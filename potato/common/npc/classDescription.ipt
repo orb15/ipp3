@@ -1,0 +1,63 @@
+# Descriptions of various classes
+
+table: ClericDescription
+[@MartialDescription with Cleric]
+
+table: FighterDescription
+[@MartialDescription with Fighter]
+
+table: WarriorDescription
+[@MartialDescription with Warrior]
+
+table: PaladinDescription
+[@MartialDescription with Paladin]
+
+table: BarbarianDescription
+[@MartialDescription with Barbarian]
+
+table: MartialDescription
+
+
+table: DruidDescription
+[@LightDescription with Druid]
+
+table: BardDescription
+[@LightDescription with Bard]
+
+table: RangerDescription
+[@LightDescription with Ranger]
+
+table: RogueDescription
+[@LightDescription with Rogue]
+
+table: LightDescription
+
+table: SorcererDescription
+[@ClothDescription with Sorcerer]
+
+table: WarlockDescription
+[@ClothDescription with Warlock]
+
+table: WizardDescription
+[@ClothDescription with Wizard]
+
+table: MysticDescription
+[@ClothDescription with Mystic]
+
+table: SageDescription
+[@ClothDescription with Sage]
+
+table: ClothDescription
+
+table: CommonerDescription
+[@PlainDescription with Commoner]
+
+table: MonkDescription
+[@PlainDescription with Monk]
+
+table: PlainDescription
+
+table: ExpertDescription
+
+table: AristocratDescription
+

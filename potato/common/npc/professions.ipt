@@ -1,0 +1,95 @@
+# commoner and expert professions
+
+table: CommonProfessions
+animal handler
+baker
+barber
+barkeep
+barmaid
+beer-seller
+beggar
+boatman
+book binder
+builder
+clerk
+clothworker
+cook
+courtesan
+farmer
+fisherman
+fishmonger
+gardener
+hay merchant
+herald
+herder
+hunter
+innkeeper
+laborer
+madame
+messenger
+miller
+miner
+nurse
+page
+peasant
+plasterer
+ratcatcher
+roofer
+sailor
+servant
+shepherd
+stablehand
+tavern keeper
+teamster
+thatcher
+tinker
+town crier
+trapper
+water carrier
+weaver
+wine seller
+wood seller
+woodcutter
+
+table: ExpertProfessions
+actor
+architect
+armorer
+artist
+banker
+blacksmith
+brewer
+buckle maker
+butcher
+carpenter
+cartographer
+concubine
+diplomat
+distiller
+furrier
+glovemaker
+hat maker
+interpreter
+jeweler
+leatherworker
+locksmith
+mason
+merchant
+mortician
+musician
+pastry cook
+perfumer
+physician
+potter
+rope maker
+rug maker
+saddler
+sculptor
+shoe maker
+silversmith
+smith
+spice merchant
+surveyor
+tailor
+tanner
+tax collector

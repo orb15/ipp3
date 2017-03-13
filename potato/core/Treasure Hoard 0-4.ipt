@@ -1,0 +1,34 @@
+; Treasure Hoard 0-4.ipt
+; created 6/26/2016 10:12:30 PM
+
+use: potatoCommon\treasure\GemsAndArt.ipt
+use: potatoCommon\treasure\magicItems.ipt
+
+table: Master
+MaxReps: 1
+set: Coins={(6d6)*100}cp, {(3d6)*100}sp, {(2d6)*10}gp
+set: GemsAndArt=none
+set: Magic=none
+set: Roll=[@Treasure]
+<b>Treasure Hoard (0-4 CR)</b>\n<i>Coins:</i> {$Coins}\n<i>Gems and Art:</i> {$GemsAndArt}\n<i>Magic:</i> {$Magic}
+
+table: Treasure
+type: lookup
+Roll: 1d100
+1-6: \z
+7-16: [@GemsAndArt=={2d6} 10GemsAndArt >> sort >> implode]
+17-26: [@GemsAndArt=={2d4} 25GemsAndArt >> sort >> implode]
+27-36: [[@GemsAndArt=={2d6} 50GemsAndArt >> sort >> implode]
+37-44: [@GemsAndArt=={2d6} 10GemsAndArt >> sort >> implode] [@Magic=={1d6} magicItemsTableA >> sort >> implode]
+45-52: [@GemsAndArt=={2d4} 25GemsAndArt >> sort >> implode] [@Magic=={1d6} magicItemsTableA >> sort >> implode]
+53-60: [[@GemsAndArt=={2d6} 50GemsAndArt >> sort >> implode] [@Magic=={1d6} magicItemsTableA >> sort >> implode]
+61-65: [@GemsAndArt=={2d6} 10GemsAndArt >> sort >> implode]  [@Magic=={1d4} magicItemsTableB >> sort >> implode]
+66-70: [@GemsAndArt=={2d4} 25GemsAndArt >> sort >> implode]  [@Magic=={1d4} magicItemsTableB >> sort >> implode]
+71-75: [[@GemsAndArt=={2d6} 50GemsAndArt >> sort >> implode] [@Magic=={1d4} magicItemsTableB >> sort >> implode]
+76-78: [@GemsAndArt=={2d6} 10GemsAndArt >> sort >> implode]  [@Magic=={1d4} magicItemsTableC >> sort >> implode]
+79-80: [@GemsAndArt=={2d4} 25GemsAndArt >> sort >> implode]  [@Magic=={1d4} magicItemsTableC >> sort >> implode]
+81-85: [[@GemsAndArt=={2d6} 50GemsAndArt >> sort >> implode] [@Magic=={1d4} magicItemsTableC >> sort >> implode]
+86-92: [@GemsAndArt=={2d4} 25GemsAndArt >> sort >> implode]  [@Magic=={1d4} magicItemsTableF >> sort >> implode]
+93-97: [@GemsAndArt=={2d6} 50GemsAndArt >> sort >> implode]  [@Magic=={1d4} magicItemsTableF >> sort >> implode]
+98-99: [[@GemsAndArt=={2d4} 25GemsAndArt >> sort >> implode] [@Magic==magicItemsTableG]
+100-101: [[@GemsAndArt=={2d6} 50GemsAndArt >> sort >> implode] [@Magic==magicItemsTableG]

@@ -1,0 +1,183 @@
+# details that describe a Gnome
+
+use: potatoCommon\npc\racialCommon.ipt
+
+table: MaleGnomeHair
+set: HairColor=[@GnomeHairColor]
+set: HairStyle=[@GnomeHairStyle]
+set: FacialHair=[@GnomeFacialHair]
+{$HairColor}, {$HairStyle} hair and {$FacialHair} beard
+
+table: FemaleGnomeHair
+set: HairColor=[@GnomeHairColor]
+set: HairStyle=[@GnomeHairStyle]
+{$HairColor}, {$HairStyle} hair
+
+table: GnomeHairColor
+black
+brown
+sandy-brown
+dark brown
+tawny
+[|blueish|reddish|blackish|greenish]-white
+
+table: GnomeHairStyle
+unkempt
+tangled
+wild
+flowing
+
+table: GnomeFacialHair
+broad
+sweeping 
+well-trimmed
+braided
+longer than average
+shorter than average
+upturned
+
+table: GnomeEyeInfo
+set: EyeColor=[@GnomeEyeColor]
+set: EyeType=[@EyeType]
+{$EyeType} {$EyeColor}
+
+table: GnomeEyeColor
+2:green
+2:blue
+2:brown
+2:light hazel
+2:gray
+1:[|hazel|gray] with flecks of [|yellow|green|blue]
+
+table: MaleGnomeName
+[@MaleGnomeFirstName] [@GnomeLastName] ([@GnomeNickname])
+[@MaleGnomeFirstName] [@MaleGnomeFirstName] [@GnomeLastName] ([@GnomeNickname])
+[@MaleGnomeFirstName] [@MaleGnomeFirstName] [@MaleGnomeFirstName] [@GnomeLastName] ([@GnomeNickname])
+
+table: FemaleGnomeName
+[@FemaleGnomeFirstName] [@GnomeLastName] ([@GnomeNickname])
+[@FemaleGnomeFirstName] [@FemaleGnomeFirstName] [@GnomeLastName] ([@GnomeNickname])
+[@FemaleGnomeFirstName] [@FemaleGnomeFirstName] [@FemaleGnomeFirstName] [@GnomeLastName] ([@GnomeNickname])
+
+table: MaleGnomeFirstName
+Alston
+Alvyn
+Boddynock
+Brocc
+Burgell
+Dimble
+Eldon
+Erky
+Fonkin
+Frug
+Gerbo
+Gimble
+Glim
+Jebeddo
+Kellen
+Namfoodle
+Orryn
+Roondar
+Seebo
+Sindri
+Warryn
+Wrenn
+Davro
+Zook
+Hapner
+Munbor
+Duknir
+Scakart
+Tudlec
+
+table: FemaleGnomeFirstName
+Breena
+Caramip
+Carlin
+Donella
+Duvamil
+Ella
+Elljobell
+Ellywick
+Lilli
+Loopmottin
+Lorilla
+Mardnab
+Nissa
+Nyx
+Oda
+Oria
+Orla
+Roywyn
+Shamil
+Tana
+Waywocket
+Zanna
+Glainbass
+Vailfavo
+Moomwer
+
+table: GnomeLastName
+Beren
+Daergol
+Folkor
+Garrick
+Nackle
+Murnig
+Ningel
+Raulnor
+Scheppen
+Timbers
+Turen
+Neselbo
+
+table: GnomeNickname
+[@GnomeSimpleNickname]
+[@GnomePrefix][@GnomeSuffix]
+
+table: GnomeSimpleNickname
+Jeb
+Badger
+Pog
+Fnipper
+Ku
+Nim
+Kit
+Pock
+Puck
+Pert
+Perl
+Kip
+Kipper
+Spark
+
+table: GnomePrefix
+Ale
+Ash
+Double
+Filtch
+One
+Two
+Sparkle
+Stumble
+Tea
+Gear
+Spring
+Screw
+Single
+
+table: GnomeSuffix
+barter
+duck
+batter
+hearth
+slosh
+gem
+lock
+buckle
+chucker
+spill
+singe
+splitter
+spark
+popper

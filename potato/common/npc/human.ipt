@@ -1,0 +1,189 @@
+# details that describe a Human
+
+use: potatoCommon\npc\racialCommon.ipt
+
+table: MaleHumanHair
+set: HairColor=[@HumanHairColor]
+set: HairStyle=[@HumanHairStyle]
+set: FacialHair=[@HumanFacialHair]
+{$HairColor}, {$HairStyle} hair{$FacialHair}
+
+table: FemaleHumanHair
+set: HairColor=[@HumanHairColor]
+set: HairStyle=[@HumanHairStyle]
+set: HairMod=[@HumanHairMod]
+{$HairColor}, {$HairStyle} hair{$HairMod}
+
+table: HumanHairColor
+brown
+sandy-brown
+dark brown
+black
+copper
+blonde
+strawberry-blonde
+red
+auburn
+
+table: HumanHairStyle
+4:wavy
+4:curly
+4:flowing 
+4:straight
+4:tangled
+4:wild
+1:bald
+
+table: HumanHairMod
+5:\z
+1: that is cut short and spiked
+1: that is tied in a [|top-knot|pony-tail]
+1: that is braided
+1: that is worn down
+1: that is worn up in a bun
+
+table: HumanFacialHair
+7:\z
+1: and [|long|short|\z] muttonchops
+1: and [|long|short|\z] sidewhiskers
+1: and a broad beard
+1: and a goate
+1: and a short, curled, beard
+1: and a [|thick|small|curled|prominent] mustache
+1: and a stuble beard
+
+table: HumanEyeInfo
+set: EyeColor=[@HumanEyeColor]
+set: EyeType=[@EyeType]
+{$EyeType} {$EyeColor}
+
+table: HumanEyeColor
+5:brown
+3:hazel
+2:blue
+2:gray
+1:green
+
+table: MaleHumanName
+[@MaleHumanFirstName] [@HumanLastName]
+
+table: FemaleHumanName
+[@FemaleHumanFirstName] [@HumanLastName]
+
+table: MaleHumanFirstName
+Khemed
+Mehmen
+Zasheir
+Darvin
+Dorn
+Evendor
+Grim
+Helm
+Malark
+Morn
+Randal
+Grigor
+Igan
+Ivor
+Pavel
+Ramas
+Thazar
+Urdun
+Jandar
+Kanithar
+Ralmevik
+Anton
+Artamo
+Maldwyn
+Marcon
+Romero
+Salazar
+Gobald
+Garvan
+Mason
+Lucas
+Artair
+Torcull
+Quintin
+Alcon
+Clavis
+
+table: FemaleHumanFirstName
+Atala
+Tanga
+Elin
+Mona
+Eloane
+Hama
+Jasmal
+Seipora
+Yasheira
+Zasheida
+Arveena
+Jhessail
+Kerri
+Miri
+Una
+Shandri
+Tesse
+Alethra
+Kara
+Katernin
+Mara
+Natali
+Olma
+Tana
+Zora
+Arizima
+Chathi
+Nulara
+Murithi
+Thola
+Umara
+Navarra
+Shevarra
+Tammith
+Yuldra
+Balma
+Dona
+Jalana
+Fazila
+Marta
+Quara
+Selise
+Vonda
+Velia
+Muri
+
+table: HumanLastName
+Basha
+Jassan
+Pashar
+Rein
+Maric
+Amblecrown
+Buckman
+Dundragon
+Evenwood
+Greyscale
+Greycastle
+Tallstag
+Bersk
+Varus
+Kovac
+Chernin
+Uren
+Burce
+Terrell
+Tyrel
+Teague
+Thentil
+Ghent
+Narvos
+Hune
+Sear
+Calabra
+Falone
+Marivaldi
+Pisacar
+Gilliam

@@ -1,0 +1,37 @@
+# Weather Generation (5e core)
+
+use: potatoCommon\misc\catchall.ipt
+
+table: Master
+MaxReps: 1
+set: Temperature=[@Temperature]
+set: Wind=[@Wind]
+set: Percipitation=[@Percipitation]
+<b>Weather (5e Core)</b>\nThe temperature is {$Temperature}. {$Wind}. {$Percipitation}.
+
+table: Temperature
+type: lookup
+Roll: 1d20
+1-14: normal for the season
+15-17: [@TempDelta] degrees warmer than usual
+18-20: [@TempDelta] degrees cooler than usual
+
+table: TempDelta
+8:5
+4:10
+2:12
+1:15
+
+table: Wind
+type: lookup
+Roll: 1d20
+1-12:There is [|no|not much|very little] wind
+13-17:There is [|light wind|a gentle breeze] out of the [@Direction]
+18-20:There [|are strong gusts|is a steady wind|are strong winds] out of the [@Direction]
+
+table: percipitation
+type: lookup
+Roll: 1d20
+1-12:There is no [|rain|percipitation]
+13-17:There is [|some|light|intermittant|light, steady] percipitation
+18-20:There is [|strong|heavy|severe] percipitation

@@ -1,0 +1,48 @@
+# Minor encounters in Gor'Fon uplands area
+prompt: Atlas Hex Terrain {Forest|Hills|Desert|Swamp|Plains|Mountain} Plains
+
+table: Master
+Set: MasterResult=[#{$prompt1} Terrain]
+{$MasterResult}
+
+table: Terrain
+type: dictionary
+Forest:[@4 EncounterMaster >> implode >> sort >> replace /no encounter,/ / >> replace /, no encounter/ /]
+Hills: [@4 EncounterMaster >> implode >> sort >> replace /no encounter,/ / >> replace /, no encounter/ /]
+Desert:[@2 EncounterMaster >> implode >> sort >> replace /no encounter,/ / >> replace /, no encounter/ /]
+Swamp: [@2 EncounterMaster >> implode >> sort >> replace /no encounter,/ / >> replace /, no encounter/ /]
+Plains:[@6 EncounterMaster >> implode >> sort >> replace /no encounter,/ / >> replace /, no encounter/ /]
+Mountain:[@2 EncounterMaster >> implode >> sort >> replace /no encounter,/ / >> replace /, no encounter/ /]
+
+table: EncounterMaster
+type: lookup
+roll: 1d6
+1:[@EncounterDetail >> LTrim >> RTrim]
+2-6: no encounter
+
+table: EncounterDetail
+monster lair (common or uncommon creature)
+wandering monster
+production camp (farm, mine, logging or similar)
+misc camp ([|hunting|trapping|adventurer|scout])
+battlefield
+isolated person ([|hermit|mad hermit|homesteader|adventurer])
+sacred ground ([|graveyard|burial ground|specially demarked area])
+[@TreasureSite]
+abundant natural resource
+gathering place ([|tribal moot|ad-hoc temple|meeting of trails|bubbling spring])
+minor construction ([@MinorConstruction])
+
+table: TreasureSite
+type: lookup
+roll: 1d10
+1-4: real treasure site - may be guarded
+6-10: rumored treasure site
+
+table: MinorConstruction
+obelisk
+flat stone with carvings
+tree dwelling
+lean-to
+pile of carved stones
+burrow or cave

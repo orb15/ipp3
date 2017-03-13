@@ -1,0 +1,204 @@
+# details that describe a dwarf
+
+use: potatoCommon\npc\racialCommon.ipt
+
+table: MaleDwarfHair
+set: HairColor=[@DwarfHairColor]
+set: HairStyle=[@DwarfHairStyle]
+set: FacialHair=[@DwarfFacialHair]
+set: HairDecoration=[@DwarfHairDecoration]
+{$HairColor}, {$HairStyle} hair and {$FacialHair} beard {$HairDecoration}
+
+table: FemaleDwarfHair
+set: HairColor=[@DwarfHairColor]
+set: HairStyle=[@DwarfHairStyle]
+{$HairColor}, {$HairStyle} hair
+
+table: DwarfHairColor
+black
+dark brown
+brown
+gray
+blonde
+white
+[|blueish|reddish|blackish]-white
+
+table: DwarfHairStyle
+8:long
+8:flowing
+8:braided
+8:tangled
+1:bald
+
+table: DwarfFacialHair
+broad
+sweeping 
+well-trimmed
+braided
+longer than average
+shorter than average
+forked
+
+table: DwarfHairDecoration
+8:\z
+1:with rings of [|copper|bronze|steel|stone]
+
+table: DwarfEyeInfo
+set: EyeColor=[@DwarfEyeColor]
+set: EyeType=[@EyeType]
+{$EyeType} {$EyeColor}
+
+table: DwarfEyeColor
+2:black
+2:gray
+2:brown
+1:blue
+
+table: MaleDwarfName
+[@MaleDwarfFirstName] [@DwarfLastName]
+
+table: FemaleDwarfName
+[@FemaleDwarfFirstName] [@DwarfLastName]
+
+table: MaleDwarfFirstName
+Adrik
+Alberich
+Baern
+Barendd
+Brotter
+Bruenor
+Dain
+Darrack
+Deig
+Eberk
+Einkil
+Fargrim
+Flint
+Gardain
+Harbek
+Kildrak
+Morgran
+Orsik
+Oskar
+Rangrim
+Rurik
+Taklinn
+Thoradin
+Thorin
+Tordek
+Traubon
+Travok
+Ulfgar
+Veit
+Vondal
+
+table: FemaleDwarfFirstName
+Amber
+Artin
+Audhild
+Bardryn
+Dagnal
+Diesa
+Eldeth
+Falkrunn
+Finellen
+Gunnloda
+Gurdis
+Helja
+Hlin
+Kathra
+Kristryd
+Ilde
+Liftrasa
+Mardred
+Riswynn
+Sannl
+Torbera
+Torgga
+Vistra
+
+table: DwarfLastName
+[@DwarfPrefix][@DwarfSuffix]
+
+table: DwarfPrefix
+Battle
+Iron
+Stone
+Dagger
+Axe
+Sword
+Hammer
+Mug
+Dragon
+Mountain
+Arrow
+Orc
+Goblin
+Cavern
+Tunnel
+Cave
+Gold
+Silver
+Gem
+Ore
+Copper
+Steel
+Spear
+Shield
+Fire
+Water
+Earth
+Lode
+Rune
+Troll
+Dark
+Deep
+Frost
+Horn
+Rock
+Wyrm
+Blood
+Foe
+War
+Mead
+Brew
+Staff
+Hand
+Song
+Beard
+Belt
+Blade
+River
+Helm
+Spell
+Anvil
+Forge
+Star
+
+table: DwarfSuffix
+helm
+brewer
+breaker
+wearer
+eater
+shield
+carver
+monger
+hammer
+miner
+forger
+bearer
+hewer
+holder
+biter
+rider
+shield
+slayer
+delver
+master
+weaver
+biter
+beard
+cutter
+crafter
+maker

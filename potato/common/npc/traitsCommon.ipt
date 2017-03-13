@@ -1,0 +1,289 @@
+# traits common to all NPCs
+
+use: potatoCommon\npc\classes.ipt
+use: potatoCommon\npc\races.ipt
+
+table: Mannerisms
+[|whistles|hums|sings|mutters] quietly when distracted
+[|chatty|reluctant to engage in conversation]
+[|drinks too much|refuses alcohol]
+[|intense / focused|easily distracted]
+[|overly neat|poor hygene|well-groomed|stylish|unkempt]
+[|boisterous|reserved]
+[|cowardly|foolhardy]
+[|flirtatious|sexually disinterested]
+[|frugal|fiscally wasteful]
+[|especially formal|overly informal]
+[|overly suspicious|too accepting / trusting]
+[|lecherous|chaste]
+[|paces|figety|can't sit still]
+[|particularly witty / clever|dull conversationalist]
+[|disorganized|organized and prepared for anything]
+[|argumentative|agreeable]
+has a [|lisp|slur|stutter|low voice|high voice|booming voice|whispering voice]
+walks [|quickly|slowly]
+speaks [|slowly|stoically|quickly]
+looks especially [|cheerful|displeased|worried|distracted|concerned|thoughtful|dreamy|unaware|observant|happy|relaxed|uncomfortable]
+noticably [|attractive|ugly]
+grunts to acknowledge or agree
+foul-mouthed
+smokes a pipe
+asks and answers own questions
+runs fingers through hair
+invades personal space
+easily offended
+brags about past deeds
+enjoys wagering/betting, even on mundane things
+malcontent
+vain
+clumsy
+forgetful
+ambitious
+
+table: InteractionType
+1:[|argumentative|arrogant|blustering|rude|irritable|ponderous]
+2:[|friendly|honest|helpful|engaging]
+4:[|curious|quiet|suspicious]
+
+table: Ideals
+Altruism
+Anarchy
+Aspiration
+Balance
+Beauty
+Change
+Charity
+Community
+Creativity
+Destiny
+Discovery
+Domination
+Fairness
+Faith
+Family
+Free thinking
+Freedom
+Friendship
+Generosity
+Glory
+Greater good
+Greed
+Honesty
+Honor
+Independence
+Knowledge
+Learning
+Life
+Live and let live
+Logic
+Mastery
+Might
+Moderation
+Nation
+Nature
+Neutrality
+No limits
+Noble obligation
+Pain
+People
+Power
+Redemption
+Respect
+Responsibility
+Retribution
+Self-improvement
+Self-knowledge
+Self-sacrifice
+Sincerity
+Slaughter
+Status
+Tradition
+Whimsy
+
+table: Bonds
+Agent of foreign power working under cover in this area
+Apostate who has betrayed the faith
+Attached to their home town
+Attracted to criminals
+Blasphemer with a serious grudge against all religious types
+Captivated by a romantic interest
+Committed to healing even if it costs dearly
+Convinced they are already damned
+Dedicated to fulfilling a personal life goal
+Drawn to a special place
+Drawn to the wilderness
+Feels that a local merchant was responsible for their financial ruin, now wants to see that merchant go down as well
+Harbors a secert animosity toward the local baron/lord and is working to undermine their rule
+Has had long-time infatuation with someone who is now married to a town VIP, seeks to disrupt/terminate relationship
+Has lost the [|love|respect] of their spouse and wants to do something important to regain it
+Hiding from powerful forces hunting them
+Idolizes a childhood hero
+A family member is gravely ill, seeks any way to restore the health of their loved one
+Loves someone they cannot have
+Loves the land
+Loyal to their [|benefactor|patron|employer]
+Loyal to their sovereign above all else
+On the run from a powerful, nearby thieves' guild that they double-crossed
+Out for revenge
+Owes a large debt
+Owes everything to their mentor
+Owes their life to a priest
+Pines for a childhood sweetheart
+Protective of a sentimental keepsake
+Protective of a valuable possession
+Protective of close family members
+Protective of colleagues or compatriots
+Pursues wealth
+Resents the military service of the land because they were denied entry due to a physical ailment
+Seeks a long lost ancient relic
+Seeks to reclaim lost status
+Separated from family in a raid many years ago, wants to discover their fate and/or whereabouts
+Spy in service to foreign power
+Staunch family tradition of serving in the military
+Supports their family
+Haunted by the memory of the [|brother|sister] that they accidentally killed
+Deserted from the military or a battle
+Values the common people
+Wants revenge on a corrupt temple
+Wants revenge on a [|noble|powerful person|neighbor|family member]
+Wants to be famous
+Wants to prove themselves superior to a hated rival
+Wishes they could travel to an exotic city far away
+Wishes to reconnect with long-lost [|child|family]
+
+table: Flaws
+[|Forbidden love|Susceptibility to romance]
+Addicted to a narcotic or other substance
+Always late
+Always too early
+Anti-social
+Anxious
+Arrogant
+Bad at a trade-necessary skill
+Blind to the flaws of others
+Blunt
+Callous
+Cannot think up new ideas
+Cheap, will haggle to the point of ruining deals
+Clumsy
+Complains
+Conspiracy theorist
+Constantly seeking approval from one person in particular
+Constantly seeking approval from others
+Cowardly
+Crabby
+Cynical
+Depressed
+Dislikes animals
+Dislikes children
+Disorganized
+Does not care what others think
+Doomed - is certain of it and will make every effort to take everyone else along with them when the time comes
+Dresses inappropriately
+Drunk most of the time, but holds their liquor well so it's hard to spot
+Easily intimidated
+Egotistical
+Enjoys decadent pleasures
+Envies another creature's [|possessions|station]
+Erratic
+Exaggerates
+Excessively curious
+Fanatical follower of a god, will attempt to subtly convert any associate after any substantial conversation occurs
+Fantasizes about being an [|adventurer|noble]
+Fear of a common mode of transportation (e.g. horses)
+Finds a common emotion to be useless
+Foolhardy bravery
+Gambling addict who is embezelling money from their work
+Gambling addiction
+Gets upset easily
+Gluttonous
+Greedy
+Dislikes or is bigotted toward: [|[@AnyRace]|[@ClassMaster]|men|women]
+Has a powerful enemy
+Has a short temper
+Has always been fascinated with magic, would do anything to learn its secrets
+Has always been passionately curious about the afterlife, seeks knowledge regarding true fate of the soul after death
+Has an irrational distrust of people in positions of authority
+Has no money left and debt-collectors are looking to collect
+Hasn't paid their taxes / tax cheat
+[|Shameful|Scandalous] history
+Idealistic
+Illiterate
+Impulsive
+In debt but puts on a wealthy front
+Injured [|arm|leg|hand|foot|groin|back|face]
+Intolerant of a common personality trait
+Jealous
+Judgmental
+Lacks forethought
+Lacks subtlety
+Lazy
+Lecherous
+Living in shadow of heroic brother, wants nothing more than to do something important, make name for themself
+Longs for a past that cannot be reclaimed
+Looks down on another social class
+Low self-worth
+Loyalist seeking to root out disloyalty and sedition
+Martyr-in-the-making
+Member of an open conspiracy to make the world a better place through science
+Mooch
+Moody
+Morally inflexible
+Naive
+Never gets a joke
+Nitpicks the flaws of others
+No sense of smell/taste
+Obese
+Obsessed with capturing a specific individual
+Obsessed with nemesis
+Obsessed with others noticing a personal quirk
+Obsessed with the acquisition of alchemical knowledge
+Overestimates the difficulty of tasks
+Overly submissive and shy
+Overly trusting
+Overpowering greed
+Oversleeps
+Overspends on items of questionable value
+Paranoid
+Parents were brother and sister
+Perfectionist
+Poet who cannot be bought or dissuaded from a disastrous path
+Poor eyesight
+Poor hygiene
+Possession of forbidden lore
+Prideful
+Prone to rage
+Rebellious type looking for a cause to adopt
+Refuses to ask for help
+Religious zealot
+Righteous
+Rude
+Secret crime
+Seeking immortality at any cost
+Self-doubting
+Sends mixed signals
+Sickly
+Social outcast
+Socially awkward with members of the opposite sex
+Socially awkward with members of the same sex
+Specific phobia
+Spiteful
+Steals
+Supports an irrational belief of some kind and can;t be convinved otherwise
+Stubborn
+Surly
+Tactless
+Underestimates the difficulty of tasks
+Uneducated
+Unobservant
+Vengeful
+Wants to be seen as a martyr
+Was cast out of their home community for discovering corruption among the leadership
+Was responsible for death of a [|child|elderly person|sibling|friend] many years ago, wants to make amends
+Weak-willed
+Whoring addiction
+Will never back down from a perceived threat
+Will never discuss some common topic (e.g. family)
+Will not compromise
+Wise-ass
+Worrywart

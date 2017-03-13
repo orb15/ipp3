@@ -1,0 +1,48 @@
+# details that describe a Tiefling
+
+use: potatoCommon\npc\racialCommon.ipt
+
+table: MaleTieflingHair
+set: HairColor=[@TieflingHairColor]
+set: HairStyle=[@TieflingHairStyle]
+set: FacialHair=[@TieflingFacialHair]
+set: HornStyle=[@TieflingHornStyle]
+{$HairColor}, {$HairStyle} hair{$FacialHair} {$HornStyle}
+
+table: FemaleTieflingHair
+set: HairColor=[@TieflingHairColor]
+set: HairStyle=[@TieflingHairStyle]
+set: HornStyle=[@TieflingHornStyle]
+{$HairColor}, {$HairStyle} hair{$HairMod} {$HornStyle}
+
+table: TieflingHairColor
+black
+dark [|brown|red|blue|purple]
+
+table: TieflingHairStyle
+flowing 
+straight
+
+table: TieflingFacialHair
+8:\z
+1: a goate
+1: a short, curled, beard
+
+table: TieflingHornStyle
+ and ram's horns
+ and straight, tall horns like a gazelle
+ and sprialed horns like an antelope
+
+table: TieflingEyeInfo
+set: EyeColor=[@TieflingEyeColor]
+set: EyeType=[@EyeType]
+{$EyeType} {$EyeColor}
+
+table: TieflingEyeColor
+solid [|black|red|white|silver|gold]
+
+table: MaleTieflingName
+GuyTiefling
+
+table: FemaleTieflingName
+GirlTiefling
