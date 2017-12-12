@@ -1,0 +1,49 @@
+; Treasure Hoard 11-16.ipt
+
+use: potato\5eDnD\treasure\GemsAndArt.ipt
+use: potato\5eDnD\treasure\magicItems.ipt
+
+table: Master
+MaxReps: 1
+set: Coins={(4d6)*1000}gp, {(5d6)*100}pp
+set: GemsAndArt=none
+set: Magic=none
+set: Roll=[@Treasure]
+<b>Treasure Hoard (5-10 CR)</b>\n<i>Coins:</i> {$Coins}\n<i>Gems and Art:</i> {$GemsAndArt}\n<i>Magic:</i> {$Magic1} {$Magic2}
+
+table: Treasure
+type: lookup
+Roll: 1d100
+1-3: \z
+4-6: [@GemsAndArt=={2d4} 250GemsAndArt >> sort >> implode]
+7-9: [@GemsAndArt=={2d4} 750GemsAndArt >> sort >> implode]
+10-12: [@GemsAndArt=={3d6} 500GemsAndArt >> sort >> implode]
+13-15: [@GemsAndArt=={3d6} 1000GemsAndArt >> sort >> implode]
+16-19: [@GemsAndArt=={2d4} 250GemsAndArt >> sort >> implode] [@Magic1=={1d4} magicItemsTableA >> sort >> implode] [@Magic2=={1d6} magicItemsTableB >> sort >> implode]
+20-23: [@GemsAndArt=={2d4} 750GemsAndArt >> sort >> implode] [@Magic1=={1d4} magicItemsTableA >> sort >> implode] [@Magic2=={1d6} magicItemsTableB >> sort >> implode]
+24-26: [@GemsAndArt=={3d6} 500GemsAndArt >> sort >> implode] [@Magic1=={1d4} magicItemsTableA >> sort >> implode] [@Magic2=={1d6} magicItemsTableB >> sort >> implode]
+27-29: [@GemsAndArt=={3d6} 1000GemsAndArt >> sort >> implode] [@Magic1=={1d4} magicItemsTableA >> sort >> implode] [@Magic2=={1d6} magicItemsTableB >> sort >> implode]
+30-35: [@GemsAndArt=={2d4} 250GemsAndArt >> sort >> implode] [@Magic1=={1d6} magicItemsTableC >> sort >> implode]
+36-40: [@GemsAndArt=={2d4} 750GemsAndArt >> sort >> implode] [@Magic1=={1d6} magicItemsTableC >> sort >> implode]
+41-45: [@GemsAndArt=={3d6} 500GemsAndArt >> sort >> implode] [@Magic1=={1d6} magicItemsTableC >> sort >> implode]
+46-50: [@GemsAndArt=={3d6} 1000GemsAndArt >> sort >> implode] [@Magic1=={1d6} magicItemsTableC >> sort >> implode]
+51-54: [@GemsAndArt=={2d4} 250GemsAndArt >> sort >> implode] [@Magic1=={1d4} magicItemsTableD >> sort >> implode]
+55-58: [@GemsAndArt=={2d4} 750GemsAndArt >> sort >> implode] [@Magic1=={1d4} magicItemsTableD >> sort >> implode]
+59-62: [@GemsAndArt=={3d6} 500GemsAndArt >> sort >> implode] [@Magic1=={1d4} magicItemsTableD >> sort >> implode]
+53-66: [@GemsAndArt=={3d6} 1000GemsAndArt >> sort >> implode] [@Magic1=={1d4} magicItemsTableD >> sort >> implode]
+67-68: [@GemsAndArt=={2d4} 250GemsAndArt >> sort >> implode] [@Magic1==magicItemsTableE >> sort >> implode]
+69-70: [@GemsAndArt=={2d4} 750GemsAndArt >> sort >> implode] [@Magic1==magicItemsTableE >> sort >> implode]
+71-72: [@GemsAndArt=={3d6} 500GemsAndArt >> sort >> implode] [@Magic1==magicItemsTableE >> sort >> implode]
+73-74: [@GemsAndArt=={3d6} 1000GemsAndArt >> sort >> implode] [@Magic1==magicItemsTableE >> sort >> implode] 
+75-76: [@GemsAndArt=={2d4} 250GemsAndArt >> sort >> implode] [@Magic1==magicItemsTableE >> sort >> implode] [@Magic2=={1d4} magicItemsTableG >> sort >> implode]
+77-78: [@GemsAndArt=={2d4} 750GemsAndArt >> sort >> implode] [@Magic1==magicItemsTableE >> sort >> implode] [@Magic2=={1d4} magicItemsTableG >> sort >> implode]
+79-80: [@GemsAndArt=={3d6} 500GemsAndArt >> sort >> implode] [@Magic1==magicItemsTableE >> sort >> implode] [@Magic2=={1d4} magicItemsTableG >> sort >> implode]
+81-82: [@GemsAndArt=={3d6} 1000GemsAndArt >> sort >> implode] [@Magic1==magicItemsTableE >> sort >> implode] [@Magic2=={1d4} magicItemsTableG >> sort >> implode]
+83-85: [@GemsAndArt=={2d4} 250GemsAndArt >> sort >> implode] [@Magic1=={1d4} magicItemsTableH >> sort >> implode]
+86-88: [@GemsAndArt=={2d4} 750GemsAndArt >> sort >> implode] [@Magic1=={1d4} magicItemsTableH >> sort >> implode]
+89-90: [@GemsAndArt=={3d6} 500GemsAndArt >> sort >> implode] [@Magic1=={1d4} magicItemsTableH >> sort >> implode]
+91-92: [@GemsAndArt=={3d6} 1000GemsAndArt >> sort >> implode] [@Magic1=={1d4} magicItemsTableH >> sort >> implode]
+93-94: [@GemsAndArt=={2d4} 250GemsAndArt >> sort >> implode] [@Magic1==magicItemsTableI >> sort >> implode]
+95-96: [@GemsAndArt=={2d4} 750GemsAndArt >> sort >> implode] [@Magic1==magicItemsTableI >> sort >> implode]
+97-98: [@GemsAndArt=={3d6} 500GemsAndArt >> sort >> implode] [@Magic1==magicItemsTableI >> sort >> implode]
+99-100: [@GemsAndArt=={3d6} 1000GemsAndArt >> sort >> implode] [@Magic1==magicItemsTableI >> sort >> implode]

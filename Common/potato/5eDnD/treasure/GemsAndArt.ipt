@@ -1,0 +1,44 @@
+use: potato/5eDnD/treasure/gemNames.ipt
+use: potato/5eDnD/treasure/artItems.ipt
+
+table: 10GemsAndArt
+[@10gpGemNames] (10gp)
+
+table: 25GemsAndArt
+[@25ItemMasterTable] (25gp)
+[@10GemsAndArt], [@10GemsAndArt], [@10GemsAndArt]
+
+
+table: 50GemsAndArt
+[@50gpGemNames] (50gp)
+[@25GemsAndArt], [@25GemsAndArt]
+[@10GemsAndArt], [@10GemsAndArt], [@10GemsAndArt], [@10GemsAndArt], [@10GemsAndArt]
+[@25GemsAndArt], [@10GemsAndArt], [@10GemsAndArt], [@10GemsAndArt]
+
+table: 100GemsAndArt
+[@100gpGemNames] (100gp)
+[@50GemsAndArt], [@50GemsAndArt]
+[@25GemsAndArt], [@25GemsAndArt], [@25GemsAndArt], [@25GemsAndArt]
+[@25GemsAndArt], [@25GemsAndArt], [@50GemsAndArt]
+
+table: 250GemsAndArt
+[@250ItemMasterTable] (250gp)
+[@100GemsAndArt], [@100GemsAndArt], [@50GemsAndArt]
+[@100GemsAndArt], [@50GemsAndArt], [@50GemsAndArt], [@50GemsAndArt]
+
+table: 500GemsAndArt
+[@500gpGemNames] (500gp)
+[@250GemsAndArt], [@250GemsAndArt],
+[@100GemsAndArt], [@100GemsAndArt], [@100GemsAndArt], [@100GemsAndArt], [@100GemsAndArt]
+[@100GemsAndArt], [@100GemsAndArt], [@100GemsAndArt], [@100GemsAndArt], [@50GemsAndArt], [@50GemsAndArt]
+
+table: 750GemsAndArt
+[@750ItemMasterTable] (750gp)
+[@250GemsAndArt], [@250GemsAndArt], [@250GemsAndArt]
+[@500GemsAndArt], [@250GemsAndArt]
+
+table: 1000GemsAndArt
+[@1000gpGemNames] (1000gp)
+[@250GemsAndArt], [@250GemsAndArt], [@250GemsAndArt], [@250GemsAndArt]
+[@500GemsAndArt], [@500GemsAndArt]
+[@500GemsAndArt], [@250GemsAndArt], [@250GemsAndArt]

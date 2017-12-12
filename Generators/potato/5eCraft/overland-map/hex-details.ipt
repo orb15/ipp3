@@ -1,0 +1,255 @@
+# ---------------------------------------
+# 5eCraft:  Atlas hex internals
+# ---------------------------------------
+
+prompt: Current Atlas Hex Terrain {Forest|Hills|Desert|Swamp|Plains|Mountains|Water} Plains
+
+table: Master
+MaxReps: 1
+Set: MasterResult=[#{$prompt1} Terrain]
+{$MasterResult}
+
+table: Terrain
+type: dictionary
+Forest:[@Forest]
+Hills: [@Hills]
+Desert:[@Desert]
+Swamp: [@Swamp]
+Plains:[@Plains]
+Mountains:[@Mountains]
+Water:[@Water]
+
+# ###########################
+# Forest
+# ###########################
+table: Forest
+Set: fullPrimaryHexCount = [@FullPrimaryCount]
+Set: fullSecondaryHexCount = {16 - fullPrimaryHexCount}
+Set: fullTertiaryHexCount = [|3|3|3|3|2|2|2|1|1|0]
+Set: fullWildcardHexCount = {19-(fullPrimaryHexCount + fullSecondaryHexCount + fullTertiaryHexCount)}
+Set: fullSecondaryText = \n{fullSecondaryHexCount} hexes of <b>Plains</b> [@Clumps]
+Set: fullTertiaryText = \n{fullTertiaryHexCount} hexes of <b>[@ForestHillCover] Hills</b> [@Clumps]
+Set: fullWildcardText = \n{fullWildcardHexCount} Wildcards: <b>[@{fullWildcardHexCount} ForestWildcard >> implode]</b>
+Set: halfPrimaryHexCount = [@HalfPrimaryCount]
+Set: halfSecondaryHexCount = [|4|3|3|3|2|2|1|0]
+Set: halfTertiaryHexCount = {12 - (halfPrimaryHexCount + halfSecondaryHexCount)}
+Set: halfSecondaryText = \n{halfSecondaryHexCount} hexes of <b>Plains</b>
+Set: halfTertiaryText = \n{halfTertiaryHexCount} hexes of <b>[@ForestHillCover] Hills</b>
+1: This Forest hex consists of the following terrain:\n\n<u>Full Hexes</u>\n{fullPrimaryHexCount} hexes of <b>Forest</b> [@Clumps] [@ForestDensity]{fullSecondaryText}{fullTertiaryText}{fullWildcardText}\n\n<u>Partial Hexes</u>\n{halfPrimaryHexCount} hexes of <b>Forest</b> [@ForestDensity]{halfSecondaryText}{halfTertiaryText}
+
+table: ForestWildcard
+3: [|River|Lake]
+2: [@ForestHillCover] Mountains
+1: Swamp
+
+table: ForestHillCover
+2: Forested
+1: Bare
+
+table: ForestDensity
+2: \z
+1: (some forest denser or lighter than Atlas hex)
+
+# ###########################
+# Hills
+# ###########################
+table: Hills
+Set: fullPrimaryHexCount = [@FullPrimaryCount]
+Set: fullSecondaryHexCount = {16 - fullPrimaryHexCount}
+Set: fullTertiaryHexCount = [|3|3|3|3|2|2|2|1|1|0]
+Set: fullWildcardHexCount = {19-(fullPrimaryHexCount + fullSecondaryHexCount + fullTertiaryHexCount)}
+Set: fullSecondaryText = \n{fullSecondaryHexCount} hexes of <b>Mountains</b> [@Clumps] [@HillsPass]
+Set: fullTertiaryText = \n{fullTertiaryHexCount} hexes of <b>Plains</b> [@Clumps]
+Set: fullWildcardText = \n{fullWildcardHexCount} Wildcards: <b>[@{fullWildcardHexCount} HillsWildcard >> implode]</b>
+Set: halfPrimaryHexCount = [@HalfPrimaryCount]
+Set: halfSecondaryHexCount = [|4|3|3|3|2|2|1|0]
+Set: halfTertiaryHexCount = {12 - (halfPrimaryHexCount + halfSecondaryHexCount)}
+Set: halfSecondaryText = \n{halfSecondaryHexCount} hexes of <b>Mountains</b> [@HillsPass]
+Set: halfTertiaryText = \n{halfTertiaryHexCount} hexes of <b>Plains</b>
+1: This Hills hex consists of the following terrain:\n\n<u>Full Hexes</u>\n{fullPrimaryHexCount} hexes of <b>Hills</b> [@Clumps] [@HillsCanyon]{fullSecondaryText}{fullTertiaryText}{fullWildcardText}\n\n<u>Partial Hexes</u>\n{halfPrimaryHexCount} hexes of <b>Hills</b> [@HillsCanyon]{halfSecondaryText}{halfTertiaryText}
+
+table: HillsWildcard
+3: [|River|Lake]
+2: [@HillsWithForest]
+1: Desert
+
+table: HillsWithForest
+1: Forested Hills
+2: Forest
+
+table: HillsCanyon
+roll:1d10
+1-8:\z
+9-10:(one contains a [|canyon|fissure])
+
+table: HillsPass
+roll:1d10
+1-6:\z
+7-10: (contains a pass to the other side of the mountains)
+
+# ###########################
+# Desert
+# ###########################
+table: Desert
+Set: fullPrimaryHexCount = [@FullPrimaryCount]
+Set: fullSecondaryHexCount = {16 - fullPrimaryHexCount}
+Set: fullTertiaryHexCount = [|3|3|3|3|2|2|2|1|1|0]
+Set: fullWildcardHexCount = {19-(fullPrimaryHexCount + fullSecondaryHexCount + fullTertiaryHexCount)}
+Set: fullSecondaryText = \n{fullSecondaryHexCount} hexes of <b>Hills</b> [@Clumps] [@DesertHills]
+Set: fullTertiaryText = \n{fullTertiaryHexCount} hexes of <b>Plains</b> [@Clumps]
+Set: fullWildcardText = \n{fullWildcardHexCount} Wildcards: <b>[@{fullWildcardHexCount} DesertWildcard >> implode]</b>
+Set: halfPrimaryHexCount = [@HalfPrimaryCount]
+Set: halfSecondaryHexCount = [|4|3|3|3|2|2|1|0]
+Set: halfTertiaryHexCount = {12 - (halfPrimaryHexCount + halfSecondaryHexCount)}
+Set: halfSecondaryText = \n{halfSecondaryHexCount} hexes of <b>Hills</b> [@DesertHills]
+Set: halfTertiaryText = \n{halfTertiaryHexCount} hexes of <b>Plains</b>
+1: This Desert hex consists of the following terrain:\n\n<u>Full Hexes</u>\n{fullPrimaryHexCount} hexes of <b>Desert</b> [@Clumps]{fullSecondaryText}{fullTertiaryText}{fullWildcardText}\n\n<u>Partial Hexes</u>\n{halfPrimaryHexCount} hexes of <b>Desert</b>{halfSecondaryText}{halfTertiaryText}
+
+table: DesertWildcard
+1: [|Oasis|River]
+5: Mountains
+
+table: DesertHills
+2:\z
+1: ([|dry, rocky hills| high dunes])
+
+# ###########################
+# Swamp
+# ###########################
+table: Swamp
+Set: fullPrimaryHexCount = [@FullPrimaryCount]
+Set: fullSecondaryHexCount = {16 - fullPrimaryHexCount}
+Set: fullTertiaryHexCount = [|3|3|3|3|2|2|2|1|1|0]
+Set: fullWildcardHexCount = {19-(fullPrimaryHexCount + fullSecondaryHexCount + fullTertiaryHexCount)}
+Set: fullSecondaryText = \n{fullSecondaryHexCount} hexes of <b>Plains</b> [@Clumps]
+Set: fullTertiaryText = \n{fullTertiaryHexCount} hexes of <b>Forest</b> [@Clumps]
+Set: fullWildcardText = \n{fullWildcardHexCount} Wildcards: <b>[@{fullWildcardHexCount} SwampWildcard >> implode]</b>
+Set: halfPrimaryHexCount = [@HalfPrimaryCount]
+Set: halfSecondaryHexCount = [|4|3|3|3|2|2|1|0]
+Set: halfTertiaryHexCount = {12 - (halfPrimaryHexCount + halfSecondaryHexCount)}
+Set: halfSecondaryText = \n{halfSecondaryHexCount} hexes of <b>Plains</b>
+Set: halfTertiaryText = \n{halfTertiaryHexCount} hexes of <b>Forest</b>
+1: This Swamp hex consists of the following terrain:\n\n<u>Full Hexes</u>\n{fullPrimaryHexCount} hexes of <b>Swamp</b> [@Clumps]{fullSecondaryText}{fullTertiaryText}{fullWildcardText}\n\n<u>Partial Hexes</u>\n{halfPrimaryHexCount} hexes of <b>Swamp</b>{halfSecondaryText}{halfTertiaryText}
+
+table: SwampWildcard
+1: [|Lake|River]
+
+# ###########################
+# Plains
+# ###########################
+table: Plains
+Set: fullPrimaryHexCount = [@FullPrimaryCount]
+Set: fullSecondaryHexCount = {16 - fullPrimaryHexCount}
+Set: fullTertiaryHexCount = [|3|3|3|3|2|2|2|1|1|0]
+Set: fullWildcardHexCount = {19-(fullPrimaryHexCount + fullSecondaryHexCount + fullTertiaryHexCount)}
+Set: fullSecondaryText = \n{fullSecondaryHexCount} hexes of <b>Forest</b> [@Clumps]
+Set: fullTertiaryText = \n{fullTertiaryHexCount} hexes of <b>Hills</b> [@Clumps]
+Set: fullWildcardText = \n{fullWildcardHexCount} Wildcards: <b>[@{fullWildcardHexCount} PlainsWildcard >> implode]</b>
+Set: halfPrimaryHexCount = [@HalfPrimaryCount]
+Set: halfSecondaryHexCount = [|4|3|3|3|2|2|1|0]
+Set: halfTertiaryHexCount = {12 - (halfPrimaryHexCount + halfSecondaryHexCount)}
+Set: halfSecondaryText = \n{halfSecondaryHexCount} hexes of <b>Forest</b>
+Set: halfTertiaryText = \n{halfTertiaryHexCount} hexes of <b>Hills</b>
+1: This Plains hex consists of the following terrain:\n\n<u>Full Hexes</u>\n{fullPrimaryHexCount} hexes of <b>Plains</b> [@Clumps]{fullSecondaryText}{fullTertiaryText}{fullWildcardText}\n\n<u>Partial Hexes</u>\n{halfPrimaryHexCount} hexes of <b>Plains</b>{halfSecondaryText}{halfTertiaryText}
+
+table: PlainsWildcard
+2: [|Lake|River]
+1: Swamp
+1: Desert
+
+# ###########################
+# Mountains
+# ###########################
+table: Mountains
+Set: fullPrimaryHexCount = [@FullPrimaryCount]
+Set: fullSecondaryHexCount = {16 - fullPrimaryHexCount}
+Set: fullTertiaryHexCount = [|3|3|3|3|2|2|2|1|1|0]
+Set: fullWildcardHexCount = {19-(fullPrimaryHexCount + fullSecondaryHexCount + fullTertiaryHexCount)}
+Set: fullSecondaryText = \n{fullSecondaryHexCount} hexes of <b>Hills</b> [@Clumps]
+Set: fullTertiaryText = \n{fullTertiaryHexCount} hexes of <b>[@MountainsForest]</b> [@Clumps]
+Set: fullWildcardText = \n{fullWildcardHexCount} Wildcards: <b>[@{fullWildcardHexCount} MountainsWildcard >> implode]</b>
+Set: halfPrimaryHexCount = [@HalfPrimaryCount]
+Set: halfSecondaryHexCount = [|4|3|3|3|2|2|1|0]
+Set: halfTertiaryHexCount = {12 - (halfPrimaryHexCount + halfSecondaryHexCount)}
+Set: halfSecondaryText = \n{halfSecondaryHexCount} hexes of <b>Hills</b>
+Set: halfTertiaryText = \n{halfTertiaryHexCount} hexes of <b>[@MountainsForest]</b>
+1: This Mountains hex consists of the following terrain:\n\n<u>Full Hexes</u>\n{fullPrimaryHexCount} hexes of <b>Mountains</b> [@Clumps]{fullSecondaryText}{fullTertiaryText}{fullWildcardText}\n\n<u>Partial Hexes</u>\n{halfPrimaryHexCount} hexes of <b>Mountains</b>{halfSecondaryText}{halfTertiaryText}
+
+table: MountainsWildcard
+1: Desert
+
+table: MountainsForest
+1: Forested Mountains
+2: Forest
+
+table: MountainsPeak
+type: lookup
+roll:1d10
+1-8: \z
+9-10: (contains a dominating peak)
+
+table: MountainPass
+type: lookup
+roll:1d10
+1-9: \z
+10: (contains a pass)
+
+table: MountainPass
+type: lookup
+roll:1d100
+1-5: (contains \a [@MountainsVolcano] volcano)
+6-100: \z
+
+table: MountainsVolcano
+9: inactive
+1: active
+
+# ###########################
+# Water
+# ###########################
+table: Water
+Set: fullPrimaryHexCount = [@FullPrimaryCount]
+Set: fullSecondaryHexCount = {16 - fullPrimaryHexCount}
+Set: fullTertiaryHexCount = [|3|3|3|3|2|2|2|1|1|0]
+Set: fullWildcardHexCount = {19-(fullPrimaryHexCount + fullSecondaryHexCount + fullTertiaryHexCount)}
+Set: fullSecondaryText = \n{fullSecondaryHexCount} hexes of <b>Plains</b> [@Clumps]
+Set: fullTertiaryText = \n{fullTertiaryHexCount} hexes of <b>[@WaterForest]</b> [@Clumps]
+Set: fullWildcardText = \n{fullWildcardHexCount} Wildcards: <b>[@{fullWildcardHexCount} WaterWildcard >> implode]</b>
+Set: halfPrimaryHexCount = [@HalfPrimaryCount]
+Set: halfSecondaryHexCount = [|4|3|3|3|2|2|1|0]
+Set: halfTertiaryHexCount = {12 - (halfPrimaryHexCount + halfSecondaryHexCount)}
+Set: halfSecondaryText = \n{halfSecondaryHexCount} hexes of <b>Plains</b>
+Set: halfTertiaryText = \n{halfTertiaryHexCount} hexes of <b>[@WaterForest]</b>
+1: This Water hex consists of the following terrain:\n\n<u>Full Hexes</u>\n{fullPrimaryHexCount} hexes of <b>Water</b> [@Clumps]{fullSecondaryText}{fullTertiaryText}{fullWildcardText}\n\n<u>Partial Hexes</u>\n{halfPrimaryHexCount} hexes of <b>Water</b>{halfSecondaryText}{halfTertiaryText}
+
+table: WaterWildcard
+2: Swamp
+1: Desert
+2: Hills
+
+table: WaterForest
+1: Forest
+2: Light Forest
+
+# ###########################
+# Misc Tables
+# ###########################
+table: Clumps
+3: in a single group in the hex
+1: [|scattered|in small groups] in the hex
+
+table: FullPrimaryCount
+1: 10
+2: 11
+3: 12
+4: 13
+3: 14
+2: 15
+1: 16
+
+table: HalfPrimaryCount
+1: 8
+2: 7
+3: 6
+2: 5
+1: 4

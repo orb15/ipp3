@@ -1,0 +1,43 @@
+# ---------------------------------------
+# 5eCraft: Water Encounter Details
+# ---------------------------------------
+
+table: Water0
+Animal, Quipper (MM 335)
+
+table: Water8th
+Animal, Giant Crab (MM 324)
+
+table: Water4th
+Animal, Giant Frog (MM 325)
+
+table: WaterHalf
+Animal, Crocodile (MM 320)
+Animal, Giant Sea Horse (MM 328)
+Animal, Reef Shark (MM 336)
+
+table: Water1
+Animal, Giant Octopus (MM 326)
+Animal, Giant Toad (MM 329)
+Swarm, Quippers (MM 338)
+
+table: Water2
+Animal, Hunter Shark (MM 330)
+Dinosaur, Plesiosaurus (MM 80)
+
+table: Water3
+Animal, Killer Whale (MM 331)
+Water Weird (MM 299)
+
+table: Water5
+Animal, Giant Crocodile (MM 324)
+Animal, Giant Shark (MM 328)
+
+table: Water10
+Aboleth (MM 13)
+
+table: Water17
+Dragon Turtle (MM 119)
+
+table: Water23
+Kraken (MM 197)

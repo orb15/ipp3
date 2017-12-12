@@ -1,0 +1,27 @@
+# ---------------------------------------
+# SWN: Wilderness Events
+# ---------------------------------------
+
+table: Master
+MaxReps: 3
+roll: 1d20
+1:Bandits have moved in
+2:Flooding swept through
+3:Part of it has collapsed
+4:Refugees are hiding here
+5:Dangerous animals lair here
+6:A rebel cell uses it for a base
+7:Smugglers have landed here
+8:Foreign agents meet here
+9:A hermit has taken up residence
+10:A toxic plant is growing wild
+11:An artist seeks inspiration here
+12:An ancient structure was dug out
+13:The weather has turned savage
+14:A vehicle crashed nearby
+15:Some locals are badly lost
+16:Religious pilgrims come here
+17:Locals fight over control of it
+18:Nature threatens to wipe it out
+19:An old shrine was raised here
+20:A shell of a building remains

@@ -1,0 +1,11 @@
+# ---------------------------------------
+# 5eCraft: Hex encounters master table
+# ---------------------------------------
+
+Use: potato\5eCraft\encounters\monster\master-monster-encounters.ipt
+
+prompt: Hex Terrain {Forest|Hills|Desert|Swamp|Plains|Mountains|Water|Undergrnd} Plains
+prompt: Encounter Level {2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17} 2
+
+table: Master
+[@MasterMonsterEncounter]

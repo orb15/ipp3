@@ -1,0 +1,83 @@
+# Describe the ever-changing illustrations in Bran's book
+
+table: Master
+MaxReps: 5
+[@People].
+[@Landscape].
+
+table: People
+A [@FigureAdjective] [@Figure]
+A [|\z|[@FigureAdjective]] [@Figure] [@Activity]
+[|Two|Three|Several] [@Figure]s [@Activity]
+A [|\z|[@FigureAdjective]] [@Figure]. [|Nearby|In the [|foreground|distance]][@SceneOther]
+A [|\z|[@FigureAdjective]] [@Figure] [@Activity]. [|Nearby|In the [|foreground|distance]][@SceneOther]
+A statue of a [|\z|[@FigureAdjective]] [@Figure]
+A statue of a [|\z|[@FigureAdjective]] [@Figure]. [|Nearby|In the [|foreground|distance]], a [|\z|[@FigureAdjective]] [@Figure] [|rests|reads a [|runed|torn|battered|mysterious] [|book|scroll]|gazes into the distance|stands in deep thought|has set up a [|cozy|dreary] camp|examines [|crumbling|leaning|ancient|moss-covered] [|ruins|carvings]]
+
+table: Landscape
+A [|frozen|icy|bubbling|idyllic|twisting|winding|leaping] [|brook|stream] with [|reeds|flowers|stones|boulders|thick moss|grass|mud] lining its [|banks|shore]
+A [|frozen|icy|idyllic|calm] [|pond|lake] with [|reeds|flowers|stones|boulders|thick moss|grass|mud] lining its [|banks|shore]
+Distant [|mountains|hills] tower over a [|dark|gloomy|shadowed|mysterious] [|forest|village|lake|swamp]
+[|Petrified|Thick-limbed|Massive|Gnarled|Ancient-looking|Crystaline] trees [|soar over|tower over|surround|all but hide] a [|village|lake|tomb|archway|crooked hut]
+A [|fog-shrouded|misty|fetid] [|bog|swamp|marsh] with [|tufts of grass|stands of reeds|tilted gravestones|small huts|noisome pools|circling buzzards|floating will-o-wisps] here and there
+
+
+table: FigureAdjective
+wizened
+bearded
+old
+mischevious
+frail
+cloaked
+prancing
+hideous
+grinning
+crying
+menacing
+angry
+fierce
+muscled
+nude
+sly
+armored
+
+
+table: SceneOther
+, [|fog|mist] rolls across a [|barren|flowery|stoney|dreary|grassy|grave-dotted|rainy|snowy] [|plain|hillside|village scene|mountainside]
+\_is a [|\z|[@FigureAdjective]] [@Figure] that is [@Activity]
+, [|tiny|large|huge|fat|\z] bees buzz [|lazily|angrily|contentedly|franticly]
+, [|striped|painted|tiny|large|swallowtail|\z] butterflies [|float|drift|sail] [|contentedly|happily|gently|as if searching for something]
+, a [|fawn|dog|wolf|badger|mouse|bird|cat|snake] [|hides|prowls|creeps|rests|plays]
+
+table: Figure
+gnome
+elf
+hag
+maiden
+sprite
+pixe
+dryad
+two-headed giant
+leprechaun
+satyr
+ogre
+goblin
+centaur
+bird-like creature
+spider-like creature
+rat-like creature
+ant-like creature
+beetle-like creature
+badger-like creature
+
+table: Activity
+dragging a [|cart|heavy bundle|struggling [@Figure]]
+climbing a [|hill|mountain|riverbank]
+riding a [|pony|horse|mule|sheep|huge moth]
+carrying a [|mishapen bundle|sealed package|[|\z|dirty|rusted|ornate|notched] sword|[\z|glowing|flowering|dying] plant|bundle of firewood|torch|[|battered|ornate|rusted|broken] shield|[|\z|folded|ornate|tattered] tapestry|[|\z|strange|ornate|mysterious|broken|runed] idol|stringer of fish|sheave of wheat|woven basket]
+resting under a [|tree|bridge|huge leaf|huge mushroom]
+sitting beside a [|campfire|flowering tree|hive of bees|tilted obelisk|bubbling stream|lake|carved arch|mushroom]
+fishing from a [|brook|pond|stream|lake|river]
+drinkng from a [|brook|stream|pool|pond|[|ornate|leaking|battered|worn] [|goblet|mug|waterskin|wineskin|fountain|flask]]
+rummaging in a [|sack|basket|bag|barrel|backpack|pile of coins and gems|pile of shattered bones]
+eating a [|meat pie|pie|chicken leg|apple|chunk of bread|hunk of cheese|hunk of mutton]

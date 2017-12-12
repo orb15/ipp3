@@ -1,0 +1,27 @@
+# ---------------------------------------
+# SWN: Rewards
+# ---------------------------------------
+
+table: Master
+MaxReps: 3
+roll: 1d20
+1:Large cache of credits
+2:Precious cultural artifact
+3:Vital data on the party's goal
+4:Missing or kidnapped VIP
+5:Advanced pretech artifact
+6:Key to some guarded location
+7:Ancient treasure object
+8:Recently-stolen goods
+9:High-tech robotic servitor
+10:Token item of ruling legitimacy 
+11:Juicy blackmail material
+12:History-rewriting evidence
+13:Alien artifact of great power
+14:Precious megacorp data files
+15:Map to some valuable thing
+16:Forbidden but precious drug
+17:Legal title to important land
+18:Awful secret of local government
+19:Cache of precious goods
+20:Stock of valuable weaponry

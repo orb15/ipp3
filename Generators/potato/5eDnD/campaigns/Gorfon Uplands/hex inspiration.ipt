@@ -1,0 +1,315 @@
+# Inspiration for Atlas hexes in Gor'Fon Uplands region
+# this approach from:  http://www.welshpiper.com/hex-based-campaign-design-part-1/
+
+prompt: Atlas Hex Terrain {Forest|Hills|Desert|Swamp|Plains|Mountain|Water} Plains
+
+table: Master
+Set: MasterResult=[#{$prompt1} Terrain]
+{$MasterResult}
+
+table: Terrain
+type: dictionary
+Forest:[@Forest]
+Hills: [@Hills]
+Desert:[@Desert]
+Swamp: [@Swamp]
+Plains:[@Plains]
+Mountain:[@Mountain]
+Water:[@Water]
+
+table: Forest
+type: lookup
+roll: 1d10
+1-4: [@RandomMajorEncounter]
+5-10: {$prompt1}: No major Encounter
+
+table: Hills
+type: lookup
+roll: 1d10
+1-4: [@RandomMajorEncounter]
+5-10:{$prompt1}: No major Encounter
+
+table: Desert
+type: lookup
+roll: 1d10
+1-2: [@RandomMajorEncounter]
+3-10: {$prompt1}: No major Encounter
+
+table: Swamp
+type: lookup
+roll: 1d10
+1-2: [@RandomMajorEncounter]
+3-10:{$prompt1}: No major Encounter
+
+table: Plains
+type: lookup
+roll: 1d10
+1-6: [@RandomMajorEncounter]
+7-10:{$prompt1}: No major Encounter
+
+table: Mountain
+type: lookup
+roll: 1d10
+1-2: [@RandomMajorEncounter]
+3-10:{$prompt1}: No major Encounter
+
+table: Water
+type: lookup
+roll: 1d10
+1: [@RandomMajorEncounter]
+2-10:{$prompt1}: No major Encounter
+
+table: RandomMajorEncounter
+[@Ruin]
+[@Monster]
+[@NaturalPhenomenon]
+
+# ####################################################
+# Ruins
+# ####################################################
+table: Ruin
+Set: RuinBuilder=[@RuinBuilder >> proper]
+Set: RuinedBy=[@RuinedBy]
+Set: RuinPurpose=[@RuinPurpose >> proper]
+Set: RuinInterest=[@RuinInterest]
+Set: RuinBoss=[@RuinBoss]
+Set: RuinHelpers=[!2 RuinHelpers >> implode]
+1:<b>Ruin of a {$RuinBuilder} {$RuinPurpose}</b>\nDestroyed by: {$RuinedBy}\nInterest: {$RuinInterest}\nMain Boss: {$RuinBoss}\nMinions: {$RuinHelpers}\n
+
+table: RuinBuilder
+6: gnome
+6: dwarf
+6: elf
+6: human (Welcavian)
+6: human (Gor'Fon)
+6: [@Humanoid]
+4: insect
+4: aberration
+2: fey
+1: [@WeirdBuilder]
+
+table: Humanoid
+2: orc
+2: goblin
+2: gnoll
+2: kobold
+2: bugbear
+2: hobgoblin
+1: ogre
+1: troll
+1: giant
+1: fey
+
+table: WeirdBuilder
+anceint Druid
+anceint reptillian
+intelligent plant or fungus
+
+table: RuinedBy
+sacked by [@RuinBuilder]
+disease
+curse
+infestation
+magic
+self-destruction
+
+table: RuinPurpose
+temple
+tomb
+fortress
+settlement
+research
+vault
+
+table: RuinInterest
+plunder
+[@RuinRecovery]
+bounty hunt
+restoration
+clear & destroy
+
+table: RuinRecovery
+recover missing person
+recover specific item / maguffin
+gather resources
+
+table: RuinBoss
+[@Humanoid] [@Class]
+dragon
+outsider
+barbarians [Elf or Human]
+monstrosity
+aberration
+
+table: Class
+3:\z
+1:[|Cleric|Druid|Mage|Barbarian|Rogue|Fighter]
+
+table: RuinHelpers
+[@Humanoid]s
+undead  
+bandits
+constructs
+outsiders
+animals
+[@WeirdHelper]
+
+table: WeirdHelper
+insects
+plants or fungus
+
+# ####################################################
+# Monster
+# #################################################### 
+
+table: Monster
+Set: MonsterType=[@MonsterType >> proper]
+Set: MonsterActivity=[@MonsterActivity]
+Set: MonsterFeature=[!2 MonsterFeature >> implode]
+1:<b>Lair of a {$MonsterType}</b>\nPrimary activity or goal: {$MonsterActivity}\nLair Feature: {$MonsterFeature}
+
+table: MonsterType
+abberation
+beast
+insect
+outsider
+construct
+dragon
+elemental
+fey
+monstrosity
+undead
+ooze
+plant
+[@MonsterComplex]
+
+table: MonsterComplex
+Set: MonsterRelationship=[@MonsterRelationship]
+Set: MonsterCohab =  [!2 MonsterType >> implode]
+1: {$MonsterCohab} with relationship: {$MonsterRelationship}
+
+table: MonsterRelationship
+allied /cooperative
+opression / enslaved
+neutral
+competitive
+at war 
+
+table: MonsterActivity
+building
+exploring
+raiding
+guarding
+organizing
+serving
+worshipping
+
+table: MonsterFeature
+completely normal
+geothermal activity
+natural spring
+portal / gateway
+magic operates differently
+rare / magical resource
+partially submerged
+strange temperature
+hive mind
+pets / servants
+connection to Underdark
+remarkable natural feature
+magical feature (pool, stone...)
+
+# ####################################################
+# Natural Phenomenon
+# ####################################################
+
+table: NaturalPhenomenon
+Set: NaturalAspect=[@NaturalAspect]
+Set: NaturalEffect=[@NaturalEffect]
+Set: NaturalDesc=[@NaturalDesc]
+Set: NaturalQuirk=[@NaturalQuirk]
+1:<b>Natural Phenomenon</b>\nAspect: {$NaturalAspect}\nEffect: {$NaturalEffect}\nDescription: {$NaturalDesc}\nQuirk: {$NaturalQuirk}
+
+table:  NaturalAspect
+type: Lookup
+roll: 
+1:[@ElementalAir]
+2:[@ElementalEarth]
+3:[@ElementalFire]
+4:[@ElementalWater]
+5:[@ElementalCombo]
+6:plantlife
+7:[@Weather]
+8:light level
+
+table: ElementalAir
+wind
+sky
+air quality
+
+table: ElementalEarth
+landscape / formations
+seismic
+canyon
+pit
+
+table: ElementalFire
+natural vents
+open flame
+
+
+table: ElementalWater
+sping
+waterfall
+geiser
+whirlpool
+
+table: ElementalCombo
+1:[!{1d4} NaturalAspect >> implode]
+
+table: Weather
+persistent weather
+chaotic weather
+oddly warm
+oddly cold
+
+table: NaturalEffect
+3:sense of awe
+3:looks weird
+2:magic [|amplified|diminished]
+1:mental [|benefit|detriment] ([@MindStat])
+1:physical [|benefit|detriment] ([@BodyStat])
+
+table: MindStat
+Intelligence
+Wisdom
+Charisma
+
+table: BodyStat
+Strength
+Dexterity
+Constitution
+
+table: NaturalDesc
+hot
+cold
+wet
+dry
+light
+heavy
+crystalline
+organic
+misty
+dusty
+
+table: NaturalQuirk
+2:not quirky
+1:lunar cycle
+1:color
+1:attracts vermin
+1:distorts sound
+1:portal / gateway
+1:adapted monster
+1:bigger inside
+1:sacred ground
+1:cursed ground

@@ -1,0 +1,102 @@
+# ---------------------------------------
+# 5eCraft: Swamp Encounter Details
+# ---------------------------------------
+
+table: Swamp0
+Animal, Deer (MM 321)
+Animal, Quipper (MM 335)
+Myconid Sprout (MM 230)
+Shrieker (MM 138)
+
+table: Swamp8th
+Animal, Blood Hawk (MM 319)
+Animal, Giant Crab (MM 324)
+Animal, Giant Rat (MM 327)
+Animal, Giant Weasel (MM 329)
+Blight, Twig (MM 32)
+Stirge (MM 284)
+
+table: Swamp4th
+Animal, Boar (MM 319)
+Animal, Constrictor Snake (MM 320)
+Animal, Giant Frog (MM 325)
+Animal, Giant Lizard (MM 326)
+Animal, Giant Owl (MM 327)
+Animal, Giant Poisonous Snake (MM 327)
+Animal, Panther (MM 333)
+Animal, Wolf (MM 341)
+Blight, Needle (MM 32)
+Insect, Giant Centipede (MM 323)
+Insect, Giant Wolf Spider (MM 330)
+Swarm, Bats (MM 337)
+Swarm, Rats (MM 339)
+Swarm, Ravens (MM 339)
+Violet Fungus (MM 138)
+
+table: SwampHalf
+Animal, Black Bear (MM 318)
+Animal, Crocodile (MM 320)
+Animal, Giant Sea Horse (MM 328)
+Animal, Reef Shark (MM 336)
+Blight, Vine (MM 32)
+Gas Spore (MM 138)
+Insect, Giant Wasp (MM 329)
+Myconid, Adult (MM 232)
+Swarm, Insects (MM 338)
+Worg (MM 341)
+
+table: Swamp1
+Animal, Dire Wolf (MM 321)
+Animal, Giant Octopus (MM 326)
+Animal, Giant Toad (MM 329)
+Insect, Giant Spider (MM 328)
+Swarm, Quippers (MM 338)
+
+table: Swamp2
+Animal, Giant Boar (MM 323)
+Animal, Giant Constrictor Snake (MM 324)
+Animal, Hunter Shark (MM 330)
+Awakened, Tree (MM 317)
+Carrion Crawler (MM 37)
+Dinosaur, Plesiosaurus (MM 80)
+Dragon, Wyrmling Black (MM 88)
+Ettercap (MM 129)
+Myconid, Sovereign (MM 232)
+Swarm, Poisonous Snakes (MM 338)
+
+table: Swamp3
+Insect, Giant Scorpion (MM 327)
+Owlbear (MM 249)
+Water Weird (MM 299)
+
+table: Swamp4
+Chuul (MM 40)
+
+table: Swamp5
+Animal, Giant Crocodile (MM 324)
+Otyugh (MM 248)
+Shambling Mound (MM 270)
+
+table: Swamp6
+Chimera (MM 39)
+
+table: Swamp7
+Dragon, Young Black (MM 88)
+
+table: Swamp8
+Hydra (MM 190)
+
+table: Swamp9
+Treant (MM 289)
+
+table: Swamp10
+Aboleth (MM 13)
+
+table: Swamp14
+Dragon, Adult Black (MM 88)
+
+table: Swamp17
+Dragon Turtle (MM 119)
+
+table: Swamp21
+Dragon, Ancient Black (MM 87)

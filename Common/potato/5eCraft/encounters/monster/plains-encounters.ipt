@@ -1,0 +1,84 @@
+# ---------------------------------------
+# 5eCraft: Plains Encounter Details
+# ---------------------------------------
+
+table: Plains0
+Animal, Deer (MM 321)
+Animal, Goat (MM 330)
+Animal, Hyena (MM 331)
+
+table: Plains8th
+Animal, Blood Hawk (MM 319)
+Animal, Camel (MM 320)
+Animal, Giant Rat (MM 327)
+Animal, Horse, Mule (MM 333)
+Animal, Horse, Pony (MM 335)
+Animal, Mastiff (MM 332)
+Animal, Poisonous Snake (MM 334)
+Stirge (MM 284)
+
+table: Plains4th
+Animal, Boar (MM 319)
+Animal, Constrictor Snake (MM 320)
+Animal, Elk (MM 322)
+Animal, Giant Owl (MM 327)
+Animal, Giant Poisonous Snake (MM 327)
+Animal, Horse, Draft (MM 321)
+Animal, Horse, Riding (MM 336)
+Animal, Panther (MM 333)
+Animal, Wolf (MM 341)
+Axe Beak (MM 317)
+Insect, Giant Centipede (MM 323)
+Insect, Giant Wolf Spider (MM 330)
+Swarm, Rats (MM 339)
+Swarm, Ravens (MM 339)
+
+table: PlainsHalf
+Animal, Ape (MM 317)
+Animal, Giant Goat (MM 326)
+Animal, Horse, Warhorse (MM 340)
+Insect, Giant Wasp (MM 329)
+Swarm, Insects (MM 338)
+Worg (MM 341)
+
+table: Plains1
+Animal, Dire Wolf (MM 321)
+Animal, Giant Eagle (MM 324)
+Animal, Giant Hyena (MM 326)
+Animal, Giant Vulture (MM 329)
+Animal, Lion (MM 331)
+Animal, Tiger (MM 339)
+Death Dog (MM 321)
+Hippogriff (MM 184)
+Insect, Giant Spider (MM 328)
+
+table: Plains2
+Animal, Giant Boar (MM 323)
+Animal, Giant Elk (MM 325)
+Animal, Rhinoceros (MM 336)
+Animal, Saber-Toothed Tiger (MM 336)
+Ankheg (MM 21)
+Dinosaur, Allosaurus (MM 79)
+Pegasus (MM 250)
+Swarm, Poisonous Snakes (MM 338)
+
+table: Plains3
+Dinosaur, Ankylosaurus (MM 79)
+Dinosaur, Triceratops (MM 80)
+Insect, Giant Scorpion (MM 327)
+
+table: Plains4
+Animal, Elephant (MM 322)
+
+table: Plains5
+Bulete (MM 34)
+Remorhaz, Young (MM 258)
+
+table: Plains6
+Animal, Mammoth (MM 332)
+
+table: Plains8
+Dinosaur, Tyrannosaurus Rex (MM 80)
+
+table: Plains11
+Remorhaz (MM 258)

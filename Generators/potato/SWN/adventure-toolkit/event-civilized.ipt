@@ -1,0 +1,27 @@
+# ---------------------------------------
+# SWN: Civilized Events
+# ---------------------------------------
+
+table: Master
+MaxReps: 3
+roll: 1d20
+1:Local festival going on
+2:Angry street protests
+3:Minor fire or other disorder
+4:Merchants and peddlers active
+5:Tourists from another country
+6:Building repair or maintenance
+7:Recent vehicle crash
+8:Public art performance
+9:Angry traffic jam
+10:Missionaries for a local religion
+11:Loud advertising campaign
+12:Memorial service ongoing
+13:Road work halting traffic
+14:Power outage in the area
+15:Police chasing criminals
+16:Annoying drunks being loud
+17:Beggars seeking alms
+18:Constructing a new building
+19:Local thugs swaggering around
+20:Aerial light display

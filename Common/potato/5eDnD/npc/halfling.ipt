@@ -1,0 +1,200 @@
+# details that describe a Halfling
+
+use: potato\5eDnD\npc\racialCommon.ipt
+
+table: MaleHalflingHair
+set: HairColor=[@HalflingHairColor]
+set: HairStyle=[@HalflingHairStyle]
+set: FacialHair=[@HalflingFacialHair]
+{$HairColor}, {$HairStyle} hair {$FacialHair}
+
+table: FemaleHalflingHair
+set: HairColor=[@HalflingHairColor]
+set: HairStyle=[@HalflingHairStyle]
+set: HairMod=[@HalflingHairMod]
+{$HairColor}, {$HairStyle} hair{$HairMod}
+
+table: HalflingHairColor
+brown
+sandy-brown
+
+table: HalflingHairStyle
+wavy
+curly
+
+table: HalflingHairMod
+6:\z
+1: that is cut short and spiked
+1: that is tied in a [|top-knot|pony-tail]
+
+
+table: HalflingFacialHair
+4:\z
+1:and [|long|short|\z] muttonchops
+1:and [|long|short|\z] sidewhiskers
+
+table: HalflingEyeInfo
+set: EyeColor=[@HalflingEyeColor]
+set: EyeType=[@EyeType]
+{$EyeType} {$EyeColor}
+
+table: HalflingEyeColor
+3:brown
+1:hazel
+
+table: MaleHalflingName
+[@MaleHalflingFirstName] [@HalflingLastName]
+
+table: FemaleHalflingName
+[@FemaleHalflingFirstName] [@HalflingLastName]
+
+table: HalflingLastName
+3:[@HalflingPrefix][@HalflingSuffix]
+1:[@HalflingSingleLastName]
+
+table: MaleHalflingFirstName
+Alton
+Ander
+Cade
+Corrin
+Eldon
+Errich
+Finnan
+Garret
+Lindal
+Lyle
+Merric
+Milo
+Osborn
+Perrin
+Uffo 
+Elfstan 
+Aregisel 
+Werinbert 
+Bernard 
+Otker 
+Deagol 
+Gorbadoc 
+Hal 
+Sigismond 
+Waltgaud 
+Hildigard 
+Guntram 
+Fardulf 
+Wichmann 
+Leodegar 
+Arbogast 
+Marmadas 
+Faro  
+Orgulas 
+Floribert 
+Godobald 
+Hunald 
+
+table: FemaleHalflingFirstName
+Andry
+Bree
+Callie
+Cora
+Euphemia
+Jillian
+Kithri
+Lavinia
+Lidda
+Merla
+Nedda
+Paela
+Portia
+Seraphina
+Shaena
+Trym
+Vani
+Verna
+Amanda 
+Mantissa 
+Itta 
+Malva 
+Blesinde 
+Rosamund 
+Tanta 
+Alexandria 
+Berenga 
+Adda 
+Marigold 
+Alexis 
+Rowan 
+Tara 
+Esmee 
+Prisca 
+Fastrada 
+Camelia 
+Amaranth 
+Jemima 
+Radogund 
+Ingeltrude 
+Erica 
+Herleva 
+Dora
+Merrig 
+
+table: HalflingSingleLastName
+Cotton
+Hlothran
+Butcher
+Galpsi
+Burrows
+Gardner
+Chubb
+Banks
+Bunce
+Button
+
+table: HalflingPrefix
+Gam
+Under
+Bramble
+Knot
+Hairy
+Thorn
+Proud
+Swift
+Tea
+Clay
+Long
+Light
+Horn
+Fair
+Far
+Mug
+Sandy
+Small
+Green
+Feather
+River
+Hedge
+Hay
+Midge
+
+table: HalflingSuffix
+wise
+string
+bramble
+bottom
+thorn
+hill
+foot
+leaf
+brook
+water
+flower
+seed
+petal
+body
+weather
+wort
+nettle
+lake
+maker
+wich
+wood
+berry

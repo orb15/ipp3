@@ -1,0 +1,3138 @@
+# ---------------------------------------
+# SWN: Revised world building - tag details
+# ---------------------------------------
+
+table: AbandonedColony_E
+Crazed survivors
+Ruthless plunderers of the ruins
+Automated defense system 
+
+
+table: AbandonedColony_F
+Inquisitive stellar archaeologist
+Heir to the colony's property
+Local wanting the place cleaned out and made safe 
+
+
+table: AbandonedColony_C
+The local government wants the ruins to remain a secret
+The locals claim ownership of it
+The colony is crumbling and dangerous to navigate 
+
+
+table: AbandonedColony_T
+Long-lost property deeds
+Relic stolen by the colonists when they left
+Historical record of the colonization attempt 
+
+
+table: AbandonedColony_P
+Decaying habitation block
+Vine-covered town square
+Structure buried by an ancient landslide 
+
+
+table: AlienRuins_E
+Customs inspector
+Worshipper of the ruins
+Hidden alien survivor 
+
+
+table: AlienRuins_F
+Curious scholar
+Avaricious local resident
+Interstellar smuggler 
+
+
+table: AlienRuins_C
+Traps in the ruins
+Remote location
+Paranoid customs officials 
+
+
+table: AlienRuins_T
+Precious alien artifacts
+Objects left with the remains of a prior unsuccessful expedition
+Untranslated alien texts
+Untouched hidden ruins 
+
+
+table: AlienRuins_P
+Undersea ruin
+Orbital ruin
+Perfectly preserved alien building
+Alien mausoleum 
+
+
+table: AlteredHumanity_E
+Biochauvinist local
+Local experimenter
+Mentally unstable mutant 
+
+
+table: AlteredHumanity_F
+Local seeking a cure?
+Curious xenophiliac
+Anthropological researcher 
+
+
+table: AlteredHumanity_C
+Alteration is contagious
+Alteration is necessary for long-term survival
+Locals fear and mistrust non-local humans 
+
+
+table: AlteredHumanity_T
+Original pretech mutagenic equipment
+Valuable biological byproduct from the mutants
+Cure for the altered genes
+Record of the original colonial genotypes 
+
+
+table: AlteredHumanity_P
+Abandoned eugenics laboratory
+An environment requiring the mutation for survival
+A sacred site where the first local was transformed 
+
+
+table: Anarchists_E
+Offworlder imperialist
+Reformer seeking to impose "good government"
+Exploiter taking advantage of the lack of centralized resistance 
+
+
+table: Anarchists_F
+Proud missionary for anarchy
+Casual local free spirit
+Curious offworlder political scientist 
+
+
+table: Anarchists_C
+The anarchistic structure is compelled by an external power
+The anarchy is enabled by currently abundant resources
+The protecting force that shelters the anarchy is waning 
+
+
+table: Anarchists_T
+A macguffin that would let the possessor enforce their rule on others
+A vital resource needed to preserve general liberty
+Tech forbidden as disruptive to the social order 
+
+
+table: Anarchists_P
+Community of similar-sized homes
+Isolated clan homestead
+Automated mining site 
+
+
+table: Anthropomorphs_E
+Anthro-supremacist local
+Native driven by feral urges
+Outside exploiter who sees the locals as subhuman creatures 
+
+
+table: Anthropomorphs_F
+Fascinated genetic researcher
+Diplomat trained to deal with normals
+Local needing outside help 
+
+
+table: Anthropomorphs_C
+The locals consider their shapes a curse from their foolish ancestors
+Society is ordered according to animal forms
+The locals view normal humans as repulsive or inferior 
+
+
+table: Anthropomorphs_T
+Pretech gengineering tech
+A cure that may not be wanted
+Sacred feral totem 
+
+
+table: Anthropomorphs_P
+Shrine to a feral deity
+Nature preserve suited to an animal type
+Living site built to take advantage of animal traits 
+
+
+table: Area51_E
+Suspicious government minder
+Free merchant who likes his local monopoly
+Local who wants a specimen for dissection 
+
+
+table: Area51_F
+Crusading offworld investigator
+Conspiracy- theorist local
+Idealistic government reformer 
+
+
+table: Area51_C
+The government has a good reason to keep the truth concealed
+The government ruthlessly oppresses the natives
+The government is actually composed of offworlders 
+
+
+table: Area51_T
+Elaborate spy devices
+Memory erasure tech
+Possessions of the last offworlder who decided to spread the truth 
+
+
+table: Area51_P
+Desert airfield
+Deep subterranean bunker
+Hidden mountain valley 
+
+
+table: BadlandsWorld_E
+Mutated badlands fauna
+Desperate local
+Badlands raider chief 
+
+
+table: BadlandsWorld_F
+Native desperately wishing to escape the world
+Scientist researching ecological repair methods
+Ruin scavenger 
+
+
+table: BadlandsWorld_C
+Radioactivity
+Bioweapon traces
+Broken terrain
+Sudden local plague 
+
+
+table: BadlandsWorld_T
+Maltech research core
+Functional pretech weaponry
+An uncontaminated well 
+
+
+table: BadlandsWorld_P
+Untouched oasis
+Ruined city
+Salt flat 
+
+
+table: Battleground_E
+Ruthless military commander
+Looter pack chieftain
+Traitorous collaborator 
+
+
+table: Battleground_F
+Native desperately seeking protection
+Pragmatic military officer
+Hapless war orphan 
+
+
+table: Battleground_C
+The war just ended as both sides are leaving
+The natives somehow brought this on themselves
+A small group of natives profit tremendously from the fighting 
+
+
+table: Battleground_T
+A cache of the resource the invaders seek
+Abandoned prototype military gear
+Precious spy intelligence lost by someone 
+
+
+table: Battleground_P
+Artillery-pocked wasteland
+Reeking refugee camp
+Burnt-out shell of a city 
+
+
+table: Beastmasters_E
+Half-feral warlord of a beast swarm
+Coldly inhuman scientist
+Altered beast with human intellect and furious malice 
+
+
+table: Beastmasters_F
+Native bonded with an adorable animal
+Herder of very useful beasts
+Animal-revering mystic 
+
+
+table: Beastmasters_C
+The animals are very heavily gengineered humans
+The animals actually run the society
+The animals have the same rights as humans 
+
+
+table: Beastmasters_T
+Tech used to alter animal life
+A plague vial that could wipe out the animals
+A pretech device that can perform a wonder if operated by a beast 
+
+
+table: Beastmasters_P
+Park designed as a comfortable home for beasts
+Public plaza designed to accommodate animal companions
+Factory full of animal workers 
+
+
+table: BubbleCities_E
+Native dreading outsider contamination
+Saboteur from another bubble city
+Local official hostile to outsider ignorance of laws 
+
+
+table: BubbleCities_F
+Local rebel against the city officials
+Maintenance chief in need of help
+Surveyor seeking new building sites 
+
+
+table: BubbleCities_C
+Bubble rupture
+Failing atmosphere reprocessor
+Native revolt against officials
+All-seeing surveillance cameras 
+
+
+table: BubbleCities_T
+Pretech habitat technology
+Valuable industrial products
+Master key codes to a city's security system 
+
+
+table: BubbleCities_P
+City power core
+Surface of the bubble
+Hydroponics complex
+Warren-like hab block 
+
+
+table: CheapLife_E
+Master assassin
+Bloody-handed judge
+Overseer of disposable clones 
+
+
+table: CheapLife_F
+Endearing local whose life the PCs accidentally bought
+Escapee from death seeking outside help
+Reformer trying to change local mores 
+
+
+table: CheapLife_C
+Radiation or local diseases ensure all locals die before twenty-five years of age
+Tech ensures that death is just an annoyance
+Locals are totally convinced of a blissful afterlife 
+
+
+table: CheapLife_T
+Device that revives or re-embodies the dead
+Maltech engine fueled by human life
+Priceless treasure held by a now-dead owner 
+
+
+table: CheapLife_P
+Thronging execution ground
+Extremely cursory cemetery
+Factory full of lethal dangers that could be corrected easily 
+
+
+table: CivilWar_E
+Master assassin
+Bloody-handed judge
+Overseer of disposable clones 
+
+
+table: CivilWar_F
+Faction loyalist seeking aid
+Native caught in the crossfire
+Offworlder seeking passage off the planet 
+
+
+table: CivilWar_C
+The front rolls over the group
+Famine strikes
+Bandit infestations are in the way 
+
+
+table: CivilWar_T
+Ammo dump
+Military cache
+Treasure buried for after the war
+Secret war plans 
+
+
+table: CivilWar_P
+Battle front
+Bombed-out town
+Rear-area red light zone
+Propaganda broadcast tower 
+
+
+table: ColdWar_E
+Suspicious chief of intelligence
+Native who thinks the outworlders are with the other side
+Femme fatale 
+
+
+table: ColdWar_F
+Apolitical information broker
+Spy for the other side
+Unjustly accused innocent
+"He's a bastard but he's our bastard" official 
+
+
+table: ColdWar_C
+Police sweep
+Low-level skirmishing
+"Red scare"? 
+
+
+table: ColdWar_T
+List of traitors in government
+secret military plans
+Huge cache of weapons built up in preparation for war 
+
+
+table: ColdWar_P
+Seedy bar in a neutral area
+Political rally
+Isolated area where fighting is underway 
+
+
+table: ColonizedPopulation_E
+Suspicious security personnel
+Offworlder-hating natives
+Local crime boss preying on rich offworlders 
+
+
+table: ColonizedPopulation_F
+Native resistance leader
+Colonial official seeking help
+Native caught between the two sides 
+
+
+table: ColonizedPopulation_C
+Natives won't talk to offworlders
+Colonial repression
+Misunderstood local customs 
+
+
+table: ColonizedPopulation_T
+Relic of the resistance movement
+List of collaborators
+Precious substance extracted by colonial labor 
+
+
+table: ColonizedPopulation_P
+Deep wilderness resistance camp
+City district off-limits to natives
+Colonial labor site 
+
+
+table: CulturalPower_E
+Suspicious security personnel
+Offworlder-hating natives
+Local crime boss preying on rich offworlders 
+
+
+table: CulturalPower_F
+Struggling young artist
+Pupil of the artistic tradition
+Scholar of the art
+Offworlder hating the source of corrupting alien ways 
+
+
+table: CulturalPower_C
+The art is slowly lethal to its masters
+The art is mentally or physically addictive
+The art is a fragment of ancient technical or military science 
+
+
+table: CulturalPower_T
+The instrument of a legendary master
+The only copy of a dead master's opus
+Proof of intellectual property ownership 
+
+
+table: CulturalPower_P
+Recording or performance studio
+Public festival choked with tourists
+Monument to a dead master of the art 
+
+
+table: Cybercommunists_E
+Embittered rebel against perceived unfairness
+Offworlder saboteur
+Aspiring Stalin-figure 
+
+
+table: Cybercommunists_F
+Idealistic planning node tech
+Cynical anti-corruption cop
+Precognitive economist 
+
+
+table: Cybercommunists_C
+The pretech planning computers are breaking down
+The planning only works because the locals have been mentally or physically altered
+The planning computers can't handle the increasing population within the system 
+
+
+table: Cybercommunists_T
+Planning node computer
+Wildly destabilizing commodity that can't be factored into plans
+A tremendous store of valuables made by accident 
+
+
+table: Cybercommunists_P
+Humming factory
+Apartment block of perfectly equal flats
+Mass demonstration of unity 
+
+
+table: Cyborgs_E
+Ambitious hacker of cyber implants
+Cybertech oligarch
+Researcher craving fresh offworlders
+Cybered-up gang boss 
+
+
+table: Cyborgs_F
+Charity-working implant physician
+Idealistic young cyber researcher
+Avant-garde activist 
+
+
+table: Cyborgs_C
+The powerful and dangerous come here often for cutting-edge implants
+The cyber has some universal negative side-effect
+Cyber and those implanted with it are forbidden to leave the planet as a tech security measure 
+
+
+table: Cyborgs_T
+Unique prototype cyber implant
+Secret research files
+A virus that debilitates cyborgs
+A cache of critically-needed therapeutic cyber 
+
+
+table: Cyborgs_P
+Grimy slum chop-shop
+Bloody lair of implant rippers
+Stark plaza where everyone is seeing things through their augmented-reality cyber 
+
+
+table: CyclicalDoom_E
+Offworlder seeking to trigger the apocalypse early for profit
+Local recklessly taking advantage of preparation stores
+Demagogue claiming the cycle is merely a myth of the authorities 
+
+
+table: CyclicalDoom_F
+Harried official working to prepare
+Offworlder studying the cycles
+Local threatened by perils of the cycle's initial stages 
+
+
+table: CyclicalDoom_C
+The cycles really are a myth of the authorities
+The cycles are controlled by alien constructs
+An outside power is interfering with preparation 
+
+
+table: CyclicalDoom_T
+A lost cache of ancient treasures
+Tech or archives that will pinpoint the cycle's timing
+Keycodes to bypass an ancient vault's security 
+
+
+table: CyclicalDoom_P
+Lethally-defended vault of forgotten secrets
+Starport crowded with panicked refugees
+Town existing in the shadow of some monstrous monument to a former upheaval 
+
+
+table: DesertWorld_E
+Raider chieftain
+Crazed hermit
+Angry isolationists
+Paranoid mineral prospector
+Strange desert beast 
+
+
+table: DesertWorld_F
+Native guide
+Research biologist
+Aspiring terraformer 
+
+
+table: DesertWorld_C
+Sandstorms
+Water supply failure
+Native warfare over water rights 
+
+
+table: DesertWorld_T
+Enormous water reservoir
+Map of hidden wells
+Pretech rainmaking equipment 
+
+
+table: DesertWorld_P
+Oasis
+"The Empty Quarter" of the desert
+Hidden underground cistern 
+
+
+table: DoomedWorld_E
+Crazed prophet of a false salvation
+Ruthless leader seeking to flee with their treasures
+Cynical ship captain selling a one-way trip into hard vacuum as escape to another world 
+
+
+table: DoomedWorld_F
+Appealing waif or family head seeking escape
+Offworld relief coordinator
+Harried law officer 
+
+
+table: DoomedWorld_C
+The doom is false or won't actually kill everyone
+The doom was intentionally triggered by someone
+Mass escape is possible if warring groups can somehow be brought to cooperate 
+
+
+table: DoomedWorld_T
+Clearance for a ship to leave the planet
+A cache of priceless cultural artifacts
+The life savings of someone trying to buy passage out
+Data that would prove to the public the end is nigh 
+
+
+table: DoomedWorld_P
+Open square beneath a sky angry with a foretaste of th impending ruin
+Orgiastic celebration involving sex and murder in equal parts
+Holy site full of desperate petitioners to the divine 
+
+
+table: DyingRace_E
+Hostile outsider who wants the locals dead
+Offworlder seeking to take advantage of their weakened state
+Invaders eager to push the locals out of their former lands 
+
+
+table: DyingRace_F
+One of the few youth among the population
+Determined and hopeful reformer
+Researcher seeking a new method of reproduction 
+
+
+table: DyingRace_C
+The dying culture's values were monstrous
+The race's death is somehow necessary to prevent some grand catastrophe
+The race is somehow convinced they deserve this fate 
+
+
+table: DyingRace_T
+Extremely valuable reproductive tech
+Treasured artifacts of the former age
+Bioweapon used on the race 
+
+
+table: DyingRace_P
+City streets devoid of pedestrians
+Mighty edifice now crumbling with disrepair
+Small dwelling full of people in a town now otherwise empty 
+
+
+table: EugenicCult_E
+Eugenic superiority fanatic
+Mentally unstable homo superior
+Mad eugenic scientist 
+
+
+table: EugenicCult_F
+Eugenic propagandist
+Biotechnical investigator
+Local seeking revenge on cult 
+
+
+table: EugenicCult_C
+The altered cultists look human
+The locals are terrified of any unusual physical appearance
+The genetic modifications- and drawbacks- are contagious with long exposure 
+
+
+table: EugenicCult_T
+Serum that induces the alteration
+Elixir that reverses the alteration
+Pretech biotechnical databanks
+List of secret cult sympathizers 
+
+
+table: EugenicCult_P
+Eugenic breeding pit
+Isolated settlement of altered humans
+Public place infiltrated by cult sympathizers 
+
+
+table: ExchangeConsulate_E
+Corrupt Exchange official
+Indebted native who thinks the players are Exchange agents
+Exchange official dunning the players for debts incurred 
+
+
+table: ExchangeConsulate_F
+Consul in need of offworld help
+Local banker seeking to hurt his competition
+Exchange diplomat 
+
+
+table: ExchangeConsulate_C
+The local Consulate has been corrupted
+the Consulate is cut off from its funds
+A powerful debtor refuses to pay 
+
+
+table: ExchangeConsulate_T
+Exchange vault codes
+Wealth hidden to conceal it from a bankruptcy judgment
+Location of forgotten vault 
+
+
+table: ExchangeConsulate_P
+Consulate meeting chamber
+Meeting site between fractious disputants
+Exchange vault 
+
+
+table: FallenHegemon_E
+Bitter pretender to a meaningless throne
+Resentful official dreaming of empire
+Vengeful offworlder seeking to punish their old rulers 
+
+
+table: FallenHegemon_F
+Realistic local leader trying to hold things together
+Scholar of past glories
+Refugee from an overthrown colonial enclave 
+
+
+table: FallenHegemon_C
+The hegemon's rule was enlightened and fair
+It collapsed due to its own internal strife rather than external resistance
+It pretends that nothing has happened to its power
+It's been counter-colonized by vengeful outsiders 
+
+
+table: FallenHegemon_T
+Precious insignia of former rule
+Relic tech important to its power
+Plundered colonial artifact 
+
+
+table: FallenHegemon_P
+Palace far too grand for its current occupant
+Oversized spaceport now in disrepair
+Boulevard lined with monuments to past glories 
+
+
+table: FeralWorld_E
+Decadent noble
+Mad cultist
+Xenophobic local
+Cannibal chief
+Maltech researcher 
+
+
+table: FeralWorld_F
+Trapped outworlder
+Aspiring reformer
+Native wanting to avoid traditional flensing 
+
+
+table: FeralWorld_C
+Horrific local "celebration"
+Inexplicable and repugnant social rules
+Taboo zones and people 
+
+
+table: FeralWorld_T
+Terribly misused piece of pretech
+Wealth accumulated through brutal evildoing
+Valuable possession owned by luckless outworlder victim 
+
+
+table: FeralWorld_P
+Atrocity amphitheater
+Traditional torture parlor
+Ordinary location twisted into something terrible. 
+
+
+table: FlyingCities_E
+Rival city pilot
+Tech thief attempting to steal outworld gear
+Saboteur or scavenger plundering the city's tech 
+
+
+table: FlyingCities_F
+Maintenance tech in need of help
+City defense force pilot
+Meteorological researcher 
+
+
+table: FlyingCities_C
+Sudden storms
+Drastic altitude loss
+Rival city attacks
+Vital machinery breaks down 
+
+
+table: FlyingCities_T
+Precious refined atmospheric gases
+Pretech grav engine plans
+Meteorological codex predicting future storms 
+
+
+table: FlyingCities_P
+Underside of the city
+The one calm place on the planet's surface
+Catwalks stretching over unimaginable gulfs below. 
+
+
+table: ForbiddenTech_E
+Mad scientist
+Maltech buyer from offworld
+Security enforcer 
+
+
+table: ForbiddenTech_F
+Victim of maltech
+Perimeter agent
+Investigative reporter
+Conventional arms merchant 
+
+
+table: ForbiddenTech_C
+The maltech is being fabricated by an unbraked AI
+The government depends on revenue from maltech sales to offworlders
+Citizens insist that it's not really maltech 
+
+
+table: ForbiddenTech_T
+Maltech research data
+The maltech itself
+Precious pretech equipment used to create it 
+
+
+table: ForbiddenTech_P
+Horrific laboratory
+Hellscape sculpted by the maltech's use
+Government building meeting room 
+
+
+table: FormerWarriors_E
+Unreformed warlord leader
+Bitter mercenary chief
+Victim of their warfare seeking revenge 
+
+
+table: FormerWarriors_F
+Partisan of the new peaceful ways
+Outsider desperate for military aid
+Martial genius repressed by the new dispensation 
+
+
+table: FormerWarriors_C
+Neighboring worlds want them pacified or dead
+They only ever used their arts in self-defense
+The source of their gifts has been "turned off" in a reversible way 
+
+
+table: FormerWarriors_T
+War trophy taken from a defeated foe
+Key to re-activating their martial ways
+Secret cache of high-tech military gear 
+
+
+table: FormerWarriors_P
+Cemetery of dead heroes
+Memorial hall now left to dust and silence
+Monument plaza dedicated to the new culture 
+
+
+table: FreakGeology_E
+Crank xenogeologist
+Cultist who believes it the work of aliens 
+
+
+table: FreakGeology_F
+Research scientist
+Prospector
+Artist 
+
+
+table: FreakGeology_C
+Local conditions that no one remembers to tell outworlders about
+Lethal weather
+Seismic activity 
+
+
+table: FreakGeology_T
+Unique crystal formations
+Hidden veins of a major precious mineral strike
+Deed to a location of great natural beauty 
+
+
+table: FreakGeology_P
+Atop a bizarre geological formation
+Tourist resort catering to offworlders 
+
+
+table: FreakWeather_E
+Crank xenogeologist
+Cultist who believes it the work of aliens 
+
+
+table: FreakWeather_F
+Meteorological researcher
+Holodoc crew wanting shots of the weather 
+
+
+table: FreakWeather_C
+The weather itself
+Malfunctioning pretech terraforming engines that cause the weather 
+
+
+table: FreakWeather_T
+Wind-scoured deposits of precious minerals
+Holorecords of a spectacularly and rare weather pattern
+Naturally-sculpted objects of intricate beauty 
+
+
+table: FreakWeather_P
+Eye of the storm
+The one sunlit place
+Terraforming control room 
+
+
+table: FriendlyFoe_E
+Driven hater of all their kind
+Internal malcontent bent on creating conflict
+Secret master who seeks to lure trust 
+
+
+table: FriendlyFoe_F
+Well-meaning bug-eyed monster
+Principled eugenics cultist
+Suspicious investigator 
+
+
+table: FriendlyFoe_C
+The group actually is as harmless and benevolent as they seem
+The group offers a vital service at the cost of moral compromise
+The group still feels bonds of affiliation with their hostile brethren 
+
+
+table: FriendlyFoe_T
+Forbidden xenotech
+Eugenic biotech template
+Evidence to convince others of their kind that they are right 
+
+
+table: FriendlyFoe_P
+Repurposed maltech laboratory
+Alien conclave building
+Widely-feared starship interior 
+
+
+table: GoldRush_E
+Paranoid prospector
+Aspiring mining tycoon
+Rapacious merchant 
+
+
+table: GoldRush_F
+Claim-jumped miner
+Native alien
+Curious tourist 
+
+
+table: GoldRush_C
+The strike is a hoax
+The strike is of a dangerous toxic substance
+Export of the mineral is prohibited by the planetary government
+The native aliens live around the strike's location 
+
+
+table: GoldRush_T
+Cases of the refined element
+Pretech mining equipment
+A dead prospector's claim deed 
+
+
+table: GoldRush_P
+Secret mine
+Native alien village
+Processing plant
+Boom town 
+
+
+table: GreatWork_E
+Local planning to sacrifice the PCs for the work
+Local who thinks the PCs threaten the work
+Obsessive zealot ready to destroy someone or something important to the PCs for the sake of the work 
+
+
+table: GreatWork_F
+Outsider studying the work
+Local with a more temperate attitude
+Supplier of work materials 
+
+
+table: GreatWork_C
+The work is totally hopeless
+Different factions disagree on what the work is
+An outside power is determined to thwart the work 
+
+
+table: GreatWork_T
+Vital supplies for the work
+Plans that have been lost
+Tech that greatly speeds the work 
+
+
+table: GreatWork_P
+A bustling work site
+Ancestral worker housing
+Local community made only semi-livable by the demands of the work 
+
+
+table: Hatred_E
+Native convinced that the offworlders are agents of Them
+Cynical politician in need of scapegoats 
+
+
+table: Hatred_F
+Intelligence agent needing catspaws
+Holodoc producers needing "an inside look"
+Unlucky offworlder from the hated system 
+
+
+table: Hatred_C
+The characters are wearing or using items from the hated world
+The characters are known to have done business there
+The characters "look like" the hated others 
+
+
+table: Hatred_T
+Proof of Their evildoing
+Reward for turning in enemy agents
+Relic stolen by Them years ago 
+
+
+table: Hatred_P
+War crimes museum
+Atrocity site
+Captured and decommissioned spaceship kept as a trophy 
+
+
+table: HeavyIndustry_E
+Tycoon monopolist
+Industrial spy
+Malcontent revolutionary 
+
+
+table: HeavyIndustry_F
+Aspiring entrepreneur
+Worker union leader
+Ambitious inventor 
+
+
+table: HeavyIndustry_C
+The factories are toxic
+The resources extractable at their tech level are running out
+The masses require the factory output for survival
+The industries' major output is being obsoleted by offworld tech 
+
+
+table: HeavyIndustry_T
+Confidential industrial data
+Secret union membership lists
+Ownership shares in an industrial complex 
+
+
+table: HeavyIndustry_P
+Factory floor
+Union meeting hall
+Toxic waste dump
+R&D complex 
+
+
+table: HeavyMining_E
+Mine boss
+Tunnel saboteur
+Subterranean predators 
+
+
+table: HeavyMining_F
+Hermit prospector
+Offworld investor
+Miner's union representative 
+
+
+table: HeavyMining_C
+The refinery equipment breaks down
+Tunnel collapse
+Silicate life forms growing in the miners' lungs 
+
+
+table: HeavyMining_T
+The mother lode
+Smuggled case of refined mineral
+Faked crystalline mineral samples 
+
+
+table: HeavyMining_P
+Vertical mine face
+Tailing piles
+Roaring smelting complex 
+
+
+table: Hivemind_E
+A hivemind that wants to assimilate outsiders
+A hivemind that has no respect for unjoined life
+A hivemind that fears and hates unjoined life 
+
+
+table: Hivemind_F
+A scholar studying the hivemind
+A person severed from the gestalt
+A relative of someone who has been assimilated 
+
+
+table: Hivemind_C
+The hivemind only functions on this world
+The hivemind has strict range limits
+The hivemind has different personality factions
+The hivemind only happens at particular times
+The world is made of semi-sentient drones and a single AI 
+
+
+table: Hivemind_T
+Vital tech for maintaining the mind
+Precious treasure held by now-assimilated outsider
+Tech that "blinds" the hivemind to the tech's users 
+
+
+table: Hivemind_P
+Barely tolerable living cells for individuals
+Workside where individuals casually die in their labors
+Community with absolutely no social or group-gathering facilities 
+
+
+table: HolyWar_E
+Blood-mad pontiff
+Coldly cynical secular leader
+Totalitarian political demagogue 
+
+
+table: HolyWar_F
+Desperate peacemaker
+Hard-pressed refugee of the fighting
+Peaceful religious leader who lost the internal debate 
+
+
+table: HolyWar_C
+The targets of the war really are doing something diabolically horrible
+The holy war is just a mask for a very traditional casus belli
+The leaders don't want the war won but only prolonged
+Both this world and the target of the war are religion-obsessed 
+
+
+table: HolyWar_T
+Sacred relic of the faith
+A captured blasphemer under a death sentence
+Plunder seized in battle 
+
+
+table: HolyWar_P
+Massive holy structure
+Razed community of infidels
+Vast shrine to the martyrs dead in war 
+
+
+table: HostileBiosphere_E
+Local fauna
+Nature cultist
+Native aliens
+Callous labor overseer 
+
+
+table: HostileBiosphere_F
+Xenobiologist
+Tourist on safari
+Grizzled local guide 
+
+
+table: HostileBiosphere_C
+Filter masks fail
+Parasitic alien infestation
+Crop greenhouses lose bio-integrity 
+
+
+table: HostileBiosphere_T
+Valuable native biological extract
+Abandoned colony vault
+Remains of an unsuccessful expedition 
+
+
+table: HostileBiosphere_P
+Deceptively peaceful glade
+Steaming polychrome jungle
+Nightfall when surrounded by Things 
+
+
+table: HostileSpace_E
+Alien raid leader
+Meteor-launching terrorists
+Paranoid local leader 
+
+
+table: HostileSpace_F
+Astronomic researcher
+Local defense commander
+Early warning monitor agent 
+
+
+table: HostileSpace_C
+The natives believe the danger is divine chastisement
+The natives blame outworlders for the danger
+The native elite profit from the danger in some way 
+
+
+table: HostileSpace_T
+Early warning of a raid or impact
+Abandoned riches in a disaster zone
+Key to a secure bunker 
+
+
+table: HostileSpace_P
+City watching an approaching asteroid
+Village burnt in an alien raid
+Massive ancient crater 
+
+
+table: Immortals_E
+Outsider determined to steal immortality
+Smug local convinced of their immortal wisdom to rule all
+Offworlder seeking the world's ruin before it becomes a threat to all 
+
+
+table: Immortals_F
+Curious longevity researcher
+Thrill-seeking local
+
+
+
+table: Immortals_C
+Immortality requires doing something that outsiders can't or won't willingly do
+The immortality ends if they leave the world
+Death is the punishment for even minor crimes
+Immortals must die or go offworld after a certain span
+Immortality has brutal side-effects 
+
+
+table: Immortals_T
+Immortality drug
+Masterwork of an ageless artisan
+Toxin that only affects immortals 
+
+
+table: Immortals_P
+Community with no visible children
+Unchanging structure of obvious ancient age
+Cultural performance relying on a century of in-jokes 
+
+
+table: LocalSpecialty_E
+Monopolist
+Offworlder seeking prohibition of the specialty
+Native who views the specialty as sacred 
+
+
+table: LocalSpecialty_F
+Spy searching for the source
+Artisan seeking protection
+Exporter with problems 
+
+
+table: LocalSpecialty_C
+The specialty is repugnant in nature
+The crafters refuse to sell to offworlders
+The specialty is made in a remote
+dangerous place
+The crafters don't want to make the specialty any more 
+
+
+table: LocalSpecialty_T
+The specialty itself
+The secret recipe
+Sample of a new improved variety 
+
+
+table: LocalSpecialty_P
+Secret manufactory
+Hidden cache
+Artistic competition for best artisan 
+
+
+table: LocalTech_E
+Keeper of the tech
+Offworld industrialist
+Automated defenses that suddenly come alive
+Native alien mentors 
+
+
+table: LocalTech_F
+Curious offworld scientist
+Eager tech buyer
+Native in need of technical help 
+
+
+table: LocalTech_C
+The tech is unreliable
+The tech only works on this world
+The tech has poorly-understood side effects
+The tech is alien in nature. 
+
+
+table: LocalTech_T
+The tech itself
+An unclaimed payment for a large shipment
+The secret blueprints for its construction
+An ancient alien R&D database 
+
+
+table: LocalTech_P
+Alien factory
+Lethal R&D center
+Tech brokerage vault 
+
+
+table: MajorSpaceyard_E
+Enemy saboteur
+Industrial spy
+Scheming construction tycoon
+Aspiring ship hijacker 
+
+
+table: MajorSpaceyard_F
+Captain stuck in drydock
+Maintenance chief
+Mad innovator 
+
+
+table: MajorSpaceyard_C
+The spaceyard is an alien relic
+The spaceyard is burning out from overuse
+The spaceyard is alive
+The spaceyard relies on maltech to function 
+
+
+table: MajorSpaceyard_T
+Intellectual property-locked pretech blueprints
+Override keys for activating old pretech facilities
+A purchased but unclaimed spaceship. 
+
+
+table: MajorSpaceyard_P
+Hidden shipyard bay
+Surface of a partially-completed ship
+Ship scrap graveyard 
+
+
+table: Mandarinate_E
+Corrupt test administrator
+Incompetent but highly-rated graduate
+Ruthless leader of a clan of high-testing relations 
+
+
+table: Mandarinate_F
+Crusader for test reform
+Talented but poorly- connected graduate
+Genius who tests badly 
+
+
+table: Mandarinate_C
+The test is totally unrelated to necessary governing skills
+The test was very pertinent in the past but tech or culture has changed
+The test is for a skill that is vital to maintaining society but irrelevant to day-to-day governance
+The test is a sham and passage is based on wealth or influence 
+
+
+table: Mandarinate_T
+Answer key to the next test
+Lost essay of incredible merit
+Proof of cheating 
+
+
+table: Mandarinate_P
+Massive structure full of test-taking cubicles
+School filled with desperate students
+Ornate government building decorated with scholarly quotes and academic images 
+
+
+table: MandateBase_E
+Deranged Mandate monitoring AI
+Aspiring sector ruler
+Demagogue preaching local superiority over "traitorous rebel worlds". 
+
+
+table: MandateBase_F
+Idealistic do-gooder local
+Missionary for advanced Mandate tech
+Outsider seeking lost data from Mandate records 
+
+
+table: MandateBase_C
+The monitoring system forces the locals to behave in aggressive ways toward "rebel" worlds
+The monitoring system severely hinders offworld use of their tech
+The original colonists are all dead and have been replaced by outsiders who don't understand all the details 
+
+
+table: MandateBase_T
+Ultra-advanced pretech
+Mandate military gear
+Databank containing precious tech schematics 
+
+
+table: MandateBase_P
+Faded Mandate offices still in use
+Vault containing ancient pretech
+Carefully-maintained monument to Mandate glory 
+
+
+table: Maneaters_E
+Ruthless ghoul leader
+Chieftain of a ravenous tribe
+Sophisticated degenerate preaching the splendid authenticity of cannibalism 
+
+
+table: Maneaters_F
+Sympathetic local fleeing the fork
+Escapee from a pharmaceutical rendering plant
+Outsider chosen for dinner
+Reformer seeking to break the custom or its necessity 
+
+
+table: Maneaters_C
+Local food or environmental conditions make human consumption grimly necessary
+The locals farm human beings
+Outsiders are expected to join in the custom
+The custom is totally unnecessary but jealously maintained by the people 
+
+
+table: Maneaters_T
+Belongings of a recent meal
+An offworlder VIP due for the menu
+A toxin that makes human flesh lethal to consumers 
+
+
+table: Maneaters_P
+Hideous human abattoir
+Extremely civilized restaurant
+Funeral-home-cum-kitchen 
+
+
+table: Megacorps_E
+Megalomaniacal executive
+Underling looking to use the PCs as catspaws
+Ruthless mercenary who wants what the PCs have 
+
+
+table: Megacorps_F
+Victim of megacorp scheming
+Offworlder merchant in far over their head
+Local reformer struggling to cope with megacorp indifference 
+
+
+table: Megacorps_C
+The megacorps are the only source of something vital to life on this world
+An autonomous Mandate system acts to punish excessively overt violence
+The megacorps are struggling against much more horrible national governments 
+
+
+table: Megacorps_T
+Blackmail on a megacorp exec
+Keycodes to critical corp secrets
+Proof of corp responsibility for a heinously unacceptable public atrocity
+Data on a vital new product line coming out soon 
+
+
+table: Megacorps_P
+A place plastered in megacorp ads
+A public plaza discreetly branded
+Private corp military base 
+
+
+table: Mercenaries_E
+Amoral mercenary leader
+Rich offworlder trying to buy rule of the world
+Mercenary press gang chief forcing locals into service 
+
+
+table: Mercenaries_F
+Young and idealistic mercenary chief
+Harried leader of enfeebled national army
+Offworlder trying to hire help for a noble cause 
+
+
+table: Mercenaries_C
+The mercenaries are all that stand between the locals and a hungry imperial power
+The mercenaries are remnants of a former official army
+The mercenaries hardly ever actually fight as compared to taking bribes to walk away 
+
+
+table: Mercenaries_T
+Lost mercenary payroll shipment
+Forbidden military tech
+Proof of a band's impending treachery against their employers 
+
+
+table: Mercenaries_P
+Shabby camp of undisciplined mercs
+Burnt-out village occupied by mercenaries
+Luxurious and exceedingly well-defended merc leader villa 
+
+
+table: Misandry/Misogyny_E
+Cultural fundamentalist
+Cultural missionary to outworlders
+Local rebel driven to pointless and meaningless violence 
+
+
+table: Misandry/Misogyny_F
+Oppressed native
+Research scientist
+Offworld emancipationist
+Local reformer 
+
+
+table: Misandry/Misogyny_C
+The oppressed gender is restive against the customs
+The oppressed gender largely supports the customs
+The customs relate to some physical quality of the world
+The oppressed gender has had maltech gengineering done to "tame" them. 
+
+
+table: Misandry/Misogyny_T
+Aerosol reversion formula for undoing gengineered docility
+Hidden history of the world
+Pretech gengineering equipment 
+
+
+table: Misandry/Misogyny_P
+Shrine to the virtues of the favored gender
+Security center for controlling the oppressed
+Gengineering lab 
+
+
+table: NightWorld_E
+Monstrous thing from the night
+Offworlder finding the obscurity of the world convenient for dark purposes
+Mad scientist experimenting with local life 
+
+
+table: NightWorld_F
+Curious offworlder researcher
+Hard-pressed colony leader
+High priest of a sect that finds religious significance in the night 
+
+
+table: NightWorld_C
+Daylight comes as a cataclysmic event at very long intervals
+Light causes very dangerous reactions in native life or chemicals here
+The locals have been gengineered to exist without sight 
+
+
+table: NightWorld_T
+Rare chemicals created in the darkness
+Light source usable on this world
+Smuggler cache hidden here in ages past 
+
+
+table: NightWorld_P
+Formlessly pitch-black wilderness
+Sea without a sun
+Location defined by sounds or smells 
+
+
+table: MinimalContact_E
+Customs official
+Xenophobic natives
+Existing merchant who doesn't like competition 
+
+
+table: MinimalContact_F
+Aspiring tourist
+Anthropological researcher
+Offworld thief
+Religious missionary 
+
+
+table: MinimalContact_C
+The locals carry a disease harmless to them and lethal to outsiders
+The locals hide dark purposes from offworlders
+The locals have something desperately needed but won't bring it into the treaty port 
+
+
+table: MinimalContact_T
+Contraband trade goods
+Security perimeter codes
+Black market local products 
+
+
+table: MinimalContact_P
+Treaty port bar
+Black market zone
+Secret smuggler landing site 
+
+
+table: Nomads_E
+Desperate tribal leader who needs what the PCs have
+Ruthless raider chieftain
+Leader seeking to weld the nomads into an army 
+
+
+table: Nomads_F
+Free-spirited young nomad
+Dreamer imagining a stable life
+Offworlder enamored of the life 
+
+
+table: Nomads_C
+An irresistibly lethal swarm of native life forces locals to move regularly
+Ancient defense systems destroy too-long-stationary communities
+Local chemical patches require careful balancing of exposure times to avoid side effects 
+
+
+table: Nomads_T
+Cache of rare and precious resource
+Plunder seized by a tribal raid
+Tech that makes a place safe for long-term inhabitation 
+
+
+table: Nomads_P
+Temporary nomad camp
+Oasis or resource reserve
+Trackless waste that kills the unprepared 
+
+
+table: OceanicWorld_E
+Pirate raider
+Violent "salvager" gang
+Tentacled sea monster 
+
+
+table: OceanicWorld_F
+Daredevil fisherman
+Sea hermit
+Sapient native life 
+
+
+table: OceanicWorld_C
+The liquid flux confuses grav engines too badly for them to function on this world
+Sea is corrosive or toxic
+The seas are wracked by regular storms 
+
+
+table: OceanicWorld_T
+Buried pirate treasure
+Location of enormous schools of fish
+Pretech water purification equipment 
+
+
+table: OceanicWorld_P
+The only island on the planet
+Floating spaceport
+Deck of a storm-swept ship
+Undersea bubble city 
+
+
+table: OutofContact_E
+Fearful local ruler
+Zealous native cleric
+Sinister power that has kept the world isolated 
+
+
+table: OutofContact_F
+Scheming native noble
+Heretical theologian
+UFO cultist native 
+
+
+table: OutofContact_C
+Automatic defenses fire on ships that try to take off
+The natives want to stay out of contact
+The natives are highly vulnerable to offworld diseases
+The native language is completely unlike any known to the group 
+
+
+table: OutofContact_T
+Ancient pretech equipment
+Terran relic brought from Earth
+Logs of the original colonists 
+
+
+table: OutofContact_P
+Long-lost colonial landing site
+Court of the local ruler
+Ancient defense battery controls 
+
+
+table: OutpostWorld_E
+Space-mad outpost staffer
+Outpost commander who wants it to stay undiscovered
+Undercover saboteur 
+
+
+table: OutpostWorld_F
+Lonely staffer
+Fixated researcher
+Overtaxed maintenance chief 
+
+
+table: OutpostWorld_C
+The alien ruin defense systems are waking up
+Atmospheric disturbances trap the group inside the outpost for a month
+Pirates raid the outpost
+The crew have become converts to a strange set of beliefs 
+
+
+table: OutpostWorld_T
+Alien relics
+Vital scientific data
+Secret corporate exploitation plans 
+
+
+table: OutpostWorld_P
+Grimy recreation room
+Refueling station
+The only building on the planet
+A "starport" of swept bare rock. 
+
+
+table: PerimeterAgency_E
+Renegade Agency Director
+Maltech researcher
+Paranoid intelligence chief 
+
+
+table: PerimeterAgency_F
+Agent in need of help
+Support staffer
+"Unjustly" targeted researcher 
+
+
+table: PerimeterAgency_C
+The local Agency has gone rogue and now uses maltech
+The Agency archives have been compromised
+The Agency has been targeted by a maltech-using organization
+The Agency's existence is unknown to the locals 
+
+
+table: PerimeterAgency_T
+Agency maltech research archives
+Agency pretech spec-ops gear
+File of blackmail on local politicians 
+
+
+table: PerimeterAgency_P
+Interrogation room
+Smoky bar
+Maltech laboratory
+Secret Agency base 
+
+
+table: PilgrimageSite_E
+Saboteur devoted to a rival belief
+Bitter reformer who resents the current leadership
+Swindler conning the pilgrims 
+
+
+table: PilgrimageSite_F
+Protector of the holy site
+Naive offworlder pilgrim
+Outsider wanting to learn the sanctum's inner secrets 
+
+
+table: PilgrimageSite_C
+The site is actually a fake
+The site is run by corrupt and venal keepers
+A natural disaster threatens the site 
+
+
+table: PilgrimageSite_T
+Ancient relic guarded at the site
+Proof of the site's inauthenticity
+Precious offering from a pilgrim 
+
+
+table: PilgrimageSite_P
+Incense-scented sanctum
+Teeming crowd of pilgrims
+Imposing holy structure 
+
+
+table: PleasureWorld_E
+Purveyor of evil delights
+Local seeking to control others with addictions
+Offworlder exploiter of native resources 
+
+
+table: PleasureWorld_F
+Tourist who's in too deep
+Native seeking a more meaningful life elsewhere
+Offworld entertainer looking for training here 
+
+
+table: PleasureWorld_C
+A deeply repugnant pleasure is offered here by a culture that sees nothing wrong with it
+Certain pleasures here are dangerously addictive
+The prices here can involve enslavement or death
+The world has been seized and exploited by an imperial power 
+
+
+table: PleasureWorld_T
+Forbidden drug
+A contract for some unspeakable payment
+Powerful tech repurposed for hedonistic ends 
+
+
+table: PleasureWorld_P
+Breathtaking natural feature
+Artful but decadent salon
+Grimy den of desperate vice 
+
+
+table: PoliceState_E
+Secret police chief
+Scapegoating official
+Treacherous native informer 
+
+
+table: PoliceState_F
+Rebel leader
+Offworld agitator
+Imprisoned victim
+Crime boss 
+
+
+table: PoliceState_C
+The natives largely believe in the righteousness of the state
+The police state is automated and its "rulers" can't shut it off
+The leaders foment a pogrom against "offworlder spies". 
+
+
+table: PoliceState_T
+List of police informers
+Wealth taken from "enemies of the state"
+Dear Leader's private stash 
+
+
+table: PoliceState_P
+Military parade
+Gulag
+Gray concrete housing block
+Surveillance center 
+
+
+table: Post-Scarcity_E
+Frenzied ideologue fighting over an idea
+Paranoid local fearing offworlder influence
+Grim reformer seeking the destruction of the "enfeebling" productive tech 
+
+
+table: Post-Scarcity_F
+Offworlder seeking something available only here
+Local struggling to maintain the production tech
+Native missionary seeking to bring abundance to other worlds 
+
+
+table: Post-Scarcity_C
+The tech causes serious side-effects on those who take advantage of it
+The tech is breaking down
+The population is growing too large
+The tech produces only certain things in abundance 
+
+
+table: Post-Scarcity_T
+A cornucopia device
+A rare commodity that cannot be duplicated
+Contract for services 
+
+
+table: Post-Scarcity_P
+Tiny but richly-appointed private quarters
+Market for services
+Hushed non-duped art salon 
+
+
+table: PreceptorArchive_E
+Luddite native
+Offworld merchant who wants the natives kept ignorant
+Religious zealot
+Corrupted First Speaker who wants to keep a monopoly on learning 
+
+
+table: PreceptorArchive_F
+Preceptor Adept missionary
+Offworld scholar
+Reluctant student
+Roving Preceptor Adept 
+
+
+table: PreceptorArchive_C
+The local Archive has taken a very religious and mystical attitude toward their teaching
+The Archive has maintained some replicable pretech science
+The Archive has been corrupted and their teaching is incorrect 
+
+
+table: PreceptorArchive_T
+Lost Archive database
+Ancient pretech teaching equipment
+Hidden cache of unacceptable tech 
+
+
+table: PreceptorArchive_P
+Archive lecture hall
+Experimental laboratory
+Student-local riot 
+
+
+table: PretechCultists_E
+Cult leader
+Artifact supplier
+Pretech smuggler 
+
+
+table: PretechCultists_F
+Offworld scientist
+Robbed collector
+Cult heretic 
+
+
+table: PretechCultists_C
+The cultists can actually replicate certain forms of pretech
+The cultists abhor use of the devices as "presumption on the holy"
+The cultists mistake the party's belongings for pretech 
+
+
+table: PretechCultists_T
+Pretech artifacts both functional and broken
+Religious-jargon laced pretech replication techniques
+Waylaid payment for pretech artifacts 
+
+
+table: PretechCultists_P
+Shrine to nonfunctional pretech
+Smuggler's den
+Public procession showing a prized artifact 
+
+
+table: PrimitiveAliens_E
+Hostile alien chief
+Human firebrand
+Dangerous local predator
+Alien religious zealot 
+
+
+table: PrimitiveAliens_F
+Colonist leader
+Peace-faction alien chief
+Planetary frontiersman
+Xenoresearcher 
+
+
+table: PrimitiveAliens_C
+The alien numbers are huge and can overwhelm the humans whenever they so choose
+One group is trying to use the other to kill their political opponents
+The aliens are incomprehensibly strange
+One side commits an atrocity 
+
+
+table: PrimitiveAliens_T
+Alien religious icon
+Ancient alien-human treaty
+Alien technology 
+
+
+table: PrimitiveAliens_P
+Alien village
+Fortified human settlement
+Massacre site 
+
+
+table: PrisonPlanet_E
+Crazed warden AI
+Brutal heir to gang leadership
+Offworlder who's somehow acquired warden powers and exploits the locals 
+
+
+table: PrisonPlanet_F
+Innocent local born here
+Native technician forced to maintain the very tech that imprisons them
+Offworlder trapped here by accident 
+
+
+table: PrisonPlanet_C
+Departure permits are a precious currency
+The prison industry still makes valuable pretech devices
+Gangs have metamorphosed into governments
+The local nobility descended from the prison staff 
+
+
+table: PrisonPlanet_T
+A pass to get offworld
+A key to bypass ancient security devices
+Contraband forbidden by the security scanners 
+
+
+table: PrisonPlanet_P
+Mandate-era prison block converted to government building
+Industrial facility manned by mandatory numbers of prisoners
+Makeshift shop where contraband is assembled 
+
+
+table: PsionicsAcademy_E
+Corrupt psychic instructor
+Renegade student
+Mad psychic researcher
+Resentful townie 
+
+
+table: PsionicsAcademy_F
+Offworld researcher
+Aspiring student
+Wealthy tourist 
+
+
+table: PsionicsAcademy_C
+The academy curriculum kills a significant percentage of students
+The faculty use students as research subjects
+The students are indoctrinated as sleeper agents
+The local natives hate the academy
+The academy is part of a religion. 
+
+
+table: PsionicsAcademy_T
+Secretly developed psitech
+A runaway psychic mentor
+Psychic research prize 
+
+
+table: PsionicsAcademy_P
+Training grounds
+Experimental laboratory
+School library
+Campus hangout 
+
+
+table: PsionicsFear_E
+Mental purity investigator
+Suspicious zealot
+Witch-finder 
+
+
+table: PsionicsFear_F
+Hidden psychic
+Offworlder psychic trapped here
+Offworld educator 
+
+
+table: PsionicsFear_C
+Psychic potential is much more common here
+Some tech is mistaken as psitech
+Natives believe certain rituals and customs can protect them from psychic powers 
+
+
+table: PsionicsFear_T
+Hidden psitech cache
+Possessions of convicted psychics
+Reward for turning in a psychic 
+
+
+table: PsionicsFear_P
+Inquisitorial chamber
+Lynching site
+Museum of psychic atrocities 
+
+
+table: PsionicsWorship_E
+Psychic inquisitor
+Haughty mind-noble
+Psychic slaver
+Feral prophet 
+
+
+table: PsionicsWorship_F
+Offworlder psychic researcher
+Native rebel
+Offworld employer seeking psychics 
+
+
+table: PsionicsWorship_C
+The psychic training is imperfect
+and the psychics all show significant mental illness
+The psychics have developed a unique discipline
+The will of a psychic is law
+Psychics in the party are forcibly kidnapped for "enlightening". 
+
+
+table: PsionicsWorship_T
+Ancient psitech
+Valuable psychic research records
+Permission for psychic training 
+
+
+table: PsionicsWorship_P
+Psitech-imbued council chamber
+Temple to the mind
+Sanitarium-prison for feral psychics 
+
+
+table: QuarantinedWorld_E
+Defense installation commander
+Suspicious patrol leader
+Crazed asteroid hermit 
+
+
+table: QuarantinedWorld_F
+Relative of a person trapped on the world
+Humanitarian relief official
+Treasure hunter 
+
+
+table: QuarantinedWorld_C
+The natives want to remain isolated
+The quarantine is enforced by an ancient alien installation
+The world is rife with maltech abominations
+The blockade is meant to starve everyone on the barren world. 
+
+
+table: QuarantinedWorld_T
+Defense grid key
+Bribe for getting someone out
+Abandoned alien tech 
+
+
+table: QuarantinedWorld_P
+Bridge of a blockading ship
+Defense installation control room
+Refugee camp 
+
+
+table: RadioactiveWorld_E
+Bitter mutant
+Relic warlord
+Desperate wouldbe escapee 
+
+
+table: RadioactiveWorld_F
+Reckless prospector
+Offworld scavenger
+Biogenetic variety seeker 
+
+
+table: RadioactiveWorld_C
+The radioactivity is steadily growing worse
+The planet's medical resources break down
+The radioactivity has inexplicable effects on living creatures
+The radioactivity is the product of a malfunctioning pretech manufactory. 
+
+
+table: RadioactiveWorld_T
+Ancient atomic weaponry
+Pretech anti-radioactivity drugs
+Untainted water supply 
+
+
+table: RadioactiveWorld_P
+Mutant-infested ruins
+Scorched glass plain
+Wilderness of bizarre native life
+Glowing barrens 
+
+
+table: Refugees_E
+Xenophobic native leader
+Refugee chief aspiring to seize the host nation
+Politician seeking to use the refugees as a weapon 
+
+
+table: Refugees_F
+Sympathetic refugee waif
+Local hard-pressed by refugee gangs
+Clergy seeking peace 
+
+
+table: Refugees_C
+The xenophobes are right that the refugees are taking over
+The refugees are right that the xenophobes want them out or dead
+Both are right
+Outside powers are using the refugees to destabilize an enemy government
+Refugee and local cultures are extremely incompatible 
+
+
+table: Refugees_T
+Treasures brought out by fleeing refugees
+Citizenship papers
+Cache of vital refugee supplies
+Hidden arms for terrorists 
+
+
+table: Refugees_P
+Hopeless refugee camp
+City swarming with confused strangers
+Festival full of angry locals 
+
+
+table: RegionalHegemon_E
+Ambitious general
+Colonial official
+Contemptuous noble 
+
+
+table: RegionalHegemon_F
+Diplomat
+Offworld ambassador
+Foreign spy 
+
+
+table: RegionalHegemon_C
+The hegemon's influence is all that's keeping a murderous war from breaking out on nearby worlds
+The hegemon is decaying and losing its control
+The government is riddled with spies
+The hegemon is genuinely benign 
+
+
+table: RegionalHegemon_T
+Diplomatic carte blanche
+Deed to an offworld estate
+Foreign aid grant 
+
+
+table: RegionalHegemon_P
+Palace or seat of government
+Salon teeming with spies
+Protest rally
+Military base 
+
+
+table: RestrictiveLaws_E
+Law enforcement officer
+Outraged native
+Native lawyer specializing in peeling offworlders
+Paid snitch 
+
+
+table: RestrictiveLaws_F
+Frustrated offworlder
+Repressed native
+Reforming crusader 
+
+
+table: RestrictiveLaws_C
+The laws change regularly in patterns only natives understand
+The laws forbid some action vital to the party
+The laws forbid the simple existence of some party members
+The laws are secret to offworlders 
+
+
+table: RestrictiveLaws_T
+Complete legal codex
+Writ of diplomatic immunity
+Fine collection vault contents 
+
+
+table: RestrictiveLaws_P
+Courtroom
+Mob scene of outraged locals
+Legislative chamber
+Police station 
+
+
+table: Revanchists_E
+Demagogue whipping the locals on to a hopeless war
+Politician seeking to use the resentment for their own ends
+Local convinced the PCs are agents of the "thieving" power
+Refugee from the land bitterly demanding it be reclaimed 
+
+
+table: Revanchists_F
+Realist local clergy seeking peace
+Politician trying to calm the public
+Third-party diplomat trying to stamp out the fire 
+
+
+table: Revanchists_C
+The revanchists' claim is completely just and reasonable
+The land is now occupied entirely by heirs of the conquerors
+Both sides have seized lands the other thinks are theirs 
+
+
+table: Revanchists_T
+Stock of vital resource produced by the taken land
+Relic carried out of it
+Proof that the land claim is justified or unjustified 
+
+
+table: Revanchists_P
+Memorial monument to the loss
+Cemetery of those who died in the conquest
+Public ceremony commemorating the disaster 
+
+
+table: Revolutionaries_E
+Blood-drenched revolutionary leader
+Blooddrenched secret police chief
+Hostile foreign agent seeking further turmoil 
+
+
+table: Revolutionaries_F
+Sympathetic victim accused of revolutionary sympathies or government collaboration
+Revolutionary or state agent who now repents
+Agent of a neutral power that wants peace 
+
+
+table: Revolutionaries_C
+The revolutionaries actually do seem likely to put in better rulers
+The revolutionaries are client groups that got out of hand
+The revolutionaries are clearly much worse than the government
+The revolutionaries have no real ideals beyond power and merely pretend to ideology 
+
+
+table: Revolutionaries_T
+List of secret revolutionary sympathizers
+Proof of rebel hypocrisy
+Confiscated wealth 
+
+
+table: Revolutionaries_P
+Festival that explodes into violence
+Heavily- fortified police station
+Revolutionary base hidden in the wilderness 
+
+
+table: RigidCulture_E
+Rigid reactionary
+Wary ruler
+Regime ideologue
+Offended potentate 
+
+
+table: RigidCulture_F
+Revolutionary agitator
+Ambitious peasant
+Frustrated merchant 
+
+
+table: RigidCulture_C
+The cultural patterns are enforced by technological aids
+The culture is run by a secret cabal of manipulators
+The culture has explicit religious sanction
+The culture evolved due to important necessities that have since been forgotten 
+
+
+table: RigidCulture_T
+Precious traditional regalia
+Peasant tribute
+Opulent treasures of the ruling class 
+
+
+table: RigidCulture_P
+Time-worn palace
+Low-caste slums
+Bandit den
+Reformist temple 
+
+
+table: RisingHegemon_E
+Jingoistic supremacist
+Official bent on glorious success
+Foreign agent saboteur 
+
+
+table: RisingHegemon_F
+Friendly emissary to the benighted
+Hardscrabble local turned great success
+Foreign visitor seeking contacts or knowledge 
+
+
+table: RisingHegemon_C
+They're only strong because their neighbors have been weakened
+Their success is based on a fluke resource or pretech find
+They bitterly resent their neighbors as former oppressors 
+
+
+table: RisingHegemon_T
+Tribute shipment
+Factory or barracks emblematic of their power source
+Tech or data that will deal a blow to their rise 
+
+
+table: RisingHegemon_P
+Rustic town being hurled into prosperity
+Government building being expanded
+Starport struggling under the flow of new ships 
+
+
+table: RitualCombat_E
+Bloodthirsty local champion
+Ambitious gladiator stable owner
+Xenophobic master fighter 
+
+
+table: RitualCombat_F
+Peace-minded foreign missionary
+Temperate defender of the weak
+Local eager to learn of offworld fighting styles 
+
+
+table: RitualCombat_C
+The required weapons are strange pretech artifacts
+Certain classes are forbidden from fighting and require champions
+Loss doesn't mean death but it does mean ritual scarring or property loss 
+
+
+table: RitualCombat_T
+Magnificent weapon
+Secret book of martial techniques
+Token signifying immunity to ritual combat challenges
+Prize won in bloody battle 
+
+
+table: RitualCombat_P
+Area full of cheering spectators
+Dusty street outside a saloon
+Memorial for fallen warriors 
+
+
+table: Robots_E
+Hostile robot master
+Robot greedy to seize offworld tech
+Robot fallen in love with the PC's ship
+Oligarch whose factories build robots 
+
+
+table: Robots_F
+Data-seeking robot
+Plucky young robot tech
+Local being pushed out of a job by robots 
+
+
+table: Robots_C
+The robots are only partially controlled
+The robots are salvaged and originally meant for a much darker use
+The robots require a rare material that the locals fight over
+The robots require the planet's specific infrastructure so cannot be exported 
+
+
+table: Robots_T
+Prototype robot
+Secret robot override codes
+Vast cache of robot-made goods
+Robot-destroying pretech weapon 
+
+
+table: Robots_P
+Humming robotic factory
+Stark robotic "barracks"
+House crowded with robot servants and only one human owner 
+
+
+table: SeagoingCities_E
+Pirate city lord
+Mer-human raider chieftain
+Hostile landsman noble
+Enemy city saboteur 
+
+
+table: SeagoingCities_F
+City navigator
+Scout captain
+Curious mer-human
+Hard-pressed ship-city engineer 
+
+
+table: SeagoingCities_C
+The seas are not water
+The fish schools have vanished and the city faces starvation
+Terrible storms drive the city into the glacial regions
+Suicide ships ram the city's hull 
+
+
+table: SeagoingCities_T
+Giant pearls with mysterious chemical properties
+Buried treasure
+Vital repair materials 
+
+
+table: SeagoingCities_P
+Bridge of the city
+Storm-tossed sea
+A bridge fashioned of many small boats. 
+
+
+table: SealedMenace_E
+Hostile outsider bent on freeing the menace
+Misguided fool who thinks he can use it
+Reckless researcher who thinks he can fix it 
+
+
+table: SealedMenace_F
+Keeper of the menace
+Student of its nature
+Victim of the menace 
+
+
+table: SealedMenace_C
+The menace would bring great wealth along with destruction
+The menace is intelligent
+The natives don't all believe in the menace 
+
+
+table: SealedMenace_T
+A key to unlock the menace
+A precious byproduct of the menace
+The secret of the menace's true nature 
+
+
+table: SealedMenace_P
+Guarded fortress containing the menace
+Monitoring station
+Scene of a prior outbreak of the menace 
+
+
+table: SecretMasters_E
+An agent of the cabal
+Government official who wants no questions asked
+Willfully blinded local 
+
+
+table: SecretMasters_F
+Paranoid conspiracy theorist
+Machiavellian gamesman within the cabal
+Interstellar investigator 
+
+
+table: SecretMasters_C
+The secret masters have a benign reason for wanting secrecy
+The cabal fights openly amongst itself
+The cabal is recruiting new members 
+
+
+table: SecretMasters_T
+A dossier of secrets on a government official
+A briefcase of unmarked credit notes
+The identity of a cabal member 
+
+
+table: SecretMasters_P
+Smoke-filled room
+Shadowy alleyway
+Secret underground bunker 
+
+
+table: Sectarians_E
+Paranoid believer
+Native convinced the party is working for the other side
+Absolutist ruler 
+
+
+table: Sectarians_F
+Reformist clergy
+Local peacekeeping official
+Offworld missionary
+Exhausted ruler 
+
+
+table: Sectarians_C
+The conflict has more than two sides
+The sectarians hate each other for multiple reasons
+The sectarians must cooperate or else life on this world is imperiled
+The sectarians hate outsiders more than they hate each other
+The differences in sects are incomprehensible to an outsider 
+
+
+table: Sectarians_T
+Ancient holy book
+Incontrovertible proof
+Offering to a local holy man 
+
+
+table: Sectarians_P
+Sectarian battlefield
+Crusading temple
+Philosopher's salon
+Bitterly divided village 
+
+
+table: SeismicInstability_E
+Earthquake cultist
+Hermit seismologist
+Burrowing native life form
+Earthquake-inducing saboteur 
+
+
+table: SeismicInstability_F
+Experimental construction firm owner
+Adventurous volcanologist
+Geothermal prospector 
+
+
+table: SeismicInstability_C
+The earthquakes are caused by malfunctioning pretech terraformers
+They're caused by alien technology
+They're restrained by alien technology that is being plundered by offworlders
+The earthquakes are used to generate enormous amounts of energy. 
+
+
+table: SeismicInstability_T
+Earthquake generator
+Earthquake suppressor
+Mineral formed at the core of the world
+Earthquake- proof building schematics 
+
+
+table: SeismicInstability_P
+Volcanic caldera
+Village during an earthquake
+Mud slide
+Earthquake opening superheated steam fissures 
+
+
+table: ShackledWorld_E
+Passionless jailer-AI
+Paranoid military grid AI
+Robot overlord
+Enigmatic alien master 
+
+
+table: ShackledWorld_F
+Struggling local researcher
+Offworlder trapped here
+Scientist with a plan to break the chains 
+
+
+table: ShackledWorld_C
+The shackles come off for certain brief windows of time
+The locals think the shackles are imposed by God
+An outside power greatly profits from the shackles
+The rulers are exempt from the shackles 
+
+
+table: ShackledWorld_T
+Keycode to bypass the shackle
+Tech shielded from the shackle
+Exportable version of the shackle that can affect other worlds 
+
+
+table: ShackledWorld_P
+Grim high-tech control center
+Factory full of workaround tech
+Temple to the power or entity that imposed the shackle 
+
+
+table: SocietalDespair_E
+Zealot who blames outsiders for the decay
+Nihilistic warlord
+Offworlder looking to exploit the local despair 
+
+
+table: SocietalDespair_F
+Struggling messenger of a new way
+Valiant paragon of a fading tradition
+Local going through the motions of serving a now-irrelevant role 
+
+
+table: SocietalDespair_C
+A massive war discredited all the old values
+Outside powers are working to erode societal confidence for their own benefit
+A local power is profiting greatly from the despair
+The old ways were meant to aid survival on this world and their passing is causing many new woes 
+
+
+table: SocietalDespair_T
+Relic that would inspire a renaissance
+Art that would inspire new ideas
+Priceless artifact of a now-scorned belief 
+
+
+table: SocietalDespair_P
+Empty temple
+Crowded den of obliviating vice
+Smoky hall full of frantic speakers 
+
+
+table: SoleSupplier_E
+Resource oligarch
+Ruthless smuggler
+Resource- controlling warlord
+Foreign agent seeking to subvert local government 
+
+
+table: SoleSupplier_F
+Doughty resource miner
+Researcher trying to synthesize the stuff
+Small-scale resource producer
+Harried starport trade overseer 
+
+
+table: SoleSupplier_C
+The substance is slow poison to process
+The substance is created by hostile alien natives
+The substance is very easy to smuggle in usable amounts
+Only the natives have the genes or tech to extract it effectively 
+
+
+table: SoleSupplier_T
+Cache of processed resource
+Trade permit to buy a load of it
+A shipment of nigh-undetectably fake substance 
+
+
+table: SoleSupplier_P
+Bustling resource extraction site
+Opulent palace built with resource money
+Lazy town square where everyone lives on resource payments 
+
+
+table: TabooTreasure_E
+Maker of a vile commodity
+Smuggler for a powerful offworlder
+Depraved offworlder here for "fun"
+Local warlord who controls the treasure 
+
+
+table: TabooTreasure_F
+Reformer seeking to end its use
+Innovator trying to repurpose the treasure in innocent ways
+Wretched addict unwillingly prey to the treasure 
+
+
+table: TabooTreasure_C
+The treasure is extremely hard to smuggle
+Its use visibly marks a user
+The natives consider it for their personal use only
+
+
+
+table: TabooTreasure_T
+Load of the forbidden good
+Smuggling tech that could hide the good perfectly
+Blackmail data on offworld buyers of the good 
+
+
+table: TabooTreasure_P
+Den where the good is used
+Market selling the good to locals and a few outsiders
+Factory or processing area where the good is created 
+
+
+table: TerraformFailure_E
+Brutal ruler who cares only for their people
+Offworlder trying to loot the damaged engines
+Warlord trying to seize limited habitable land 
+
+
+table: TerraformFailure_F
+Local trying to fix the engines
+Offworlder student of the engines
+World-wise native survivor 
+
+
+table: TerraformFailure_C
+The engines produced too much of something instead of too little
+The engines were hijacked by aliens with different preferences
+It was discovered that an Earth-like environment would eventually cause a catastrophic disaster 
+
+
+table: TerraformFailure_T
+Parts to repair or restore the engines
+Lootable pretech fragments
+Valuable local tech devised to cope with the world 
+
+
+table: TerraformFailure_P
+Zone of tolerable gravity or temperature
+Native settlement built to cope with the environment
+Massive ruined terraforming engine 
+
+
+table: Theocracy_E
+Decadent priest-ruler
+Zealous inquisitor
+Relentless proselytizer
+True Believer 
+
+
+table: Theocracy_F
+Heretic
+Offworld theologian
+Atheistic merchant
+Desperate commoner 
+
+
+table: Theocracy_C
+The theocracy actually works well
+The theocracy is decadent and hated by the common folk
+The theocracy is divided into mutually hostile sects
+The theocracy is led by aliens 
+
+
+table: Theocracy_T
+Precious holy text
+Martyr's bones
+Secret church records
+Ancient church treasures 
+
+
+table: Theocracy_P
+Glorious temple
+Austere monastery
+Academy for ideological indoctrination
+Decadent pleasure- cathedral 
+
+
+table: TombWorld_E
+Demented survivor tribe chieftain
+Avaricious scavenger
+Automated defense system
+Native predator 
+
+
+table: TombWorld_F
+Scavenger Fleet captain
+Archaeologist
+Salvaging historian
+Xenophilic native survivor 
+
+
+table: TombWorld_C
+The ruins are full of booby-traps left by the final inhabitants
+The world's atmosphere quickly degrades anything in an opened building
+A handful of desperate natives survived the Silence
+The structures are unstable and collapsing 
+
+
+table: TombWorld_T
+Lost pretech equipment
+Tech caches
+Stores of unused munitions
+Ancient historical data 
+
+
+table: TombWorld_P
+Crumbling hive-city
+City square carpeted in bones
+Ruined hydroponic facility
+Cannibal tribe's lair
+Dead orbital jump gate 
+
+
+table: TradeHub_E
+Cheating merchant
+Thieving dockworker
+Commercial spy
+Corrupt customs official 
+
+
+table: TradeHub_F
+Rich tourist
+Hardscrabble free trader
+Merchant prince in need of catspaws
+Friendly spaceport urchin 
+
+
+table: TradeHub_C
+An outworlder faction schemes to seize the trade hub
+Saboteurs seek to blow up a rival's warehouses
+Enemies are blockading the trade routes
+Pirates lace the hub with spies 
+
+
+table: TradeHub_T
+Voucher for a warehouse's contents
+Insider trading information
+Case of precious offworld pharmaceuticals
+Box of legitimate tax stamps indicating customs dues have been paid. 
+
+
+table: TradeHub_P
+Raucous bazaar
+Elegant restaurant
+Spaceport teeming with activity
+Foggy street lined with warehouses 
+
+
+table: Tyranny_E
+Debauched autocrat
+Sneering bully-boy
+Soulless government official
+Occupying army officer 
+
+
+table: Tyranny_F
+Conspiring rebel
+Oppressed merchant
+Desperate peasant
+Inspiring religious leader 
+
+
+table: Tyranny_C
+The tyrant rules with vastly superior technology
+The tyrant is a figurehead for a cabal of powerful men and women
+The people are resigned to their suffering
+The tyrant is hostile to "meddlesome outworlders". 
+
+
+table: Tyranny_T
+Plundered wealth
+Beautiful toys of the elite
+Regalia of rulership 
+
+
+table: Tyranny_P
+Impoverished village
+Protest rally massacre
+Decadent palace
+Religious hospital for the indigent 
+
+
+table: UnbrakedAI_E
+AI Cultist
+Maltech researcher
+Government official dependent on the AI 
+
+
+table: UnbrakedAI_F
+Perimeter agent
+AI researcher
+Braked AI 
+
+
+table: UnbrakedAI_C
+The AI's presence is unknown to the locals
+The locals depend on the AI for some vital service
+The AI appears to be harmless
+The AI has fixated on the group's ship's computer
+The AI wants transport offworld 
+
+
+table: UnbrakedAI_T
+The room-sized AI core itself
+Maltech research files
+Perfectly tabulated blackmail on government officials
+Pretech computer circuitry 
+
+
+table: UnbrakedAI_P
+Municipal computing banks
+Cult compound
+Repair center
+Ancient hardcopy library 
+
+
+table: UrbanizedSurface_E
+Maintenance AI that hates outsiders
+Tyrant of a habitation block
+Deep-dwelling prophet who considers "the sky" a blasphemy to be quelled 
+
+
+table: UrbanizedSurface_F
+Local yearning for wild spaces
+Grubby urchin of the underlevels
+Harried engineer trying to maintain ancient works
+Grizzled hab cop 
+
+
+table: UrbanizedSurface_C
+The urban blocks are needed to survive the environment
+The blocks were part of an ancient device of world-spanning size
+The blocks require constant maintenance to avoid dangerous types of decay 
+
+
+table: UrbanizedSurface_T
+Massively efficient power source
+Map of the secret ways of a zone
+Passkey into restricted hab block areas 
+
+
+table: UrbanizedSurface_P
+Giant hab block now devoid of inhabitants
+Chemical-reeking underway
+Seawater mine full of salt and massive flowing channels 
+
+
+table: Utopia_E
+Compassionate neurotherapist
+Proselytizing native missionary to outsiders
+Brutal tyrant who rules through inexorable happiness 
+
+
+table: Utopia_F
+Deranged malcontent
+Bloody-handed guerrilla leader of a rebellion of madmen
+Outsider trying to find a way to reverse the utopian changes 
+
+
+table: Utopia_C
+The natives really are deeply and contentedly happy with their altered lot
+The utopia produces something that attracts others
+The utopia works on converting outsiders through persuasion and generosity
+The utopia involves some sacrifice that's horrifying to non-members 
+
+
+table: Utopia_T
+Portable device that applies the utopian change
+Plans for a device that would destroy the utopia
+Goods created joyfully by the locals 
+
+
+table: Utopia_P
+Plaza full of altered humans
+Social ritual site
+Secret office where "normal" humans rule 
+
+
+table: Warlords_E
+Warlord
+Avaricious lieutenant
+Expensive assassin
+Aspiring minion 
+
+
+table: Warlords_F
+Vengeful commoner
+Government military officer
+Humanitarian aid official
+Village priest 
+
+
+table: Warlords_C
+The warlords are willing to cooperate to fight mutual threats
+The warlords favor specific religions or races over others
+The warlords are using substantially more sophisticated tech than others
+Some of the warlords are better rulers than the government 
+
+
+table: Warlords_T
+Weapons cache
+Buried plunder
+A warlord's personal battle harness
+Captured merchant shipping 
+
+
+table: Warlords_P
+Gory battlefield
+Burnt-out village
+Barbaric warlord palace
+Squalid refugee camp 
+
+
+table: Xenophiles_E
+Offworld xenophobe
+Suspicious alien leader
+Xenocultural imperialist 
+
+
+table: Xenophiles_F
+Benevolent alien
+Native malcontent
+Gone-native offworlder 
+
+
+table: Xenophiles_C
+The enthusiasm is due to alien psionics or tech
+The enthusiasm is based on a lie
+The aliens strongly dislike their "groupies"
+The aliens feel obliged to rule humanity for its own good
+Humans badly misunderstand the aliens 
+
+
+table: Xenophiles_T
+Hybrid alien-human tech
+Exotic alien crafts
+Sophisticated xenolinguistic and xenocultural research data 
+
+
+table: Xenophiles_P
+Alien district
+Alien-influenced human home
+Cultural festival celebrating alien artist 
+
+
+table: Xenophobes_E
+Revulsed local ruler
+Native convinced some wrong was done to him
+Cynical demagogue 
+
+
+table: Xenophobes_F
+Curious native
+Exiled former ruler
+Local desperately seeking outworlder help 
+
+
+table: Xenophobes_C
+The natives are symptomless carriers of a contagious and dangerous disease
+The natives are exceptionally vulnerable to offworld diseases
+The natives require elaborate purification rituals after speaking to an offworlder or touching them
+The local ruler has forbidden any mercantile dealings with outworlders 
+
+
+table: Xenophobes_T
+Jealously-guarded precious relic
+Local product under export ban
+Esoteric local technology 
+
+
+table: Xenophobes_P
+Sealed treaty port
+Public ritual not open to outsiders
+Outcaste slum home 
+
+
+table: Zombies_E
+Soulless maltech biotechnology cult
+Sinister governmental agent
+Crazed zombie cultist 
+
+
+table: Zombies_F
+Survivor of an outbreak
+Doctor searching for a cure
+Rebel against the secret malefactors 
+
+
+table: Zombies_C
+The zombies retain human intelligence
+The zombies can be cured
+The process is voluntary among devotees
+The condition is infectious 
+
+
+table: Zombies_T
+Cure for the condition
+Alien artifact that causes it
+Details of the cult's conversion process 
+
+
+table: Zombies_P
+House with boarded-up windows
+Dead city
+Fortified bunker that was overrun from within

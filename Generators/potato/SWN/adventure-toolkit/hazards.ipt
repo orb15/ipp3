@@ -1,0 +1,149 @@
+# ---------------------------------------
+# SWN:Hazards
+# ---------------------------------------
+
+table:Master
+MaxReps:3
+Set:hazard=[@Hazard]
+Set:example=[@{$hazard}Example]
+Set:danger=[@{$hazard}Danger]
+<b>{$hazard}</b>\nDetails: {$example}\nDanger: {$danger}
+
+table:Hazard
+roll:1d8
+1:Social
+2:Legal
+3:Environmental
+4:Trap
+5:Animal
+6:Sentient
+7:Decay
+8:PC-Induced
+
+table:SocialExample
+roll:1d10
+1-2:An explosively temperamental VIP
+3-4:An unknown but critical social taboo
+5-6:A case of mistaken identity
+7-8:An expectation for specific PC action
+9-10:A frame job hung on the PCs
+
+table:SocialDanger
+roll:1d10
+1-2:An allied NPC breaks ties
+3-4:An enemy is alerted to them
+5-6:A new enemy is made
+7-8:Cads think the PCs are allies
+9-10:An opportunity is lost
+
+table:LegalExample
+roll:1d10
+1-2:A regulation unknown to the PCs
+3-4:A tax or confiscation
+5-6:Vital gear is prohibited here
+7-8:Lawsuit from an aggrieved NPC
+9-10:A state agent conscripts PC help
+
+table:LegalDanger
+roll:1d10
+1-2:A regulation unknown to the PCs
+3-4:Imprisonment for the party
+5-6:Vital gear is prohibited here
+7-8:Lawsuit from an aggrieved NPC
+9-10:A state agent conscripts PC help
+
+table:EnvironmentalExample
+roll:1d10
+1-2:Heavy background radiation
+3-4:A planetary sickness foreigners get
+5-6:Strong or weak local gravity
+7-8:Gear-eating microbial life
+9-10:Unpredictable psychic power field
+
+table:EnvironmentalDanger
+roll:1d10
+1-2:Catch a lingering disease
+3-4:Suffer bodily harm
+5-6:Take a penalty on rolls
+7-8:Lose some equipment
+9-10:Psychic abilities are altered
+
+table:TrapExample
+roll:1d10
+1-2:Alarm system attached to a trap
+3-4:Snare left for local animals
+5-6:Hermit's self-defense measure
+7-8:Long-dead builder's trapsmithing
+9-10:New occupant's defensive trap
+
+table:TrapDanger
+roll:1d10
+1-2:Something set on fire
+3-4:Guards are summoned
+5-6:Fall to a new area
+7-8:Equipment is damaged
+9-10:Subject is injured
+
+table:AnimalExample
+roll:1d10
+1-2:Dangerous local swarm vermin
+3-4:A big predator lair
+5-6:Pack hunters haunt the area
+7-8:Flying threats pounce here
+9-10:Monstrous beast sleeps or is torpid
+
+table:AnimalDanger
+roll:1d10
+1-2:They have a ranged attack
+3-4:They're venomous
+5-6:Dangerously coordinated foe
+7-8:Killing them inflicts a fine
+9-10:Their deaths cause an effect
+
+table:SentientExample
+roll:1d10
+1-2:A group hostile to intruders
+3-4:Trickster thieves and con-men
+5-6:Hostile expert-system robots
+7-8:Secrecy-loving rebels or criminals
+9-10:Another area-clearing group
+
+table:SentientDanger
+roll:1d10
+1-2:Immediate combat
+3-4:Treacherous feigned friend
+5-6:Lead the PCs into a trap
+7-8:Demand payment or loot
+9-10:Activate other area defenses
+
+table:DecayExample
+roll:1d10
+1-2:Crumbling floor or ceiling
+3-4:Waste or heating tubes rupture
+5-6:Dangerous standing liquid
+7-8:Maintenance robots gone haywire
+9-10:Power plant is unstable
+
+table:DecayDanger
+roll:1d10
+1-2:Ruptures to release a peril
+3-4:Toxic or radioactive debris
+5-6:Explosive decompression
+7-8:Invisible or slow-acting toxin
+9-10:Fires or explosions
+
+table:PC-InducedExample
+roll:1d10
+1-2:Activating a system causes a disaster
+3-4:Catastrophic plan proposed by NPCs
+5-6:Removing loot triggers defenses
+7-8:Handling an object ruins it
+9-10:Leaving a thing open brings calamity
+
+table:PC-InducedDanger
+roll:1d10
+1-2:Horrible vermin are admitted
+3-4:Local system goes berserk
+5-6:Something ruptures violently
+7-8:Ancient defenses awaken
+9-10:The PC's goal is imperiled

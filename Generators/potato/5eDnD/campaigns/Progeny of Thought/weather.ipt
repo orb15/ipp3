@@ -1,0 +1,42 @@
+# Weather Generation (5e customized for Progeny of Thought)
+
+table: Master
+MaxReps: 1
+set: Temperature=[@Temperature]
+set: Wind=[@Wind]
+set: Percipitation=[@Percipitation]
+<b>Weather (Progeny)</b>\nThe temperature is {$Temperature}. {$Wind}. {$Percipitation}.
+
+table: Temperature
+type: lookup
+Roll: 1d20
+1-14: normal for the season
+15-17: [@TempDelta] degrees warmer than usual
+18-20: [@TempDelta] degrees cooler than usual
+
+table: TempDelta
+8:5
+4:10
+2:12
+1:15
+
+table: Wind
+type: lookup
+Roll: 1d20
+1-16:There is [|no|not much|very little] wind
+17-18:There is [|light wind|a gentle breeze] out of the [@WindDir]
+19-20:There [|are strong gusts|is a steady wind|are strong winds] out of the [@WindDir]
+
+table: WindDir
+8:west
+6:[|northwest|southwest]
+4:[|north|south]
+3:[|northeast|southeast]
+1:east
+
+table: percipitation
+type: lookup
+Roll: 1d20
+1-6:There is no [|rain|percipitation]
+7-14:There is [|some|light|intermittant|light, steady] percipitation
+15-20:There is [|strong|heavy|severe] percipitation

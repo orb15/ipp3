@@ -1,0 +1,93 @@
+# ---------------------------------------
+# 5eCraft: Monster encounters master table
+# ---------------------------------------
+
+Use: potato\5eCraft\encounters\monster\forest-encounters.ipt
+Use: potato\5eCraft\encounters\monster\plains-encounters.ipt
+Use: potato\5eCraft\encounters\monster\hills-encounters.ipt
+Use: potato\5eCraft\encounters\monster\desert-encounters.ipt
+Use: potato\5eCraft\encounters\monster\swamp-encounters.ipt
+Use: potato\5eCraft\encounters\monster\mountains-encounters.ipt
+Use: potato\5eCraft\encounters\monster\water-encounters.ipt
+Use: potato\5eCraft\encounters\monster\underground-encounters.ipt
+
+table: MasterMonsterEncounter
+MaxReps: 1
+Set: difficulty=[@Difficulty]
+[#{$prompt1} MonsterTerrain]
+
+table: MonsterTerrain
+type: dictionary
+Forest:[@{$difficulty}{$prompt2} with Forest]
+Hills:[@{$difficulty}{$prompt2} with Hills]
+Desert:[@{$difficulty}{$prompt2} with Desert]
+Swamp:[@{$difficulty}{$prompt2} with Swamp]
+Plains:[@{$difficulty}{$prompt2} with Plains]
+Mountains:[@{$difficulty}{$prompt2} with Mountains]
+Water:[@{$difficulty}{$prompt2} with Water]
+Undergrnd:[@{$difficulty}{$prompt2} with Underground] 
+
+table: Difficulty
+roll: 1d4
+1:Easy
+2-3:Medium
+4:Hard
+
+# ###########################
+# Level 2
+# ###########################
+
+table: Easy2
+3 x [@{$1}0]
+[@{$1}4th]
+
+table: Medium2
+[|4|5] x [@{$1}0]
+2 x [@{$1}8th]
+
+table: Hard2
+6 x [@{$1}0]
+3 x [@{$1}8th]
+[@{$1}Half]
+
+# ###########################
+# Level 3
+# ###########################
+
+table: Easy3
+[|3|4|5] x [@{$1}0]
+2 x [@{$1}8th]
+[@{$1}4th]
+
+table: Medium3
+[|6|7] x [@{$1}0]
+3 x [@{$1}8th]
+2 x [@{$1}4th]
+[@{$1}Half]
+
+table: Hard3
+[|8|9|10] x [@{$1}0]
+[|4|5|6] x [@{$1}8th]
+3 x [@{$1}4th]
+[@{$1}1]
+
+# ###########################
+# Level 4
+# ###########################
+
+table: Easy4
+[|5|6|7|8] x [@{$1}0]
+3 x [@{$1}8th]
+2 x [@{$1}4th]
+[@{$1}Half]
+
+table: Medium4
+[|9|10] x [@{$1}0]
+[|4|5] x [@{$1}8th]
+[@{$1}1]
+
+table: Hard4
+[|11|12] x [@{$1}0]
+6 x [@{$1}8th]
+3 x [@{$1}4th]
+2 x [@{$1}Half]

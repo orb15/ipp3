@@ -1,0 +1,43 @@
+# ---------------------------------------
+# SWN:Sex and Race
+# ---------------------------------------
+
+
+table: Sex
+type: dictionary
+Male:Male
+Female:Female
+DontCare:[|Male|Female]
+
+table: Age
+roll: 1d4
+1:Unusually young or old for their role
+2:Young adult
+3:Mature or prime
+4:Middle-aged or elderly
+
+table: RaceDictionary
+type: dictionary
+Arabic:Arabic
+Chinese:Chinese
+English:English
+Greek:Greek
+Indian:Indian
+Japanese:Japanese
+Latin:Latin
+Nigerian:Nigerian
+Russian:Russian
+Spanish:Spanish
+DontCare:[@Race]
+
+table: Race
+Arabic
+Chinese
+English
+Greek
+Indian
+Japanese
+Latin
+Nigerian
+Russian
+Spanish

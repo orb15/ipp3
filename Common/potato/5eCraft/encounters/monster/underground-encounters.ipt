@@ -1,0 +1,73 @@
+# ---------------------------------------
+# 5eCraft: Underground Encounter Details
+# ---------------------------------------
+
+table: Underground0
+Insect, Giant Fire Beetle (MM 325)
+Myconid Sprout (MM 230)
+Shrieker (MM 138)
+
+table: Underground8th
+Animal, Giant Rat (MM 327)
+Animal, Poisonous Snake (MM 334)
+Stirge (MM 284)
+
+table: Underground4th
+Animal, Giant Bat (MM 323)
+Animal, Giant Lizard (MM 326)
+Swarm, Bats (MM 337)
+Swarm, Rats (MM 339)
+Violet Fungus (MM 138)
+
+table: UndergroundHalf
+Darkmantle (MM 46)
+Gas Spore (MM 138)
+Myconid, Adult (MM 232)
+Ooze, Gray (MM 243)
+Piercer (MM 252)
+Rust Monster (MM 252)
+Swarm, Insects (MM 338)
+
+table: Underground1
+--no suitable encounter--
+
+table: Underground2
+Carrion Crawler (MM 37)
+Gibbering Mouther (MM 157)
+Grick (MM 173)
+Intellect Devourer (MM 191)
+Mimic (MM 220)
+Myconid, Sovereign (MM 232)
+Ooze, Gelatinous Cube (MM 242)
+Ooze, Ochre Jelly (MM 243)
+
+table: Underground3
+Basilisk (MM 24)
+Beholder, Spectator (MM 30)
+Grell (MM 172)
+Hook Horror (MM 189)
+Insect, Giant Scorpion (MM 327)
+
+table: Underground4
+Ooze, Black Pudding (MM 241)
+
+table: Underground5
+Otyugh (MM 248)
+Roper (MM 261)
+Umber Hulk (MM 292)
+Xorn (MM 304)
+
+table: Underground7
+Grick, Alpha (MM 173)
+
+table: Underground8
+Cloaker (MM 41)
+
+table: Underground10
+Aboleth (MM 13)
+
+table: Underground11
+Beholder (MM 28)
+
+table: Underground15
+Purple Worm (MM 255)

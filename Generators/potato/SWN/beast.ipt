@@ -1,0 +1,152 @@
+# ---------------------------------------
+# SWN: Savage Beasts Appearance
+# ---------------------------------------
+
+table: Master
+MaxReps: 5
+Set: feature =[@Feature]
+Set: body =[@BodyPlan]
+Set: limb =[@Limbs]
+Set: skin =[@Skin]
+Set: weap =[@MainWeapon]
+Set: size =[@Size]
+Set: type =[@Type]
+<b>{$type}</b>\n{$size} {$body} {$limb} {$feature} {$skin}\n<b>Primary Weapon: </b>{$weap}
+
+table: Type
+Predator ([@DetailPred])
+Prey ([@DetailPrey])
+Scavenger ([@DetailScav])
+
+table: DetailPred
+roll: 1d8
+1:Hunts in kin-group packs
+2:Favors ambush attacks
+3:Cripples prey and waits for death
+4:Pack supports alpha-beast attack
+5:Lures or drives prey into danger
+6:Hunts as a lone, powerful hunter
+7:Only is predator at certain times
+8:Mindlessly attacks humans
+
+table: DetailPrey
+roll: 1d8
+1:Moves in vigilant herds
+2:Exists in small family groups
+3:They all team up on a single foe
+4:They go berserk when near death
+5:They’re violent in certain seasons
+6:They’re vicious if threatened
+7:Symbiotic creature protects them
+8:Breeds at tremendous rates
+
+table: DetailScav
+roll: 1d8
+1:Never attacks unwounded prey
+2:Uses other beasts as harriers
+3:Always flees if significantly hurt
+4:Poisons prey, waits for it to die
+5:Disguises itself as its prey
+6:Remarkably stealthy
+7:Summons predators to weak prey
+8:Steals prey from weaker predator
+
+table: Feature
+roll: 1d10
+1:Amphibian (froggish or newtlike)
+2:Bird (winged and feathered)
+3:Fish (scaled and torpedo-bodied)
+4:Insect (beetle-like or fly-winged)
+5:Mammal (hairy and fanged)
+6:Reptile (lizardlike and long-bodied)
+7:Spider (many-legged and fat)
+8:Exotic (made of wholly alien elements)
+9-10:Hybrid: [#{1d8} Feature] / [#{1d8} Feature]
+
+table: BodyPlan
+roll: 1d6
+1:Humanoid
+2:Quadruped
+3:Many-legged
+4:Bulbous
+5:Amorphous
+6:Hybrid: [#{1d8} BodyPlan] / [#{1d8} BodyPlan]
+
+table: Limbs
+roll: 1d6
+1:Wings
+2:Many joints
+3:Tentacles
+4:Opposable thumbs
+5:Retractable
+6:Varying sizes
+
+table: Skin
+roll: 1d6
+1:Hard shell
+2:Exoskeleton
+3:Odd texture
+4:Molts regularly
+5:Harmful to touch
+6:Wet or slimy
+
+table: MainWeapon
+roll: 1d6
+1:Teeth
+2:Claws
+3:Poison: [@Poison]
+4:Harmful discharge: [@Discharge]
+5:Pincers
+6:Horns
+
+table: Size
+roll: 1d12
+1-2:Cat-sized
+3-6:Wolf-sized
+7-8:Calf-sized
+9-10:Bull-sized
+11:Hippo-sized
+12:Elephant-sized
+
+table: Discharge
+roll: 1d8
+1:Acidic spew doing its damage on a hit
+2:Toxic spittle or cloud, use adjacent chart
+3:Super-heated or super-chilled spew
+4:Sonic drill or other disabling noise
+5:Natural laser or plasma discharge
+6:Nauseating stench or disabling chemical
+7:Equipment-melting corrosive
+8:Explosive pellets or chemical catalysts
+
+table: Poison
+Set: effect =[@PoisonEffect]
+Set: onset =[@PoisonOnset]
+Set: duration =[@PoisonDuration]
+Poison causes {$effect} with onset {$onset} and duration {$duration}
+
+table: PoisonEffect
+roll: 1d6
+1:Death
+2:Paralysis
+3:1d4 dmg per onset interval
+4:Convulsions
+5:Blindness
+6:Hallucinations
+
+table: PoisonOnset
+roll: 1d6
+1:Instant
+2:1 round
+3:1d6 rounds
+4:1 minute
+5:1d6 minutes
+6:1 hour
+
+table: PoisonDuration
+1:1d6 rounds
+2:1 minute
+3:10 minutes
+4:1 hour
+5:1d6 hours
+6:1d6 days

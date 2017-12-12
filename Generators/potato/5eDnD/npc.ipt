@@ -1,0 +1,49 @@
+# NPC Description Generator
+
+use: potato\5eDnD\npc\classes.ipt
+use: potato\5eDnD\npc\races.ipt
+use: potato\5eDnD\npc\racialCommon.ipt
+use: potato\5eDnD\npc\dwarf.ipt
+use: potato\5eDnD\npc\elf.ipt
+use: potato\5eDnD\npc\halfling.ipt
+use: potato\5eDnD\npc\human.ipt
+use: potato\5eDnD\npc\gnome.ipt
+use: potato\5eDnD\npc\halfelf.ipt
+use: potato\5eDnD\npc\halforc.ipt
+use: potato\5eDnD\npc\tiefling.ipt
+use: potato\5eDnD\npc\dragonborn.ipt
+use: potato\5eDnD\npc\classDescription.ipt
+use: potato\5eDnD\npc\traitsCommon.ipt
+
+prompt: Class {Any|Main|NPC|Barbarian|Bard|Cleric|Druid|Fighter|Monk|Paladin|Ranger|Rogue|Sorcerer|Warlock|Wizard|Aristocrat|Commoner|Expert|Mystic|Sage|Warrior} Any
+prompt: Race {Any|Dwarf|Elf|Halfling|Human|Dragonborn|Gnome|Half-Elf|Half-Orc|Tiefling} Any
+
+table: Master
+MaxReps: 3
+set: Sex=[|Male|Female]
+set: Class=[#{$prompt1} ClassMaster >> Proper]
+set: SubclassRaw=[@{$Class}Subclass >> Proper]
+set: Subclass=[when]{$SubclassRaw}[do][({$SubclassRaw})][end]
+set: Race=[#{$prompt2} RaceMaster]
+set: UpperRace=[{$Race} >> Proper]
+set: SubraceRaw=[@{$Race}Subrace >> Proper]
+set: Subrace=[when]{$SubraceRaw}[do][({$SubraceRaw})][end]
+set: RacialHairTable=[when]{$SubraceRaw}[do]{$Sex}{$UpperRace}Hair with {$Subrace}[else]{$Sex}{$UpperRace}Hair[end]
+set: RacialEyeTable=[when]{$SubraceRaw}[do]{$UpperRace}EyeInfo with {$Subrace}[else]{$UpperRace}EyeInfo[end]
+set: SexPronoun1=[#{$Sex} SexPronoun1]
+set: SexProunoun2=[#{$Sex} SexPronoun2]
+set: Age=[@Age]
+set: Height=[@Height]
+set: Weight=[@Weight]
+set: Name=[@{$Sex}{$UpperRace}Name]
+set: Description=[@Description]
+set: ClassDescription=[@{$Class}Description]
+set: Mannerism=[@Mannerisms]
+set: InteractionType=[@InteractionType >> Proper]
+set: Ideal=[@Ideals]
+set: Bond=[@Bonds]
+set: Flaw=[@Flaws]
+<b>{$Name}</b>\n{$Sex} {$UpperRace} {$Subrace} {$Class} {$Subclass}\n{$Description}\n\n<b>Distinctive Appearance:</b> {$ClassDescription}\n<b>Mannerism:</b> {$Mannerism}<b>\nInteraction Approach:</b> {$InteractionType}\n<b>Ideal:</b> {$Ideal}\n<b>Bond:</b> {$Bond}\n<b>Flaw or Secret:</b> {$Flaw}
+
+table: Description
+A {$Age} {$UpperRace} with [@{$RacialHairTable}]. [{$SexPronoun1} >> Proper] has [@{$RacialEyeTable}] eyes. [{$SexPronoun1} >> Proper] is of {$Height} height and of {$Weight} weight.

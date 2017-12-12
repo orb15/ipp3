@@ -1,0 +1,86 @@
+# ---------------------------------------
+# 5eCraft: Mountains Encounter Details
+# ---------------------------------------
+
+table: Mountains0
+Animal, Goat (MM 330)
+
+table: Mountains8th
+--no suitable encounter--
+
+table: Mountains4th
+Animal, Elk (MM 322)
+Dinosaur, Pteranodon (MM 80)
+
+table: MountainsHalf
+Animal, Ape (MM 317)
+Animal, Black Bear (MM 318)
+Animal, Giant Goat (MM 326)
+Cockatrice (MM 42)
+Ooze, Gray (MM 243)
+
+table: Mountains1
+Animal, Brown Bear (MM 319)
+Animal, Giant Eagle (MM 324)
+Animal, Giant Vulture (MM 329)
+Death Dog (MM 321)
+Harpy (MM 181)
+Hippogriff (MM 184)
+Insect, Giant Spider (MM 328)
+
+table: Mountains2
+Animal, Giant Elk (MM 325)
+Animal, Saber-Toothed Tiger (MM 336)
+Dragon, Wyrmling White (MM 102)
+Griffon (MM 174)
+Nothic (MM 236)
+Pegasus (MM 250)
+Peryton (MM 251)
+
+table: Mountains3
+Basilisk (MM 24)
+Displacer Beast (MM 81)
+Hook Horror (MM 189)
+Manticore (MM 213)
+Winter Wolf (MM 340)
+Yeti (MM 305)
+
+table: Mountains4
+Dragon, Wyrmling Red (MM 98)
+
+table: Mountains5
+Gorgon (MM 171)
+Remorhaz, Young (MM 258)
+Umber Hulk (MM 292)
+Xorn (MM 304)
+
+table: Mountains6
+Chimera (MM 39)
+Dragon, Young White (MM 101)
+Wyvern (MM 303)
+
+table: Mountains7
+Animal, Giant Ape (MM 323)
+
+table: Mountains9
+Yeti, Abominable (MM 306)
+
+table: Mountains10
+Dragon, Young Red (MM 98)
+
+table: Mountains11
+Behir (MM 25)
+Remorhaz (MM 258)
+Roc (MM 260)
+
+table: Mountains13
+Dragon, Adult White (MM 101)
+
+table: Mountains17
+Dragon, Adult Red (MM 98)
+
+table: Mountains20
+Dragon, Ancient White (MM 100)
+
+table: Mountains24
+Dragon, Ancient Red (MM 97)

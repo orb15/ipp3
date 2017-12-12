@@ -1,0 +1,92 @@
+# Describe the many scenes one can find in the Needlewood
+
+table: Master
+MaxReps: 5
+1:[@FoundObjects].
+8:[@Landscape].
+
+table: Landscape
+The [|distant|nearby] sound of [@Sound]
+A smell of [@Smell]
+A [|beehive|ant hill] of significant size
+A [|burned] area of [|trees|diseased trees|birch and aspen|wildflowers]
+A stand of [|larger|denser|sparse] [|pines|birch and aspen] 
+A worn game trail with tracks of a [@Animal]
+A large tree hollowed by [|fire|lightning|the claws of some huge beast]
+Several axe-cut limbs and smaller trunks and the signs of a [|recent|old] fire
+A [|large|small] clearing with [@ClearingDetails]
+A small group of trees completely stripped of branches
+The [|hole|den|nest|bedding area|burrow] of a [@Animal]
+A small group of trees with [|lighter|darker|longer|shorter] needles and branches
+[|Fresh|Thick|Tattered|Ruined] spider webs drape across and around the trees [|ahead|off to one side]
+A [|uprooted|fallen|broken] tree
+A [|moss-covered|newly-placed|quartz-dotted|hand-worked] boulder
+A [|deep|shallow] crater filled with [|nothing|bracken|stagnant water|dried blood|broken stones|a tree seedling]
+A [|placid|burbelling] creek with steep banks
+A deep [|washout|gully]
+A small stream blocked by a large beaver dam
+An area that is especially [|brightly lit|shadowy]
+
+table: FoundObjects
+A carved [|tree trunk|stone|obelisk] denoting some kind of boundary
+A [|arrow|axe|dagger|bolt] stuck into a tree
+A [|torn|bloody|faded] [|banner|flag|blanket|bedroll] [|wadded up on the ground|hanging on a low branch|partially buried under needles|spread out carefully on the ground]
+A [|rotting pelt|partial skeliton] of a [@Animal]
+A mouldering [|backpack|boot|leather cap|leather scabbard|blanket|bedroll|quiver|bow|crossbow|canteen|tent]
+A rusted [|sword|dagger|axe|mace|small shield]
+A [|battered|collapsing|well-built] leanto of branches and logs
+A [|broken|ruined|partial|crushed] [|wasp|bees] nest of tremendous size
+A pile of [|firewood|rotting gear] under a tarp held down with logs
+A [|collapsing|newly-set|dilapidated|torn|bloody] tent
+A primative shrine to an unknown god
+A [|collapsing|newly-repaired|battered|broken] wall of stones
+A deep [|washout|gully] spanned by a [|ruined|well-made|dangerous-looking] [|rope bridge|fallen-tree|wood bridge]
+
+table: ClearingDetails
+wildflowers
+rising mists
+carefully cultivated small pines
+scrabble and brush
+signs of a fire and camping place
+stones arranged in a strange pattern
+tracks of a [@Animal]
+a feeling of intense [|heat|cold|wind]
+lush mosses dotted with tiny [|white|yellow|red] flowers
+soggy, water-logged soil
+
+table: Smell
+death
+[|pungent|lingering] raw-cut pine
+smoke
+musk
+feces
+urine
+some large animal
+wildflowers
+
+table: Sound
+growling
+rustling
+grunting
+crunching
+flutter of birds wings
+a woodpecker
+screetching
+humming
+creaking
+crashing
+thumping
+croaking
+
+table: Animal
+elk
+deer
+badger
+boar
+bear
+wolverine
+bird
+great cat
+squirrel
+unrecognizable beast
+huge [|spider|centipede|forest scorpion|wasp]

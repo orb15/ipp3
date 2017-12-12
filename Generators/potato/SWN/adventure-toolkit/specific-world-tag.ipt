@@ -1,0 +1,16 @@
+# ---------------------------------------
+# SWN: Revised World Tags in Isolation
+# ---------------------------------------
+
+use: potato\SWN\worldtagdetail.ipt
+
+prompt: World Tag {AbandonedColony|AlienRuins|AlteredHumanity|Anarchists|Anthropomorphs|Area51|BadlandsWorld|Battleground|Beastmasters|BubbleCities|CheapLife|CivilWar|ColdWar|ColonizedPopulation|CulturalPower|Cybercommunists|Cyborgs|CyclicalDoom|DesertWorld|DoomedWorld|DyingRace|EugenicCult|ExchangeConsulate|FallenHegemon|FeralWorld|FlyingCities|ForbiddenTech|FormerWarriors|FreakGeology|FreakWeather|FriendlyFoe|GoldRush|GreatWork|Hatred|HeavyIndustry|HeavyMining|Hivemind|HolyWar|HostileBiosphere|HostileSpace|Immortals|LocalSpecialty|LocalTech|MajorSpaceyard|Mandarinate|MandateBase|Maneaters|Megacorps|Mercenaries|Misandry/Misogyny|NightWorld|MinimalContact|Nomads|OceanicWorld|OutofContact|OutpostWorld|PerimeterAgency|PilgrimageSite|PleasureWorld|PoliceState|PostScarcity|PreceptorArchive|PretechCultists|PrimitiveAliens|PrisonPlanet|PsionicsAcademy|PsionicsFear|PsionicsWorship|QuarantinedWorld|RadioactiveWorld|Refugees|RegionalHegemon|RestrictiveLaws|Revanchists|Revolutionaries|RigidCulture|RisingHegemon|RitualCombat|Robots|SeagoingCities|SealedMenace|SecretMasters|Sectarians|SeismicInstability|ShackledWorld|SocietalDespair|SoleSupplier|TabooTreasure|TerraformFailure|Theocracy|TombWorld|TradeHub|Tyranny|UnbrakedAI|UrbanizedSurface|Utopia|Warlords|Xenophiles|Xenophobes|Zombies} AbandonedColony
+
+table: Master
+MaxReps: 1
+Set: enemy=[@{$prompt1}_E]
+Set: friend=[@{$prompt1}_F]
+Set: complication=[@{$prompt1}_C]
+Set: thing=[@{$prompt1}_T]
+Set: place=[@{$prompt1}_P]
+<b>{$prompt1}</b>\nEnemy: {$enemy}\nFriend: {$friend}\nComplication: {$complication}\nThing: {$thing}\nPlace: {$place}

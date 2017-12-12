@@ -1,0 +1,97 @@
+# ---------------------------------------
+# 5eCraft:  Atlas hex - adjacent Hexes
+# ---------------------------------------
+
+prompt: Departing Atlas Hex Terrain {Forest|Hills|Desert|Swamp|Plains|Mountains|Water} Plains
+
+table: Master
+MaxReps: 1
+Set: MasterResult=[#{$prompt1} Terrain]
+You are currently in a <b>{prompt1}</b> hex. The new Atlas Hex adjacent to your current hex is a <b>{MasterResult}</b> hex.
+
+table: Terrain
+type: dictionary
+Forest:[@Forest]
+Hills:[@Hills]
+Desert:[@Desert]
+Swamp:[@Swamp]
+Plains:[@Plains]
+Mountains:[@Mountains]
+Water:[@Water]
+
+# ###########################
+# Forest
+# ###########################
+table: Forest
+type: lookup
+roll: 1d12
+1-6: Forest
+7-9: Plains
+10-11: Hills
+12: [|Water|Swamp|Mountains]
+
+# ###########################
+# Hills
+# ###########################
+table: Hills
+type: lookup
+roll: 1d12
+1-6: Hills
+7-9: Mountains
+10-11: Plains
+12: [|Water|Desert|Forest]
+
+# ###########################
+# Desert
+# ###########################
+table: Desert
+type: lookup
+roll: 1d12
+1-6: Desert
+7-9: Hills
+10-11: Plains
+12: [|Water|Mountains]
+
+# ###########################
+# Swamp
+# ###########################
+table: Swamp
+type: lookup
+roll: 1d12
+1-6: Swamp
+7-9: Plains
+10-11: Forest
+12: Water
+
+# ###########################
+# Plains
+# ###########################
+table: Plains
+type: lookup
+roll: 1d12
+1-6: Plains
+7-9: Forest
+10-11: Hills
+12: [|Water|Desert|Swamp]
+
+# ###########################
+# Mountains
+# ###########################
+table: Mountains
+type: lookup
+roll: 1d12
+1-6: Mountains
+7-9: Hills
+10-11: Forest
+12: Desert
+
+# ###########################
+# Water
+# ###########################
+table: Water
+type: lookup
+roll: 1d12
+1-6: Water
+7-9: Plains
+10-11: Forest
+12: [|Hills|Desert|Swamp]

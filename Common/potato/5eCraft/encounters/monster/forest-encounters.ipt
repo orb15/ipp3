@@ -1,0 +1,95 @@
+# ---------------------------------------
+# 5eCraft: Forest Encounter Details
+# ---------------------------------------
+
+table: Forest0
+Animal, Deer (MM 321)
+Animal, Goat (MM 330)
+Myconid Sprout (MM 230)
+Shrieker (MM 138)
+
+table: Forest8th
+Animal, Blood Hawk (MM 319)
+Animal, Giant Rat (MM 327)
+Animal, Giant Weasel (MM 329)
+Animal, Mastiff (MM 332)
+Animal, Poisonous Snake (MM 334)
+Animal, Snake, Flying (MM 322)
+Blight, Twig (MM 32)
+Stirge (MM 284)
+
+table: Forest4th
+Animal, Boar (MM 319)
+Animal, Constrictor Snake (MM 320)
+Animal, Elk (MM 322)
+Animal, Giant Badger (MM 323)
+Animal, Giant Bat (MM 323)
+Animal, Giant Lizard (MM 326)
+Animal, Giant Owl (MM 327)
+Animal, Giant Poisonous Snake (MM 327)
+Animal, Panther (MM 333)
+Animal, Wolf (MM 341)
+Blight, Needle (MM 32)
+Dinosaur, Pteranodon (MM 80)
+Insect, Giant Centipede (MM 323)
+Insect, Giant Wolf Spider (MM 330)
+Swarm, Rats (MM 339)
+Swarm, Ravens (MM 339)
+Violet Fungus (MM 138)
+
+table: ForestHalf
+Animal, Ape (MM 317)
+Animal, Black Bear (MM 318)
+Blight, Vine (MM 32)
+Gas Spore (MM 138)
+Insect, Giant Wasp (MM 329)
+Myconid, Adult (MM 232)
+Swarm, Insects (MM 338)
+Worg (MM 341)
+
+table: Forest1
+Animal, Brown Bear (MM 319)
+Animal, Dire Wolf (MM 321)
+Animal, Lion (MM 331)
+Animal, Tiger (MM 339)
+Insect, Giant Spider (MM 328)
+
+table: Forest2
+Animal, Giant Boar (MM 323)
+Animal, Giant Constrictor Snake (MM 324)
+Animal, Giant Elk (MM 325)
+Animal, Saber-Toothed Tiger (MM 336)
+Ankheg (MM 21)
+Awakened, Tree (MM 317)
+Dragon, Wyrmling Green (MM 95)
+Ettercap (MM 129)
+Myconid, Sovereign (MM 232)
+Nothic (MM 236)
+Swarm, Poisonous Snakes (MM 338)
+
+table: Forest3
+Displacer Beast (MM 81)
+Grell (MM 172)
+Insect, Giant Scorpion (MM 327)
+Owlbear (MM 249)
+
+table: Forest4
+Animal, Elephant (MM 322)
+
+table: Forest5
+Shambling Mound (MM 270)
+
+table: Forest7
+Animal, Giant Ape (MM 323)
+
+table: Forest8
+Dragon, Young Green (MM 94)
+
+table: Forest9
+Treant (MM 289)
+
+table: Forest15
+Dragon, Adult Green (MM 94)
+
+table: Forest22
+Dragon, Ancient Green (MM 93)

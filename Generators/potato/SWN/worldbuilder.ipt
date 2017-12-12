@@ -1,0 +1,173 @@
+# ---------------------------------------
+# SWN: Revised world building
+# ---------------------------------------
+
+use: potato\SWN\worldtagdetail.ipt
+use: potato\SWN\names.ipt
+use: potato\SWN\sex-and-race.ipt
+
+table: Master
+MaxReps: 1
+Set: tag1 =[@WorldTag]
+Set: tag2 =[@WorldTag]
+Set: atmo =[@Atmosphere]
+Set: temp =[@Temperature]
+Set: bios =[@Biosphere]
+Set: pop =[@Population]
+Set: tech =[@TechLevel]
+Set: lang =[@Race]
+Set: name =[@{$lang}_Place]
+<b>{$name} ({$lang})</b>\nA {$temp} world with {$bios}\nIt is home to {$pop} with a technlogy level of {$tech}\nIts atmosphere is {$atmo}\n\n{$tag1}\n{$tag2}
+
+table: WorldTag
+roll: 1d100
+1:<b>Abandoned Colony</b>\nEnemy: [@AbandonedColony_E]\nFriend: [@AbandonedColony_F]\nComplication: [@AbandonedColony_C]\nThing: [@AbandonedColony_T]\nPlace: [@AbandonedColony_P]
+2:<b>Alien Ruins</b>\nEnemy: [@AlienRuins_E]\nFriend: [@AlienRuins_F]\nComplication: [@AlienRuins_C]\nThing: [@AlienRuins_T]\nPlace: [@AlienRuins_P]
+3:<b>Altered Humanity</b>\nEnemy: [@AlteredHumanity_E]\nFriend: [@AlteredHumanity_F]\nComplication: [@AlteredHumanity_C]\nThing: [@AlteredHumanity_T]\nPlace: [@AlteredHumanity_P]
+4:<b>Anarchists</b>\nEnemy: [@Anarchists_E]\nFriend: [@Anarchists_F]\nComplication: [@Anarchists_C]\nThing: [@Anarchists_T]\nPlace: [@Anarchists_P]
+5:<b>Anthropomorphs</b>\nEnemy: [@Anthropomorphs_E]\nFriend: [@Anthropomorphs_F]\nComplication: [@Anthropomorphs_C]\nThing: [@Anthropomorphs_T]\nPlace: [@Anthropomorphs_P]
+6:<b>Area 51</b>\nEnemy: [@Area51_E]\nFriend: [@Area51_F]\nComplication: [@Area51_C]\nThing: [@Area51_T]\nPlace: [@Area51_P]
+7:<b>Badlands World</b>\nEnemy: [@BadlandsWorld_E]\nFriend: [@BadlandsWorld_F]\nComplication: [@BadlandsWorld_C]\nThing: [@BadlandsWorld_T]\nPlace: [@BadlandsWorld_P]
+8:<b>Battleground</b>\nEnemy: [@Battleground_E]\nFriend: [@Battleground_F]\nComplication: [@Battleground_C]\nThing: [@Battleground_T]\nPlace: [@Battleground_P]
+9:<b>Beastmasters</b>\nEnemy: [@Beastmasters_E]\nFriend: [@Beastmasters_F]\nComplication: [@Beastmasters_C]\nThing: [@Beastmasters_T]\nPlace: [@Beastmasters_P]
+10:<b>Bubble Cities</b>\nEnemy: [@BubbleCities_E]\nFriend: [@BubbleCities_F]\nComplication: [@BubbleCities_C]\nThing: [@BubbleCities_T]\nPlace: [@BubbleCities_P]
+11:<b>Cheap Life</b>\nEnemy: [@CheapLife_E]\nFriend: [@CheapLife_F]\nComplication: [@CheapLife_C]\nThing: [@CheapLife_T]\nPlace: [@CheapLife_P]
+12:<b>Civil War</b>\nEnemy: [@CivilWar_E]\nFriend: [@CivilWar_F]\nComplication: [@CivilWar_C]\nThing: [@CivilWar_T]\nPlace: [@CivilWar_P]
+13:<b>Cold War</b>\nEnemy: [@ColdWar_E]\nFriend: [@ColdWar_F]\nComplication: [@ColdWar_C]\nThing: [@ColdWar_T]\nPlace: [@ColdWar_P]
+14:<b>Colonized Population</b>\nEnemy: [@ColonizedPopulation_E]\nFriend: [@ColonizedPopulation_F]\nComplication: [@ColonizedPopulation_C]\nThing: [@ColonizedPopulation_T]\nPlace: [@ColonizedPopulation_P]
+15:<b>Cultural Power</b>\nEnemy: [@CulturalPower_E]\nFriend: [@CulturalPower_F]\nComplication: [@CulturalPower_C]\nThing: [@CulturalPower_T]\nPlace: [@CulturalPower_P]
+16:<b>Cybercommunists</b>\nEnemy: [@Cybercommunists_E]\nFriend: [@Cybercommunists_F]\nComplication: [@Cybercommunists_C]\nThing: [@Cybercommunists_T]\nPlace: [@Cybercommunists_P]
+17:<b>Cyborgs</b>\nEnemy: [@Cyborgs_E]\nFriend: [@Cyborgs_F]\nComplication: [@Cyborgs_C]\nThing: [@Cyborgs_T]\nPlace: [@Cyborgs_P]
+18:<b>Cyclical Doom</b>\nEnemy: [@CyclicalDoom_E]\nFriend: [@CyclicalDoom_F]\nComplication: [@CyclicalDoom_C]\nThing: [@CyclicalDoom_T]\nPlace: [@CyclicalDoom_P]
+19:<b>Desert World</b>\nEnemy: [@DesertWorld_E]\nFriend: [@DesertWorld_F]\nComplication: [@DesertWorld_C]\nThing: [@DesertWorld_T]\nPlace: [@DesertWorld_P]
+20:<b>Doomed World</b>\nEnemy: [@DoomedWorld_E]\nFriend: [@DoomedWorld_F]\nComplication: [@DoomedWorld_C]\nThing: [@DoomedWorld_T]\nPlace: [@DoomedWorld_P]
+21:<b>Dying Race</b>\nEnemy: [@DyingRace_E]\nFriend: [@DyingRace_F]\nComplication: [@DyingRace_C]\nThing: [@DyingRace_T]\nPlace: [@DyingRace_P]
+22:<b>Eugenic Cult</b>\nEnemy: [@EugenicCult_E]\nFriend: [@EugenicCult_F]\nComplication: [@EugenicCult_C]\nThing: [@EugenicCult_T]\nPlace: [@EugenicCult_P]
+23:<b>Exchange Consulate</b>\nEnemy: [@ExchangeConsulate_E]\nFriend: [@ExchangeConsulate_F]\nComplication: [@ExchangeConsulate_C]\nThing: [@ExchangeConsulate_T]\nPlace: [@ExchangeConsulate_P]
+24:<b>Fallen Hegemon</b>\nEnemy: [@FallenHegemon_E]\nFriend: [@FallenHegemon_F]\nComplication: [@FallenHegemon_C]\nThing: [@FallenHegemon_T]\nPlace: [@FallenHegemon_P]
+25:<b>Feral World</b>\nEnemy: [@FeralWorld_E]\nFriend: [@FeralWorld_F]\nComplication: [@FeralWorld_C]\nThing: [@FeralWorld_T]\nPlace: [@FeralWorld_P]
+26:<b>Flying Cities</b>\nEnemy: [@FlyingCities_E]\nFriend: [@FlyingCities_F]\nComplication: [@FlyingCities_C]\nThing: [@FlyingCities_T]\nPlace: [@FlyingCities_P]
+27:<b>Forbidden Tech</b>\nEnemy: [@ForbiddenTech_E]\nFriend: [@ForbiddenTech_F]\nComplication: [@ForbiddenTech_C]\nThing: [@ForbiddenTech_T]\nPlace: [@ForbiddenTech_P]
+28:<b>Former Warriors</b>\nEnemy: [@FormerWarriors_E]\nFriend: [@FormerWarriors_F]\nComplication: [@FormerWarriors_C]\nThing: [@FormerWarriors_T]\nPlace: [@FormerWarriors_P]
+29:<b>Freak Geology</b>\nEnemy: [@FreakGeology_E]\nFriend: [@FreakGeology_F]\nComplication: [@FreakGeology_C]\nThing: [@FreakGeology_T]\nPlace: [@FreakGeology_P]
+30:<b>Freak Weather</b>\nEnemy: [@FreakWeather_E]\nFriend: [@FreakWeather_F]\nComplication: [@FreakWeather_C]\nThing: [@FreakWeather_T]\nPlace: [@FreakWeather_P]
+31:<b>Friendly Foe</b>\nEnemy: [@FriendlyFoe_E]\nFriend: [@FriendlyFoe_F]\nComplication: [@FriendlyFoe_C]\nThing: [@FriendlyFoe_T]\nPlace: [@FriendlyFoe_P]
+32:<b>Gold Rush</b>\nEnemy: [@GoldRush_E]\nFriend: [@GoldRush_F]\nComplication: [@GoldRush_C]\nThing: [@GoldRush_T]\nPlace: [@GoldRush_P]
+33:<b>Great Work</b>\nEnemy: [@GreatWork_E]\nFriend: [@GreatWork_F]\nComplication: [@GreatWork_C]\nThing: [@GreatWork_T]\nPlace: [@GreatWork_P]
+34:<b>Hatred</b>\nEnemy: [@Hatred_E]\nFriend: [@Hatred_F]\nComplication: [@Hatred_C]\nThing: [@Hatred_T]\nPlace: [@Hatred_P]
+35:<b>Heavy Industry</b>\nEnemy: [@HeavyIndustry_E]\nFriend: [@HeavyIndustry_F]\nComplication: [@HeavyIndustry_C]\nThing: [@HeavyIndustry_T]\nPlace: [@HeavyIndustry_P]
+36:<b>Heavy Mining</b>\nEnemy: [@HeavyMining_E]\nFriend: [@HeavyMining_F]\nComplication: [@HeavyMining_C]\nThing: [@HeavyMining_T]\nPlace: [@HeavyMining_P]
+37:<b>Hivemind</b>\nEnemy: [@Hivemind_E]\nFriend: [@Hivemind_F]\nComplication: [@Hivemind_C]\nThing: [@Hivemind_T]\nPlace: [@Hivemind_P]
+38:<b>Holy War</b>\nEnemy: [@HolyWar_E]\nFriend: [@HolyWar_F]\nComplication: [@HolyWar_C]\nThing: [@HolyWar_T]\nPlace: [@HolyWar_P]
+39:<b>Hostile Biosphere</b>\nEnemy: [@HostileBiosphere_E]\nFriend: [@HostileBiosphere_F]\nComplication: [@HostileBiosphere_C]\nThing: [@HostileBiosphere_T]\nPlace: [@HostileBiosphere_P]
+40:<b>Hostile Space</b>\nEnemy: [@HostileSpace_E]\nFriend: [@HostileSpace_F]\nComplication: [@HostileSpace_C]\nThing: [@HostileSpace_T]\nPlace: [@HostileSpace_P]
+41:<b>Immortals</b>\nEnemy: [@Immortals_E]\nFriend: [@Immortals_F]\nComplication: [@Immortals_C]\nThing: [@Immortals_T]\nPlace: [@Immortals_P]
+42:<b>Local Specialty</b>\nEnemy: [@LocalSpecialty_E]\nFriend: [@LocalSpecialty_F]\nComplication: [@LocalSpecialty_C]\nThing: [@LocalSpecialty_T]\nPlace: [@LocalSpecialty_P]
+43:<b>Local Tech</b>\nEnemy: [@LocalTech_E]\nFriend: [@LocalTech_F]\nComplication: [@LocalTech_C]\nThing: [@LocalTech_T]\nPlace: [@LocalTech_P]
+44:<b>Major Spaceyard</b>\nEnemy: [@MajorSpaceyard_E]\nFriend: [@MajorSpaceyard_F]\nComplication: [@MajorSpaceyard_C]\nThing: [@MajorSpaceyard_T]\nPlace: [@MajorSpaceyard_P]
+45:<b>Mandarinate</b>\nEnemy: [@Mandarinate_E]\nFriend: [@Mandarinate_F]\nComplication: [@Mandarinate_C]\nThing: [@Mandarinate_T]\nPlace: [@Mandarinate_P]
+46:<b>Mandate Base</b>\nEnemy: [@MandateBase_E]\nFriend: [@MandateBase_F]\nComplication: [@MandateBase_C]\nThing: [@MandateBase_T]\nPlace: [@MandateBase_P]
+47:<b>Maneaters</b>\nEnemy: [@Maneaters_E]\nFriend: [@Maneaters_F]\nComplication: [@Maneaters_C]\nThing: [@Maneaters_T]\nPlace: [@Maneaters_P]
+48:<b>Megacorps</b>\nEnemy: [@Megacorps_E]\nFriend: [@Megacorps_F]\nComplication: [@Megacorps_C]\nThing: [@Megacorps_T]\nPlace: [@Megacorps_P]
+49:<b>Mercenaries</b>\nEnemy: [@Mercenaries_E]\nFriend: [@Mercenaries_F]\nComplication: [@Mercenaries_C]\nThing: [@Mercenaries_T]\nPlace: [@Mercenaries_P]
+50:<b>Misandry/Misogyny</b>\nEnemy: [@Misandry/Misogyny_E]\nFriend: [@Misandry/Misogyny_F]\nComplication: [@Misandry/Misogyny_C]\nThing: [@Misandry/Misogyny_T]\nPlace: [@Misandry/Misogyny_P]
+51:<b>Night World</b>\nEnemy: [@NightWorld_E]\nFriend: [@NightWorld_F]\nComplication: [@NightWorld_C]\nThing: [@NightWorld_T]\nPlace: [@NightWorld_P]
+52:<b>Minimal Contact</b>\nEnemy: [@MinimalContact_E]\nFriend: [@MinimalContact_F]\nComplication: [@MinimalContact_C]\nThing: [@MinimalContact_T]\nPlace: [@MinimalContact_P]
+53:<b>Nomads</b>\nEnemy: [@Nomads_E]\nFriend: [@Nomads_F]\nComplication: [@Nomads_C]\nThing: [@Nomads_T]\nPlace: [@Nomads_P]
+54:<b>Oceanic World</b>\nEnemy: [@OceanicWorld_E]\nFriend: [@OceanicWorld_F]\nComplication: [@OceanicWorld_C]\nThing: [@OceanicWorld_T]\nPlace: [@OceanicWorld_P]
+55:<b>Out of Contact</b>\nEnemy: [@OutofContact_E]\nFriend: [@OutofContact_F]\nComplication: [@OutofContact_C]\nThing: [@OutofContact_T]\nPlace: [@OutofContact_P]
+56:<b>Outpost World</b>\nEnemy: [@OutpostWorld_E]\nFriend: [@OutpostWorld_F]\nComplication: [@OutpostWorld_C]\nThing: [@OutpostWorld_T]\nPlace: [@OutpostWorld_P]
+57:<b>Perimeter Agency</b>\nEnemy: [@PerimeterAgency_E]\nFriend: [@PerimeterAgency_F]\nComplication: [@PerimeterAgency_C]\nThing: [@PerimeterAgency_T]\nPlace: [@PerimeterAgency_P]
+58:<b>Pilgrimage Site</b>\nEnemy: [@PilgrimageSite_E]\nFriend: [@PilgrimageSite_F]\nComplication: [@PilgrimageSite_C]\nThing: [@PilgrimageSite_T]\nPlace: [@PilgrimageSite_P]
+59:<b>Pleasure World</b>\nEnemy: [@PleasureWorld_E]\nFriend: [@PleasureWorld_F]\nComplication: [@PleasureWorld_C]\nThing: [@PleasureWorld_T]\nPlace: [@PleasureWorld_P]
+60:<b>Police State</b>\nEnemy: [@PoliceState_E]\nFriend: [@PoliceState_F]\nComplication: [@PoliceState_C]\nThing: [@PoliceState_T]\nPlace: [@PoliceState_P]
+61:<b>Post-Scarcity</b>\nEnemy: [@Post-Scarcity_E]\nFriend: [@Post-Scarcity_F]\nComplication: [@Post-Scarcity_C]\nThing: [@Post-Scarcity_T]\nPlace: [@Post-Scarcity_P]
+62:<b>Preceptor Archive</b>\nEnemy: [@PreceptorArchive_E]\nFriend: [@PreceptorArchive_F]\nComplication: [@PreceptorArchive_C]\nThing: [@PreceptorArchive_T]\nPlace: [@PreceptorArchive_P]
+63:<b>Pretech Cultists</b>\nEnemy: [@PretechCultists_E]\nFriend: [@PretechCultists_F]\nComplication: [@PretechCultists_C]\nThing: [@PretechCultists_T]\nPlace: [@PretechCultists_P]
+64:<b>Primitive Aliens</b>\nEnemy: [@PrimitiveAliens_E]\nFriend: [@PrimitiveAliens_F]\nComplication: [@PrimitiveAliens_C]\nThing: [@PrimitiveAliens_T]\nPlace: [@PrimitiveAliens_P]
+65:<b>Prison Planet</b>\nEnemy: [@PrisonPlanet_E]\nFriend: [@PrisonPlanet_F]\nComplication: [@PrisonPlanet_C]\nThing: [@PrisonPlanet_T]\nPlace: [@PrisonPlanet_P]
+66:<b>Psionics Academy</b>\nEnemy: [@PsionicsAcademy_E]\nFriend: [@PsionicsAcademy_F]\nComplication: [@PsionicsAcademy_C]\nThing: [@PsionicsAcademy_T]\nPlace: [@PsionicsAcademy_P]
+67:<b>Psionics Fear</b>\nEnemy: [@PsionicsFear_E]\nFriend: [@PsionicsFear_F]\nComplication: [@PsionicsFear_C]\nThing: [@PsionicsFear_T]\nPlace: [@PsionicsFear_P]
+68:<b>Psionics Worship</b>\nEnemy: [@PsionicsWorship_E]\nFriend: [@PsionicsWorship_F]\nComplication: [@PsionicsWorship_C]\nThing: [@PsionicsWorship_T]\nPlace: [@PsionicsWorship_P]
+69:<b>Quarantined World</b>\nEnemy: [@QuarantinedWorld_E]\nFriend: [@QuarantinedWorld_F]\nComplication: [@QuarantinedWorld_C]\nThing: [@QuarantinedWorld_T]\nPlace: [@QuarantinedWorld_P]
+70:<b>Radioactive World</b>\nEnemy: [@RadioactiveWorld_E]\nFriend: [@RadioactiveWorld_F]\nComplication: [@RadioactiveWorld_C]\nThing: [@RadioactiveWorld_T]\nPlace: [@RadioactiveWorld_P]
+71:<b>Refugees</b>\nEnemy: [@Refugees_E]\nFriend: [@Refugees_F]\nComplication: [@Refugees_C]\nThing: [@Refugees_T]\nPlace: [@Refugees_P]
+72:<b>Regional Hegemon</b>\nEnemy: [@RegionalHegemon_E]\nFriend: [@RegionalHegemon_F]\nComplication: [@RegionalHegemon_C]\nThing: [@RegionalHegemon_T]\nPlace: [@RegionalHegemon_P]
+73:<b>Restrictive Laws</b>\nEnemy: [@RestrictiveLaws_E]\nFriend: [@RestrictiveLaws_F]\nComplication: [@RestrictiveLaws_C]\nThing: [@RestrictiveLaws_T]\nPlace: [@RestrictiveLaws_P]
+74:<b>Revanchists</b>\nEnemy: [@Revanchists_E]\nFriend: [@Revanchists_F]\nComplication: [@Revanchists_C]\nThing: [@Revanchists_T]\nPlace: [@Revanchists_P]
+75:<b>Revolutionaries</b>\nEnemy: [@Revolutionaries_E]\nFriend: [@Revolutionaries_F]\nComplication: [@Revolutionaries_C]\nThing: [@Revolutionaries_T]\nPlace: [@Revolutionaries_P]
+76:<b>Rigid Culture</b>\nEnemy: [@RigidCulture_E]\nFriend: [@RigidCulture_F]\nComplication: [@RigidCulture_C]\nThing: [@RigidCulture_T]\nPlace: [@RigidCulture_P]
+77:<b>Rising Hegemon</b>\nEnemy: [@RisingHegemon_E]\nFriend: [@RisingHegemon_F]\nComplication: [@RisingHegemon_C]\nThing: [@RisingHegemon_T]\nPlace: [@RisingHegemon_P]
+78:<b>Ritual Combat</b>\nEnemy: [@RitualCombat_E]\nFriend: [@RitualCombat_F]\nComplication: [@RitualCombat_C]\nThing: [@RitualCombat_T]\nPlace: [@RitualCombat_P]
+79:<b>Robots</b>\nEnemy: [@Robots_E]\nFriend: [@Robots_F]\nComplication: [@Robots_C]\nThing: [@Robots_T]\nPlace: [@Robots_P]
+80:<b>Seagoing Cities</b>\nEnemy: [@SeagoingCities_E]\nFriend: [@SeagoingCities_F]\nComplication: [@SeagoingCities_C]\nThing: [@SeagoingCities_T]\nPlace: [@SeagoingCities_P]
+81:<b>Sealed Menace</b>\nEnemy: [@SealedMenace_E]\nFriend: [@SealedMenace_F]\nComplication: [@SealedMenace_C]\nThing: [@SealedMenace_T]\nPlace: [@SealedMenace_P]
+82:<b>Secret Masters</b>\nEnemy: [@SecretMasters_E]\nFriend: [@SecretMasters_F]\nComplication: [@SecretMasters_C]\nThing: [@SecretMasters_T]\nPlace: [@SecretMasters_P]
+83:<b>Sectarians</b>\nEnemy: [@Sectarians_E]\nFriend: [@Sectarians_F]\nComplication: [@Sectarians_C]\nThing: [@Sectarians_T]\nPlace: [@Sectarians_P]
+84:<b>Seismic Instability</b>\nEnemy: [@SeismicInstability_E]\nFriend: [@SeismicInstability_F]\nComplication: [@SeismicInstability_C]\nThing: [@SeismicInstability_T]\nPlace: [@SeismicInstability_P]
+85:<b>Shackled World</b>\nEnemy: [@ShackledWorld_E]\nFriend: [@ShackledWorld_F]\nComplication: [@ShackledWorld_C]\nThing: [@ShackledWorld_T]\nPlace: [@ShackledWorld_P]
+86:<b>Societal Despair</b>\nEnemy: [@SocietalDespair_E]\nFriend: [@SocietalDespair_F]\nComplication: [@SocietalDespair_C]\nThing: [@SocietalDespair_T]\nPlace: [@SocietalDespair_P]
+87:<b>Sole Supplier</b>\nEnemy: [@SoleSupplier_E]\nFriend: [@SoleSupplier_F]\nComplication: [@SoleSupplier_C]\nThing: [@SoleSupplier_T]\nPlace: [@SoleSupplier_P]
+88:<b>Taboo Treasure</b>\nEnemy: [@TabooTreasure_E]\nFriend: [@TabooTreasure_F]\nComplication: [@TabooTreasure_C]\nThing: [@TabooTreasure_T]\nPlace: [@TabooTreasure_P]
+89:<b>Terraform Failure</b>\nEnemy: [@TerraformFailure_E]\nFriend: [@TerraformFailure_F]\nComplication: [@TerraformFailure_C]\nThing: [@TerraformFailure_T]\nPlace: [@TerraformFailure_P]
+90:<b>Theocracy</b>\nEnemy: [@Theocracy_E]\nFriend: [@Theocracy_F]\nComplication: [@Theocracy_C]\nThing: [@Theocracy_T]\nPlace: [@Theocracy_P]
+91:<b>Tomb World</b>\nEnemy: [@TombWorld_E]\nFriend: [@TombWorld_F]\nComplication: [@TombWorld_C]\nThing: [@TombWorld_T]\nPlace: [@TombWorld_P]
+92:<b>Trade Hub</b>\nEnemy: [@TradeHub_E]\nFriend: [@TradeHub_F]\nComplication: [@TradeHub_C]\nThing: [@TradeHub_T]\nPlace: [@TradeHub_P]
+93:<b>Tyranny</b>\nEnemy: [@Tyranny_E]\nFriend: [@Tyranny_F]\nComplication: [@Tyranny_C]\nThing: [@Tyranny_T]\nPlace: [@Tyranny_P]
+94:<b>Unbraked AI</b>\nEnemy: [@UnbrakedAI_E]\nFriend: [@UnbrakedAI_F]\nComplication: [@UnbrakedAI_C]\nThing: [@UnbrakedAI_T]\nPlace: [@UnbrakedAI_P]
+95:<b>Urbanized Surface</b>\nEnemy: [@UrbanizedSurface_E]\nFriend: [@UrbanizedSurface_F]\nComplication: [@UrbanizedSurface_C]\nThing: [@UrbanizedSurface_T]\nPlace: [@UrbanizedSurface_P]
+96:<b>Utopia</b>\nEnemy: [@Utopia_E]\nFriend: [@Utopia_F]\nComplication: [@Utopia_C]\nThing: [@Utopia_T]\nPlace: [@Utopia_P]
+97:<b>Warlords</b>\nEnemy: [@Warlords_E]\nFriend: [@Warlords_F]\nComplication: [@Warlords_C]\nThing: [@Warlords_T]\nPlace: [@Warlords_P]
+98:<b>Xenophiles</b>\nEnemy: [@Xenophiles_E]\nFriend: [@Xenophiles_F]\nComplication: [@Xenophiles_C]\nThing: [@Xenophiles_T]\nPlace: [@Xenophiles_P]
+99:<b>Xenophobes</b>\nEnemy: [@Xenophobes_E]\nFriend: [@Xenophobes_F]\nComplication: [@Xenophobes_C]\nThing: [@Xenophobes_T]\nPlace: [@Xenophobes_P]
+100:<b>Zombies</b>\nEnemy: [@Zombies_E]\nFriend: [@Zombies_F]\nComplication: [@Zombies_C]\nThing: [@Zombies_T]\nPlace: [@Zombies_P]
+
+table: Atmosphere
+roll: 2d6
+2:Corrosive, damaging to foreign objects
+3:Inert gas, useless for respiration
+4:Airless or thin to the point of suffocation
+5-9:Breathable mix
+10:Thick, but breathable with a pressure mask
+11:Invasive, penetrating suit seals
+12:Both corrosive and invasive in its effects
+
+table: Temperature
+roll: 2d6
+2:Frozen, locked in perpetual ice
+3:Cold, dominated by glaciers and tundra
+4-5:cold with temperate places
+6-8:Temperate, Earthlike in its ranges
+9-10:warm, with temperate places
+11:Warm, tropical and hotter in places
+12:Burning, intolerably hot on its surface
+
+table: Biosphere
+roll: 2d6
+2:a Remnant biosphere
+3:Microbial life
+4-5:No native biosphere
+6-8:a Human-miscible biosphere
+9-10:an Immiscible biosphere
+11:a Hybrid biosphere
+12:an Engineered biosphere
+
+table: Population
+roll: 2d6
+2:a Failed colony
+3:an Outpost
+4-5:Fewer than a million inhabitants
+6-8:Several million inhabitants
+9-10:Hundreds of millions of inhabitants
+11:Billions of inhabitants
+12:Alien inhabitants
+
+table: TechLevel
+roll: 2d6
+2:TL0, neolithic-level technology
+3:TL1, medieval technology
+4-5:TL2, early Industrial Age tech
+6-8:TL4, modern postech
+9-10:TL3, tech like that of present-day Earth
+11:TL4+, postech with specialties
+12:TL5, pretech with surviving infrastructure
