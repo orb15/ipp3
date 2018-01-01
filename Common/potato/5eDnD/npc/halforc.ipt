@@ -1,6 +1,6 @@
 # details that describe a Half-orc
 
-use: potato\5eDnD\npc\racialCommon.ipt
+use: potato\5eDnD\npc\racial-common.ipt
 
 table: MaleHalf-orcHair
 set: HairColor=[@Half-orcHairColor]

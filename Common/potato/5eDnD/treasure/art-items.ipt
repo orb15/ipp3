@@ -1,4 +1,4 @@
-use: potato/5eDnd/treasure/gemNames.ipt
+use: potato/5eDnd/treasure/gem-names.ipt
 
 table: 25ItemMasterTable
 4: [@commonArtMaterial] [@itemOfArt]

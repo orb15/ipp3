@@ -1,6 +1,6 @@
 # details that describe a Human
 
-use: potato\5eDnD\npc\racialCommon.ipt
+use: potato\5eDnD\npc\racial-common.ipt
 
 table: MaleHumanHair
 set: HairColor=[@HumanHairColor]

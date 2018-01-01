@@ -1,7 +1,7 @@
 ; Treasure Hoard 11-16.ipt
 
-use: potato\5eDnD\treasure\GemsAndArt.ipt
-use: potato\5eDnD\treasure\magicItems.ipt
+use: potato\5eDnD\treasure\gems-and-art.ipt
+use: potato\5eDnD\treasure\magic-items.ipt
 
 table: Master
 MaxReps: 1
@@ -9,7 +9,7 @@ set: Coins={(4d6)*1000}gp, {(5d6)*100}pp
 set: GemsAndArt=none
 set: Magic=none
 set: Roll=[@Treasure]
-<b>Treasure Hoard (5-10 CR)</b>\n<i>Coins:</i> {$Coins}\n<i>Gems and Art:</i> {$GemsAndArt}\n<i>Magic:</i> {$Magic1} {$Magic2}
+<b>Treasure Hoard (11-16 CR)</b>\n<i>Coins:</i> {$Coins}\n<i>Gems and Art:</i> {$GemsAndArt}\n<i>Magic:</i> {$Magic1} {$Magic2}
 
 table: Treasure
 type: lookup

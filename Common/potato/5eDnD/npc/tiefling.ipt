@@ -1,6 +1,6 @@
 # details that describe a Tiefling
 
-use: potato\5eDnD\npc\racialCommon.ipt
+use: potato\5eDnD\npc\racial-common.ipt
 
 table: MaleTieflingHair
 set: HairColor=[@TieflingHairColor]

@@ -1,6 +1,6 @@
 # details that describe a Elf
 
-use: potato\5eDnD\npc\racialCommon.ipt
+use: potato\5eDnD\npc\racial-common.ipt
 
 table: MaleElfHair
 set: HairColor=[@ElfHairColor]

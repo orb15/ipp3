@@ -1,4 +1,3 @@
-
 table: magicItemsTableA
 type: lookup
 roll: 1d100

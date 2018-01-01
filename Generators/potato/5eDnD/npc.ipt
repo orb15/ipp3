@@ -2,7 +2,7 @@
 
 use: potato\5eDnD\npc\classes.ipt
 use: potato\5eDnD\npc\races.ipt
-use: potato\5eDnD\npc\racialCommon.ipt
+use: potato\5eDnD\npc\racial-common.ipt
 use: potato\5eDnD\npc\dwarf.ipt
 use: potato\5eDnD\npc\elf.ipt
 use: potato\5eDnD\npc\halfling.ipt
@@ -12,8 +12,8 @@ use: potato\5eDnD\npc\halfelf.ipt
 use: potato\5eDnD\npc\halforc.ipt
 use: potato\5eDnD\npc\tiefling.ipt
 use: potato\5eDnD\npc\dragonborn.ipt
-use: potato\5eDnD\npc\classDescription.ipt
-use: potato\5eDnD\npc\traitsCommon.ipt
+use: potato\5eDnD\npc\class-description.ipt
+use: potato\5eDnD\npc\traits-common.ipt
 
 prompt: Class {Any|Main|NPC|Barbarian|Bard|Cleric|Druid|Fighter|Monk|Paladin|Ranger|Rogue|Sorcerer|Warlock|Wizard|Aristocrat|Commoner|Expert|Mystic|Sage|Warrior} Any
 prompt: Race {Any|Dwarf|Elf|Halfling|Human|Dragonborn|Gnome|Half-Elf|Half-Orc|Tiefling} Any

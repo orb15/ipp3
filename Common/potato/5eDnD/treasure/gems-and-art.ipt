@@ -1,5 +1,5 @@
-use: potato/5eDnD/treasure/gemNames.ipt
-use: potato/5eDnD/treasure/artItems.ipt
+use: potato/5eDnD/treasure/gem-names.ipt
+use: potato/5eDnD/treasure/art-items.ipt
 
 table: 10GemsAndArt
 [@10gpGemNames] (10gp)

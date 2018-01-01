@@ -1,8 +1,8 @@
 ; Treasure Hoard 0-4.ipt
 ; created 6/26/2016 10:12:30 PM
 
-use: potato\5eDnD\treasure\GemsAndArt.ipt
-use: potato\5eDnD\treasure\magicItems.ipt
+use: potato\5eDnD\treasure\gems-and-art.ipt
+use: potato\5eDnD\treasure\magic-items.ipt
 
 table: Master
 MaxReps: 1

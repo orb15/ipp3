@@ -1,6 +1,6 @@
 # details that describe a Dragonborn
 
-use: potato\5eDnD\npc\racialCommon.ipt
+use: potato\5eDnD\npc\racial-common.ipt
 
 table: MaleDragonbornHair
 [@DragonbornScales with {$1}]

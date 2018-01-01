@@ -46,7 +46,7 @@ roll:1d10
 
 table:LegalDanger
 roll:1d10
-1-2:A regulation unknown to the PCs
+1-2:Substantial monetary fine
 3-4:Imprisonment for the party
 5-6:Vital gear is prohibited here
 7-8:Lawsuit from an aggrieved NPC
