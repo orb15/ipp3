@@ -44,6 +44,7 @@ Grime
 Crackling Electricity
 Wires
 Mechanisms
+[|Abandoned|Dirty|Bloody|Worn|Damaged] [|ball|doll|wooden train|jumprope|child's coat|child's shoe]
 
 table: Sounds
 Machinery
@@ -61,6 +62,8 @@ Driving Rain Rain
 Bells
 Clock Chimes
 Harbor Horns
+Crying [|man|woman|child]
+Children playing a [|carefree|dark] game
 
 table: Smells
 Cook Fires
@@ -80,6 +83,8 @@ Rain Water
 Ocean
 Ozone
 Electroplasmic Discharges
+Urine
+Stale [|beer|wine|alcohol]
 
 table: UseMaster
 roll: 1d6
