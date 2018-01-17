@@ -3,7 +3,7 @@
 # ---------------------------------------
 
 table: Master
-MaxReps: 3
+MaxReps: 1
 Set: exterior=[@Exterior]
 Set: details=[@Details]
 Set: use=[@UseMaster]
