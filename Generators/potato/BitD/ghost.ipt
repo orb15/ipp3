@@ -1,0 +1,67 @@
+# ---------------------------------------
+# BitD:Street Ghosts
+# ---------------------------------------
+
+table: Master
+MaxReps: 3
+Set: traits=[!{1d2} Traits >> implode]
+Set: effect=[@SecondaryEffect]
+<b>A Duskvol Ghost...</b>\nUse People to learn who this ghost was in life\n\n<b>Effect:</b> {$effect}\n<b>Traits:</b> {$traits}
+
+table: Traits
+Jealous
+Desperate
+Violent
+Hysterical
+Skittish
+Fleeting
+Curious
+Deceptive
+Clever
+Probing
+Knowledgeable
+Charming
+Prophetic
+Insightful
+True
+Revelatory
+Guiding
+Instructive
+Reactive
+Territorial
+Dominant
+Insistent
+Bold
+Demanding
+Angry
+Volatile
+Aggressive
+Wild
+Savage
+Vengeful
+Mad
+Chaotic
+Bizarre
+Destructive
+Insane
+Vile
+
+table: SecondaryEffect
+Frost or Chill
+Cold wind
+Faint visions of the local past
+Electrical discharge
+Weird shadows
+Faint echoes
+Mist or Fog
+Rushing wind
+Intense visual echoes
+Intense magnetism
+Disturbing shadows
+Thunderous sounds
+Freezing fog
+Storm winds
+Pitch darkness
+Lightning
+Clutching shadows
+Voices in your head

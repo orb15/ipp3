@@ -1,0 +1,254 @@
+# ---------------------------------------
+# BitD:Street Description
+# ---------------------------------------
+
+table: Master
+MaxReps: 2
+Set: mood=[@Mood]
+Set: sights=[!{1d4} Sights >> implode]
+Set: sounds=[!{1d2} Sounds >> implode]
+Set: smells=[!{1d2} Smells >> implode]
+Set: use=[@UseMaster]
+Set: type=[@TypeMaster]
+Set: details=[!{2d3} Details >> implode]
+Set: props=[!{1d4} Props >> implode]
+<b>A street in Duskvol...</b>\n\n<b>Mood:</b> {$mood}\n<b>Sights:</b> {$sights}\n<b>Sounds:</b> {$sounds}\n<b>Smells:</b> {$smells}\n<b>Use:</b> {$use}\n<b>Type:</b> {$type}\n\n<b>Details:</b> {$details}\n<b>Props:</b> {$props}
+
+table: Mood
+Dark
+Cold
+Bright
+Lively
+Quiet
+Refined
+Abandoned
+Decrepit
+Cramped
+Noisy
+Cozy
+Warm
+
+table: Sights
+Rain Slick
+Oil Slick
+Dancing Shadows
+Flickering Lights
+Mist
+Fog
+Frost
+Fleeting Shapes
+Echoes in the Ghost Field
+Soot
+Ash Clouds
+Grime
+Crackling Electricity
+Wires
+Mechanisms
+
+table: Sounds
+Machinery
+Workers
+Fluttering Cloth
+Howling Wind
+Laughter
+Song
+Music
+Whispers
+Echoes,
+Strange Voices
+Thunder
+Driving Rain Rain
+Bells
+Clock Chimes
+Harbor Horns
+
+table: Smells
+Cook Fires
+Furnaces
+Damp Wood
+Decay
+Refuse
+Animals
+Hides
+Blood
+Chemicals
+Distillates
+Fumes
+5 Soot, Ash Clouds,
+Rain Water
+Ocean
+Ozone
+Electroplasmic Discharges
+
+table: UseMaster
+roll: 1d6
+1-3:[@Use1]
+4-5:[@Use2]
+6:[@Use3]
+
+table: Use1
+Residential
+Crafts
+Labor
+Shops
+Trade
+Hospitality
+
+table: Use2
+Law, Government
+Public Space
+Power
+Manufacture
+Transportation
+Leisure
+
+table: Use3
+Vice
+Entertainment
+Storage
+Cultivation
+Academic
+Artists
+
+table: TypeMaster
+roll: 1d6
+1-3:[@Type1]
+4-5:[@Type2]
+6:[@Type3]
+
+table: Type1
+Narrow Lane
+Tight Alley
+Twisting Street
+Rough Road
+Bridge
+Waterway
+
+table: Type2
+Closed Court
+Open Plaza
+Paved Avenue
+Tunnel
+Wide Boulevard
+Roundabout
+
+table: Type3
+Elevated
+Flooded
+Suspended
+Subterranean
+Floating
+Private, Gated
+
+table: Details
+Metal Supports
+Ironwork
+Gates
+Fences
+Belching
+Chimneys
+Metal Grates
+Hatches and Doors
+Clockwork Mechanisms
+Rigging
+Cables
+Stairs
+Ramps.
+Terraces
+Wooden Scaffolds
+Skyways
+Rooftop Spaces
+Rails and Train Cars
+Hidden Passages
+Banners
+Pennants
+Festival Decorations
+Crowd
+Parade
+Riot
+Street Performers
+Makeshift Stalls
+Makeshift Shelters
+Crisscrossing Routes
+Gang Markings
+Patrol Posts 
+Lookouts 
+Stockade or Public Punishment
+Street Crier
+Visionary Preacher
+News Stand
+Public Notices
+5Stray Animals
+Landscaping Muck
+Mire
+Construction Debris
+Demolition
+Foul Runoff,
+Fumes
+Smoke
+Orphans
+Beggars
+6Ancient Ruin
+Leering Gargoyles
+Spirit Chimes
+Wards
+Eerie Emptiness
+Quarantine
+Lockdown
+Shrine with Offerings
+
+table: Props
+Nets, Ropes
+Crates, Boxes
+Cables, Chains
+Drain Pipes
+Water Pump
+Oil Drums
+Brick Pile
+Iron Bars
+Wooden Boards
+Cut Stones
+Loose Rocks
+Cement Buckets
+Sewer Grate
+Rotting Refuse
+Mud Puddles
+Discarded Junk
+Carrion & Crows
+Sodden Trash
+Carriages
+Push Carts
+Moored Boats
+Cargo Barge
+Gondolas
+Wagons
+Crane & Pulleys
+Cargo Bales
+Metal Ingots
+Industrial Forge
+Coal / Fuel
+Waste Bins
+Street Lamps
+Electric Wires
+Junction Boxes
+Spotlight Tower
+Clock Tower
+Messenger Post
+Withered Trees
+Monument
+Fountain
+Mossy Ruin
+Collapsed Bldg.
+Flimsy Hovel
+Barricade
+Gate
+Checkpoint
+Piled Rubble
+Canal Lock
+Lightning Barrier
+Food Stall
+Vendor Stall
+Barrels, Casks
+Makeshift Shrine
+News Stand
+Stockade

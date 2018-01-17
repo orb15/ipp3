@@ -1,0 +1,7 @@
+Set: var=[@Goober]
+
+table: Tabroll
+The value is: {$var}
+
+table: Goober
+[|success|fail]

@@ -1,0 +1,545 @@
+# ---------------------------------------
+# BitD:People
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: sex=[@Sex]
+Set: heritage=[@HeritageMaster]
+Set: style=[!{2d2} Style >> implode]
+Set: looks=[!{2d2} Looks >> implode]
+Set: goals=[@Goals]
+Set: method=[@Method]
+Set: prof=[@MasterProfession]
+Set: name=[@FirstName] [@FamilyName] ([@Alias])
+Set: interest=[@Interests]
+Set: quirk=[@Quirks]
+<b>{$name}</b>\n\n<b>Sex:</b> {$sex}\n<b>Heritage:</b> {$heritage}\n<b>Goal:</b> {$goals}\n<b>Method:</b> {$method}\n<b>Profession:</b> {$prof}\n<b>Interest:</b> {$interest}\n<b>Quirk:</b> {$quirk}\n\n<b>Appearance:</b> {$looks}\n<b>Style:</b> {$style}
+
+table: Sex
+Man
+Woman
+Ambiguous or Concealed [|Man|Woman]
+
+table: HeritageMaster
+Akoroski
+[@Foreigner]
+
+table: Foreigner
+roll:1d6
+1-2:Skovlander
+3:Iruvian
+4:Dagger Islander
+5:Severosi
+6:Tycherosi ([@DemonPeople])
+
+table: DemonPeople
+[|black|blue|white|yellow] shark eyes
+[|onyx|crystalline|iridescent|metallic] scales
+sharp claws
+bony protrusions
+feathers
+extra digits
+extremely long fingers
+
+table: Style
+Tricorn Hat
+Long Coat
+Hood & Veil
+Short Cloak
+Knit Cap
+Slim Jacket
+Hooded Coat
+Tall Boots
+Work Boots
+Mask
+Robes
+Suit
+Vest
+Collared Shirt
+Suspenders
+Rough Tunic
+Skirt & Blouse
+Wide Belt
+Fitted Dress
+Heavy Cloak
+Thick Greatcoat
+Soft Boots
+Loose Silks
+Sharp Trousers
+Waxed Coat
+Long Scarf
+Leathers
+Eelskin Bodysuit
+Hide & Furs
+Uniform
+Tatters
+Fitted Leggings
+Apron
+Heavy Gloves
+Face Mask
+Tool Belt
+Crutches
+Cane
+Wheelchair
+
+table: Looks
+Large
+Lovely
+Weathered
+Chiseled
+Handsome
+Athletic
+Slim
+Dark
+Fair
+Stout
+Delicate
+Scarred
+Bony
+Worn
+Rough
+Plump
+Wiry Striking
+Short
+Tall
+Sexy
+Wild
+Elegant
+Stooped
+Cute 
+Plain
+Old
+Young
+Stylish
+Strange
+Disfigured
+Maimed
+Glasses
+Monocle
+Prosthetic
+Crippled
+Long Hair
+Beard
+Wig
+Shorn
+Bald
+Tattooed
+
+table: Goals
+Wealth
+Power
+Authority
+Prestige
+Fame
+Control
+Knowledge
+Pleasure
+Revenge
+Freedom
+Achievement
+Happiness
+Infamy
+Fear
+Respect
+Love
+Change
+Chaos
+Destruction
+Justice
+Cooperation
+
+table: Method
+Violence
+Threats
+Negotiation
+Study
+Manipulation
+Strategy
+Theft
+Arcane
+Commerce
+Hard
+Work
+Law
+Politics
+Sabotage
+Subterfuge
+Alchemy
+Blackmail
+Teamwork
+Espionage
+Chaos
+
+table: MasterProfession
+5:[@CommonProfession]
+1:[@RareProfession]
+
+table: CommonProfession
+Baker
+Barber
+Blacksmith
+Brewer
+Butcher
+Carpenter
+Cartwright
+Chandler
+Clerk
+Cobbler
+Cooper
+Cultivator
+Driver
+Dyer
+Embroiderer
+Fishmonger
+Gondolier
+Guard
+Leatherworker
+Mason
+Merchant
+Roofer
+Ropemaker
+Rug
+Maker
+Servant
+Shipwright
+Criminal
+Tailor
+Tanner
+Tinkerer
+Vendor
+Weaver
+Woodworker
+Goat
+Herd
+Messenger
+Sailor
+
+table: RareProfession
+Advocate
+Architect
+Artist
+Author
+Bailiff
+Apiarist
+Banker
+Bounty
+Hunter
+Clockmaker
+Courtesan
+Furrier
+Glass
+Blower
+Diplomat
+Jailer
+Jeweler
+Leech
+Locksmith
+Magistrate
+Musician
+Physicker
+Plumber
+Printer
+Scholar
+Scribe
+Sparkwright
+Tax
+Collector
+Treasurer
+Whisper
+Composer
+Steward
+Captain
+Spirit
+Warden
+Journalist
+Explorer
+Rail
+Jack
+Soldier
+
+table: FirstName
+Adric
+Aldo
+Amosen
+Andrel
+Arden
+Arlyn
+Arquo
+Arvus
+Ashlyn
+Branon
+Brace
+Brance
+Brena
+Bricks
+Candra
+Carissa
+Carro
+Casslyn
+Cavelle
+Clave
+Corille
+Cross
+Crowl
+Cyrene
+Daphnia
+Drav
+Edlun
+Emeline
+Grine
+Helles
+Hix
+Holtz
+Kamelin
+Kelyr
+Kobb
+Kristov
+Laudius
+Lauria
+Lenia
+Lizete
+Lorette
+Lucella
+Lynthia
+Mara
+Milos
+Morlan
+Myre
+Narcus
+Naria
+Noggs
+Odrienne
+Orlan
+Phin
+Polonia
+Quess
+Remira
+Ring
+Roethe
+Sesereth
+Sethla
+Skannon
+Stavrul
+Stev
+Syra
+Talitha
+Tesslyn
+Thena
+Timoth
+Tocker
+Una
+Vaurin
+Veleris
+Veretta
+Vestine
+Vey
+Volette
+Vond
+Weaver
+Wester
+Zamira
+
+table:FamilyName
+Ankhayat
+Arran
+Athanoch
+Basran
+Boden
+Booker
+Bowman
+Breakiron
+Brogan
+Clelland
+Clermont
+Coleburn
+Comber
+Daava
+Dalmore
+Danfield
+Dunvil
+Farros
+Grine
+Haig
+Helker
+Helles
+Hellyers
+Jayan
+Jeduin
+Kardera
+Karstas
+Keel
+Kessarin
+Kinclaith
+Lomond
+Maroden
+Michter
+Morriston
+Penderyn
+Prichard
+Rowan
+Sevoy
+Skelkallan
+Skora
+Slane
+Strangford
+Strathmill
+Templeton
+Tyrconnell
+Vale
+Walund
+Welker
+
+table: Alias
+Bell
+Birch
+Bricks
+Bug
+Chime
+Coil
+Cricket
+Cross
+Crow
+Echo
+Flint
+Frog
+Frost
+Grip
+Gunner
+Hammer
+Hook
+Junker
+Mist
+Moon
+Nail
+Needle
+Ogre
+Pool
+Ring
+Ruby
+Silver
+Skinner
+Song
+Spur
+Tackle
+Thistle
+Thorn
+Tick-Tock
+Twelves  ^[0-9]{2} ([A-Z]{1}[a-z]+) [A-Za-z /,'.\?\-\(\)]+
+Vixen
+Whip
+Wicker
+
+table: Traits
+Charming
+Cold
+Cavalier
+Brash
+Suspicious
+Obsessive
+Shrewd
+Quiet
+Moody
+Fierce
+Careless
+Secretive
+Ruthless
+Calculating
+Defiant
+Gracious
+Insightful
+Dishonest
+Patient
+Vicious
+Sophisticated
+Paranoid
+Enthusiastic
+Elitist
+Savage
+Cooperative
+Arrogant
+Confident
+Vain
+Daring
+Volatile
+Candid
+Subtle
+Melancholy
+Enigmatic
+Calm
+
+table: Interests
+Fine whiskey, wine, beer
+Fine food, restaurants
+Fine clothes, jewelry, furs
+Fine arts, opera, theater
+Painting, drawing, sculpture
+History, legends
+Architecture, furnishings
+Poetry, novels, writing
+Pit-fighting, duels
+Forgotten gods
+Chruch of Ecstasy
+Path of Echoes
+Weeping Lady, charity
+Antiques, artifacts, curios
+Horses, riding
+Gadgets, new technology
+Weapons collector
+Music, instruments, dance
+Hunting, shooting
+Cooking, gardening
+Gambling, cards, dice
+Natural philosophy
+Drugs, essences, tobacco
+Lovers, romance, trysts
+Parties, social events
+Exploration, adventure
+Pets (birds, dogs, cats)
+Craft (leatherwork, etc.)
+Ships, boating
+Politics, journalism
+Arcane books, rituals
+Spectrology, electroplasm
+Alchemy, medicine
+Essences, alchemy
+Demon lore, legends
+Pre-cataclysm legends
+
+table: Quirks
+Superstitious. Believes in signs, magic numbers
+Devoted to their family
+Married into important / powerful family
+Holds their position to spy for another faction
+Reclusive Prefers to interact via messengers
+Massive debts (to banks / criminals / family)
+Blind to flaws in friends, allies, family, etc
+Once hollowed, then restored Immune to spirits
+Has chronic illness that requires frequent care
+Secretly (openly?) controlled by possessing spirit
+Serves a demon's agenda (knowingly or not)
+Proud of heritage, traditions, native language
+Concerned with appearances, gossip, peers
+Drug / alcohol abuser Often impaired by their vice
+Holds their position due to blackmail
+Relies on council to make decisions
+Involved with war crimes from the Unity War
+Leads a double life using cover identity
+Black sheep / outcast from family or organization
+In prison or under noble's house arrest
+Well-traveled Connections outside Doskvol
+Revolutionary. Plots against the Imperium
+Inherited their position May not deserve / want it
+Popularized in print / song / theater
+Scandalous reputation (deserved or not)
+Surrounded by sycophants, supplicants, toadies
+Spotless reputation Highly regarded
+Bigoted against culture / belief / social class
+Holds radical views for future
+Cursed, haunted, harassed by spirits or demon
+Intense, unreasonable phobia or loathing
+Extensive education on every scholarly subject
+Keeps detailed journals, notes, records, ledgers
+Is blindly faithful to an ideal, group, or tradition
+Deeply traditional Opposed to new ideas
+A fraud Some important aspect is fabricated
