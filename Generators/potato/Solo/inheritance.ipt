@@ -1,0 +1,149 @@
+# ---------------------------------------
+# Solo:  Inheritance
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+set: main=[@MainBuilding]
+set: mainCondition=[@Condition]
+set: mainMaterial=[@Material]
+set: roofMaterial=[@RoofMaterial]
+set: mainContents=[@{1d3} MainContents >> implode]
+set: mainDoor=[@MainDoor]
+set: outCount={1d3-1}
+set: outCond=[@{$outCount} Condition >> implode]
+set: outMat=[@{$outCount} Material >> implode]
+set: dungLoc=[@DungeonLoc]
+set: dungEnter=[@DungeonEntrance]
+set: dungDepth={2d2*10} ft
+set: landSize={1d20} acres
+set: landSoil=[|Poor|Fair|Good] soil
+set: landCond=[@{1d2} LandCondition >> implode]
+set: landFeat=[@{1d2} LandFeature >> implode]
+set: landFeel=[@LandFeel]
+set: landMark=[@LandMarked]
+set: wellCond=[@WellCondition]
+set: wellWaterDepth=[|Low|Medium|High]
+set: wellTaste=[@WellTaste]
+<b>Inheritance Information</b>\n\n<b>Main Building: {$main}</b>\nCondition: {$mainCondition}\nMade from: {$mainMaterial}\nRoof: {$roofMaterial}\nDoor: {$mainDoor}\nContents: Empty or useless except for {$mainContents}\n\n<b>Well</b>\nCondition: {$wellCond}\nWater Depth: {$wellWaterDepth}\nTaste: {$wellTaste}\n\n<b>Outbuildings</b>\nNumber: {$outCount}\nCondition: {$outCond}\nMaterial: {$outMat}\n\n<b>Dungeon</b>\nEntrance located in: {$dungLoc}\nEntrance: {$dungEnter}\nDepth: {$dungDepth}\n\n<b>Land Grant</b>\nSize: {$landSize}\nBoundary Markers: {$landMark}\nSoil Condition: {$landSoil}\nOverall Condition: {$landCond}\nFeel: {$landFeel}\nFeatures: {$landFeat}
+
+table: WellCondition
+2:Crumbling
+1:Reasonable condition
+
+table: WellTaste
+Fresh
+Salty
+Minerals
+Stagnant
+Polluted
+Muddy
+Bitter
+
+table: LandFeel
+Pleasant
+Forlorn
+Abandoned
+Empty / lifeless
+
+table: LandCondition
+Rocky
+Overgrown
+Hilly
+Reasonably good
+
+table: LandFeature
+Copse of old-growth trees
+Small pond
+Strange obelisk
+Open/unbroken
+Ancient cairn
+Small [|bramble-choked|reasonably-kept|mouldy] graveyard with [|moss-covered|ivy-covered|plain] [|defaced|illegible|readable] markers [|on open ground|in a small fenced area] 
+
+table: LandMarked
+None
+[|Scattered|Regular] [|wooden|stone] marker posts in [|poor|reasonable] condition
+
+table: DungeonEntrance
+Open steps
+Trapdoor with [|steps|ladder]
+Secret Trapdoor with [|steps|ladder]
+
+table: DungeonLoc
+3:First floor of main building
+1:[when]{$outCond} > 0[do][|Outbuilding][else][|First floor of main building][end]
+
+table: MainBuilding
+[@Tower]
+Manor house ({3d2*10}ft x {3d2*10}ft, {1d3} stories)
+
+table: Tower
+Circular tower ({(3d2-1)*10}ft diameter, {3d2-1} stories)
+Square tower ({{3d2}*10}ft, {3d2-1} stories)
+
+table: Condition
+Foundation only
+Crumbling
+Collapsed wall
+Collapsed floor or roof
+Holes in walls
+Reasonably intact
+
+table: Material
+Stone
+Wood
+Stone and Wood
+
+table: RoofMaterial
+Slate shingle
+Stone
+Wood shingle
+
+table: MainDoor
+[|Wood|Stone] door that is [|locked|closed|open|hanging by one hinge|destroyed|discarded nearby]
+
+table: MainContents
+19:[@MainContentsStatus] [@MainContentsItems]
+1: a secreted stash consisting of: ([@{1d3} MainStash >> implode])
+
+table: MainStash
+{8d10}gp
+{1d3} 25gp gems
+{2d4} pp
+Silver dagger
+Well-preserved longsword
+Potion of healing
+Scroll written in some kind of code
+Map to a hidden cave complex
+
+table: MainContentsItems
+furniture
+dishware
+flatware
+firewood
+torches
+clothing
+rugs
+empty [|bookcases|chests|barrels|crates|sacks]
+[|banners|tapestries]
+[|construction|woodworking|stoneworking|brewing|fishing|cooking] tools
+a [|playing cards|tarot cards|chess|dice] set
+collection of empty glass phials
+quills and paper
+rope
+pots [|with withered|devoid of] plants
+candles
+bedding and blankets
+
+table: MainContentsStatus
+scattered [@MainContentsQuality] 
+a few pieces of [@MainContentsQuality]
+several pieces of [@MainContentsQuality]
+numerous pieces of [@MainContentsQuality]
+
+table:  MainContentsQuality
+6:common
+3:poorly-made
+2:well-made
+1:high-quality
+

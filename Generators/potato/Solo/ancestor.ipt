@@ -1,0 +1,62 @@
+# ---------------------------------------
+# Solo:  Ancestor
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+set: fame=[@Fame]
+set: rep=[@{1d2} Reputation >> implode]
+set: prof=[@Profession]
+set: fate=[@Fate]
+set: acquire=[@Acquire]
+set: rumor=[@Rumor]
+<b>Ancestor Information</b>\nFame: {$fame}\nReputation: {$rep}\nProfession: {prof}\n\How Property Acquired: {$acquire}\nFate: {$fate}\nRumor about property: {$rumor}
+
+table: Fame
+Unknown to all but a very few
+A few people have heard the name
+Most people have heard the name
+Many people have heard  the name
+Virtually all have heard the name
+
+table: Reputation
+Angry
+Heroic
+Brooding
+Solitary
+Jovial
+Evil
+Good
+Social
+Reclusive
+Bitter
+Lawless
+Law-abiding
+Mysterious
+Insane
+Generous
+Miserly
+
+table: Profession
+Fighter
+Cleric
+Wizard
+Thief
+Merchant
+Minor Noble
+Appointee
+
+table: Fate
+Vanished
+Died, body [|cremated|buried on property|carried off by servants]
+
+table: Acquire
+Grant for act of [|service|valor]
+Constructed with personal wealth
+Purchased from a long-dead occupant
+
+table: Rumor
+Monsters roam there
+Thieves use it as a base
+Deserted
+Haunted

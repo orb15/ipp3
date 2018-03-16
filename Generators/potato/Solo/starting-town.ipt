@@ -1,0 +1,293 @@
+# ---------------------------------------
+# Solo:  Starting Town
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+set: name=[@Name]
+set: water=[@WaterSource]
+set: why=[@WhyBuilt]
+set: trouble=[@Trouble]
+set: pop={1d2+1},{1d9}{1d9}{1d9}
+set: gov=[@Government]
+set: eco=[@Economy]
+set: mystery=[@Mystery]
+set: quirk=[@{1d2} Quirk >> implode]
+set: tax={2d10 + 3}%
+set: resource=[@NatResources]
+set: terrain=[@Terrain]
+<b>{$name}</b>\nPopulation: {$pop}\nGovernment: {$gov}\nProminent Terrain: {$terrain}\nWater Source: {$water}\nWhy Built: {$why}\nOther resource: {$resource}\nCurrent Economy: {$eco}\nTax on treasure: {$tax}\nQuirk: {$quirk}\nMystery: {$mystery}\nRecent Trouble: {$trouble}\n
+
+
+table: Terrain
+3:Plains
+1:Forest
+1:Hills
+1:Mountains
+
+table: NatResources
+3:None
+1:Forest / logging
+1:Fish
+1:Abundant wildlife
+
+table: Quirk
+[|Strict|Lax] laws and punishments
+[|Minor|Major] racism toward [|Dwarves|Elves|Halflings]
+Weird law ([|no magic|disputes settled by duel|no weapons|no armor|no alcohol|no prostitution|no gambling|all bodies burned (no cemetery)])
+Indentured servitude or debtor's prisons
+[|High|Low] taxes (+/-{2d4}%)
+Suspicious of outsiders
+Especially [|pious|blasphemous]
+Robust black market
+
+table: Mystery
+shuffle: MysteryList
+3:[@MysteryList]
+2:[!2 MysteryList >> implode]
+1:[!3 MysteryList >> implode]
+
+table: MysteryList
+Built on ancient ruins
+Active thieves guild
+Corrupt leadership
+Inactive portal
+Monstrous influence
+Unexplained [|murders|disappearances]
+Hidden cult
+Strange obelisk
+Restless dead
+Magic sometimes misbehaves
+Connected to Underdark
+
+table: Economy
+1: Very poor
+2: Poor
+4: Average
+2: Above average
+1: Excellent
+
+table: Government
+shuffle: GovernmentType
+4:[@GovernmentType]
+1:[!2 GovernmentType >> implode]
+
+table: GovernmentType
+Merchant council
+Mayor or elected official
+Noble family
+Protector
+Theocracy - God of [|Trade|War|Fertility|Nature|Protection|Sun|Moon|Justice]
+
+table: WaterSource
+4:River
+1:Lake
+
+table: WhyBuilt
+Trade (nexus of roads or routes)
+Mining ([|gold|silver|iron|copper|tin|salt])
+Rich cropland
+Rich grazing lands
+Strategic location
+
+table: Trouble
+4:None
+1:War or raids from [|monsters|enemy nation|separatists|bandits]
+1:Plague
+1:Trade war
+1:Restless dead
+
+table: Name
+Millwall
+Brittlemaw
+Whitbrook
+Muteband
+Westwick
+Deepfalls
+Drycliff
+Summerhollow
+Steelbreak
+Grimehand
+Beachshade
+Whaleland
+Wolfwallow
+Graycliff
+Blackhill
+Bridgehallow
+Slyvale
+Mudborough
+Bonebreak
+Eldermore
+Demonport
+Fallrun
+Newwall
+Ebonford
+Mightshield
+Basinburn
+Steelmere
+Springstar
+Eastwind
+Dragonfall
+Madglen
+Lastborn
+Silkshear
+Windspell
+Silkhelm
+Swiftfield
+Littlehollow
+Frostfair
+Duskfalls
+Purewich
+Shimmermouth
+Boulderhelm
+Steelbell
+Duskgarde
+Thornwharf
+Slyfort
+Bleakhelm
+Drymeadow
+Cursemeadow
+Grimebreach
+Dustfair
+Lasthill
+Winterburgh
+Smallbell
+Lakehollow
+Faycoast
+Bronzebell
+Snakestrand
+Snakehall
+Arrowchill
+Redharbor
+Rustcoast
+Irongate
+Angelspire
+Lagoonfalls
+Lostfall
+Flathall
+Deertide
+Swiftchill
+Roseband
+Rageforest
+Rustcrest
+Cavebay
+Dawnmere
+Eastport
+Slybarrow
+Grimevale
+Southwood
+Stormscar
+Oldport
+Brittleharbor
+Silverwallow
+Blindbrook
+Blackshear
+Mageborough
+Rimevein
+Southstar
+Summermount
+Ravenwall
+Basinband
+Roguewood
+Moonreach
+Boulderglen
+Mageshield
+Highfair
+Basinlight
+Ghostfalls
+Southshell
+Coldstall
+Ghostshear
+Westwall
+Flatwall
+Silverbourne
+Smallbury
+Deercairn
+Pondhost
+Honeywich
+Northband
+Clearlight
+Cloudfalls
+Tradeshear
+Steelrock
+Newcliff
+Swampburgh
+Summercoast
+Sunhill
+Wildegulf
+Oldfrost
+Madlight
+Oxfrost
+Ironrock
+Greenmeadow
+Steelhallow
+Southbell
+Duskmond
+Steamglen
+Riverville
+Craggrasp
+Cliffbell
+Shimmerstorm
+Heartvault
+Moonhill
+Elderrock
+Bearhost
+Ebonscar
+Glimmeracre
+Midspell
+Scorchchill
+Silverhall
+Pearlfront
+Beachview
+Cavehorn
+Ravendale
+Houndhold
+Mooncoast
+Easttide
+Roguefront
+Demonmoor
+Pearlstar
+Freyholde
+Houndhill
+Summerholde
+Steelwind
+Whithorn
+Wildcross
+Ravenbay
+Nighthelm
+Stagstall
+Oceanstrand
+Millmoor
+Westmount
+Lakebury
+Beachwall
+Moondrift
+Crystalcall
+Stonemeadow
+Bearrest
+Dewmount
+Barestar
+Mageforest
+Snakereach
+Snakefalls
+Kilstrand
+Flameshade
+Oceanfalls
+Deershore
+Thornport
+Mapleglen
+Maplefrost
+Rockwind
+Basinkeep
+Rocktide
+Silentglen
+Steelwind
+Knightmeadow
+Goldstrand
+Shimmerhallow
+Millvein
+Mutegrave
+Mossburn
+Bronzemouth
+Springpoint
+Ironbranch

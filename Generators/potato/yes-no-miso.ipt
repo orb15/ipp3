@@ -1,0 +1,16 @@
+# ---------------------------------------
+# Modified Miso dice
+# ---------------------------------------
+
+prompt: Option 1 (Yes) Die Type {4|6|8|10|12|20} 6
+prompt: Option 2 (No) Die Type {4|6|8|10|12|20} 6
+prompt: And/But? {yes|no} yes
+
+table: Master
+MaxReps: 1
+set: opt1={1d{$prompt1}}
+set: opt2={1d{$prompt2}}
+set: andBut=[when]{$prompt3} = yes[do][|and|but|\z][else][|\z][end]
+set: outcome1=[when]{$opt1} > {$opt2}[do]Option 1 (Yes) occurs[else]Option 2 (No) occurs[end]
+set: outcome2=[when]{$andBut}[do]{$andBut}...[end]
+In answer to your question:  <b>{$outcome1} {$outcome2}</b>
