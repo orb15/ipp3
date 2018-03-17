@@ -1,0 +1,145 @@
+# ---------------------------------------
+# Solo:  Dungeon
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+shuffle: Feature
+set: size=[@Size]
+set: depth=[@Depth]
+set: level=[@Level]
+set: feat=[!{7d3} Feature >> implode]
+<b>Dungeon Information (Level: {$level})</b>\nSize: {$size}\nDepth: {$depth}\n\nFeature Tags: {$feat}
+
+table: Feature
+Dusty
+Dirty
+Clean
+Damp
+Wet
+Ice
+Running water
+Pools
+Waterfall
+Trap
+Magical trap
+False treasure
+Natural caves
+Hand-worked caves
+Paved stone construction
+Bas-relief
+Slimy/muddy
+Debris
+[|Faint|Strong] smell of death
+[|Faint|Strong] smell of dung
+[|Faint|Strong] smell of mold/earth
+Unstable floor
+Unstable ceiling
+Glittering
+[|Slight|Moderate|Strong] breeze
+Stalagmites & stalactites
+Uneven floor
+Galleries and balconies
+Chasm/cliffs
+Open pits
+Secret room
+Secret passage
+Secret stash
+Shrine/Temple
+Fountain
+Sarcophagus
+Interred dead
+Mushroom/fungus
+Laboratory
+Torture chamber
+Storeroom
+Fire
+[|Faint|Strong] acrid fumes
+Well
+Portcullis
+Bones
+Conjuring room
+Trophy room
+Armory
+Mine
+Kennel/pen
+Webs
+Throne
+Brazier
+Sconce
+Library
+Engraved rune
+Statue
+Mold
+Stone pile
+Cracks/gaps/crevasse
+Vein of ore
+Firepit/fireplace
+Rug
+Tapestry
+Magic
+Chest
+Ladder up/down
+Trap door
+Glowing fungus/moss
+Mossy
+Mud
+Misty/Foggy/Smoky
+Stale smell
+Dais
+Cask/barrel
+Cold
+Hot and stuffy
+Jail/prison
+Skull
+Alter
+Differing passage sizes
+Sloped
+Arrow slit
+Poison
+Living [|micro-|macro-]ecosystem
+Lingering spell effect
+Crystals/mineral
+Pottery
+Low ceiling
+High ceiling
+Crawlway
+Warren
+Connects to Underdark
+Connects to another dungeon
+Symbiotic factions
+Competitive factions
+Dominant faction
+Slavery
+Pets
+Workshop
+Vertical arrangement
+Slippery
+Well-made
+Poorly-made
+Natural bridge/arch
+Another entrance
+One-way door
+Secret trapdoor
+Concealed door
+Concealed chamber
+Vent
+Portal or teleport trap to another location [|inside this|outside this] dungeon
+
+table: Size
+4:Small
+3:Medium
+1:Large
+
+table: Depth
+3:One level
+2:A few levels
+1:Many Levels
+
+table: Level
+1:2 lower
+2:1 lower
+4:same 
+3:1 higher
+2:2 higher
+1:3 higher

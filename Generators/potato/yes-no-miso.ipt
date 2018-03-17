@@ -2,8 +2,8 @@
 # Modified Miso dice
 # ---------------------------------------
 
-prompt: Option 1 (Yes) Die Type {4|6|8|10|12|20} 6
-prompt: Option 2 (No) Die Type {4|6|8|10|12|20} 6
+prompt: Option 1 (Yes) Die Type {4|6|8|10|12|20|100} 6
+prompt: Option 2 (No) Die Type {4|6|8|10|12|20|100} 6
 prompt: And/But? {yes|no} yes
 
 table: Master
