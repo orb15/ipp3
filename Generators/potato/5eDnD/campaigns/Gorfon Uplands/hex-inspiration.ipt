@@ -101,8 +101,8 @@ table: Humanoid
 1: fey
 
 table: WeirdBuilder
-anceint Druid
-anceint reptillian
+ancient Druid
+ancient reptilian
 intelligent plant or fungus
 
 table: RuinedBy
@@ -169,7 +169,7 @@ Set: MonsterFeature=[!2 MonsterFeature >> implode]
 1:<b>Lair of a {$MonsterType}</b>\nPrimary activity or goal: {$MonsterActivity}\nLair Feature: {$MonsterFeature}
 
 table: MonsterType
-abberation
+aberration
 beast
 insect
 outsider
@@ -190,7 +190,7 @@ Set: MonsterCohab =  [!2 MonsterType >> implode]
 
 table: MonsterRelationship
 allied /cooperative
-opression / enslaved
+oppression / enslaved
 neutral
 competitive
 at war 
@@ -259,9 +259,9 @@ open flame
 
 
 table: ElementalWater
-sping
+spring
 waterfall
-geiser
+geyser
 whirlpool
 
 table: ElementalCombo
