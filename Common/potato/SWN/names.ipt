@@ -3,6 +3,7 @@
 # ---------------------------------------
 
 table: Arabic_Male
+type: Lookup
 roll: 1d100
 1-4:Aamir
 5-8:Ayub
@@ -31,6 +32,7 @@ roll: 1d100
 97-100:Zubair
 
 table: Arabic_Female
+type: Lookup
 roll: 1d100
 1-4:Aisha
 5-8:Alimah
@@ -59,6 +61,7 @@ roll: 1d100
 97-100:Zulehka
 
 table: Arabic_Surname
+type: Lookup
 roll: 1d100
 1-4:Abdel
 5-8:Awad
@@ -87,6 +90,7 @@ roll: 1d100
 97-100:Tabari
 
 table: Arabic_Place
+type: Lookup
 roll: 1d100
 1-2:Adan
 3-4:Ahsa
@@ -140,6 +144,7 @@ roll: 1d100
 99-100:Yaman
 
 table: Chinese_Male
+type: Lookup
 roll: 1d100
 1-4:Aiguo
 5-8:Bohai
@@ -168,6 +173,7 @@ roll: 1d100
 97-100:Zian
 
 table: Chinese_Female
+type: Lookup
 roll: 1d100
 1-4:Biyu
 5-8:Changying
@@ -196,6 +202,7 @@ roll: 1d100
 97-100:Zhilan
 
 table: Chinese_Surname
+type: Lookup
 roll: 1d100
 1-4:Bai
 5-8:Cao
@@ -224,6 +231,7 @@ roll: 1d100
 97-100:Zhang
 
 table: Chinese_Place
+type: Lookup
 roll: 1d100
 1-2:Andong
 3-4:Anqing
@@ -277,6 +285,7 @@ roll: 1d100
 99-100:Zoige
 
 table: English_Male
+type: Lookup
 roll: 1d100
 1-4:Adam
 5-8:Albert
@@ -305,6 +314,7 @@ roll: 1d100
 97-100:William
 
 table: English_Female
+type: Lookup
 roll: 1d100
 1-4:Abigail
 5-8:Anne
@@ -333,6 +343,7 @@ roll: 1d100
 97-100:Victoria
 
 table: English_Surname
+type: Lookup
 roll: 1d100
 1-4:Barker
 5-8:Brown
@@ -361,6 +372,7 @@ roll: 1d100
 97-100:Young
 
 table: English_Place
+type: Lookup
 roll: 1d100
 1-2:Aldington
 3-4:Appleton
@@ -414,6 +426,7 @@ roll: 1d100
 99-100:Worcester
 
 table: Greek_Male
+type: Lookup
 roll: 1d100
 1-4:Alexander
 5-8:Alexius
@@ -442,6 +455,7 @@ roll: 1d100
 97-100:Yannis
 
 table: Greek_Female
+type: Lookup
 roll: 1d100
 1-4:Alexandra
 5-8:Amalia
@@ -470,6 +484,7 @@ roll: 1d100
 97-100:Zoe
 
 table: Greek_Surname
+type: Lookup
 roll: 1d100
 1-4:Andreas
 5-8:Argyros
@@ -498,6 +513,7 @@ roll: 1d100
 97-100:Yannakakis
 
 table: Greek_Place
+type: Lookup
 roll: 1d100
 1-2:Adramyttion
 3-4:Ainos
@@ -551,6 +567,7 @@ roll: 1d100
 99-100:Vyvlos
 
 table: Indian_Male
+type: Lookup
 roll: 1d100
 1-4:Amrit
 5-8:Ashok
@@ -579,6 +596,7 @@ roll: 1d100
 97-100:Yash
 
 table: Indian_Female
+type: Lookup
 roll: 1d100
 1-4:Amala
 5-8:Asha
@@ -607,6 +625,7 @@ roll: 1d100
 97-100:Vasanta
 
 table: Indian_Surname
+type: Lookup
 roll: 1d100
 1-4:Achari
 5-8:Banerjee
@@ -635,6 +654,7 @@ roll: 1d100
 97-100:Yadav
 
 table: Indian_Place
+type: Lookup
 roll: 1d100
 1-2:Ahmedabad
 3-4:Alipurduar
@@ -688,6 +708,7 @@ roll: 1d100
 99-100:Villivakkam
 
 table: Japanese_Male
+type: Lookup
 roll: 1d100
 1-4:Akira
 5-8:Daisuke
@@ -716,6 +737,7 @@ roll: 1d100
 97-100:Yasuharu
 
 table: Japanese_Female
+type: Lookup
 roll: 1d100
 1-4:Aemi
 5-8:Airi
@@ -744,6 +766,7 @@ roll: 1d100
 97-100:Yoshiko
 
 table: Japanese_Surname
+type: Lookup
 roll: 1d100
 1-4:Abe
 5-8:Arakaki
@@ -772,6 +795,7 @@ roll: 1d100
 97-100:Yamasaki
 
 table: Japanese_Place
+type: Lookup
 roll: 1d100
 1-2:Bando
 3-4:Chikuma
@@ -825,6 +849,7 @@ roll: 1d100
 99-100:Yuki
 
 table: Latin_Male
+type: Lookup
 roll: 1d100
 1-4:Agrippa
 5-8:Appius
@@ -853,6 +878,7 @@ roll: 1d100
 97-100:Volescus
 
 table: Latin_Female
+type: Lookup
 roll: 1d100
 1-4:Appia
 5-8:Aula
@@ -881,6 +907,7 @@ roll: 1d100
 97-100:Vibia
 
 table: Latin_Surname
+type: Lookup
 roll: 1d100
 1-4:Antius
 5-8:Aurius
@@ -909,6 +936,7 @@ roll: 1d100
 97-100:Vitellius
 
 table: Latin_Place
+type: Lookup
 roll: 1d100
 1-2:Abilia
 3-4:Alsium
@@ -962,6 +990,7 @@ roll: 1d100
 99-100:Volubilis
 
 table: Nigerian_Male
+type: Lookup
 roll: 1d100
 1-4:Adesegun
 5-8:Akintola
@@ -990,6 +1019,7 @@ roll: 1d100
 97-100:Uzochi
 
 table: Nigerian_Female
+type: Lookup
 roll: 1d100
 1-4:Abike
 5-8:Adesuwa
@@ -1018,6 +1048,7 @@ roll: 1d100
 97-100:Yemisi
 
 table: Nigerian_Surname
+type: Lookup
 roll: 1d100
 1-4:Adegboye
 5-8:Adeniyi
@@ -1046,6 +1077,7 @@ roll: 1d100
 97-100:Yamusa
 
 table: Nigerian_Place
+type: Lookup
 roll: 1d100
 1-2:Abadan
 3-4:Ador
@@ -1099,6 +1131,7 @@ roll: 1d100
 99-100:Yala
 
 table: Russian_Male
+type: Lookup
 roll: 1d100
 1-4:Aleksandr
 5-8:Andrei
@@ -1127,6 +1160,7 @@ roll: 1d100
 97-100:Yuri
 
 table: Russian_Female
+type: Lookup
 roll: 1d100
 1-4:Aleksandra
 5-8:Anastasia
@@ -1155,6 +1189,7 @@ roll: 1d100
 97-100:Yelena
 
 table: Russian_Surname
+type: Lookup
 roll: 1d100
 1-4:Abelev
 5-8:Bobrikov
@@ -1183,6 +1218,7 @@ roll: 1d100
 97-100:Zhukov
 
 table: Russian_Place
+type: Lookup
 roll: 1d100
 1-2:Amur
 3-4:Arkhangelsk
@@ -1236,6 +1272,7 @@ roll: 1d100
 99-100:Yaroslavl
 
 table: Spanish_Male
+type: Lookup
 roll: 1d100
 1-4:Alejandro
 5-8:Alonso
@@ -1264,6 +1301,7 @@ roll: 1d100
 97-100:Vicente
 
 table: Spanish_Female
+type: Lookup
 roll: 1d100
 1-4:Adalina
 5-8:Aleta
@@ -1292,6 +1330,7 @@ roll: 1d100
 97-100:Zenaida
 
 table: Spanish_Surname
+type: Lookup
 roll: 1d100
 1-4:Arellano
 5-8:Arispana
@@ -1320,6 +1359,7 @@ roll: 1d100
 97-100:Vivero
 
 table: Spanish_Place
+type: Lookup
 roll: 1d100
 1-2:Aguascebas
 3-4:Alcazar

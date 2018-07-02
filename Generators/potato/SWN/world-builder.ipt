@@ -17,9 +17,10 @@ Set: pop =[@Population]
 Set: tech =[@TechLevel]
 Set: lang =[@Race]
 Set: name =[@{$lang}_Place]
-<b>{$name} ({$lang})</b>\nA {$temp} world with {$bios}\nIt is home to {$pop} with a technlogy level of {$tech}\nIts atmosphere is {$atmo}\n\n{$tag1}\n{$tag2}
+<b>{$name} ({$lang})</b>\nA {$temp} world with {$bios}\nIt is home to {$pop} with a technology level of {$tech}\nIts atmosphere is {$atmo}\n\n{$tag1}\n{$tag2}
 
 table: WorldTag
+type: Lookup
 roll: 1d100
 1:<b>Abandoned Colony</b>\nEnemy: [@AbandonedColony_E]\nFriend: [@AbandonedColony_F]\nComplication: [@AbandonedColony_C]\nThing: [@AbandonedColony_T]\nPlace: [@AbandonedColony_P]
 2:<b>Alien Ruins</b>\nEnemy: [@AlienRuins_E]\nFriend: [@AlienRuins_F]\nComplication: [@AlienRuins_C]\nThing: [@AlienRuins_T]\nPlace: [@AlienRuins_P]
@@ -123,6 +124,7 @@ roll: 1d100
 100:<b>Zombies</b>\nEnemy: [@Zombies_E]\nFriend: [@Zombies_F]\nComplication: [@Zombies_C]\nThing: [@Zombies_T]\nPlace: [@Zombies_P]
 
 table: Atmosphere
+type: Lookup
 roll: 2d6
 2:Corrosive, damaging to foreign objects
 3:Inert gas, useless for respiration
@@ -133,6 +135,7 @@ roll: 2d6
 12:Both corrosive and invasive in its effects
 
 table: Temperature
+type: Lookup
 roll: 2d6
 2:Frozen, locked in perpetual ice
 3:Cold, dominated by glaciers and tundra
@@ -143,6 +146,7 @@ roll: 2d6
 12:Burning, intolerably hot on its surface
 
 table: Biosphere
+type: Lookup
 roll: 2d6
 2:a Remnant biosphere
 3:Microbial life
@@ -153,6 +157,7 @@ roll: 2d6
 12:an Engineered biosphere
 
 table: Population
+type: Lookup
 roll: 2d6
 2:a Failed colony
 3:an Outpost
@@ -163,6 +168,7 @@ roll: 2d6
 12:Alien inhabitants
 
 table: TechLevel
+type: Lookup
 roll: 2d6
 2:TL0, neolithic-level technology
 3:TL1, medieval technology

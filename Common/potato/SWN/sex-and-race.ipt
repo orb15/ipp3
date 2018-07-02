@@ -10,6 +10,7 @@ Female:Female
 DontCare:[|Male|Female]
 
 table: Age
+type: Lookup
 roll: 1d4
 1:Unusually young or old for their role
 2:Young adult

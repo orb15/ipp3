@@ -1,0 +1,18 @@
+# Weather Generation (2-20 table)
+
+table: Master
+MaxReps: 1
+Set: detail=[#{1d8+1d12} WeatherDetail]
+<b>Weather (2-20 table)</b>\nThe weather is {$detail} for the location and season
+
+table: WeatherDetail
+type: lookup
+2-3:extremely bad
+4:[|extremely bad|bad]
+5-6:bad
+7-8:below average
+9-13:average
+14-15:above average
+16-17:good
+18:[|good|extremely good]
+19-20: extremely good
