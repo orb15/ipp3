@@ -1,0 +1,27 @@
+table: Master
+type: lookup
+roll: 1d100
+MaxReps:1
+1-2:<b>Worse:</b> [@Result]
+3-98:[@Result]
+99-100:<b>Two outcomes:</b> [@Result] <b>-and-</b> [@Result]
+
+table: Result
+type: lookup
+roll: 1d100
+1-2:[@Result]
+3-5:A person or community you trusted loses faith in you, or acts against you.
+6-9:A person or community you care about is exposed to danger.
+10-16:You are separated from something or someone.
+17-23:Your action has an unintended effect.
+24-32:Something of value is lost or destroyed.
+33-41:The current situation worsens.
+42-50:A new danger or foe is revealed.
+51-59:It puts you at a disadvantage.
+60-68:It is tiring or harmful.
+69-76:A surprising development complicates your quest.
+77-85:It is disheartening, upsetting or frightening.
+86-90:It wastes resources.
+91-94:It forces you to act against your best intentions.
+95-98:A companion or ally is put in harm's way (or you are, if alone).
+99-100:[@Result]
