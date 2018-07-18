@@ -28,6 +28,7 @@ roll: 1d8
 
 table: Restraint
 roll: 1d20
+type: lookup
 1:The government is cracking down on the conflict
 2:One side seems invincibly stronger to the other
 3:Both sides have "doomsday" info or devices
@@ -51,6 +52,7 @@ roll: 1d20
 
 table: Twist
 roll: 1d20
+type: lookup
 1:There's a very sharp time limit for any resolution
 2:The sympathetic side is actually a bunch of bastards
 3:There's an easy but very repugnant solution to hand
@@ -74,6 +76,7 @@ roll: 1d20
 
 table: MoneyConflictSituation
 roll: 1d10
+type: lookup
 1-2:Money is owed to a ruthless creditor
 3-4:Money was stolen from someone
 5-6:A sudden profit opportunity arises
@@ -82,6 +85,7 @@ roll: 1d10
 
 table: MoneyConflictFocus
 roll: 1d10
+type: lookup
 1-2:Organized crime wants it
 3-4:Corrupt officials want it
 5-6:A sympathetic NPC needs it
@@ -90,6 +94,7 @@ roll: 1d10
 
 table: RevengeConflictSituation
 roll: 1d10
+type: lookup
 1-2:Someone was murdered
 3-4:Someone was stripped of rank
 5-6:Someone lost all their wealth
@@ -98,6 +103,7 @@ roll: 1d10
 
 table: RevengeConflictFocus
 roll: 1d10
+type: lookup
 1-2:It was wholly justified
 3-4:The wrong person is targeted
 5-6:The reaction is excessive
@@ -106,6 +112,7 @@ roll: 1d10
 
 table:PowerConflictSituation
 roll:1d10
+type: lookup
 1-2:An influential political leader
 3-4:A stern community elder
 5-6:A ruling patriarch of a large family
@@ -114,6 +121,7 @@ roll:1d10
 
 table:PowerConflictFocus
 roll:1d10
+type: lookup
 1-2:They've betrayed their own
 3-4:Someone's gunning for them
 5-6:They made a terrible choice
@@ -122,6 +130,7 @@ roll:1d10
 
 table:NaturalDangerConflictSituation
 roll:1d10
+type: lookup
 1-2:A cyclical planetary phenomenon
 3-4:A sudden natural disaster
 5-6:Sudden loss of vital infrastructure
@@ -130,6 +139,7 @@ roll:1d10
 
 table:NaturalDangerConflictFocus
 roll:1d10
+type: lookup
 1-2:Anti-helpful bureaucrats
 3-4:Religious zealots panic
 5-6:Bandits and looters strike
@@ -138,6 +148,7 @@ roll:1d10
 
 table:ReligionConflictSituation
 roll:1d10
+type: lookup
 1-2:Sects that hate each other bitterly
 3-4:Zealot reformers forcing new things
 5-6:Radical traditionalists fighting back
@@ -146,6 +157,7 @@ roll:1d10
 
 table:ReligionConflictFocus
 roll:1d10
+type: lookup
 1-2:Charismatic new leader
 3-4:Mandatory state religion
 5-6:Heavy foreign influence
@@ -154,6 +166,7 @@ roll:1d10
 
 table:IdeologyConflictSituation
 roll:1d10
+type: lookup
 1-2:A universally-despised fringe group
 3-4:Terrorists with widespread support
 5-6:A political party's goon squads
@@ -162,6 +175,7 @@ roll:1d10
 
 table:IdeologyConflictFocus
 roll:1d10
+type: lookup
 1-2:Terrorist attack
 3-4:Street rioting
 5-6:Police state crackdown
@@ -170,6 +184,7 @@ roll:1d10
 
 table:EthnicityConflictSituation
 roll:1d10
+type: lookup
 1-2:A traditionally subordinate group
 3-4:An ethnic group from offworld
 5-6:A dominant caste or ethnicity
@@ -178,6 +193,7 @@ roll:1d10
 
 table:EthnicityConflictFocus
 roll:1d10
+type: lookup
 1-2:Forced immigration
 3-4:Official ethnic ghettos
 5-6:Rigid separation of groups
@@ -186,6 +202,7 @@ roll:1d10
 
 table:ResourcesConflictSituation
 roll:1d10
+type: lookup
 1-2:There's a cache of illegal materials
 3-4:A hidden strike of rare resources
 5-6:Cargo has been abandoned as lost
@@ -194,6 +211,7 @@ roll:1d10
 
 table:ResourcesConflictFocus
 roll:1d10
+type: lookup
 1-2:Someone thinks they own it
 3-4:The state is looking for it
 5-6:It has its own protectors

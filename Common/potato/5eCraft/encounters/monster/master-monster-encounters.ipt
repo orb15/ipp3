@@ -29,6 +29,7 @@ Undergrnd:[@{$difficulty}{$prompt2} with Underground]
 
 table: Difficulty
 roll: 1d4
+type: lookup
 1:Easy
 2-3:Medium
 4:Hard

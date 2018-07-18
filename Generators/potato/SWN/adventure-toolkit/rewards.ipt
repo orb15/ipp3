@@ -5,6 +5,7 @@
 table: Master
 MaxReps: 3
 roll: 1d20
+type: lookup
 1:Large cache of credits
 2:Precious cultural artifact
 3:Vital data on the party's goal

@@ -5,6 +5,7 @@
 table: Master
 MaxReps: 3
 roll: 1d20
+type: lookup
 1:Bandits have moved in
 2:Flooding swept through
 3:Part of it has collapsed

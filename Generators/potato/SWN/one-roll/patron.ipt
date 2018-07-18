@@ -24,6 +24,7 @@ Set: complication=[@Complication]
 
 table: Eagerness
 roll: 1d4
+type: lookup
 1:Cautious, but can be convinced to hire
 2:Willing to promise standard rates
 3:Eager, willing to offer a bonus
@@ -31,6 +32,7 @@ roll: 1d4
 
 table: Trustworthiness
 roll: 1d6
+type: lookup
 1:They intend to totally screw the PCs
 2:They won't pay unless forced to do so
 3:They'll pay slowly or reluctantly
@@ -40,6 +42,7 @@ roll: 1d6
 
 table: Job
 roll: 1d8
+type: lookup
 1:Kill somebody who might deserve it
 2:Kidnap someone dangerous
 3:Steal a well-guarded object
@@ -51,6 +54,7 @@ roll: 1d8
 
 table: Opposition
 roll: 1d10
+type: lookup
 1:A treacherous employer or subordinate
 2:An open and known enemy of the patron
 3:Official governmental meddling
@@ -64,6 +68,7 @@ roll: 1d10
 
 table: NonCashReward
 roll: 1d12
+type: lookup
 1:Government official favors owed
 2:Property in the area
 3:An item very valuable on another world
@@ -79,6 +84,7 @@ roll: 1d12
 
 table: Complication
 roll: 1d20
+type: lookup
 1:An ambush is laid somewhere
 2:PC involvement is leaked to the enemy
 3:The patron gives faulty aid somehow

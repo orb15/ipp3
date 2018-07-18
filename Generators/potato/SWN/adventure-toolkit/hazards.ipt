@@ -11,6 +11,7 @@ Set:danger=[@{$hazard}Danger]
 
 table:Hazard
 roll:1d8
+type: lookup
 1:Social
 2:Legal
 3:Environmental
@@ -22,6 +23,7 @@ roll:1d8
 
 table:SocialExample
 roll:1d10
+type: lookup
 1-2:An explosively temperamental VIP
 3-4:An unknown but critical social taboo
 5-6:A case of mistaken identity
@@ -30,6 +32,7 @@ roll:1d10
 
 table:SocialDanger
 roll:1d10
+type: lookup
 1-2:An allied NPC breaks ties
 3-4:An enemy is alerted to them
 5-6:A new enemy is made
@@ -38,6 +41,7 @@ roll:1d10
 
 table:LegalExample
 roll:1d10
+type: lookup
 1-2:A regulation unknown to the PCs
 3-4:A tax or confiscation
 5-6:Vital gear is prohibited here
@@ -46,6 +50,7 @@ roll:1d10
 
 table:LegalDanger
 roll:1d10
+type: lookup
 1-2:Substantial monetary fine
 3-4:Imprisonment for the party
 5-6:Vital gear is prohibited here
@@ -54,6 +59,7 @@ roll:1d10
 
 table:EnvironmentalExample
 roll:1d10
+type: lookup
 1-2:Heavy background radiation
 3-4:A planetary sickness foreigners get
 5-6:Strong or weak local gravity
@@ -62,6 +68,7 @@ roll:1d10
 
 table:EnvironmentalDanger
 roll:1d10
+type: lookup
 1-2:Catch a lingering disease
 3-4:Suffer bodily harm
 5-6:Take a penalty on rolls
@@ -70,6 +77,7 @@ roll:1d10
 
 table:TrapExample
 roll:1d10
+type: lookup
 1-2:Alarm system attached to a trap
 3-4:Snare left for local animals
 5-6:Hermit's self-defense measure
@@ -78,6 +86,7 @@ roll:1d10
 
 table:TrapDanger
 roll:1d10
+type: lookup
 1-2:Something set on fire
 3-4:Guards are summoned
 5-6:Fall to a new area
@@ -86,6 +95,7 @@ roll:1d10
 
 table:AnimalExample
 roll:1d10
+type: lookup
 1-2:Dangerous local swarm vermin
 3-4:A big predator lair
 5-6:Pack hunters haunt the area
@@ -94,6 +104,7 @@ roll:1d10
 
 table:AnimalDanger
 roll:1d10
+type: lookup
 1-2:They have a ranged attack
 3-4:They're venomous
 5-6:Dangerously coordinated foe
@@ -102,6 +113,7 @@ roll:1d10
 
 table:SentientExample
 roll:1d10
+type: lookup
 1-2:A group hostile to intruders
 3-4:Trickster thieves and con-men
 5-6:Hostile expert-system robots
@@ -110,6 +122,7 @@ roll:1d10
 
 table:SentientDanger
 roll:1d10
+type: lookup
 1-2:Immediate combat
 3-4:Treacherous feigned friend
 5-6:Lead the PCs into a trap
@@ -118,6 +131,7 @@ roll:1d10
 
 table:DecayExample
 roll:1d10
+type: lookup
 1-2:Crumbling floor or ceiling
 3-4:Waste or heating tubes rupture
 5-6:Dangerous standing liquid
@@ -126,6 +140,7 @@ roll:1d10
 
 table:DecayDanger
 roll:1d10
+type: lookup
 1-2:Ruptures to release a peril
 3-4:Toxic or radioactive debris
 5-6:Explosive decompression
@@ -134,6 +149,7 @@ roll:1d10
 
 table:PC-InducedExample
 roll:1d10
+type: lookup
 1-2:Activating a system causes a disaster
 3-4:Catastrophic plan proposed by NPCs
 5-6:Removing loot triggers defenses
@@ -142,6 +158,7 @@ roll:1d10
 
 table:PC-InducedDanger
 roll:1d10
+type: lookup
 1-2:Horrible vermin are admitted
 3-4:Local system goes berserk
 5-6:Something ruptures violently

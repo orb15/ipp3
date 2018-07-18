@@ -55,6 +55,7 @@ Hollow or Revivify
 
 table: PatronVictimMaster
 type: Lookup
+roll: 1d4
 1:[@Civilian]
 2:[@Criminal]
 3:[@Political]

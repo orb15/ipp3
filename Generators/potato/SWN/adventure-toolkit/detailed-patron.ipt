@@ -23,6 +23,7 @@ Set: outcome=[@DefaultOutcome]
 
 table: InitialManner
 roll: 1d20
+type: lookup
 1:Ingratiating and cloying
 2:Grim suspicion of the PCs or their backers
 3:Xenophilic interest in the novelty of the PCs
@@ -46,6 +47,7 @@ roll: 1d20
 
 table: DefaultOutcome
 roll: 1d20
+type: lookup
 1:They'll screw the PCs over even at their own cost
 2:They firmly intend to actively betray the PCs
 3:They won't keep the deal unless driven to it
@@ -69,6 +71,7 @@ roll: 1d20
 
 table: Motivation
 roll: 1d20
+type: lookup
 1:An ambition for greater social status
 2:Greed for wealth and indulgent riches
 3:Protect a loved one who is somehow imperiled
@@ -92,6 +95,7 @@ roll: 1d20
 
 table: Want
 roll: 1d20
+type: lookup
 1:Obtain or gain an exotic piece of tech
 2:Convince someone to meet with the NPC
 3:Kill a particular NPC
@@ -115,6 +119,7 @@ roll: 1d20
 
 table: Power
 roll: 1d20
+type: lookup
 1:They're just really appealing and sympathetic to PCs
 2:They have considerable liquid funds
 3:They control the use of large amounts of violence
@@ -138,6 +143,7 @@ roll: 1d20
 
 table: Hook
 roll: 1d20
+type: lookup
 1:A particular odd style of dress
 2:An amputation or other maiming
 3:Visible cyberware or prosthetics

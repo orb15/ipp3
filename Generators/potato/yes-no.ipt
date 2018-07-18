@@ -4,7 +4,8 @@
 
 table: Master
 MaxReps:1
-
+roll: 1d6
+type: lookup
 1:No and...
 2:No.
 3:No, but...

@@ -14,6 +14,7 @@ Set: features=[@Features]
 
 table: Conflict
 roll: 1d4
+type: lookup
 1:Money, extortion, payment due, debts
 2:Respect, submission to social authority
 3:Grudges, ethnic resentment, gang payback
@@ -21,6 +22,7 @@ roll: 1d4
 
 table: Venue
 roll: 1d6
+type: lookup
 1:In the middle of the street
 2:In a public plaza
 3:Down a side alley
@@ -30,6 +32,7 @@ roll: 1d6
 
 table: Involved
 roll: 1d8
+type: lookup
 1:A sympathetic participant appeals to them
 2:Ways around it are all dangerous/blocked
 3:It happens immediately around them
@@ -41,6 +44,7 @@ roll: 1d8
 
 table: Nature
 roll: 1d10
+type: lookup
 1:A parade or festival is being disrupted
 2:Innocents are being assaulted
 3:An establishment is being robbed
@@ -54,6 +58,7 @@ roll: 1d10
 
 table: Antagonists
 roll: 1d12
+type: lookup
 1:A local bully and their thugs
 2:A ruthless political boss and their zealots
 3:Violent criminals
@@ -74,6 +79,7 @@ table: Features
 
 table: Feature
 roll: 1d20
+type: lookup
 1:Heavy traffic running through the place
 2:Music blaring at deafening volumes
 3:Two groups present that detest each other

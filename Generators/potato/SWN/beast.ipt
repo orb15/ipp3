@@ -20,6 +20,7 @@ Scavenger ([@DetailScav])
 
 table: DetailPred
 roll: 1d8
+type: lookup
 1:Hunts in kin-group packs
 2:Favors ambush attacks
 3:Cripples prey and waits for death
@@ -31,6 +32,7 @@ roll: 1d8
 
 table: DetailPrey
 roll: 1d8
+type: lookup
 1:Moves in vigilant herds
 2:Exists in small family groups
 3:They all team up on a single foe
@@ -42,6 +44,7 @@ roll: 1d8
 
 table: DetailScav
 roll: 1d8
+type: lookup
 1:Never attacks unwounded prey
 2:Uses other beasts as harriers
 3:Always flees if significantly hurt
@@ -53,6 +56,7 @@ roll: 1d8
 
 table: Feature
 roll: 1d10
+type: lookup
 1:Amphibian (froggish or newtlike)
 2:Bird (winged and feathered)
 3:Fish (scaled and torpedo-bodied)
@@ -65,6 +69,7 @@ roll: 1d10
 
 table: BodyPlan
 roll: 1d6
+type: lookup
 1:Humanoid
 2:Quadruped
 3:Many-legged
@@ -74,6 +79,7 @@ roll: 1d6
 
 table: Limbs
 roll: 1d6
+type: lookup
 1:Wings
 2:Many joints
 3:Tentacles
@@ -83,6 +89,7 @@ roll: 1d6
 
 table: Skin
 roll: 1d6
+type: lookup
 1:Hard shell
 2:Exoskeleton
 3:Odd texture
@@ -92,6 +99,7 @@ roll: 1d6
 
 table: MainWeapon
 roll: 1d6
+type: lookup
 1:Teeth
 2:Claws
 3:Poison: [@Poison]
@@ -101,6 +109,7 @@ roll: 1d6
 
 table: Size
 roll: 1d12
+type: lookup
 1-2:Cat-sized
 3-6:Wolf-sized
 7-8:Calf-sized
@@ -110,6 +119,7 @@ roll: 1d12
 
 table: Discharge
 roll: 1d8
+type: lookup
 1:Acidic spew doing its damage on a hit
 2:Toxic spittle or cloud, use adjacent chart
 3:Super-heated or super-chilled spew
@@ -127,6 +137,7 @@ Poison causes {$effect} with onset {$onset} and duration {$duration}
 
 table: PoisonEffect
 roll: 1d6
+type: lookup
 1:Death
 2:Paralysis
 3:1d4 dmg per onset interval
@@ -136,6 +147,7 @@ roll: 1d6
 
 table: PoisonOnset
 roll: 1d6
+type: lookup
 1:Instant
 2:1 round
 3:1d6 rounds
@@ -144,6 +156,8 @@ roll: 1d6
 6:1 hour
 
 table: PoisonDuration
+roll: 1d6
+type: lookup
 1:1d6 rounds
 2:1 minute
 3:10 minutes

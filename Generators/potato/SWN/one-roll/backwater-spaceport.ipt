@@ -14,6 +14,7 @@ Set: problem=[@Problem]
 
 table: WhyBackwater
 roll: 1d4
+type: lookup
 1:The PCs are the only ship in port for some time.
 2:The port gear is dangerously outdated and worn.
 3:The locals really dislike or mistrust offworlders.
@@ -21,6 +22,7 @@ roll: 1d4
 
 table: HowSecured
 roll: 1d6
+type: lookup
 1:Absolutely no security on an open field.
 2:Native longshoremen extort cash for "security".
 3:The local ruler "secures" cargo in his storehouses.
@@ -30,6 +32,7 @@ roll: 1d6
 
 table: SupportStaffProblem
 roll: 1d8
+type: lookup
 1:The portmaster is a corrupt and greedy political hire.
 2:Maintenance staff are totally incompetent.
 3:They expect outsiders to follow odd cultural taboos.
@@ -41,6 +44,7 @@ roll: 1d8
 
 table: SpecialNeed
 roll: 1d10
+type: lookup
 1:A desperate native, despised and hated locally.
 2:A hidden outlaw seeking passage offworld.
 3:A local ruler in dire need of advanced medtech.
@@ -54,6 +58,7 @@ roll: 1d10
 
 table: Entertainment
 roll: 1d12
+type: lookup
 1:A spectacularly filthy dive bar full of criminals.
 2:Native animal races, sometimes with escapees.
 3:Public executions of criminals and political losers.
@@ -69,6 +74,7 @@ roll: 1d12
 
 table: Problem
 roll: 1d20
+type: lookup
 1:Maintenance staff is stealing vital parts off ships.
 2:A plague has suddenly hit the area.
 3:A local war zone suddenly engulfs the port.

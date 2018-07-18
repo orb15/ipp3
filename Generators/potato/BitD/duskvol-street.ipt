@@ -88,6 +88,7 @@ Stale [|beer|wine|alcohol]
 
 table: UseMaster
 roll: 1d6
+type: lookup
 1-3:[@Use1]
 4-5:[@Use2]
 6:[@Use3]
@@ -118,6 +119,7 @@ Artists
 
 table: TypeMaster
 roll: 1d6
+type: lookup
 1-3:[@Type1]
 4-5:[@Type2]
 6:[@Type3]

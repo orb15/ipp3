@@ -15,6 +15,7 @@ Set: features=[@Features]
 
 table: Range
 roll: 1d4
+type: lookup
 1:Visible from a long distance away
 2:Noticed 1d4 hundred meters away
 3:Noticed only within 1d6 x 10 meters
@@ -22,6 +23,7 @@ roll: 1d4
 
 table: Weather
 roll: 1d6
+type: lookup
 1:Takes place in daylight and clear weather
 2:Daylight, but fog, mist, rain or the like
 3:Daylight, but harsh seasonal weather
@@ -31,6 +33,7 @@ roll: 1d6
 
 table: Nature
 roll: 1d8
+type: lookup
 1:Attack by pack of hostiles
 2:Ambush by single lone hostile
 3:Meet people who don't want to be met
@@ -42,6 +45,7 @@ roll: 1d8
 
 table: Friends
 roll: 1d10
+type: lookup
 1:Affable but reclusive hermit
 2:Local herd animal let loose to graze
 3:Government ranger or circuit judge
@@ -55,6 +59,7 @@ roll: 1d10
 
 table: Hostiles
 roll: 1d12
+type: lookup
 1:Bandits in their wilderness hideout
 2:Dangerous locals looking for easy marks
 3:Rabid or diseased large predator
@@ -75,6 +80,7 @@ table: Features
 
 table: Feature
 roll: 1d20
+type: lookup
 1:Overgrown homestead
 2:Stream prone to flash-flooding
 3:Narrow bridge or beam over deep cleft

@@ -14,6 +14,7 @@ Set: feature=[@Features]
 
 table: Entrance
 roll: 1d4
+type: lookup
 1:The front or main entrance is still passable.
 2:There's a sinkhole or tunnel to a basement level.
 3:There are holes in the roof.
@@ -21,6 +22,7 @@ roll: 1d4
 
 table: Decay
 roll: 1d6
+type: lookup
 1:Extremely rickety; structural supports are failing.
 2:Local vegetation has almost entombed it.
 3:Fire has scorched large portions of it.
@@ -30,6 +32,7 @@ roll: 1d6
 
 table: OrigPurpose
 roll: 1d8
+type: lookup
 1:Residential. People lived in it, either as home or hotel.
 2:Industrial. It was a factory, farm or workshop.
 3:Governmental. Local officials worked there.
@@ -41,6 +44,7 @@ roll: 1d8
 
 table: Value
 roll: 1d10
+type: lookup
 1:A cache of local currency was left behind.
 2:A valuable cultural artifact or historical item.
 3:Interesting bank accounts, legal data, or land deeds.
@@ -54,6 +58,7 @@ roll: 1d10
 
 table: Danger
 roll: 1d12
+type: lookup
 1:Savage local fauna have nested in it.
 2:One or more dangerous humans are lairing there.
 3:A roof or floor is threatening to give way.
@@ -74,6 +79,7 @@ table: Features
 
 table: FeatureDetails
 roll: 1d20
+type: lookup
 1:The running water still works, and is stuck on.
 2:The building is partially buried.
 3:Exiles, criminals, or social outcasts once laired here.

@@ -27,6 +27,7 @@ Akoroski
 
 table: Foreigner
 roll:1d6
+type: lookup
 1-2:Skovlander
 3:Iruvian
 4:Dagger Islander

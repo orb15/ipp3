@@ -5,6 +5,7 @@
 table: Master
 MaxReps: 3
 roll: 1d20
+type: lookup
 1:Local festival going on
 2:Angry street protests
 3:Minor fire or other disorder

@@ -23,6 +23,7 @@ Set: trait=[@Traits]
 
 table: Background
 roll: 1d6
+type: lookup
 1:The local underclass or poorest natives
 2:Common laborers or cube workers
 3:Aspiring bourgeoise or upper class
@@ -32,6 +33,7 @@ roll: 1d6
 
 table: Role
 roll: 1d8
+type: lookup
 1:Criminal, thug, thief, swindler
 2:Menial, cleaner, retail worker, servant
 3:Unskilled heavy labor, porter, construction
@@ -43,6 +45,7 @@ roll: 1d8
 
 table: Problem
 roll: 1d10
+type: lookup
 1:They have significant debt or money woes
 2:A loved one is in trouble; reroll for it
 3:Romantic failure with a desired person
@@ -56,6 +59,7 @@ roll: 1d10
 
 table: Desire
 roll: 1d12
+type: lookup
 1:They want a particular romantic partner
 2:They want money for them or a loved one
 3:They want a promotion in their job
@@ -76,6 +80,7 @@ table: Traits
 
 table: Trait
 roll: 1d20
+type: lookup
 1:Ambition
 2:Avarice
 3:Bitterness

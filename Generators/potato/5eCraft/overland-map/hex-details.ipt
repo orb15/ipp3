@@ -79,11 +79,13 @@ table: HillsWithForest
 
 table: HillsCanyon
 roll:1d10
+type: lookup
 1-8:\z
 9-10:(one contains a [|canyon|fissure])
 
 table: HillsPass
 roll:1d10
+type: lookup
 1-6:\z
 7-10: (contains a pass to the other side of the mountains)
 
