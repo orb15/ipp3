@@ -1,0 +1,9 @@
+# ---------------------------------------
+# SWN: Sector Planet Placement
+# ---------------------------------------
+
+table: Master
+MaxReps: 20
+Set: across={1d8}
+Set: down={1d9-1}
+<b>Planet at:</b> 0{$across}.0{$down}

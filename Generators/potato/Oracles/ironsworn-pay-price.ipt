@@ -1,8 +1,12 @@
+# ---------------------------------------
+# Ironsworn:General Oracle for 'Pay the Price'
+# ---------------------------------------
+
 table: Master
 type: lookup
 roll: 1d100
 MaxReps:1
-1-2:<b>Worse:</b> [@Result]
+1-2:<b>Increased Impact:</b> [@Result]
 3-98:[@Result]
 99-100:<b>Two outcomes:</b> [@Result] <b>-and-</b> [@Result]
 
