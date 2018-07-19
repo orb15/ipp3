@@ -1,0 +1,60 @@
+# ---------------------------------------
+# SWN: System Misc Info
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: planetCount=[@PlanetCount]
+Set: gasGiantCount=[#{$planetCount} GasGiantCount]
+Set: asteroidBeltCount=[#{$planetCount} AsteroidBeltCount]
+Set: bulkGoodsCost={2d6*10}
+<b>Misc Info about this system</b>\nPlanets: {$planetCount}\nGas Giants: {$gasGiantCount}\nAsteroid Belts: {$asteroidBeltCount}
+
+table: PlanetCount
+1:{1d4+1}
+2:{2d4}
+3:{2d4+1}
+4:{2d4+2}
+3:{2d4+1}
+2:{3d4}
+1:{3d4+2}
+
+table: GasGiantCount
+type: dictionary
+2:[|0|1]
+3:[|0|1|2]
+4:{1d3}
+5:{1d3}
+6:{1d3}
+7:{1d3}
+8:{1d3+1}
+9:{1d3+1}
+10:{1d3+2}
+11:{2d3}
+12:{2d3+1}
+13:{2d3+1}
+14:{2d3+2}
+
+table: AsteroidBeltCount
+type: dictionary
+2:[@LowBeltChance]
+3:[@LowBeltChance]
+4:[@LowBeltChance]
+5:[|0|1]
+6:[@HighBeltChance]
+7:[@HighBeltChance]
+8:[@HighBeltChance]
+9:{1d2}
+10:{1d2}
+11:{1d2}
+12:{1d2}
+13:{1d2+1}
+14:{1d2+1}
+
+table: LowBeltChance
+1:1
+4:0
+
+table: HighBeltChance
+1:0
+4:1

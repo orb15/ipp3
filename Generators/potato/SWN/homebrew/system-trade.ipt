@@ -1,0 +1,24 @@
+# ---------------------------------------
+# SWN: System Trade
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: p1Bulk={(2d6)*10}
+Set: p2Bulk={(2d6-1)*10}
+Set: buyBulk={min($p1Bulk,$p2Bulk)}
+Set: sellBulk={max($p1Bulk,$p2Bulk)}
+Set: availBulk={(2d6)*10000}
+Set: p1Finished={(2d6)*100}
+Set: p2Finished={(2d6-1)*100}
+Set: buyFinished={min($p1Finished,$p2Finished)}
+Set: sellFinished={max($p1Finished,$p2Finished)}
+Set: availFinished={(1d6)*1000}
+Set: p1Expensive={(2d6)*1000}
+Set: p2Expensive={(2d6-1)*1000}
+Set: buyExpensive={min($p1Expensive,$p2Expensive)}
+Set: sellExpensive={max($p1Expensive,$p2Expensive)}
+Set: availExpensive={(1d3)*100}
+Set: inSystemRate={(1d4)*10}
+Set: inSystemAvail={(2d6)*100}
+<b>System Trade (wait 1 week to adjust)</b>\n\nBulk Goods Will Buy: {$buyBulk} Will Sell: {$sellBulk} Avail Units: {$availBulk}\nFinished Goods Will Buy: {$buyFinished}  Will Sell: {$sellFinished} Avail Units: {$availFinished}\nExpensive Goods Will Buy: {$buyExpensive} Will Sell: {$sellExpensive} Avail Units: {$availExpensive}\n\nIn-System Transport Will Buy: {$inSystemRate} Avail Units: {$inSystemAvail}

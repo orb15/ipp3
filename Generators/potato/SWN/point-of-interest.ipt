@@ -3,7 +3,7 @@
 # ---------------------------------------
 
 table: master
-MaxReps: 3
+MaxReps: 1
 Set: point=[@Point]
 Set: occupied=[@{$point}_Occupied]
 Set: situation=[@{$point}_Situation] 
