@@ -1,0 +1,50 @@
+# ---------------------------------------
+# SWN: Hub and Spoke Sector Generation
+# ---------------------------------------
+
+prompt: Home System{yes|no} no
+
+table: Master
+MaxReps: 1
+set: systemName=[when]{$prompt1} = yes[do]Home System[else]Other System[end]
+set: starCount=[when]{$prompt1} = yes[do]There are: {1d10+20} stars in this sector[end]
+set: connectionCount=[when]{$prompt1} = yes[do][@HomeSystemConnectionCount][else][@OtherSystemConnectionCount][end]
+set: systemType=[when]{$prompt1} = yes[do][#{$connectionCount} HomeSystemType][else][#{$connectionCount} OtherSystemType][end]
+set: connectDirects=[!{$connectionCount} ConnectionDirections >> implode]
+{$starCount}\n<b>{$systemName} is a {$systemType} with {$connectionCount} other connections</b>\n{$ConnectDirects}
+
+table: HomeSystemConnectionCount
+type: lookup
+roll: 1d100
+1-65:2
+66-95:3
+95-100:4
+
+table: OtherSystemConnectionCount
+type: lookup
+roll: 1d100
+1-65:1
+66-80:0
+81-95:2
+96-100:3
+
+table: HomeSystemType
+type: dictionary
+2:Spoke System
+3:Minor Hub
+4:Major Hub
+
+table: OtherSystemType
+type: dictionary
+0:Leaf System
+1:Spoke System
+2:Minor Hub
+3:Major Hub
+
+table: ConnectionDirections
+Position 1 (North)
+Position 2 (Northeast)
+Position 3 (Southeast)
+Position 4 (South)
+Position 5 (Southwest)
+Position 6 (Northwest)
