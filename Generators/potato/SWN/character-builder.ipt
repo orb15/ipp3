@@ -1,0 +1,87 @@
+# ---------------------------------------
+# SWN: Character Generator
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: str={3d6}
+Set: strMod=[#{$str} AttribMod]
+Set: dex={3d6}
+Set: dexMod=[#{$dex} AttribMod]
+Set: con={3d6}
+Set: conMod=[#{$con} AttribMod]
+Set: int={3d6}
+Set: intMod=[#{$int} AttribMod]
+Set: wis={3d6}
+Set: wisMod=[#{$wis} AttribMod]
+Set: cha={3d6}
+Set: chaMod=[#{$cha} AttribMod]
+Set: background=[@Background]
+Set: freeSkill=[#{background} FreeSkill]
+<b>A new hero is born...</b>\n\nStrength: {$str}  ({$strMod})\nDexterity: {$dex}  ({$dexMod})\nConstitution: {$con}  ({$conMod})\nIntelligence: {$int}  ({$intMod})\nWisdom: {$wis}  ({$wisMod})\nCharisma: {$cha}  ({$chaMod})\n\nBackground: {$background}\nFree Skill: {$freeSkill}
+
+table: AttribMod
+type: dictionary
+3:[-2]
+4:[-1]
+5:[-1]
+6:[-1]
+7:[-1]
+8:[+0]
+9:[+0]
+10:[+0]
+11:[+0]
+12:[+0]
+13:[+0]
+14:[+1]
+15:[+1]
+16:[+1]
+17:[+1]
+18:[+2]
+
+table: Background
+type: lookup
+roll: 1d20
+1:Barbarian
+2:Clergy
+3:Courtesan
+4:Criminal
+5:Dilettante
+6:Entertainer
+7:Merchant
+8:Noble
+9:Official
+10:Peasant
+11:Physician
+12:Pilot
+13:Politician
+14:Scholar
+15:Soldier
+16:Spacer
+17:Technician
+18:Thug
+19:Vagabond
+20:Worker
+
+table: FreeSkill
+type: dictionary
+Barbarian:Survive-0
+Clergy:Talk-0
+Courtesan:Perform-0
+Criminal:Sneak-0
+Dilettante:Connect-0
+Entertainer:Perform-0
+Merchant:Trade-0
+Noble:Lead-0
+Official:Administer-0
+Peasant:Exert-0
+Physician:Heal-0
+Pilot:Pilot-0
+Politician:Talk-0
+Scholar:Know-0
+Soldier:Any Combat-0
+Spacer:Fix-0
+Technician:Fix-0
+Thug:Any-Combat-0
+Vagabond:Survive-0
+Worker:Work-0
