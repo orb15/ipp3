@@ -1,0 +1,249 @@
+# ---------------------------------------
+# Knave: spellgen
+# ---------------------------------------
+
+table: Master
+MaxReps: 3
+The spell is called: [@MasterSpell]
+
+table: MasterSpell
+[@PhysicalEffect] [@PhysicalForm]
+[@EtherealElement] [@PhysicalForm]
+[@PhysicalEffect] [@EtherealForm]
+[@EtherealElement] [@EtherealForm]
+[@EtherealEffect] [@PhysicalForm]
+[@PhysicalEffect] [@PhysicalElement]
+[@EtherealEffect] [@EtherealForm]
+[@PhysicalEffect] [@EtherealElement]
+[@PhysicalElement] [@PhysicalForm]
+[@EtherealEffect] [@PhysicalElement]
+[@PhysicalElement] [@EtherealForm]
+[@EtherealEffect] [@EtherealElement]
+
+Table: PhysicalEffect
+Animating
+Crushing
+Fusing
+Levitating
+Reflecting
+Sealing
+Attracting
+Diminishing
+Grasping
+Opening
+Regenerating
+Shapeshifting
+Binding
+Dividing
+Hastening
+Petrifying
+Rending
+Shielding
+Blossoming
+Duplicating
+Hindering
+Phasing
+Repelling
+Spawning
+Consuming
+Enveloping
+Illuminating
+Piercing
+Resurrecting
+Transmuting
+Creeping
+Expanding
+Imprisoning
+Pursuing
+Screaming
+Transporting
+
+table: PhysicalElement
+Acid
+Clay
+Glass
+Moss
+Sand
+Thorn
+Amber
+Crow
+Honey
+Obsidian
+Sap
+Vine
+Bark
+Crystal
+Ice
+Oil
+Serpent
+Water
+Blood
+Ember
+Insect
+Poison
+Slime
+Wine
+Bone
+Flesh
+Wood
+Ray
+Stone
+Wood
+Brine
+Fungus
+Lava
+Salt
+Tar
+Worm
+
+table: PhysicalForm
+Altar
+Chain
+Elemental
+Horn
+Sentinel
+Tentacle
+Armor
+Chariot
+Eye
+Key
+Servant
+Throne
+Arrow
+Claw
+Fountain
+Mask
+Shield
+Torch
+Beast
+Cloak
+Gate
+Monolith
+Spear
+Trap
+Blade
+Colossus
+Golem
+Pit
+Steed
+Wall
+Cauldron
+Crown
+Hammer
+Prison
+Swarm
+Web
+
+table: EtherealEffect
+Avenging
+Compelling
+Dispelling
+Excruciating
+Nullifying
+Soothing
+Banishing
+Concealing
+Emboldening
+Foreseeing
+Paralyzing
+Summoning
+Bewildering
+Deafening
+Encoding
+Intoxicating
+Revealing
+Terrifying
+Blinding
+Deceiving
+Energizing
+Maddening
+Revolting
+Warding
+Charming
+Deciphering
+Enlightening
+Mesmerizing
+Scrying
+Wearying
+Communicating
+Disguising
+Enraging
+Mindreading
+Silencing
+Withering
+
+table: EtherealElement
+Ash
+Ectoplasm
+Light
+Plague
+Smoke
+Thunder
+Chaos
+Fire
+Lightening
+Plasma
+Snow
+Time
+Distortion
+Fog
+Memory
+Probability
+Soul
+Void
+Dream
+Ghost
+Mind
+Rain
+Star
+Warp
+Dust
+Harmony
+Mutation
+Rot
+Stasis
+Whisper
+Echo
+Heat
+Negation
+Shadow
+Steam
+Wind
+
+table: EtherealForm
+Aura
+Bubble
+Cone
+Gaze
+Pyramid
+Swarm
+Beacon
+Call
+Cube
+Loop
+Ray
+Torrent
+Beam
+Cascade
+Dance
+Moment
+Shard
+Touch
+Blast
+Circle
+Disk
+Nexus
+Sphere
+Vortex
+Blob
+Cloud
+Field
+Portal
+Spray
+Wave
+Bolt
+Coil
+Form
+Pulse
+Storm
+Word

@@ -1,0 +1,341 @@
+# ---------------------------------------
+# Knave: Chargen
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: strBonus={min(1d6,1d6,1d6)}
+Set: dexBonus={min(1d6,1d6,1d6)}
+Set: conBonus={min(1d6,1d6,1d6)}
+Set: intBonus={min(1d6,1d6,1d6)}
+Set: wisBonus={min(1d6,1d6,1d6)}
+Set: chaBonus={min(1d6,1d6,1d6)}
+Set: abilities=<i>STR:</i> {$strBonus}\n<i>DEX:</i> {$dexBonus}\n<i>CON:</i> {$conBonus}\n<i>INT:</i> {$intBonus}\n<i>WIS:</i> {$wisBonus}\n<i>CHA:</i> {$chaBonus}
+Set: otherAbilities=<i>Hit Points:</i> {1d8}\n<i>Healing:</i> 1d8 + {$conBonus}\n<i>Explore Speed:</i> 120ft\n<i>Combat Speed:</i> 40ft
+Set: physique=[@Physique]
+Set: face=[@Face]
+Set: hair=[@Hair]
+Set: skin=[@Skin]
+Set: clothing=[@Clothing]
+Set: physical=<i>Physique:</i> {$physique}\n<i>Face:</i> {$face}\n<i>Hair:</i> {$hair}\n<i>Skin:</i> {$skin}\n<i>Clothing:</i> {$clothing}
+Set: virtue=[@Virtue]
+Set: vice=[@Vice]
+Set: speech=[@Speech]
+Set: background=[@Background]
+Set: misfortune=[@Misfortune]
+set: align=[@Alignment]
+Set: personality=<i>Virtue:</i> {$virtue}\n<i>Vice:</i> {$vice}\n<i>Speech:</i> {$speech}\n<i>Background:</i> {$background}\n<i>Misfortune:</i> {$misfortune}\n<i>Alignment:</i> {$align}
+Set: armor=[@StartingArmor] [@StartingArmorOther]
+Set: availItemSlots={$conDefense + 10}
+Set: gear=Rations (2 days), [!2 BasicGear >> implode \n], [@OtherGear1], [@OtherGear2]
+Set: weapon=1 weapon of char's choice
+<b>A Knave is born...</b>\n\n<b>Abilities</b>\n{$abilities}\n\n<b>Other Abilities</b>\n{$otherAbilities}\n\n<b>Starting Gear (slots: {$availItemSlots}):</b>\n<i>Weapon:</i> {$weapon}\n<i>Armor:</i> {$armor}\n<i>Other Gear:</i> {$gear}\n\n<b>Roleplaying Suggestions - Physical Traits</b>\n{$physical}\n\n<b>Roleplaying Suggestions - Personality Traits</b>\n{$personality}
+
+table: StartingArmor
+type: lookup
+roll: 1d20
+1-3:None (Defense: 11)
+4-14:Gambeson (Defense: 12 Slot: 1 Quality: 3)
+15-19:Brigandine (Defense: 13 Slot: 2 Quality: 4)
+20:Chain (Defense: 14 Slot: 3 Quality: 5)
+
+table: StartingArmorOther
+type: lookup
+roll: 1d20
+1-13:\z
+14-16:Helmet (Defense: +1 Slot: 1 Quality: 1)
+17-19:Shield (Defense: +1 Slot: 1 Quality: 1)
+20:Helmet and Shield (Defense: +1 Slot: 1 Quality: 1 <i>each</i>)
+
+table: BasicGear 
+Rope (50ft)
+Pulleys
+Candles (5)
+Chain (10ft)
+Chalk (10)
+Crowbar
+Tinderbox
+Grappling hook
+Hammer
+Waterskin
+Lantern
+Lamp oil
+Padlock
+Manacles
+Mirror
+Pole (10ft)
+Sack
+Tent
+Spikes (5)
+Torches (5)
+
+table: OtherGear1
+Air bladder
+Saw
+Fishing rod
+Net
+Bear trap
+Bucket
+Marbles
+Tongs
+Shovel
+Caltrops
+Glue
+Lockpicks
+Bellows
+Chisel
+Pick
+Metal file
+Grease
+Drill
+Hourglass
+Nails
+
+table: OtherGear2
+Incense
+Bottle
+Fake jewels
+Face paint
+Sponge
+Soap
+Blank book
+Whistle
+Musical Instrument
+Spyglass
+Card deck
+Lens
+Perfume
+Tar pot
+Dice set
+Quill & Ink
+Horn
+Twine
+Cook pots
+Small bell
+
+Table: Physique
+Athletic
+Hulking
+Short
+Stout
+Brawny
+Lanky
+Sinewy
+Tiny
+Corpulent
+Ripped
+Slender
+Towering
+Delicate
+Rugged
+Flabby
+Willowy
+Gaunt
+Scrawny
+Statuesque
+Wiry
+
+Table: Face
+Bloated
+Elongated
+Impish
+Sharp
+Blunt
+Patrician
+Narrow
+Soft
+Bony
+Pinched
+Rat-like
+Square
+Chiseled
+Hawkish
+Round
+Wide
+Delicate
+Broken
+Sunken
+Wolfish
+
+Table: Skin
+Battle Scar
+Oily
+Reeking
+Sunburned
+Birthmark
+Pale
+Tattooed
+Tanned
+Burn Scar
+Perfect
+Rosy
+War Paint
+Dark
+Pierced
+Rough
+Weathered
+Makeup
+Pocked
+Sallow
+Whip Scar
+
+Table: Hair
+Bald
+Disheveled
+Limp
+Ponytail
+Braided
+Dreadlocks
+Long
+Silky
+Bristly
+Filthy
+Luxurious
+Topknot
+Cropped
+Frizzy
+Mohawk
+Wavy
+Curly
+Greased
+Oily
+Wispy
+
+Table: Clothing
+Antique
+Elegant
+Foreign
+Patched
+Bloody
+Fashionable
+Frayed
+Perfumed
+Ceremonial
+Filthy
+Frumpy
+Rancid
+Decorated
+Flamboyant
+Livery
+Torn
+Eccentric
+Stained
+Oversized
+Undersized
+
+Table: Virtue
+Ambitious
+Disciplined
+Honorable
+Merciful
+Cautious
+Focused
+Humble
+Righteous
+Courageous
+Generous
+Idealistic
+Serene
+Courteous
+Gregarious
+Just
+Stoic
+Curious
+Honest
+Loyal
+Tolerant
+
+Table: Vice
+Aggressive
+Deceitful
+Lazy
+Suspicious
+Arrogant
+Flippant
+Nervous
+Vain
+Bitter
+Gluttonous
+Prejudiced
+Vengeful
+Cowardly
+Greedy
+Reckless
+Wasteful
+Cruel
+Irascible
+Rude
+Whiny
+
+Table: Speech
+Blunt
+Droning
+Mumbling
+Dialect
+Booming
+Flowery
+Precise
+Slow
+Breathy
+Formal
+Quaint
+Squeaky
+Cryptic
+Gravelly
+Rambling
+Stuttering
+Drawling
+Hoarse
+Rapid-fire
+Whispery
+
+Table: Background
+Alchemist
+Cleric
+Magician
+Performer
+Beggar
+Cook
+Mariner
+Pickpocket
+Butcher
+Cultist
+Mercenary
+Smuggler
+Burglar
+Gambler
+Merchant
+Student
+Charlatan
+Herbalist
+Outlaw
+Tracker
+
+Table: Misfortune
+Abandoned
+Defrauded
+Framed
+Pursued
+Addicted
+Demoted
+Haunted
+Rejected
+Blackmailed
+Discredited
+Kidnapped
+Replaced
+Condemned
+Disowned
+Mutilated
+Robbed
+Cursed
+Exiled
+Poor
+Suspected
+
+Table: Alignment
+type: lookup
+roll: 1d20
+1-5:Lawful
+6-15:Neutral
+17-20:Chaotic
