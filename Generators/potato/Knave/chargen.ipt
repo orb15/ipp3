@@ -26,7 +26,7 @@ Set: misfortune=[@Misfortune]
 set: align=[@Alignment]
 Set: personality=<i>Virtue:</i> {$virtue}\n<i>Vice:</i> {$vice}\n<i>Speech:</i> {$speech}\n<i>Background:</i> {$background}\n<i>Misfortune:</i> {$misfortune}\n<i>Alignment:</i> {$align}
 Set: armor=[@StartingArmor] [@StartingArmorOther]
-Set: availItemSlots={$conDefense + 10}
+Set: availItemSlots={$conBonus + 10}
 Set: gear=Rations (2 days), [!2 BasicGear >> implode \n], [@OtherGear1], [@OtherGear2]
 Set: weapon=1 weapon of char's choice
 <b>A Knave is born...</b>\n\n<b>Abilities</b>\n{$abilities}\n\n<b>Other Abilities</b>\n{$otherAbilities}\n\n<b>Starting Gear (slots: {$availItemSlots}):</b>\n<i>Weapon:</i> {$weapon}\n<i>Armor:</i> {$armor}\n<i>Other Gear:</i> {$gear}\n\n<b>Roleplaying Suggestions - Physical Traits</b>\n{$physical}\n\n<b>Roleplaying Suggestions - Personality Traits</b>\n{$personality}
