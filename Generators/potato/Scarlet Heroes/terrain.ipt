@@ -1,0 +1,66 @@
+# ---------------------------------------
+# Scarlet Heroes: Terrain
+# See pg 122 for the algorithm used here
+# ---------------------------------------
+
+prompt: Climate {Tropical|Temperate|Cold|Dry} Temperate
+
+table: Master
+MaxReps: 1
+Set: simTerrain={1d8}
+[when] {$simTerrain} < 7 [do] [@SimilarTerrain with {$simTerrain}] [else] The terrain is [@Random{$prompt1}] [end]
+
+table: SimilarTerrain
+The terrain in this hex is the same as the hex on side: {$1}. If this hex is blank, the terrain is [@Random{$prompt1}]
+
+table: RandomTropical
+type: lookup
+roll: 1d10
+1:Jungle
+2:Jungle
+3:Swamp
+4:Heavy forest
+5:Plains
+6:Forest
+7:Hills
+8:Mountains
+9-10: the same as the largest contiguous terrain type near this hex. If this doesn't make sense, reroll.
+
+table: RandomTemperate
+type: lookup
+roll: 1d10
+1:Plains
+2:Plains
+3:Swamp
+4:Light forest
+5:Heavy Forest
+6:Forest hills
+7:Hills
+8:Mountains
+9-10: the same as the largest contiguous terrain type near this hex. If this doesn't make sense, reroll.
+
+table: RandomCold
+type: lookup
+roll: 1d10
+1:Plains
+2:Tundra
+3:Cold marsh
+4:Light taiga
+5:Heavy taiga
+6:Taiga hills
+7:Scrub hills
+8:Mountains
+9-10: the same as the largest contiguous terrain type near this hex. If this doesn't make sense, reroll.
+
+table: RandomDry
+type: lookup
+roll: 1d10
+1:Plains
+2:Desert
+3:Desert
+4:Scrub
+5:Light forest
+6:Hills
+7:Scrub hills
+8:Mountains
+9-10: the same as the largest contiguous terrain type near this hex. If this doesn't make sense, reroll. 

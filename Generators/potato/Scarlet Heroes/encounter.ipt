@@ -1,0 +1,365 @@
+# ---------------------------------------
+# Scarlet Heroes: Encounter
+# ---------------------------------------
+
+prompt: Terrain {Forest|Hills|Jungle|Mountains|Plains|Road|Ruins|Sea|Subartic|Urban} Plains
+prompt: Location {Wilderness|Urban|Dungeon} Wilderness
+
+table: Master
+MaxReps: 1
+Set: creature=[@{$prompt1}]
+Set: locTwist=[@{$prompt2}Twist]
+Set: attitude=[@Attitude]
+Set: sizeCond=[@GroupSizeAndCondition]
+<b>{$prompt1} Encounter ({$prompt2})</b>\nCreature: {$creature}\n\nIf the creature is intelligent or if a twist would help the story...\n\nTwist: {$locTwist}\nAttitude toward hero: {$attitude}\nGroup size and condition: {$sizeCond}
+
+
+table: Forest
+type: lookup
+roll:1d20
+1:Aswang
+2:Bear, Black
+3:Cat, Tiger
+4:Diwata
+5:Human, Bandit
+6:Human, Bandit
+7:Human, Commoner
+8:Hungry Ghost
+9:Mambabarang
+10:Ogre
+11:Serpent, Giant
+12:Shou, Bugbears
+13:Shou, Goblins
+14:Shou, Goblins
+15:Shou, Goblins
+16:Shou, Orcs
+17:Shou, Orcs
+18:Spider, Giant
+19:Tikbalang
+20:Wolf, Normal
+
+table: Hills
+type: lookup
+roll:1d20
+1:Bear, Cave
+2:Bear Black
+3:Cat, Tiger
+4:Griffon
+5:Human, Bandit
+6:Human, Bandit
+7:Human, Commoner
+8:Hungry Ghost
+9:Nagar
+10:Ogre
+11:Sarangay
+12:Shou, Bugbear
+13:Shou, Bugbear
+14:Shou, Goblins
+15:Shou, Orcs
+16:Shou, Orcs
+17:Shou, Orcs
+18:Tengu
+19:Wolf, Dire
+20:Wolf, Normal
+
+table: Jungle
+type: lookup
+roll:1d20
+1:Aswang
+2:Cat, Leopard
+3:Cat, Tiger
+4:Centipede Woman
+5:Diwata
+6:Ghoul
+7:Human, Bandit
+8:Human, Commoner
+9:Hungry Ghost
+10:Kappa
+11:Lizardman
+12:Mambabarang
+13:Serpent, Giant
+14:Shou, Goblins
+15:Shou, Goblins
+16:Shou, Orcs
+17:Shou, Orcs
+18:Spider, Giant
+19:Tikbalang
+20:Tinh
+
+table: Mountains
+type: lookup
+roll:1d20
+1:Bear, Cave
+2:Centipede Woman
+3:Diwata
+4:Dwarf
+5:Griffon
+6:Human, Bandit
+7:Human Commoner
+8:Hungry Ghost
+9:Jiangshi
+10:Lizardman
+11:Nagar
+12:Nue, bull-sized
+13:Serpent, Giant
+14:Shou, Goblins
+15:Shou, Goblins
+16:Shou, Orcs
+17:Shou, Orcs
+18:Tengu
+19:Tinh
+20:Zombie
+
+table: Plains
+type: lookup
+roll:1d20
+1:Bear, Black
+2:Cat, Leopard
+3:Halfling
+4:Horse
+5:Human, Bandit
+6:Human, Commoner
+7:Human, Commoner
+8:Human, Noble
+9:Human, Soldier
+10:Hungry Ghost
+11:Kappa
+12:Langsuyar
+13:Ma Lai
+14:Ogre
+15:Serpent, Giant
+16:Shou, Goblins
+17:Shou, Goblins
+18:Shou, Orcs
+19:Spider, Giant
+20:Wolf, Normal
+
+table: Road
+type: lookup
+roll:1d20
+1:Aswang
+2:Babi Ngepet
+3:Human, Bandit
+4:Human, Bandit
+5:Human, Bandit
+6:Human, Commoner
+7:Human, Commoner
+8:Human, Noble
+9:Human, Soldier
+10:Human, Soldier
+11:Hungry Ghost
+12:Jiangshi
+13:Langsuyar
+14:Mambabarang
+15:Manananggal
+16:Ogre
+17:Shou, Goblins
+18:Shou, Goblins
+19:Shou, Orcs
+20:Wolf, Normal
+
+table: Ruins
+type: lookup
+roll:1d20
+1:Aswang
+2:Babi Ngepet
+3:Centipede Woman
+4:Construct, Man of Clay
+5:Construct, Porcelain Servitor
+6:Construct, War Golem
+7:Ghoul
+8:Human, Bandit
+9:Hungry Ghost
+10:Jiangshi
+11:Lizardman
+12:Nue, bull-sized
+13:Nue, man-sized
+14:Shou, Goblin
+15:Shou, Orc
+16:Shou, Orc
+17:Skeleton
+18:Spider. Giant
+19:Tengu
+20:Zhi Ren
+
+table: Sea
+type: lookup
+roll:1d20
+1:Ghoul
+2:Human, Fishermen
+3:Human, Fishermen
+4:Human, Merchant
+5:Human, Naval Forces
+6:Human, Naval Forces
+7:Human, Pirates
+8:Human, Pirates
+9:Human, Pirates
+10:Human, Shipwrecked
+11:Human, Shipwrecked
+12:Nue, bull-sized
+13:Shui Gui
+14:Siyokoy
+15:Siyokoy
+16:Siyokoy
+17:Squid, Giant
+18:Tinh
+19:Whale, Killer
+20:Whale, Killer
+
+table: Subartic
+type: lookup
+roll:1d20
+1:Bear, Black
+2:Bear, Cave
+3:Griffon
+4:Human, Bandit
+5:Human, Bandit
+6:Human, Commoner
+7:Hungry Ghost
+8:Nagar
+9:Ogre
+10:Sarangay
+11:Shou, Bugbears
+12:Shou, Goblins
+13:Shou, Goblins
+14:Shou, Orcs
+15:Shou, Orcs
+16:Tikbalang
+17:Tinh
+18:Wolf, Dire
+19:Wolf, Normal
+20:Zombie
+
+table: Urban
+type: lookup
+roll:1d20
+1:Begging monk
+2:Bored noblewoman
+3:Brusque guardsmen
+4:Charlatan sorcerer
+5:Corrupt petty official
+6:Endearing urchin
+7:Filthy beggar
+8:Haughty noble
+9:Impatient scholar
+10:Nimble pickpocket
+11:Persistent harlot
+12:Press gangers
+13:Pugnacious drunkard
+14:Shrill fishwife
+15:Skulking footpads
+16:Slumming noble scions
+17:Street peddler
+18:Tipsy sailor
+19:Tong hatchetmen
+20:Work-stained artisan
+
+table: WildernessTwist
+type: lookup
+roll: 1d20
+1:Avenge a raid by neighboring enemies
+2:Perform a religious ritual
+3:Gather a valuable plant or forest crop
+4:Hunt the local wildlife
+5:Check a trapline they have in the area
+6:Patrol for intruders in their territory
+7:Search for help with some present crisis
+8:Flee a greater and more brutal foe
+9:Escort an important figure elsewhere
+10:Scout the area for potential threats
+11:Track a dangerous beast or foe
+12:Visit a friendly neighboring community
+13:Set traps for the snaring of intruders
+14:Pursuing thieves or raiders
+15:Take slaves or prisoners elsewhere
+16:Escort an exile to the edge of their lands
+17:Seek slaves or prisoners for local labor
+18:Follow a rumor of treasure in the area
+19:Seeking the weak to plunder
+20:Trying to avoid a hunting local authority
+
+table: UrbanTwist
+type: lookup
+roll: 1d20
+1:Out on an errand of shady business
+2:Seeking an assignation with a lover
+3:Looking for strangers to waylay
+4:Seeking a victim to rob or cheat
+5:Furiously chasing a thieving stranger
+6:Drunkenly reeling from a tavern visit
+7:Going to or from a local brothel
+8:Visiting a merchant of bad repute
+9:Seeking help for a sudden crisis
+10:Collecting protection money from locals
+11:On their way to a local temple
+12:Begging from the more fortunate
+13:Trying to get away from stress at home
+14:Seeking a wayward family member
+15:On their way to or from their labors
+16:Sullenly seeking trouble or fights
+17:Looking for a gullible stranger
+18:Trying to sell their wares or trifles
+19:Hastening to attend a local noble
+20:Wandering aimlessly, lacking a home
+
+table: DungeonTwist
+type: lookup
+roll: 1d20
+1:Lying in wait for suitable prey
+2:Cleaning their homes of filth
+3:Repairing a damaged fitting
+4:Serving a local notable
+5:Patrolling the corridors for intruders
+6:Checking and resetting the traps
+7:Trying to enjoy some privacy
+8:Lying in wait for one of their own
+9:Searching for overlooked plunder
+10:Seeking privacy for an assignation
+11:Lost or hiding from others
+12:Privately eating a tasty morsel
+13:Hiding from an angry leader
+14:Overseeing slaves or prisoners
+15:Studying or praying to their gods
+16:Destroying or ruining a feature
+17:Toiling at some necessary labor
+18:Lolling around and drinking
+19:Enjoying suitable company
+20:Feasting raucously with their brethren
+
+table: Attitude
+type: lookup
+roll: 2d8
+2:Furiously angry, blaming the hero for some recent crime
+3:Bloodthirsty, spoiling for a fight
+4:Violent, willing to fight if it seems at all profitable
+5:Predacious, willing to take advantage of those weaker
+6:Predacious, willing to take advantage of those weaker
+7:Looking for an excuse to prey on the hero
+8:The usual, but tinted with a note of suspicion
+9:The usual, given the nature of the encounter
+10:The usual, but they might parlay if that seems plausible
+11:Disinclined to fight unless that seems necessary
+12:Disinclined to fight unless that seems necessary
+13:Will parley or ignore the hero if at all possible
+14:Willing to talk and can be persuaded to friendliness
+15:Friendly and peaceful if that’s possible in the situation
+16:Zealous friendliness, if that’s at all plausible
+
+table: GroupSizeAndCondition
+type: lookup
+roll: 2d8
+2:An entire lair’s worth of the creatures are here
+3:Maximum normal encounter numbers or size
+4:Roll encounter size twice and take the bigger total
+5:The biggest one has double normal hit dice
+6:1d10 x 10% of them have an extra hit die
+7:At lest one of them has half again normal hit dice
+8:Full strength and with their usual degree of morale
+9:Full strength and with their usual degree of morale
+10:Full strength and with their usual degree of morale
+11:They've been hard-pressed lately; Morale lowered by 1
+12:One of them is too badly injured to fight
+13:Half of them are wounded, losing half their hit dice
+14:The group is small; roll its size twice and take the lesser
+15:Half of them are gravely wounded; Morale lowered by 3
+16:A lair's worth of them fleeing a horribly lost battle
