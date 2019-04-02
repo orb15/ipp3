@@ -1,0 +1,130 @@
+# ---------------------------------------
+# Scarlet Heroes: Dungeon Overview
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: generalType=[|Cavern|Habitation|Fortress|Temple|Academy]
+Set: specificType=[@{$generalType}SpecificType]
+Set: size=[@Size]
+Set: inhab=[@Inhabitants]
+Set: threat=[@ThreatAdj]
+<b>{$generalType} : {$specificType}</b>\nSize: {$size}\nThreat: {$threat}\n\n<i>Inhabitants</i>\n{$inhab}
+
+table: Size
+{1d6} locations
+{2d6} locations
+{3d6} locations
+{1d10+10} locations
+{1d10+5} locations
+{3d6} locations split into two parts
+{1d20} locations
+{2d12} locations
+{1d6} parts each of {1d20} locations
+{1d12+10} locations
+{2d20} locations
+{1d100} locations
+
+table: ThreatAdj
+type: lookup
+roll: 2d6
+2:The threat differs from the expected level. PC level + {1d4} - {1d4}, down to a minimum of 1.
+3:Talk of its dangers is overblown. PC level - 1, down to a minimum of 1
+4:A dangerous power lurks within. The Threat is equal to the PC's level, but after half the rooms are explored, it jumps by {1d4}.
+5:They'll send for help. Your first expedition is at a Threat equal to the PC's level. Any further expeditions are at Threat + {1d4}.
+6-10:The danger is roughly as anticipated. The Threat is equal to the PC's level
+11-12:It's much worse than you expected in there; the threat is equal to the PC's level plus {1d4+2}
+
+table: CavernSpecificType
+Abandoned mine
+Bandit hideout
+Beast lair
+Cave village
+Geomantic nexus
+Hermit's haven
+Massacre site
+Prehistoric dwelling
+Prehuman shrine
+Refugee shelter
+Shou refuge
+Unquiet grave
+
+table: HabitationSpecificType
+Bandit camp
+Crumbling villa
+Dwarven clanhold
+Escaped slave camp
+Exile hamlet
+Farming village
+Hunter's camp
+Nonhuman settlement
+Pillaged village
+Prehuman habitation
+Ruined manor
+Sacked town
+
+table: FortressSpecificType
+Abandoned army camp
+Brigand stronghold
+Broken keep
+Crumbling watchtower
+Decaying toll keep
+Defensible tower
+Fortified manor
+Natural fortress
+Prehuman fort
+Remnant dungeon
+Ruined caravanserai
+Shattered outpost
+
+table: TempleSpecificType
+Alien place of worship
+Cursed temple
+Forgotten fane
+Fortified abbey
+Heretic hideout
+Holy natural feature
+Isolated monastery
+Pilgrimage temple
+Prehuman shrine
+Ruined nunnery
+Sacred tomb
+Sectarian stronghold
+
+table: AcademySpecificType
+Cabal of infernalists
+Demon-ruled school
+Fortified academy
+Foul breeding pit
+Inhuman wizard lair
+Lost library
+Mad wizard's lab
+Necromancer cell
+Plagued research lab
+Prison for mages
+Ruined mage school
+Wizard tower
+
+table: Inhabitants
+type: lookup
+roll: 1d20
+1:Basic: Bandits Minions: Brigand ruffian Elite: Bandit scout Boss: Brutal chieftain Mage: Renegade mage Civilians: Hostage/camp follower
+2:Basic: Deserters Minions: Spearman Elite: Thuggish sergeant Boss: Deserter officer Mage: Craven mage Civilians: Camp follower/slave
+3:Basic: Dwarf repenters Minions: Repenter warrior Elite: Scarred zealot Boss: High priest Mage: Torturer-priest Civilians: Dwarf victim/slave
+4:Basic: Massacre Minions: Hungry ghost Elite: Ghoul Boss: Jiangshi master Mage: Ghoul mage Civilians: Confused ghost
+5:Basic: Shou Minions: Shou spearman Elite: Grizzled warrior Boss: Shou chieftain Mage: Witch-priestess Civilians: Woman/child/slave
+6:Basic: Elf zealots Minions: Elven swordsman Elite: Creed fanatic Boss: Mage-swordsman Mage: Philosopher-mage Civilians: Mates/prisoners/pupils
+7:Basic: Lizardfolk Minions: Lizardman Elite: Hunting leader Boss: Tribal chief Mage: Scaled shaman Civilians: Mates/edible prisoners
+8:Basic: Ogres Minions: Slave wretch Elite: Ogre warrior Boss: Ogre chieftain Mage: Ogre sorcerer Civilians: Victims/slave laborers
+9:Basic: Wild beasts Minions: Wolves Elite: Dire wolf Boss: Wolf tinh Mage: Tainted wolf Civilians: Pups or whelps
+10:Basic: Tidespawn creeper Minions: Wormwalker Elite: White chanter Boss: Red apostle Mage: Untransformed victim Civilians: 
+11:Basic: Tide cult Minions: Deluded wretch Elite: Twisted cultist Boss: Cult priest Mage: Mad sorcerer Civilians: Sacrificial victim
+12:Basic: Centipede women Minions: Charmed slave Elite: Centipede woman Boss: Elder poisoner Mage: Many-legged mage Civilians: Enthralled slaves/hosts
+13:Basic: Necromancers Minions: Skeleton Elite: Ghoul slaves Boss: Necromancer Mage: Necromancer pupil Civilians: Components-to-be
+14:Basic: Infernalists Minions: Hell cultist Elite: Red jade templar Boss: Hell cult priest Mage: Underpriests Civilians: Sacrifices and slaves
+15:Basic: Rebels Minions: Peasant warrior Elite: Renegade soldier Boss: Wild demagogue Mage: Idealistic mage Civilians: Spouses/children/believers
+16:Basic: Heretics Minions: Armed acolyte Elite: Temple champion Boss: Heresiarch Mage: Sorcerer-priest Civilians: Believer/slave/prisoner
+17:Basic: Looters Minions: Novice adventurer Elite: Skilled freebooter Boss: Expedition leader Mage: Voracious mage Civilians: Porter/servant
+18:Basic: Supremacists Minions: Bitter purist Elite: Hardened warrior Boss: Ethnarch Mage: Traditional mage Civilians: Family member
+19:Basic: Abominations Minions: Crawling vermin Elite: Misshapen hulk Boss: Living weapon Mage: Beast-warper Civilians: Tenders/Lab victims
+20:Basic: Degenerates Minions: Savage cannibal Elite: Huge man-eater Boss: Cannibal chief Mage: Unholy sorcerer Civilians: Prisoners/Meals-to-be

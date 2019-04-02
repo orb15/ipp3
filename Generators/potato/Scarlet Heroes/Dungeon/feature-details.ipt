@@ -1,0 +1,86 @@
+# ---------------------------------------
+# Scarlet Heroes: Feature Details
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: feature=[@FeatureSuggestion]
+Set: inanimateInfo=[@InanimateFeatureInfo]
+Set: creatureInfo=[@CreatureMotivation]
+<b>{$feature}</b>\n\nIf the Feature is a Thing: {$inanimateInfo}\nIf the Feature is a Creature, it wants to: {$creatureInfo}
+
+table: InanimateFeatureInfo
+Forces a reconsideration of the dungeon's real nature
+Forewarns. Free surprise on next Boss encounter
+Endangers investigator. Roll for it as a Hazard
+Load-bearing. Destroy it and 1dlocations collapse
+Triggers a spell on investigator. Roll spell randomly
+Poisonous to investigators. Save or perish
+Map clue. Find treasure automatically in next room
+Hiding place. A fitting Minion or beast lairs in it
+Blocks an exit. Destroying it takes 1dturns of noise
+Simply beautiful to behold. Valuable if portable
+Worth Tdx gp. 50% chance it's really worthless
+Contains a terrible truth about an important NPC
+Hindering. Snares the PC here for 1dturns
+Manipulate to open a secret door; check to open
+Atrociously ugly or disturbing to look upon
+Religious in iconography or purpose
+Worth Tdx gp, but will encumber you
+Known to be wanted by a local noble
+An object of pious devotion by the locals
+Despoiled by or a relic of the locals' atrocities
+
+table: CreatureMotivation
+Get out of the dungeon alive.
+Kill a Boss. Cumulative 10% chance/room of locating.
+Feed on the inhabitants or simply kill them.
+Rescue another person within the site.
+Retrieve a stolen treasure- possibly taken by PC.
+Scout the site for an outside power.
+Sabotage a vital feature 1dlocations away.
+Reclaim a seeming trifle of actual great importance.
+Negotiate with the leader of the dungeon.
+Creature has been badly hurt while trying to [@CreatureMotivation]
+
+table: FeatureSuggestion
+A once-glorious furnishing now scarred and rotten
+A furnishing infested with noxious vermin
+Fire pit with cinders of once-valuable furnishings
+Corpse adorning a table; tortured or half-eaten
+Furnishing cherished by dungeon inhabitants
+Elaborate lighting apparatus, possibly still working
+Furnishings made of parts of human prey
+Furnishings from the original site's creators
+Obscenely defaced furniture
+Chest. Room gets additional Treasure check roll.
+Fountain or flowing liquid source
+Bath or large pool, perhaps enchanted
+Check to find a secret door to a random new room
+Water-weakened floor. Check to avoid it or Tddmg
+Large bed of mold or plant life growing here
+Roots or growth that block a path
+Deep crevasse; route to a new underground place
+Drains that have been made vermin burrows
+Signs of recent attempts at repair and furnishing
+Scorch marks of recent destruction
+Elaborately-illustrated book
+Scrolls of something relevant to nearest community
+Incongruously beautiful artwork, original or stolen
+Note revealing location of a treasure
+Ragged journal speaking of what happens here
+Ancient scroll; 10% chance of being magical
+Unusually well-drawn erotica of local denizens
+Note recording a dark secret of the denizens' leader
+Book written by the site's original creators
+Half-burnt note; check to use it to find a treasure
+A cowering resident from the nearest community
+A traitor from the nearest village
+A hapless civilian being held for ransom or sacrifice
+A crippled, youthful, or elderly site inhabitant
+A dangerous pet of the inhabitants
+The corpse of an outsider, freshly killed
+A hideously tormented victim of the inhabitants
+An inhabitant being held for later punishment
+An outsider made a crippled slave by the denizens
+An intruder seeking something among the locals

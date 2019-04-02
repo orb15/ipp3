@@ -1,0 +1,174 @@
+# ---------------------------------------
+# Scarlet Heroes: Mundane NPC
+# ---------------------------------------
+
+Use: potato/Scarlet Heroes/npc-common.ipt
+
+prompt: Type {Random|Commoner|Underworld|Elite} Random 
+
+table: Master
+MaxReps: 1
+Shuffle: Tags
+Set: sex=[|Male|Female]
+Set: race=[@CommonRace]
+Set: age=[@Age]
+Set: family=[@Family]
+Set: influence=[@Influence]
+Set: motivation=[@Motivation]
+Set: firstname=[@{$sex}{race}]
+Set: surname=[@{$race}Surname]
+Set: trait=[@Trait]
+Set: tags=[!3 Tags >> implode]
+Set: temperment=[@Temperment]
+Set: immediateDesire=[@ImmediateDesire]
+Set: profession=[@{$prompt1}]
+<b>{$firstname} {$surname}</b> ({$sex} {$race})\n{$profession}\n\nAge: {$age}\nTrait: {$trait}\n\n<i>Other Information</i>\nFamily: {$family}\nInfluence: {$influence}\nMotivation: {$motivation}\nTemperment: {$temperment}\nImmediate Desire: {$immediateDesire}\nDescriptive Tags: {$tags}
+
+table: Random
+8:[@Commoner]
+1:[@Underworld]
+1:[@Elite]
+
+table: Commoner
+Commoner ([@CommonerProfession])
+
+table: Underworld
+Underworld ([@UnderworldProfession])
+
+table: Elite
+Elite ([@EliteProfession])
+
+table: CommonRace
+type: lookup
+roll: 1d20
+1-13:[@HumanSubrace]
+14-16:Dwarf
+17:Halfling
+18-19:[@ShouBloodedSubrace]
+20:Elf
+
+table:CommonerProfession
+Ambitious scholar
+Battered ex-adventurer
+Beautiful young mistress
+Bold ship captain
+Commercial moneylender
+Cunning shipwright
+Cynical investigator
+Doddering sage
+Drunken sailor
+Dubious spice merchant
+Earthy construction boss
+Elderly crafter
+Erudite bookseller
+Exquisite dancer
+Grasping merchant
+Grizzled border hunter
+Gross slave or labor trader
+Honest gravetender
+Humble day laborer
+Intrepid explorer
+Marriage-minded deb
+Minor government official
+Mistreated servant or slave
+Pitiless tax collector
+Polished tea house owner
+Promising artist
+Puzzled foreigner
+Rakehell family heir
+Relentless bounty hunter
+Reputable tong brother
+Retired mercenary officer
+Rough caravan master
+Sagacious alchemist
+Sincere priest
+Skillful artisan
+Stern market magistrate
+Suspicious farm owner
+Veteran soldier
+Wealthy bachelor
+Weary physician
+
+table:UnderworldProfession
+Ambitious guttersnipe
+Amoral assassin
+Bitter pretender to rank
+Black marketeer
+Callous blackmailer
+Careworn priest
+Cheap legbreaker
+Cheating merchant
+Cretinous street thug
+Crippled beggar child
+Cynical young whore
+Deceitful footpad
+Degraded former noble
+Depraved slumming noble
+Desperate young mother
+Diseased beggar
+Disguised con artist
+Dissipated physician
+Drug den proprietor
+Earnest charity worker
+Exiled foreigner
+Expert forger
+Grasping fence
+Hard-drinking labor boss
+Hardened burglar
+Haughty ninja
+Impartial info broker
+Impoverished ex-noble
+Knife-slinging gambler
+Menacing tong enforcer
+Migrant farmer
+Naive country girl
+Press gang boss
+Priest of a forbidden faith
+Ruthless moneylender
+Scrawny pickpocket
+Street-worn prostitute
+Suspicious urchin
+World-weary madame
+Wretched miser
+
+table: EliteProfession
+Aged plutocrat
+City magistrate
+Cynical watch leader
+Discreet banker
+Exiled pretender
+Famed courtesan
+Famous artist
+Favored concubine
+Feared court blackmailer
+Foreign diplomat
+Foreign nobleman
+Heartless noble matron
+High military officer
+High-ranking priest
+Instructor to nobles
+Master assassin
+Mighty war hero
+Minister of taxes
+Minister of trade
+Newlywed noble bride
+Ninja clan leader
+Official investigator
+Powerful sorcerer
+Provincial governor
+Purveyor of rare sins
+Rich moneylender
+Riotous young heir
+Scheming daifu
+Scion of a noble lineage
+Scion of past rulers
+Shipping fleet owner
+Social club leader
+Sorcerous "fixer"
+Steward of family lands
+Tong grandfather
+Veteran adventurer
+Wealthy heir
+Wealthy landowner
+Wealthy merchant prince
+Widely-sought maiden

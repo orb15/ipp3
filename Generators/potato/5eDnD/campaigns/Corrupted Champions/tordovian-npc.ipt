@@ -1,0 +1,189 @@
+# ---------------------------------------
+# Tordovian NPC
+# ---------------------------------------
+
+Use: potato\5eDnD\npc\professions.ipt
+Use: potato\5eDnD\npc\racial-common.ipt
+
+prompt: Sex {Male|Female|Random} Random
+
+table: Master
+MaxReps: 5
+Set: profession=[@Profession]
+Set: finalSex=[when]{$prompt1} = Random[do][|Male|Female][else]{$prompt1}[end]
+Set: age=[@Age]
+Set: height=[@Height]
+Set: weight=[@Weight]
+Set: name=[@{$finalSex}FirstName] [@LastName]
+<b>{$name}</b>  ([{$age} >> Proper] {$finalSex})\n[{$profession} >> Proper]
+
+table: Profession
+7:[@CommonProfessions]
+1:[@ExpertProfessions]
+
+table: MaleFirstName
+Abela
+Anghel
+Anton
+Antonio
+Bodgan
+Branimir
+Budimir
+Cappi
+Cato
+Ciodaru
+Davor
+Dominik
+Doru
+Eduard
+Emanuel
+Emanuel
+Emil
+Emil
+Ernest
+Eugen
+Gabriel
+Garridan
+Harman
+Horea
+Igor
+Ilija
+Jakov
+Jardani
+Juraj
+Kem
+Libor
+Lumír
+Mander
+Marin
+Matei
+Matej
+Nenad
+Neven
+Nicolas
+Nikola
+Nikola
+Otmar
+Pattin
+Pavao
+Pov
+Sasha
+Serghei
+Simon
+Stefan
+Tem
+Teo
+Tudor
+Valentin
+Vedran
+Vedran
+Viktor
+
+table: FemaleFirstName
+Ana-maria
+Asena
+Bela
+Bianca
+Catina
+Daciana
+Damara
+Dana
+Ema
+Florica
+Gabriela
+Georgeta
+Ida
+Ihrin
+Ileana
+Irena
+Iva
+Ivona
+Jana
+Jili
+Kostana
+Lalya
+Leondra
+Liliana
+Lillai
+Lucie
+Lucka
+Luminitsa
+Magdalena
+Malina
+Marika
+Marina
+Masilda
+Matylde
+Mirela
+Miri
+Olympia
+Paula
+Rodica
+Rozalia
+Ruza
+Sabina
+Sandra
+Sara
+Sorana
+Stefana
+Tatiana
+Tawni
+Vilma
+Viola
+
+table: LastName
+Arcos
+Arslan
+Batirov
+Baymatov
+Boka
+Buzov
+Casslett
+Chivu
+Ciora
+Costin
+Dalca
+Dobre
+Dobre
+Fabeck
+Filar
+Francas
+Garayev
+Glavan
+Grul
+Jílek
+Jonker
+Joris
+Kerg
+Kirchen
+Lacca
+Lazar
+Lupu
+Mauzer
+Miazga
+Mileta
+Minea
+Mocanu
+Moldovanu
+Mondragon
+Nicolae
+Odam
+Ozols
+Petran
+Petran
+Pietras
+Pilat
+Popa
+Rak
+Roman
+Santer
+Talaga
+Tardic
+Tariko
+Thyes
+Tilea
+Udre
+Wacha
+Weiss
+Yakupov
+Zukal

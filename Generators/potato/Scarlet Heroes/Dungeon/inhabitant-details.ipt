@@ -1,0 +1,76 @@
+# ---------------------------------------
+# Scarlet Heroes: Inhabitant Details
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: allegiance=[@Allegiance]
+Set: quirk=[@QuirkOrStyle]
+Set: firstRnd=[@FirstRoundOrAction]
+Set: avoidDeath=[@AvoidDeath]
+Set: special=[@SpecialAbility]
+This foe may not be like others encountered. Some suggestions...\n\nAllegiance: {$allegiance}\nApproach to combat: {$quirk}\nOn the first round of combat they: {$firstRnd}\nTo avoid death, they: {$avoidDeath}\nThey have a special ability: {$special}
+
+table: Allegiance
+Willingly obedient to the ruling inhabitants of the place.
+Grudgingly submissive to the location's rulers.
+Neutrals who may or may not cooperate with the rulers.
+A rebel or hostile group opposed to the location's rulers.
+
+table:QuirkOrStyle
+Hates to attack a prepared foe; vastly prefers ambushes.
+Will seek to flee if injured by an enemy.
+Blood-crazed; never checks morale against a wounded foe.
+Slow-witted; always effectively surprised in combat.
+Blindingly fast; even heroes must roll initiative.
+Will use special abilities even if tactically unsound.
+Prefers to lure foes into snares or dangerous terrain.
+Always sends underlings or minions in before engaging
+
+table: FirstRoundOrAction
+Bewildered confusion; they lose the first round's action.
+All-out attack, charging in heedlessly
+Maneuver to a better position or more cohesive group
+Fall back to a more defensible location
+Fight individually, neglecting to coordinate with others
+Unleash special abilities of any are had; if not, charge
+Half maneuver to encircle, the others attack directly
+Activate trap or environmental hazard; if none, charge
+Half leap to attack, while the others mill in confusion
+Try to trap the hero in with them before attacking
+
+table: AvoidDeath
+Flee blindly, offering the hero a free attack as they turn
+Try to bribe the hero with the location of a Treasure
+Try to bribe the hero with the secret of the next Trap
+Try to sound an alarm to bring an Encounter to help
+Turn on each other as they settle scores in the chaos
+Fall back in a disciplined way, seeking defensible ground
+Offer x T gp in treasure to buy their lives
+Offer slavish obedience for being spared- possibly sincere
+Offer prisoners or slaves as payment for being spared
+Let a few sacrifice as rear guard while the others flee
+Wildly hurl themselves into doomed battle
+Think the hero's a better ruler than the one they have now
+
+table: SpecialAbility
+Hits hard. +step to its damage die size.
+Multiple attacks. +attack/round for each HD, round up
+Poisoned weapons or bite. Save or die on first hit of fight.
+Has a spell-like special ability it can use once per fight.
+Dies hard. First time it hits hit dice, it regains 1.
+Magic resistant. Can reroll failed saves versus magic.
+Can masquerade as a human or harmless thing.
+Can turn invisible or hide amazingly well.
+Spreads disease. If touches or hits, save or die in 3ddays.
+Undead. Morale and immune to living concerns.
+Unholy. Can use one spell gifted it by its infernal masters.
+Ruinous. Once a fight, save or ruin PC's weapon or armor
+Lingering hurt. Its hits do 1ddamage next round, too.
+Armored. Its AC is points better than usual.
+Impervious. The creature applies a -penalty to Fray dice
+Frenzied. Gains bonus to hit equal to HD it has lost.
+Gilded. Crusted with x T gp worth of precious matter.
+Vanishing. Can teleport 1/round to twice normal move.
+Warded. Immune to non-magical weapons, but not Fray.
+Enslaving. As action, can force save or mental subjection.

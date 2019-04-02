@@ -1,0 +1,35 @@
+# ---------------------------------------
+# Scarlet Heroes: Weather
+# ---------------------------------------
+
+prompt: Season {Dry|Wet|Mixed} Dry 
+
+table: Master
+MaxReps: 1
+<b>The {$prompt1} Season weather is:</b> [@{$prompt1}]
+
+table: Dry
+type: lookup
+roll: 2d4
+2:Steady rain
+3:Cloudy skies
+4:Clear and windy
+5:Clear, still, and humid
+6:Hot and damp
+7:Hot, windy, and dry
+8:Sizzling and bone-dry
+
+table: Wet
+type: lookup
+roll: 2d4
+2:Cloudless
+3:Cloudy but no rain
+4:A light drizzle
+5:Steady rain
+6:A heavy rain
+7:Concealing downpour
+8:Blinding deluge
+
+table: Mixed
+[@Dry]
+[@Wet]

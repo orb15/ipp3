@@ -1,4 +1,6 @@
+# ---------------------------------------
 # Describe the many scenes one can find in the Needlewood
+# ---------------------------------------
 
 table: Master
 MaxReps: 5
@@ -9,7 +11,7 @@ table: Landscape
 The [|distant|nearby] sound of [@Sound]
 A smell of [@Smell]
 A [|beehive|ant hill] of significant size
-A [|burned] area of [|trees|diseased trees|birch and aspen|wildflowers]
+A [|burned|lush|pleasant|idyllic|befouled|diseased|trampled] area of [|trees|birch and aspen|wildflowers]
 A stand of [|larger|denser|sparse] [|pines|birch and aspen] 
 A worn game trail with tracks of a [@Animal]
 A large tree hollowed by [|fire|lightning|the claws of some huge beast]

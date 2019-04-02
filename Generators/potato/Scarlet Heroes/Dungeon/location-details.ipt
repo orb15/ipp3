@@ -1,0 +1,189 @@
+# ---------------------------------------
+# Scarlet Heroes: Dungeon Location
+# ---------------------------------------
+
+prompt: Type {Cavern|Habitation|Fortress|Temple|Academy}
+
+table: Master
+MaxReps: 1
+Set: room=[@{$prompt1}Location]
+Set: encounter=[@EncounterChance]
+Set: treasureRoll={1d10}
+Set: hazardRoll={1d10}
+Set: featureRoll={1d10}
+Set: treasureFound=[@FoundTreasure]
+Set: hazardDetails=[@HazardDetails]
+<b>This is a {$room} that contains...</b>\n\nEncounter: {$encounter}\nBase Treasure roll was: {$treasureRoll} ([#{$treasureRoll} BaseTreasureChance]). Add 3 to this value if there is an Encounter. Threshold: 8\nBase Hazard roll was: {$hazardRoll} ([#{$hazardRoll} BaseHazardChance]). If there is Treasure and no Encounter, add 3 to this value. Threshold: 10\nBase Feature roll was: {$featureRoll} ([#{$featureRoll} BaseFeatureChance]). Add 1 to this value if there was no Encounter, Treasure or Hazard present. Threshold: 9\n\n<i>Details (if they exist at all)</i>\nTreasure Found: {$treasureFound}\nHazard Details: {$hazardDetails}
+
+table: EncounterChance
+type: lookup
+roll: 1d10
+1-7: No encounter
+8-10:[@DungeonEncounter]
+
+table: DungeonEncounter
+type: lookup
+roll: 3d6
+3:Minion or Civilian actually willing to help the hero.
+4-5:Unusual foe; roll on a Bestiary chapter encounter table fitting to the terrain or location
+6-8:{1d4}+T hit dice worth of [|Minions|Civilians][@DungeonEncounterPossibleElite].
+9-12:{2d4}+T hit dice worth of Minions and Elites.
+13-15:{1d6}+T hit dice worth of Minions and Elites[@DungeonEncounterPossibleAllies].
+16-17:{2d4} hit dice of Minions plus 2 * T hit dice worth of [|Elites|Mages|Boss] enemies.
+18: A Boss with T+3 hit dice[@DungeonEncountBossPossibleAllies]
+
+table: DungeonEncounterPossibleElite
+4:\z
+1: and an Elite
+
+table: DungeonEncounterPossibleAllies
+\z
+ with T hit dice worth of [|guard beasts|Minion allies]
+ 
+table: DungeonEncountBossPossibleAllies
+\z
+ with a guard of {3d6} hit dice worth of Minions, ELites, and Mages.
+
+table: BaseTreasureChance
+1-7:None
+8-9:Yes, but hidden
+10-13:Yes 
+
+table: BaseHazardChance
+1-9:No
+10-13:Yes 
+
+table: BaseFeatureChance
+1-8:None
+9-13:Yes
+
+table: FoundTreasure
+type: lookup
+roll: 3d6
+3:It only looks like a treasure, but is actually a Hazard. Roll to determine its type.
+4-5:Trove type M1 worth of coins, furnishings, or items
+6-8:No encounter treasure, but M2 worth of room contents.
+9-12:Standard treasure trove for whatever encounter is present. If no encounter, trove M1 in room contents.
+13-15:One tenth of the C-type trove appropriate to the place.
+16-17:One quarter of the C-type trove that fits the dungeon type. If no encounter present, check for one again.
+18:A full C-type trove is present appropriate to the type of dungeon. It will require 1d6 turns to fully catalog and collect it from its repository, risking wandering foes.
+
+table: HazardDetails
+Entry trap. As you enter, save or take Td4 damage.
+Environmental danger. Save or take Td4 damage.
+Decrepit structure. Save or Td6 damage and leave room.
+Triggered danger. If Encounter there, save or Td6 dmg.
+Dangerous object. Save or take Td6 damage.
+Trapped container. If Treasure, save or take Td6 damage.
+Trapped feature. If Feature, save or take Td6 damage.
+Lethal trap or environmental quality. Save or perish.
+
+table: CavernLocation
+Caved-in cavern
+Circular chamber
+Crumbling dry cave
+Dead end
+Domed cavern
+Flowing water
+Narrow crevasse
+Natural bridge
+Pit ledge
+Sloping gallery
+Spiral tunnel
+Stalactite maze
+Strata pocket
+Stream bank
+Tunnel intersection
+Twisted tunnel
+Underground pool
+Vertical shaft
+Water-smoothed cave
+Wide gallery
+
+table: HabitationLocation
+Bathing room
+Cellar
+Courtyard
+Dining room
+Garden
+Great hall
+Kennel or stable
+Kitchen
+Library
+Master bedroom
+Pantry
+Salon
+Scullery
+Servant's rooms
+Shrine
+Solar
+Stairwell
+Storeroom
+Study
+Vault
+
+table: FortressLocation
+Archery range
+Armory
+Barracks
+Cemetery
+Cistern
+Commissary
+Family quarters
+Gatehouse
+Guardpost
+Kitchen
+Map and file room
+Mess hall
+Officer's quarters
+Prison cell
+Sickroom
+Smithy
+Stables
+Storeroom
+Training hall
+Vault
+
+table: TempleLocation
+Acolyte's cells
+Altar hall
+Bathing room
+Cemetery
+Garden
+Guardpost
+Kitchen
+Library
+Meditation room
+Minor shrine
+Pilgrim quarters
+Prayer hall
+Priest's quarters
+Relic chamber
+Ritual chamber
+Sickroom
+Storeroom
+Vault
+Vestry
+Workroom
+
+table: AcademyLocation
+Laboratory
+Occult library
+Apprentice rooms
+Master bedroom
+Summoning room
+Divination room
+Storeroom
+Kitchen
+Study hall
+Dining hall
+Vault
+Secure cell
+Servant's chambers
+Crafter's workroom
+Academy archives
+Memorial hall
+Monument
+Courtyard garden
+Stables
+Lecture hall

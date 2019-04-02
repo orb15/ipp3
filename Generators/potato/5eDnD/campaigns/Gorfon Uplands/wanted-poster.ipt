@@ -1,0 +1,403 @@
+# ---------------------------------------
+# Wanted Posters
+# ---------------------------------------
+
+Use: potato\5eDnD\npc\dwarf.ipt
+Use: potato\5eDnD\npc\elf.ipt
+Use: potato\5eDnD\npc\gnome.ipt
+Use: potato\5eDnD\npc\halfelf.ipt
+Use: potato\5eDnD\npc\halfling.ipt
+Use: potato\5eDnD\npc\halforc.ipt
+Use: potato\5eDnD\npc\human.ipt
+
+table: Master
+MaxReps: 3
+Shuffle: MasterCrime
+Set: type=[@MasterType]
+Set: creature=[@{$type}]
+Set: creatureMinions=[@{$type}Minions]
+Set: creatureFeature=[@MasterFeature]
+Set: creatureName=[@{$type}Name]
+Set: distance=[@Distance]
+Set: reward=[@Reward]
+Set: crimes=[@{1d10} MasterCrime >> implode \n]
+<b>{$creatureName} : A [@Adjective] {$type}</b>\n\nReward: {$reward}\nDistinguishing Feature: {$creatureFeature}\n\nLast Seen: {$distance}\nKnown Associates: {$creatureMinions}\n\nCrimes: {$crimes}\n\nDM Info: {$creature}
+
+table: Adjective
+Foul
+Brutal
+Murderous
+Devilish
+Evil
+Tyrannical
+Cursed
+Terrible
+Vile
+Wicked
+
+table: MasterType
+1:Dragon
+1:Fiend
+3:Giant
+15:Humanoid
+
+table: Distance
+{1d6-1} hexes from Yeager's Fist to the [@DistanceDirection]
+
+table: DistanceDirection
+5:north
+5:northeast
+5:northwest
+2:south
+2:southwest
+1:southeast
+
+table: MasterFeature
+8:[@{$type}Feature]
+1:[@2 {$type}Feature >> implode]
+
+table: Reward
+16:{1d4 * 100} gp and [|{1d2 * 10} gp|no reward] per minion
+3:{2d4 * 100} gp and [|{2d4 * 10} gp|no reward] per minion
+1:1000 gp
+
+table: MasterCrime
+[|Murdered|Killed|Maimed|Devoured|Crippled] [@CrimeVictim]
+[|Murdered|Killed|Devoured] [@CrimeVictim] and their {1d6} companions
+
+table: CrimeVictim
+Set: crimerace=[|Dwarf|Elf|Gnome|Half-elf|Half-orc|Human]
+Set: crimesex=[|Male|Female]
+the {$crimerace} [@{$crimesex}{$crimerace}Name]
+
+table: Dragon
+Dragon, Wyrmling Black	2	450	MM88	DRAGON
+Dragon, Wyrmling Green	2	450	MM95	DRAGON
+Dragon, Wyrmling White	2	450	MM102	DRAGON
+
+table: DragonMinions
+5:None
+1:Sycophantic kobolds
+
+table: DragonFeature
+No special marks or features
+Particularly [|dark|light|glossy|large-sized|small-sized] scales
+Broken claw on [|left|right] [|front|hind] leg
+Broken fang
+Exceptionally [|large|small|broad] [|claws|horns|fangs|tail]
+[|Left eye is|Right eye is|Both eyes are] [|limned with gold|dimly shining|of an unusual color]
+[|Lighter|Darker] scales on the [|left|right|underside] of its body
+Covered in battle scars
+Torn [|left|right] wing
+[|Left|Right] wing has a small hole in it near the [|chest|tip|wing claw]
+
+table: DragonName
+[@DragonFirstNamePart][@DragonLastNamePart]
+[@DragonFirstNamePart][@DragonLastNamePart] the [@DragonNameSuffix]
+
+table: DragonFirstNamePart
+Death
+Blood
+Terror
+Soul
+Life
+Flesh
+Heart
+
+table: DragonLastNamePart
+wing
+breath
+claw
+tooth
+scale
+spitter
+drinker
+hunter
+eater
+taker
+render
+killer
+taker
+spiller
+splitter
+
+table: DragonNameSuffix
+Devourer
+Murderer
+Stalker
+Destroyer
+Insane
+Mad
+Endless
+Deathless
+
+table: Fiend
+Nupperibo	0.5	100	TF168	FIEND
+Demon, Maw	1	200	VO137	FIEND
+Devil, Spined	2	450	MM78	FIEND
+Rutterkin	2	450	TF136	FIEND
+Bulezau	3	700	TF131	FIEND
+Devil, Bearded	3	700	MM70	FIEND
+Yuggoloth, Merrenoloth	3	700	TF250	FIEND
+
+table: FiendMinions
+None
+
+table: FiendName
+[@FiendFirstPart]
+[@FiendFirstPart] the [@FiendSecondPart]
+
+table: FiendFirstPart
+Xalvil
+Guglog
+Droggodath
+Junnanuth
+Olmithach
+Drergrillun
+Trirgrach
+Bizron
+Uzgorok
+Al'gurod
+Zarzomar
+Valgrozad
+Rer'gumin
+Moth'temiun
+Toth'tek
+Thizzenod
+Xel'goron
+Kogdrazoth
+Dragrod
+Bogdron
+Bolvaman
+Thag'thamun
+Arroth
+Xazrod
+Zelgronnin
+Agdronneth
+Kozgollan
+Gal'gadoth
+Trolvalos
+Duzzadan
+
+table: FiendSecondPart
+Black
+Red
+Deformed
+All-Seeing
+Corrupt
+Diseased
+Slaughterer
+Twisted
+Liar
+
+table: FiendFeature
+Covered in pustules
+Scaled skin
+Deep [|green|purple|yellow] eyes with [|white|blue|black|red|no] pupils
+Rune carved into its [|chest|arm|leg|forehead]
+Lolling tongue
+Foul stench
+Forked tail
+Covered in {|flies|maggots|ticks}
+
+table: Giant
+Ogre, Half-Ogre (Ogrillion)	1	200	MM238	GIANT
+Ogre	2	450	MM237	GIANT
+Ogre, Bolt Launcher	2	450	TF220	GIANT
+Ogre, Howdah	2	450	TF221	GIANT
+Ogre, Chain Brute	3	700	TF221	GIANT
+
+table: GiantMinions
+1:None
+1:Pet - [|bear|dog|wolf]
+2:A small band of followers
+4:Several [@Humanoid]s
+
+table: GiantName
+[@GiantFirstPart]
+[@GiantFirstPart] the [@GiantSecondPart]
+
+table: GiantFirstPart
+Erag
+Genk
+Blezig
+Vozrug
+Brireg
+Klodozig
+Krudukuhr
+Oneg
+Vuwarth
+Vraug
+Kukug
+Kragrok
+Dorut
+Xak
+Turub
+Vroorug
+Vronukag
+Uuret
+Enurig
+Owukor
+
+table: GiantSecondPart
+Huge
+Mighty
+Treeripper
+Uncaring
+Enormous
+Glutton
+Thirsty
+Limbripper
+Gouger
+Devourer
+
+table: GiantFeature
+Wears the [|pelt|headpiece] of a white [|deer|wolf|elk|bear]
+Missing [|all|some] [|upper|lower] teeth
+Missing a finger on the [|left|right] hand
+Covered in scars
+Wears warpaint
+Bald
+Stringy [|red|gray|yellow] hair [|and beard|\z]
+Wears a [|gold|silver|bone] [|earring|necklace|anklet]
+Patch on the [|left|right] eye
+[|Left|Right] eye is missing
+Clan or tribe emblem - [@TribeEmblem]
+
+table: TribeEmblem
+[@TribeColor] background with [@TribeSecondPart]
+[@TribeColor] and [@TribeColor] background with [@TribeSecondPart]
+
+table: TribeSecondPart
+{1d3} [@TribeColor] [@TribeDevice]
+
+table: TribeDevice
+slashes
+eyes
+circles
+fangs
+arrows
+ands
+flames
+skulls
+bones
+chevrons
+splatters
+strange 
+runes
+linked rings
+dragonheads
+axes
+swords
+horns
+
+table: TribeColor
+black
+red
+blood-red
+green
+yellow
+orange
+purple
+yellow
+blue
+white
+crimson
+dark brown
+
+table: Humanoid
+Gnoll	0.5	100	MM163	HUMANOID
+Gnoll, Hunter	0.5	100	VO154	HUMANOID
+Hobgoblin	0.5	100	MM186	HUMANOID
+Jackalwere	0.5	100	MM193	HUMANOID
+Lizardfolk	0.5	100	MM204	HUMANOID
+Orc	0.5	100	MM246	HUMANOID
+Orc, Nurtured One of Yurtrus	0.5	100	VO184	HUMANOID
+Skulk	0.5	100	TF227	HUMANOID
+Bugbear	1	200	MM33	HUMANOID
+Gnoll, Flesh Gnawer	1	200	VO154	HUMANOID
+Goblin, Boss	1	200	MM166	HUMANOID
+Grung, Wildling	1	200	VO157	HUMANOID
+Kobold Dragonshield	1	200	VO165	HUMANOID
+Kobold Scale Sorcerer	1	200	VO167	HUMANOID
+Meazel	1	200	TF214	HUMANOID
+Nilbog	1	200	VO182	HUMANOID
+Xvart, Warlock of Raxivort	1	200	VO200	HUMANOID
+Gnoll, Pack Lord	2	450	MM163	HUMANOID
+Grung, Elite Warrior	2	450	VO157	HUMANOID
+Hobgoblin Iron Shadow	2	450	VO162	HUMANOID
+Lizardfolk, Shaman	2	450	MM205	HUMANOID
+Lycanthrope, Wererat	2	450	MM209	HUMANOID
+Orc, Claw of Luthic	2	450	VO183	HUMANOID
+Orc, Eye of Gruumsh	2	450	MM247	HUMANOID
+Orc, Hand of Yurtrus	2	450	VO184	HUMANOID
+Orc, Orog	2	450	MM247	HUMANOID
+Quaggoth	2	450	MM256	HUMANOID
+Bugbear, Chief	3	700	MM33	HUMANOID
+Hobgoblin, Captain	3	700	MM186	HUMANOID
+Lycanthrope, Werewolf	3	700	MM211	HUMANOID
+Orc, Red Fang of Shagaas	3	700	VO185	HUMANOID
+
+table: HumanoidMinions
+1:Pet - [|bear|wardog|wolf]
+5:A small band of followers
+
+table: HumanoidName
+Xnath
+Murag
+Wapkagut
+Jolagh
+Onog
+Egharod
+Dalthu
+Balogog
+Bruigig
+Gulm
+Zulkaz
+Tazingo
+Shaktilar
+Zoljin
+Trezzahn
+Tazingo
+Hyptu
+Venjo
+Shaktilar
+Juma
+Fraakx
+Ugz
+Strong
+Uird
+Wraal
+Kralabs
+Eevlirm
+Chohnuzz
+Jivrirt
+Woisurx
+Zrazra
+Zrauroz
+Kenzoz
+Croc
+Gron
+Drood
+Nag
+Daar
+Relloeh
+Natkek
+Ghukziarc
+Uggu
+Vurdour
+Neg
+Bhab
+Krub
+Ghon
+Zilk
+Cradrib
+Krarvo
+Oucca
+Ougge
+Nadvirc
+Zadas
+Kedetus
+
+table: HumanoidFeature
+Clan or tribe emblem - [@TribeEmblem]

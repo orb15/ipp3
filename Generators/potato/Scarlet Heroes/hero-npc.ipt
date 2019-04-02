@@ -1,0 +1,331 @@
+# ---------------------------------------
+# Scarlet Heroes: Hero NPC
+# ---------------------------------------
+
+Use: potato/Scarlet Heroes/npc-common.ipt
+
+table: Master
+MaxReps: 1
+Shuffle: Tags
+Set: sex=[|Male|Female]
+Set: race=[@HeroRace]
+Set: age=[@Age]
+Set: family=[@Family]
+Set: influence=[@Influence]
+Set: motivation=[@Motivation]
+Set: firstname=[@{$sex}{race}]
+Set: surname=[@{$race}Surname]
+Set: trait=[@Trait]
+Set: tags=[!3 Tags >> implode]
+Set: temperment=[@Temperment]
+Set: immediateDesire=[@ImmediateDesire]
+Set: class=[@{$race}Class]
+Set: background=[@{$class}Background]
+Set: quality=[@InnateQuality]
+Set: relationship=[@Relationships]
+<b>{$firstname} {$surname}</b> ({$sex} {$race})\n{$class} ({$background})\n\nHeroic Quality: {$quality}\nHeroic Relationship: {$relationship}\n\nAge: {$age}\nTrait: {$trait}\n\n<i>Other Information</i>\nFamily: {$family}\nInfluence: {$influence}\nMotivation: {$motivation}\nTemperment: {$temperment}\nImmediate Desire: {$immediateDesire}\nDescriptive Tags: {$tags}
+
+table: HeroRace
+type: lookup
+roll: 1d20
+1-11:[@HumanSubrace]
+12-15:Dwarf
+16-17:Halfling
+18-19:[@ShouBloodedSubrace]
+20:Elf
+
+table: HumanClass
+Cleric
+Cleric
+Fighter
+Fighter
+MagicUser
+MagicUser
+Thief
+Thief
+
+table: DwarfClass
+Fighter
+Fighter
+Fighter
+Fighter
+Fighter
+Fighter
+Thief
+Thief
+
+table: HalflingClass
+Fighter
+Fighter
+Fighter
+Fighter
+Thief
+Thief
+Thief
+Thief
+
+table: ShouBloodedClass
+Cleric
+Fighter
+Fighter
+Fighter
+MagicUser
+Thief
+Thief
+Thief
+
+table: ElfClass
+Fighter
+Fighter
+Fighter
+MagicUser
+MagicUser
+MagicUser
+Thief
+Thief
+ 
+table: ImperialClass
+[@HumanClass]
+
+table: EshkantiClass
+[@HumanClass]
+
+table: GadaalClass
+[@HumanClass]
+
+table: EirengarderClass
+[@HumanClass]
+
+table: KuehClass
+[@HumanClass]
+
+table: SkandrClass
+[@HumanClass]
+
+table: Imperial-Shou-BloodedClass
+[@ShouBloodedClass]
+
+table: Eshkanti-Shou-BloodedClass
+[@ShouBloodedClass]
+
+table: Gadaal-Shou-BloodedClass
+[@ShouBloodedClass]
+
+table: Eirengarder-Shou-BloodedClass
+[@ShouBloodedClass]
+
+table: Kueh-Shou-BloodedClass
+[@ShouBloodedClass]
+
+table: Skandr-Shou-BloodedClass
+[@ShouBloodedClass]
+
+table: FighterBackground
+Arms merchant
+Army officer
+Artilleryman
+Assassin
+Bandit
+Bodyguard
+Bounty hunter
+City tough
+City watch
+Duelist
+Escaped slave
+Fallen noble
+Farmer
+Forest hermit
+Guardsman
+Hunter
+Military archer
+Military scout
+Monster slayer
+Peasant militia
+Pirate
+Robber
+Sailor
+Sergeant
+Slave gladiator
+Smith
+Street thug
+Temple knight
+Tong enforcer
+Wanderer
+Warrior monk
+Weapon trainer
+Wild man
+
+table: ClericBackground
+Abbot
+Ascetic monk
+Charismatic prophet
+Cloistered monk
+Converted heretic
+Crusader
+Cult hunter
+Demon hunter
+Disinherited scion
+Exiled noble
+Former charlatan
+Former cultist
+Gifted cantor
+Guard leader
+Heretic priest
+Holy hermit
+Military chaplain
+Military surgeon
+Noble's chaplain
+Orthodox inquisitor
+Peasant priest
+Physician
+Roving paladin
+Sage theologian
+Shrine slave
+Street missionary
+Temple archivist
+Temple artist
+Temple knight
+Temple laborer
+Tong priest
+Warrior monk
+Worldly clerk
+
+table: MagicUserBackground
+Academy student
+Academy teacher
+Alchemist
+Apothecary
+Astrologer
+Bookseller
+Charlatan
+Court wizard
+Cult hunter
+Curio seller
+Curse-lifter
+Feng shui architect
+Former cultist
+Gifted burglar
+Gifted peasant
+Gutter mage
+Historian
+Lab freak
+Learned merchant
+Mage's slave
+Market mage
+Military mage
+Physician
+Ruin explorer
+Rural witch
+Scholarly arcanist
+Scion of mages
+Scribe
+Temple mage
+Tong sorcerer
+Village seer
+Wandering mage
+Wise hermit
+
+table: ThiefBackground
+Acrobat
+Ascetic monk
+Assassin
+Bandit
+Beggar
+Bodyguard
+Bored noble
+Bounty hunter
+Burglar
+Charlatan
+City watch
+Con man
+Dragoman
+Escaped slave
+Fallen noble
+Gutter urchin
+Hired affection
+Hunter
+Information seller
+Investigator
+Locksmith
+Military scout
+Ninja clan
+Peasant rebel
+Pirate
+Rebel leader
+Ruin explorer
+Sailor
+Street "mage"
+Street ruffian
+Thief catcher
+Tong thug
+Wanderer
+
+table: InnateQuality
+Acute hearing
+An ear for lies
+Bursts of strength
+Classically educated
+Compelling suasion
+Contempt for pain
+Easily overlooked
+Eidetic memory
+Emotionally controlled
+Fleet-footed
+Hard to intoxicate
+Inured to harsh weather
+Iron determination
+Keen vision
+Leader of men
+Light sleeper
+Lightning reflexes
+Long-distance runner
+Magnificent voice
+Natural linguist
+Noble bearing
+Passes for demihuman
+Precise hands
+Skilled liar
+Blends to any society
+Strikingly attractive
+Strong back
+Superb balance
+Swims like a fish
+Terrifying mien
+Tireless endurance
+Trustworthy face
+Vibrant health
+
+table: Relationships
+Aided a talented thief
+Associate to ninja clan
+Defender of a faith
+Destroyer of a dark cult
+Friend to a bandit group
+Friend to a secret fence
+Friend to a secret society
+Friend to animals
+Friend to Shou-blooded
+Has a noble kinsman
+Has capable sibling
+Has far-flung family
+Has many ex-lovers
+Has old military buddies
+Helped a foreign spy
+Helped a skilled lawyer
+Knows a city magistrate
+Knows many harlots
+Knows many thieves
+Knows noble servants
+Knows ship captains
+Knows tong grandfather
+Member of a private club
+Once a temple acolyte
+Once was a mercenary
+Owed by many freed slaves
+Reputation for valor
+Saved a learned sage
+Saved a nobleman's child
+Secret agent for a merchant
+Spy for an official
+Trusted by merchants
+Well-known to scholars

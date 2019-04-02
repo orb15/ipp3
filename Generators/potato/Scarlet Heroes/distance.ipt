@@ -1,0 +1,35 @@
+# ---------------------------------------
+# Scarlet Heroes: Distance
+# ---------------------------------------
+
+prompt: Proximity {Local|Distant|Unknown} Local 
+
+table: Master
+MaxReps: 1
+<b>The thing is known to be \a {$prompt1} distance from here. Specifically, it is :</b> [@{$prompt1}]
+
+table: Local
+type: lookup
+roll: 2d4
+2:Close enough to touch
+3:Within melee range
+4:A few paces away
+5:The other side of the room
+6:In the next room
+7:A few rooms away
+8:In the same structure
+
+table: Distant
+type: lookup
+roll: 2d4
+2:The same building
+3:The same neighborhood
+4:The same community
+5:Within a day's ride
+6:Within a week's ride
+7:Within a month’s journey
+8:Far, far away
+
+table: Unknown
+[@Local]
+[@Distant]

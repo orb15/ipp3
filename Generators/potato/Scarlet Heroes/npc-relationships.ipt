@@ -1,0 +1,34 @@
+# ---------------------------------------
+# Scarlet Heroes: Relationships Between NPCs
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+This NPC is related to another NPC by: [@Relationship]
+
+table: Relationship
+Business partner
+Child
+Childhood friend
+Co-workers
+Cousin
+Crime culprit
+Crime partner
+Crime victim
+Ex-lover
+Ex-spouse
+Grandparent
+Has blackmail
+Heir to something
+Inlaws
+Lover
+Old favor
+Parent
+Rival
+Schoolmates
+Sibling
+Society fellows
+Spouse
+Subordinate
+Superior
+Uncle/Aunt

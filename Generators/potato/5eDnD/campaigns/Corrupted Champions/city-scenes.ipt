@@ -1,0 +1,78 @@
+# ---------------------------------------
+# Tordovian City Scenes
+# ---------------------------------------
+
+table: Master
+MaxReps: 5
+A group of guards[@HasPriest] is [|accosting|questioning|whipping|dragging|berating|arresting|carefully watching] \a [@GuardTarget]
+A group of guards[@HasPriest] are [@GuardActivity]
+A [@Wretch] is [@WretchActivity]
+[@PublicPunishment]
+A group of merchants [|argue quietly|chat amicably|chuckle about something]
+[@SoundSmell]
+A public proselytizer [|maimed in some way|dressed piously|with a gleam of madness in his eye] shouts from an inverted crate
+
+table: HasPriest
+7:\z
+1: with a Priest of the Flame
+
+table: GuardTarget
+peasant
+family of peasants
+shopkeeper
+begger
+tax collector
+merchant
+fisherman
+young woman
+street urchin
+knight of the local lord
+
+table: GuardActivity
+walking in formation and with purpose
+standing post, [|alert for trouble|looking distracted|eying young women as they pass]
+whispering amongst themselves, watching you carefully
+handing out food and clothing to peasants that appear to be in their good favor
+stand joking with a second group of guards
+patrolling the streets nearby
+
+table: Wretch
+[|old|young|diseased|thin|emaciated|filthy|] beggar
+street urchin
+trollop
+peasant
+
+table: WretchActivity
+carrying a heavy burden in a [|filthy blanket|worn carpet|worn bag|tattered sack|battered basket]
+weeping [|silently|loudly|in the mud]
+begging for alms
+eying passers-by [|slyly|greedily|lustily|mournfully]
+pulling a cart of [|old bread|mud bricks|empty baskets|sad-faced children|old clothes|common tools]
+sorting through cast-off [|clothes|food|tools]
+praising the virtues of the Church
+asking for work
+making an offering in one of the public braziers
+busy [|loading a brazier with fuel|polishing a brazier]
+
+table: PublicPunishment
+A [@PunishmentTarget] is [@Punishment]
+Street-cleaners, obviously being punished for a transgression, are cleaning the streets of refuse
+
+table: PunishmentTarget
+[|young|old|middle-aged] [|man|woman|couple|family]
+
+table: Punishment
+in stocks
+hanging from the gibbet [|and tarred|being picked at by crows and buzzards|\z]
+carrying a heavy stone chained about their neck
+wearing an iron [|boot|mask|glove|crown]
+tied to a lashing post, stripped to the waist and [|fresh from a lashing|left to hang in torment, their wounds bleeding|awaiting the lash]
+confined in [|a hanging cage|too small a cell|an oubliette that doubles as a refuse or waste dump]
+chained to a working mule or horse
+
+table: SoundSmell
+A baby is crying [|in the distance|nearby]
+A dog is [|barking|howling|whimpering] [|nearby|in the distance]
+There is the [|strong|faint] smell of [|human waste|death|rotting food|bread baking|farm animals|manure|smoke]
+A [|woman|child|man] is [|laughing|crying|shouting something unintelligible]
+A group of children [|run and play merrily|sing morbid rhymes|play a simple game or sport with rocks, buckets and the like|wield toy weapons|engage in a footrace|watch the street listlessly]

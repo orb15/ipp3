@@ -1,0 +1,672 @@
+# ---------------------------------------
+# Scarlet Heroes: NPC Common Items
+# ---------------------------------------
+
+table: HumanSubrace
+type: lookup
+roll: 1d20
+1-6:[@HumanSubrace]
+6-12:Imperial
+13-14:Eshkanti
+15:Gadaal
+16-17:Eirengarder
+18-19:Kueh
+20:Skandr
+
+table: ShouBloodedSubrace
+type: lookup
+roll: 1d20
+1-6:[@ShouBloodedSubrace]
+6-12:Imperial-Shou-Blooded
+13-14:Eshkanti-Shou-Blooded
+15:Gadaal-Shou-Blooded
+16-17:Eirengarder-Shou-Blooded
+18-19:Kueh-Shou-Blooded
+20:Skandr-Shou-Blooded
+
+table: Temperment
+Ambitious
+Bigoted
+Capricious
+Cautious
+Compassionate
+Deceitful
+Exhibitionistic
+Fearful
+Garrulous
+Greedy
+Indecisive
+Inquisitive
+Lazy
+Loyal
+Lustful
+Merciful
+Observant
+Patient
+Proud
+Scornful
+Shy
+Stubborn
+Valorous
+Vicious
+Wrathful
+
+table: Trait
+Always carries things
+Always hurried
+Asthmatic
+Blind in an eye
+Careless dresser
+Constantly watchful
+Dark, sober clothes
+Deaf or hard of hearing
+Elaborate tattoos
+Emphatic speech
+Facial scarring
+Gaudy jewelry
+Immaculate clothes
+Laconic speaker
+Magnificent hair
+Missing an appendage
+Numerous piercings
+Often drunk or drugged
+Out of shape
+Precise hands
+Shaven or balding
+Stutters
+Subtle fragrance
+Tends work constantly
+Twitches regularly
+
+table: ImmediateDesire
+Aiding a friend
+Avenging a slight
+Bribing an official
+Buying an object
+Collecting a bribe
+Collecting a debt
+Commit a crime
+Curing a sickness
+Destroying evidence
+Earning money
+Funding a funeral
+Getting a document
+Getting drunk
+Going home to rest
+Having a man/woman
+Helping a relative
+Impressing a lover
+Impressing the boss
+Paying a debt
+Recovering a lost item
+Revealing a secret
+Selling an object
+Spreading a faith
+Spying on a person
+Stealing from the boss
+
+table: Tags
+Abuse
+Desire
+Habit
+Love
+Shame
+Accident
+Despair
+Hatred
+Loyalty
+Skillfulness
+Addiction
+Disease
+Hidden connection
+Madness
+Sorcery
+Aging
+Disowning
+Hierarchy
+Mistake
+Speed
+Alertness
+Dominance
+History
+Mystery
+Strength
+Anger
+Duty
+Honor
+Naivete
+Struggle
+Avarice
+Enamourment
+Hunger
+Offense
+Stupidity
+Beauty
+Erudition
+Ignorance
+Panic
+Submission
+Blindness
+Escape
+Illegality
+Perversion
+Tardiness
+Broken object
+Exhaustion
+Illusion
+Planning
+Temperance
+Capture
+Experience
+Imprisonment
+Poison
+Thoughtlessness
+Charity
+Exploration
+Incest
+Pride
+Tradition
+Chastity
+Fear
+Incompetence
+Promise
+Treachery
+Coins
+Foolishness
+Inheritance
+Rapacity
+Trickery
+Compassion
+Foresight
+Innocence
+Recklessness
+Truth
+Confusion
+Forgery
+Jewels
+Regret
+Ugliness
+Courage
+Forgetfulness
+Journeying
+Rot
+Vengeance
+Debauchery
+Forgiveness
+Kinship
+Secrets
+Weakness
+Debt
+Fury
+Knowledge
+Seizure
+Wealth
+Delusion
+Guilt
+Longing
+Servitude
+Wisdom
+
+table: Age
+Unusually young for the role they fill
+Youthful and vigorous
+Seasoned by age and experience, yet in their prime
+Uncommonly old for one of their current position
+
+table: Family
+Unmarriageable or estranged from their family
+Looking for a suitable spouse or intentionally unwed
+Wed comfortably, if of an appropriate age and role
+Wed uncomfortably, with marital strife
+Divorced or widowed, with children to support
+Their conjugal situation is complicated or scandalous
+
+table: Influence
+Great personal strength or potential for violence
+Seductive influence over a figure of authority
+Uncommon wealth for one of their position
+Acquaintance with dark magic or its practitioners
+The love and admiration of those who know them
+Favors and blackmail held over figures of importance
+Remarkable wit, perceptiveness, and personal cunning
+A traditional position of authority respected by others
+
+table: Motivation
+Lust for a particular uncooperative man or woman
+A solution to a pressing family crisis that coin cannot help
+Cure for a sickness that afflicts them or one dear to them
+Elevation in their current role through favor or success
+Payment of a debt so great that coin may not be enough
+Concealment of a dire shame or crime they were party to
+Ruination of a hated rival or long-term enemy
+Zealous performance of their job to its utmost degree
+Pleasure of all kinds and an ease from painful duties
+Redemption of their name from a shame, perhaps unjust
+Support for a kinsman in some dire need
+Excitement and the thrill of some new experience or lore
+
+table: MaleDwarf
+Arkadi
+Boris
+Dimitry
+Fyodor
+Gorya
+Kazimir
+Koldan
+Nikita
+Semyon
+Vasily
+
+table: FemaleDwarf
+Agnessa
+Anja
+Borbala
+Irina
+Karina
+Nastasia
+Oksana
+Raisa
+Svetlana
+Valeriya
+
+table: DwarfSurname
+Blackshaft
+Brassfist
+Breakblade
+Chimerock
+Copperhew
+Greathammer
+Heavypick
+Highdoor
+Longburrow
+Orefinder
+
+table: MaleEirengarder
+Adalric
+Ariaric
+Beremud
+Donar
+Egon
+Heilgar
+Hilt
+Hrolf
+Reginhard
+Sigmar
+
+table: FemaleEirengarder
+Adala
+Bertine
+Brunhild
+Dagma
+Ermintrude
+Haldisa
+Hildegard
+Isold
+Malasintha
+Methtilde
+
+
+Table:EirengarderSurname
+Altmann
+Brandt
+Diederich
+Frey
+Himmelreich
+Maurer
+Osterhagen
+Ritter
+Strauss
+Unger
+
+table: MaleElf
+Chamant
+Chontak
+Daktan
+Getak
+Jeddak
+Maganak
+Mhek
+Rendak
+Shekkad
+Shom
+
+table: FemaleElf
+Barahti
+Calai
+Chael
+Dalah
+Ganna
+Jemai
+Kalmi
+Kishani
+Lachada
+Mora
+
+table: ElfSurname
+of Creed Bitter Moon 
+of Creed Broken Stone
+of Creed Clean Book
+of Creed Five Names
+of Creed Great Wall
+of Creed Proven Road
+of Creed Righteous Fire
+of Creed Seven Ways Out
+of Creed Still Water
+of Creed That Within
+
+table: MaleHalfling
+Aman
+Baud
+Ces
+Cheten
+Chijn
+Dandus
+Edwin
+Eng
+Fer
+Gavin
+Gozberm
+Irvid
+Isac
+Iwan
+Joch
+Jock
+Lius
+Lout
+Maach
+Magnah
+Maudold
+Rager
+Ric
+Sier
+Stier
+Syath
+Wel
+Wil
+Wimaric
+
+table: FemaleHalfling
+Abbona
+Cleoneta
+Clesela
+Condra
+Cria
+Elora
+Erra
+Ersia
+Gina
+Iria
+Kitza
+Lida
+Liveva
+Loria
+Luige
+Mantza
+Maribela
+Marra
+Onda
+Otsenzia
+Quia
+Rosca
+Rosida
+Rosmuzia
+Sara
+Taita
+Vilia
+Wana
+Zana
+Zuberga
+
+table: HalflingSurname
+Bunce
+Hopesinger
+Underlake
+Farfoot
+Rumble
+Underfoot
+Galbassi
+Townsend
+Burrowes
+Goold
+Goodchild
+Fallonhide
+Lothran
+Goodchild
+Langham
+Knotwise
+Rose Greenhill
+Zaragamba
+
+table: MaleEshkanti
+Ali
+Bakir
+Hisham
+Jabir
+Mansur
+Rahim
+Salim
+Shahib
+Umar
+Yazid
+
+table: FemaleEshkanti
+Aminah
+Chiklah
+Ijliyah
+Jaida
+Khalida
+Maridah
+Munisa
+Rayya
+Sabiha
+Thana
+
+table: EshkantiSurname
+Aliyya
+Aswari
+Halali
+Jaludi
+Misri
+Naqit
+Raqashi
+Rumi
+Sakhawi
+Tabari
+
+table: MaleGadaal
+Aidan
+Callum
+Eanraig
+Gavin
+Jock
+Lammach
+Morgan
+Murdoch
+Sawney
+Tearlach
+
+table: FemaleGadaal
+Bradana
+Daracha
+Iona
+Jinty
+Mae
+Morag
+Muriel
+Rona
+Senga
+Tavie
+
+table: GadaalSurname
+Bannatyne
+Dalmahoy
+Imrie
+Jarvie
+Lindoch
+Mar
+Niven
+Pire
+Reith
+Tassie
+
+table: MaleImperial
+Bai
+Dai
+Jian
+Jing
+Minghua
+On
+Qiang
+Shan
+Wang
+Xue
+
+table: FemaleImperial
+Daiyu
+Jia
+Mingxia
+Nuwa
+Rou
+Sulin
+Ting
+Xia
+Xiuli
+Yanmei
+
+table: ImperialSurname
+Chang
+Guo
+Lai
+Lei
+Pan
+Shao
+Song
+Wan
+Xiong
+Ye
+
+table: MaleKueh
+Arata
+Daisuke
+Ichiro
+Jiro
+Kiyoshi
+Minoru
+Nobu
+Ren
+Shiro
+Tetsuya
+
+table: FemaleKueh
+Akiko
+Asuka
+Hina
+Izumi
+Kasumi
+Mariko
+Midori
+Noriko
+Sakura
+Ume
+
+table: KuehSurname
+Asakuma
+Endo
+Ito
+Kamei
+Kitano
+Matsumoto
+Nakatomi
+Sato
+Suzuki
+Tanaka
+
+table: MaleSkandr
+Bergfin
+Dagr
+Haruk
+Ingimarr
+Lofrik
+Njall
+Ormulf
+Ragnbjorn
+Sigdan 
+Tyrfing
+
+table: FemaleSkandr
+Birla
+Disa
+Inga
+Jutta
+Maeva
+Lindahl
+Otkatla
+Runa
+Spana
+Thyrna
+Ursula
+
+table: SkandrSurname
+Birkeland
+Eide
+Hanevold
+Ingstad
+Ramsfjell
+Skarsgard
+Tangvik
+Thules
+Ulving
+
+table: MaleImperial-Shou-Blooded
+[@MaleImperial]
+
+table: FemaleImperial-Shou-Blooded
+[@FemaleImperial]
+
+table: Imperial-Shou-BloodedSurname
+[@ImperialSurname]
+
+table: MaleGadaal-Shou-Blooded
+[@MaleGadaal]
+
+table: FemaleGadaal-Shou-Blooded
+[@FemaleGadaal]
+
+table: Gadaal-Shou-BloodedSurname
+[@GadaalSurname]
+
+table: MaleEirengarder-Shou-Blooded
+[@MaleEirengarder]
+
+table: FemaleEirengarder-Shou-Blooded
+[@FemaleEirengarder]
+
+table: Eirengarder-Shou-BloodedSurname
+[@EirengarderSurname]
+
+table: MaleKueh-Shou-Blooded
+[@MaleKueh]
+
+table: FemaleKueh-Shou-Blooded
+[@FemaleKueh]
+
+table: Kueh-Shou-BloodedSurname
+[@KuehSurname]
+
+table: MaleSkandr-Shou-Blooded
+[@MaleSkandr]
+
+table: FemaleSkandr-Shou-Blooded
+[@FemaleSkandr]
+
+table: Skandr-Shou-BloodedSurname
+[@SkandrSurname]
+
+table: MaleEshkanti-Shou-Blooded
+[@MaleEshkanti]
+
+table: FemaleEshkanti-Shou-Blooded
+[@FemaleEshkanti]
+
+table: Eshkanti-Shou-Bloodedurname
+[@SkandrEshkanti]
