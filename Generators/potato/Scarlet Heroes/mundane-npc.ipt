@@ -19,10 +19,10 @@ Set: firstname=[@{$sex}{race}]
 Set: surname=[@{$race}Surname]
 Set: trait=[@Trait]
 Set: tags=[!3 Tags >> implode]
-Set: temperment=[@Temperment]
+Set: temperament=[@Temperament]
 Set: immediateDesire=[@ImmediateDesire]
 Set: profession=[@{$prompt1}]
-<b>{$firstname} {$surname}</b> ({$sex} {$race})\n{$profession}\n\nAge: {$age}\nTrait: {$trait}\n\n<i>Other Information</i>\nFamily: {$family}\nInfluence: {$influence}\nMotivation: {$motivation}\nTemperment: {$temperment}\nImmediate Desire: {$immediateDesire}\nDescriptive Tags: {$tags}
+<b>{$firstname} {$surname}</b> ({$sex} {$race})\n{$profession}\n\nAge: {$age}\nTrait: {$trait}\n\n<i>Other Information</i>\nFamily: {$family}\nInfluence: {$influence}\nMotivation: {$motivation}\nTemperament: {$temperament}\nImmediate Desire: {$immediateDesire}\nDescriptive Tags: {$tags}
 
 table: Random
 8:[@Commoner]

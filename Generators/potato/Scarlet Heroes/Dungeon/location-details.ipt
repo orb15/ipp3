@@ -13,7 +13,8 @@ Set: hazardRoll={1d10}
 Set: featureRoll={1d10}
 Set: treasureFound=[@FoundTreasure]
 Set: hazardDetails=[@HazardDetails]
-<b>This is a {$room} that contains...</b>\n\nEncounter: {$encounter}\nBase Treasure roll was: {$treasureRoll} ([#{$treasureRoll} BaseTreasureChance]). Add 3 to this value if there is an Encounter. Threshold: 8\nBase Hazard roll was: {$hazardRoll} ([#{$hazardRoll} BaseHazardChance]). If there is Treasure and no Encounter, add 3 to this value. Threshold: 10\nBase Feature roll was: {$featureRoll} ([#{$featureRoll} BaseFeatureChance]). Add 1 to this value if there was no Encounter, Treasure or Hazard present. Threshold: 9\n\n<i>Details (if they exist at all)</i>\nTreasure Found: {$treasureFound}\nHazard Details: {$hazardDetails}
+Set: nextDir=[@NextLocationDirection]
+<b>This is a {$room} that contains...</b>\n\nAn exit to the {$nextDir}\n\nEncounter: {$encounter}\nBase Treasure roll was: {$treasureRoll} ([#{$treasureRoll} BaseTreasureChance]). Add 3 to this value if there is an Encounter. Threshold: 8\nBase Hazard roll was: {$hazardRoll} ([#{$hazardRoll} BaseHazardChance]). If there is Treasure and no Encounter, add 3 to this value. Threshold: 10\nBase Feature roll was: {$featureRoll} ([#{$featureRoll} BaseFeatureChance]). Add 1 to this value if there was no Encounter, Treasure or Hazard present. Threshold: 9\n\n<i>Details (if they exist at all)</i>\nTreasure Found: {$treasureFound}\nHazard Details: {$hazardDetails}
 
 table: EncounterChance
 type: lookup
@@ -77,6 +78,19 @@ Dangerous object. Save or take Td6 damage.
 Trapped container. If Treasure, save or take Td6 damage.
 Trapped feature. If Feature, save or take Td6 damage.
 Lethal trap or environmental quality. Save or perish.
+
+table: NextLocationDirection
+type: lookup
+roll: 1d10
+1:northwest
+2:north
+3:northeast
+4:east
+5:southeast
+6:south
+7:southwest
+8:west
+9-10:best/any direction
 
 table: CavernLocation
 Caved-in cavern

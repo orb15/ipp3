@@ -6,7 +6,7 @@ prompt: Likelihood {AlmostImpossible|VeryUnlikely|Unlikely|Unknown|Likely|VeryLi
 
 table: Master
 MaxReps: 1
-In answer to your question: <b>[@{$prompt1}]</b>
+In answer to your question with {$prompt1} likelihood: <b>[@{$prompt1}]</b>
 
 table: AlmostImpossible
 type: lookup
