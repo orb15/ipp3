@@ -2,7 +2,7 @@
 # Scarlet Heroes: Dungeon Location
 # ---------------------------------------
 
-prompt: Type {Cavern|Habitation|Fortress|Temple|Academy}
+prompt: Type {Cavern|Habitation|Fortress|Temple|Academy} Cavern
 
 table: Master
 MaxReps: 1

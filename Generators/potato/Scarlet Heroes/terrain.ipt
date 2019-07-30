@@ -63,4 +63,4 @@ roll: 1d10
 6:Hills
 7:Scrub hills
 8:Mountains
-9-10: the same as the largest contiguous terrain type near this hex. If this doesn't make sense, reroll. 
+9-10: the same as the largest contiguous terrain type near this hex. If this doesn't make sense, reroll.

@@ -1,0 +1,1894 @@
+# ---------------------------------------
+# Scarlet Heroes: Adventure
+# See pg 96
+# ---------------------------------------
+
+prompt: Location {Urban|Wilderness|Dungeon|Random} Random
+
+table: Master
+maxReps: 1
+Shuffle: UrbanTag
+Shuffle: WildernessTag
+Shuffle: DungeonTag
+Set: loc=[when]{$prompt1} = Random[do][|Wilderness|Urban|Dungeon][else]{$prompt1}[end]
+Set: tag1=[!{$loc}Tag]
+Set: tag2=[!{$loc}Tag]
+Set: enemy1=[@{tag1}_Enemies]
+Set: friend1=[@{tag1}_Friends]
+Set: thing1=[@{tag1}_Things]
+Set: complication1=[@{tag1}_Complications]
+Set: place1=[@{tag1}_Places]
+Set: enemy2=[@{tag2}_Enemies]
+Set: friend2=[@{tag2}_Friends]
+Set: thing2=[@{tag2}_Things]
+Set: complication2=[@{tag2}_Complications]
+Set: place2=[@{tag2}_Places]
+<b>This is \a {$loc} location</b>\n\n<b>{$tag1}</b>\nEnemy: {$enemy1}\nFriend: {$friend1}\nThing: {$thing1}\nComplication: {$complication1}\nPlace: {$place1}\n\n<b>{$tag2}</b>\nEnemy: {$enemy2}\nFriend: {$friend2}\nThing: {$thing2}\nComplication: {$complication2}\nPlace: {$place2}
+
+table: UrbanTag
+Angry_Ghosts
+Class_Warfare
+Corrupt_Official
+Dueling_Families
+Ethnic_Violence
+Foul_Sorcery
+Grasping_Merchant
+Marauding_Thugs
+Monstrous_Predator
+Plundered_Tribute
+Rebel_Cell
+Renegade_Ninja
+Serial_Killer
+Sinister_Religion
+Stolen_Authority
+Sudden_Privation
+Tide_Cult
+Tong_Extortion
+Troubled_Festival
+Uncovered_Depths
+
+table: WildernessTag
+Abandoned_Traps
+Beast_Nests
+Brutal_Terrain
+Changed_Terrain
+Cursed_Miasma
+Degenerate_Tribe
+Dubious_Hermit
+Freakish_Beasts
+Good_Location
+Hidden_Riches
+Hostile_Camp
+Hunting_Grounds
+Isolationist_Village
+Lost_Shrine
+Massacre_Site
+Mazey_Paths
+Poisonous_Land
+Ruined_Settlement
+Trade_Path
+Vicious_Flora
+
+table: DungeonTag
+Aspiring_Warlord
+Bad_Feng_Shui
+Cursed_Past
+Disorienting_Layout
+Dueling_Explorers
+False_Facade
+Familiar_Peril
+Holy_Site
+Honey_Trap
+Multiple_Layers
+Newly_Discovered
+Plundered_Recently
+Preserved_Fragment
+Recent_Upheaval
+Repurposed_Ruin
+Slow_Poison
+Stronghold_Site
+Sympathetic_Locals
+Unstable_Structures
+Watery_Doom
+
+table: Abandoned_Traps_Enemies 
+Golem trap-maintainer
+Confused undead guardian
+Vicious scavenger of trap victims
+Creature that is an animate peril
+
+table: Abandoned_Traps_Friends 
+Curious engineer
+Intrepid explorer
+Intruder too frightened to escape
+Sage who knows the secret of the traps
+
+table: Abandoned_Traps_Things 
+Key to deactivate traps
+Precious thing the traps guard
+Map of trap placement
+Magical protection from the traps
+
+table: Abandoned_Traps_Complications 
+The traps keep something in
+The traps are intelligent
+The traps have been suborned
+The "traps" were never meant to be
+
+table: Abandoned_Traps_Places 
+Innocent room
+"Obviously trapped statue" chamber
+False treasure cave
+Clearing littered with remains of victims
+
+table: Angry_Ghosts_Enemies
+Meddlesome necromancer
+Vengeful wraith
+Negligent priest
+Grasping tomb-robber
+
+table: Angry_Ghosts_Friends
+Ghost's surviving relative
+Distressed cemetery keeper
+Local priest
+Inquiring magistrate
+
+table: Angry_Ghosts_Things
+Lost family heirloom
+Plundered tomb goods
+Treasure of disputed ownership
+Ancestor tablet
+
+table: Angry_Ghosts_Complications
+The ghosts want something horrible
+The ghosts are mistaken in their anger
+The locals blame the wrong cause
+Some worship the angry dead as gods or use them as tools
+
+table: Angry_Ghosts_Places
+Neglected temple
+Desolate cemetery
+Ancestral family dwelling
+Site of a terrible crime
+
+table: Aspiring_Warlord_Enemies
+Embittered noble pretender
+Zealous cult prophet
+Cynical mercenary chief
+Paid agent of an enemy foreign power
+
+table: Aspiring_Warlord_Friends
+Spy from a nearby city
+Dissatisfied underling
+Wretched prisoner of the tyrant
+Rival warlord or former dungeon chief
+
+table: Aspiring_Warlord_Things
+Map of the warlord's strategy
+Payroll treasure
+Artifact that gives the warlord legitimacy
+Key to the warlord's sanctum
+
+table: Aspiring_Warlord_Complications
+The warlord is popular with rebels
+He pretends to noble title
+He is a puppet for a local noble
+He's actually inhuman
+
+table: Aspiring_Warlord_Places
+Chamber of barbaric splendor
+Squalid barracks
+Storehouse of plundered supplies
+Armory of crude weapons
+
+table: Bad_Feng_Shui_Enemies
+Undying original leader of the site
+Sorcerer seeking to tap the foul energy
+Misshapen abomination
+Foolish conqueror
+
+table: Bad_Feng_Shui_Friends
+Victim of misfortune
+Tragically warped innocent
+Crusading purifier
+Curious magical researcher
+
+table: Bad_Feng_Shui_Things
+Warped magical artifact
+Object that is causing the misfortune
+Cursed treasure
+Book telling the secrets of the place
+
+table: Bad_Feng_Shui_Complications
+The curse takes the form of a warped blessing or invigoration
+Local officials are somehow responsible for the curse
+The curse is the result of recent actions
+The misfortune is intelligent and targets for maximum chaos
+
+table: Bad_Feng_Shui_Places
+Desecrated shrine
+Chamber of palpably oppressive ill-luck
+Abandoned living quarters
+Leprously decayed structures
+
+table: Beast_Nests_Enemies
+Savage beast-tamer
+Mad flesh-molding sorcerer
+Brutish rural menagerie-owner
+Lycanthropic pack leader
+
+table: Beast_Nests_Friends
+Intrepid hunter
+Bewildered local
+Wood-wise hermit
+Shaman with the beast as a totem
+
+table: Beast_Nests_Things
+Beast-attracting magical artifact
+Tools of flesh-molding
+Prey-feeding phenomenon
+Device that creates more beasts
+
+table: Beast_Nests_Complications
+The beasts are unnatural and have human intelligence
+The beasts are tiny but lethal swarm creatures
+The beasts are being used as a tool to some dark end
+The beasts are possessed by some evil spiritual power
+
+table: Beast_Nests_Places
+Fetid cave lair
+Site of bloody predation
+Lonely darkness surrounded by howls
+Reeking laboratory with cages and vivisection tables
+
+table: Brutal_Terrain_Enemies
+Trapper of humans
+Degenerate exiled noble
+Refugee cult leader
+Angry spirit of the land
+
+table: Brutal_Terrain_Friends
+Ensnared explorer
+Desperate refugee seeking shelter
+Priest of Kega
+Treasure-hunter convinced of hidden plunder
+
+table: Brutal_Terrain_Things
+Precious medicinal plant
+Costly mineral formation
+Map to lost edifice in the terrain
+Artifact to protect from conditions
+
+table: Brutal_Terrain_Complications
+The terrain is intelligent and malevolent
+The terrain actually has a hidden danger that has killed those who discovered it
+The terrain is a refuge for bandits or worse
+The terrain produces some precious compound or substance
+
+table: Brutal_Terrain_Places
+Boiling swamp
+Gash of earth seeping with lava
+Caverns of half-toxic gases
+Hills of steaming mudslides
+
+table: Changed_Terrain_Enemies
+Released elemental monstrosity
+Necromancer seeking parts
+Looter plundering the dead
+Cannibal survivor
+
+table: Changed_Terrain_Friends
+Harried survivor
+Struggling local official
+Disoriented nature spirit
+Outsider bringing aid from neighbors
+
+table: Changed_Terrain_Things
+Large cache of food and supplies
+Unearthed treasure
+Abandoned wealth
+Disaster-created magical reagent
+
+table: Changed_Terrain_Complications
+The disaster was caused by a villain
+Enemies seek to cut off relief
+Someone important was lost in the area when it struck
+Some edifice or precious object was revealed by the disaster
+but will soon sink back into the depths
+
+table: Changed_Terrain_Places
+Revealed ancient ruin
+Forest of dead trees
+Half-buried village
+Perfectly silent desolation
+
+table: Class_Warfare_Enemies
+Rabble-rousing demagogue
+Cynical profiteer
+Bigoted zealot
+Foreign agent provocateur
+
+table: Class_Warfare_Friends
+Wretched victim
+Desperate peacemaker
+Struggling civil official
+Child of both groups
+
+table: Class_Warfare_Things
+Charter of ancient rights
+"Stolen" wealth
+Proof of hidden crimes
+Valuable commodity being fought over
+
+table: Class_Warfare_Complications
+Both sides have sympathetic arguments
+One side is vital to the city but very unpopular
+One side is sympathetic but wildly excessive in its wants
+One side is repugnant but legally justified in their demands
+
+table: Class_Warfare_Places
+Now-empty tea house both once used
+Angry public rally
+Site of a recent street fight
+Abandoned house of a class enemy
+
+table: Corrupt_Official_Enemies
+Venal magistrate
+Brutal watch captain
+Ravaging military commander
+Depraved daifu
+
+table: Corrupt_Official_Friends
+Victim of the official
+Investigating inquisitor
+Righteous predecessor in office
+Aspiring underling
+
+table: Corrupt_Official_Things
+Proof of their crimes
+Stolen plunder
+Forbidden goods
+Missing inquisitor's report
+
+table: Corrupt_Official_Complications
+Their superior is complicit
+He has many local collaborators
+The locals are terrified of his men
+He is a traitor in service to an enemy power
+
+table: Corrupt_Official_Places
+Opulent mansion
+Farcical courtroom
+Burnt site of outspoken critic's home
+Market groaning under "taxes"
+
+table: Cursed_Miasma_Enemies
+Warped animal
+Corruption-worshiping cultist
+Twisted nature spirit
+Crazed local leader
+
+table: Cursed_Miasma_Friends
+Investigating sage
+Hard-pressed local
+Desperate physician
+Baffled hunter
+
+table: Cursed_Miasma_Things
+Cure for the plague
+Dark artifact that created the curse
+Possessions of victims
+Costly reagent created by the miasma
+
+table: Cursed_Miasma_Complications
+The plague enrages wildlife
+The miasma warps humans
+The miasma is a magical bio-toxin
+Evil cultists are gathering to take advantage of the dark conjunction
+
+table: Cursed_Miasma_Places
+Stinking swamp
+Glade of twisted shadows
+Meadow pocked with gas vents
+Tent with sickened victims
+
+table: Cursed_Past_Enemies
+Undying author of the crime
+Inheritor of the crime's fruits
+Creature made by the evil
+Vengeance-mad avenger
+
+table: Cursed_Past_Friends
+Survivor of the evil
+Exorcist seeking purification
+Distressed ghost
+Investigator seeking the truth
+
+table: Cursed_Past_Things
+Bones of the restless dead
+Treasure that caused grief
+Maliciously cursed blade
+Proof of the culprit's evil
+
+table: Cursed_Past_Complications
+The tragedy was the result of a terrible misunderstanding
+The tragedy hasn't happened yet but is prophesied to
+Someone continues to profit greatly by the atrocity
+The author of the atrocity still is present or will return
+
+table: Cursed_Past_Places
+Charnel ground
+Haunted locale
+Hidden refuge long since lost
+Palatial dwelling of the culprit
+
+table: Degenerate_Tribe_Enemies
+Cannibal chieftain
+Tittering noble depravatus
+Blood-crazed demihuman zealot
+Coldly compelling prophet of sin
+
+table: Degenerate_Tribe_Friends
+Tribal with a struggling conscience
+Desperate escapee from the pot
+Frightened local
+Concerned forest hunter
+
+table: Degenerate_Tribe_Things
+A holy totem of their former civilization
+Treasures of their prey
+Maddening drugs
+Prehuman icon of dark magic
+
+table: Degenerate_Tribe_Complications
+They appear normal to outsiders
+They serve an inhuman horror against their will
+They know no better
+They recruit prey
+
+table: Degenerate_Tribe_Places
+Filthy hut
+Decaying structure of their ancestors
+Parodic mockery of former construction
+Den made opulent with loot
+
+table: Disorienting_Layout_Enemies
+Hidden master of the lair
+Living mist-thing
+Forever-trapped ghost
+Furious original builder of the place
+
+table: Disorienting_Layout_Friends
+Trapped explorer
+Frustrated heir to the place
+Fascinated sorcerer
+Bounty hunter after someone inside
+
+table: Disorienting_Layout_Things
+Key to escape
+Secret control unit for the area
+Artifact to detect confusing magic
+Treasure at the area's heart
+
+table: Disorienting_Layout_Complications
+The area is alive and its changes are organic
+Escape requires finding some sort of key
+The inhabitants use the effect to defend themselves from invaders
+The environment has had a dire influence on its denizens
+
+table: Disorienting_Layout_Places
+A maze of twisty passages all alike
+A hall of identical rooms
+Mist-shrouded pit-laced corridor
+Rooms of one-way doors
+
+table: Dubious_Hermit_Enemies
+Mad outcast wizard
+Prophet of a foul revelation
+Notorious criminal laying low
+Aswang eater of travelers
+
+table: Dubious_Hermit_Friends
+Pious holy hermit
+Well-meaning outcast from society
+Rebel against an evil ruler
+Retired hero seeking solitude
+
+table: Dubious_Hermit_Things
+A relic of the hermit's old life
+The hermit's treasure
+The hermit's lost precious
+The trove the hermit has long sought
+
+table: Dubious_Hermit_Complications
+The locals are convinced a kindly hermit is dangerous or vice-versa
+The hermit guards a sleeping evil
+The hermit has almost forgotten human language
+The hermit is exquisitely cultured and lives in opulent ease
+
+table: Dubious_Hermit_Places
+Dank cave
+Huge hollow tree trunk
+Long-ruined villa returned to use
+Hidden aerie among the cliffs
+
+table: Dueling_Explorers_Enemies
+Gold-crazed freebooter
+Ruthless tomb thief
+Rapacious sage of lost treasures
+Local lord with a lust for their "rightful due"
+
+table: Dueling_Explorers_Friends
+Patron backing the hero's efforts
+Rival of an enemy group
+Dungeon denizen wanting protection
+The ruin's true owner
+
+table: Dueling_Explorers_Things
+The macguffin treasure
+Notes on a rival's weakness
+A fake treasure
+Keys to an intruder-destroying defensive trap
+
+table: Dueling_Explorers_Complications
+A rival group actually has a sympathetic cause
+Rivals seek to coerce the hero's failure through their friends or allies
+The treasure is actually extremely dangerous to seize
+A seeming ally to the hero is actually a secret rival
+
+table: Dueling_Explorers_Places
+A treasure vault with multiple entrances
+Tavern full of rumors
+Chasm with ledges on either side
+Bloodstained arena
+
+table: Dueling_Families_Enemies
+Venomous matriarch
+Furious patriarch
+Scheming young kinsman
+Outside sower of discord
+
+table: Dueling_Families_Friends
+Hapless lovers
+Fearful head of a client family
+Peacemaking official
+Related friend of a PC
+
+table: Dueling_Families_Things
+Proof of one side's culpability
+The treasure they're fighting over
+Evidence of outside agitation
+Weapons to arm a side
+
+table: Dueling_Families_Complications
+Both families share in the wrong
+Many in both clans want peace but the leaders don't
+One clan has brute force while the other has money and social position
+The feud is actually cover for someone's desire to completely exterminate their rivals
+
+table: Dueling_Families_Places
+Bloodstained wedding hall
+Hostile community festival
+Now-shuttered former joint business
+Mysteriously burnt house
+
+table: Ethnic_Violence_Enemies
+Ethnic supremacist
+Brutal pogromchik
+Cynical politician seeking scapegoats
+Ruthless crusader for their interests
+
+table: Ethnic_Violence_Friends
+Oppressed victim
+Struggling peacemaker
+Frustrated official
+Determined cultural innovator
+
+table: Ethnic_Violence_Things
+Cultural treasure
+Evidence of a zealot's corruption
+Proof of false accusations
+Weapons to arm a violent group
+
+table: Ethnic_Violence_Complications
+The smaller group is led by paranoid and violent leaders
+The larger group actually thinks they're the oppressed ones
+Both groups are evenly matched in size or guilt
+The smaller group has a powerful and crazed leader
+
+table: Ethnic_Violence_Places
+Cultural society meeting-house
+Customary public ritual
+Workshop full of slaving oppressed
+Cemetery for one ethnicity
+
+table: False_Facade_Enemies
+Smiling "abbot"
+Mayor of secret cannibal village
+Repenter dwarf clan leader
+Murderous innkeeper
+
+table: False_Facade_Friends
+Hidden escapee
+Suspicious official investigator
+Survivor of slaughtered original inhabitants
+Family of latest victim
+
+table: False_Facade_Things
+Proof of foul doings
+Plunder of victims
+Relic that twisted the inhabitants
+Secret treasure they strive to protect
+
+table: False_Facade_Complications
+They really do perform their seeming service most of the time
+They never prey on heroes but only the weak and friendless
+They are forced to evil by an outsider
+They profit by a former reputation for excellence
+
+table: False_Facade_Places
+Hidden abattoir
+Secret gathering chamber
+Trash-room with former necessities
+Graves of former inhabitants
+
+table: Familiar_Peril_Enemies
+Maimed foe
+Undead shade of an enemy
+Embittered survivor of a former victory
+Child or kindred of a dead rival
+
+table: Familiar_Peril_Friends
+One the hero aided
+Messenger seeking heroic aid
+Local afflicted by the villain
+Seeker of a former victor over the evil
+
+table: Familiar_Peril_Things
+Secret weapon against the hero
+The prize the villain has long sought
+A prize the hero carelessly left behind
+The remedy for a plague or evil unleashed by the hero
+
+table: Familiar_Peril_Complications
+The enemy's vengeance seems justified to others
+The enemy has made unclean bargains for power
+The enemy is a former friend now embittered by how the hero's actions played out
+The enemy is badly mistaken about the hero's acts
+
+table: Familiar_Peril_Places
+Former place of victory
+Once-mighty stronghold
+Burned houses of allies
+Massacre site meant to send a message
+
+table: Foul_Sorcery_Enemies
+Amoral necromancer
+Power-mad blood sorcerer
+Secretly vengeful wizard
+Novice suddenly come into some dark power
+
+table: Foul_Sorcery_Friends
+Investigating official
+Frustrated local wizard
+Curse-raddled victim
+Old rival of the antagonist
+
+table: Foul_Sorcery_Things
+Artifact of dark sorcerous might
+Tome of forbidden lore
+Item specially baneful to the antagonist
+Proof of the true identity of the evildoer
+
+table: Foul_Sorcery_Complications
+The sorcerer's evil is accidental but uncontrollable
+The sorcery was originally meant for a "good" cause
+The sorcerer is working with officials
+The sorcery is not what it seems to be
+
+table: Foul_Sorcery_Places
+Hidden unsanctified ossuary
+Reeking tenement in the slums
+Hidden cultic shrine
+Secret room in a noble's palace
+
+
+table: Freakish_Beasts_Enemies
+Flesh-warping wizard
+Maddened beast-cult priest
+Unnaturally intelligent animal
+Trainer of these foul things
+
+table: Freakish_Beasts_Friends
+Desperate village leader
+Worried hunter
+Distressed forest diwata
+Vengeful survivor of the beasts' attacks
+
+table: Freakish_Beasts_Things
+Object causing bad feng shui
+Tome of dark biomantic lore
+Magnificent furs or beast extracts
+Item lost by a beast victim
+
+table: Freakish_Beasts_Complications
+Some of the beasts are not evil
+The beasts have enslaved human cattle
+The beasts were harmless until someone corrupted their nature
+The beasts are a mixed curse with both benefits and costs to the locals- and some benefit more than others
+
+table: Freakish_Beasts_Places
+Tainted pool of geomantic energy
+Bloodstained lab
+Gory beast attack site
+Animal lair with eerily intelligent decor
+
+table: Good_Location_Enemies
+Bandit chief lairing here
+Paranoid mine owner
+Savage Shou chieftain
+Privacy-loving dark sorcerer
+
+table: Good_Location_Friends
+Aspiring colony leader
+Wildcat prospector
+Inquisitive magic-user
+Eager explorer
+
+table: Good_Location_Things
+Hidden cache left behind by another
+Map to the site's secret resources or treasures
+Rich gold vein
+Vital supply store
+
+table: Good_Location_Complications
+The site is a trap and only looks appealing
+Someone else tried to settle here but perished terribly
+Two strong local powers are fighting over possession of the site
+The site could be good but something is interfering with its potential
+
+table: Good_Location_Places
+Subterranean spring
+High vantage point overlooking the land
+Old ruined colony building
+Makeshift new construction
+
+table: Grasping_Merchant_Enemies
+Avaricious usurer
+Reckless mine owner
+Heartless monopolist
+Brutal keeper of debt slaves
+
+table: Grasping_Merchant_Friends
+Hard-pressed business owner
+Desperate debtor
+Ruined beggar
+Honest competitor
+
+table: Grasping_Merchant_Things
+Vital contract document
+Hidden cache of gold
+The merchant's debt records
+Store of precious commodities
+
+table: Grasping_Merchant_Complications
+The "victims" are actually trying to cheat the merchant
+The merchant secretly trades in slaves
+The merchant desperately needs money
+The merchant is actually part of the government
+
+table: Grasping_Merchant_Places
+Opulent palace of the merchant
+Dangerous workshop
+Creaking slum tenement
+Smoky back room of a shady tea house
+
+table: Hidden_Riches_Enemies
+Ruthless fellow seeker
+The thing that has guarded the riches
+Wraith of its original owner
+Treacherous guide or patron
+
+table: Hidden_Riches_Friends
+Heir to the original owner
+New owner of the land
+Aspiring treasure-hunter
+Soul in desperate need of the riches
+
+table: Hidden_Riches_Things
+Mound of uncut jewels
+Key to unlock the hidden cache
+Journal of a dead seeker
+Protection from a warding trap
+
+table: Hidden_Riches_Complications
+The riches are a lie to lure prey to an undying evil
+The riches are in a very different form than tales say
+The riches were plundered but signs remain of who took them
+A villain seeks the riches to fund some awful purpose
+
+table: Hidden_Riches_Places
+Glittering cavern
+Camp of massacred treasure-hunters
+Tunnel trapped to slay intruders
+Foul lair of the treasure's guard
+
+table: Holy_Site_Enemies
+Scarred high priest
+Treacherous seemingly-friendly abbot
+Wild-eyed peasant prophet
+Exiled urban heretic
+
+table: Holy_Site_Friends
+Grim inquisitor
+Relative of a sacrificed victim
+Last survivor of an adventuring party
+Original denizen of the site
+
+table: Holy_Site_Things
+Unholy artifact of the god
+Pile of golden tribute exacted from the contemptible unbelievers
+Stolen holy text of the parent faith
+Black relic of a martyred anti-saint
+
+table: Holy_Site_Complications
+The cultists are wrong about which god sanctifies the site
+The site is only potentially holy and needs a gory sanctification
+Several religions fight for control of the site
+The cult has broken into sects which compete for the site leadership
+
+table: Holy_Site_Places
+Gaudily adorned shrine
+Antediluvian temple hall
+Austere cells of the cultists
+Hideously defiled sanctum
+
+table: Honey_Trap_Enemies
+Cynical rebel leader
+Component-seeking necromancer
+Curious newly-awakened tomb-lich
+Monstrous Tide priest
+
+table: Honey_Trap_Friends
+Naive young ally
+Desperate seeker of what the trap offers
+Innocent young adventurer
+Survivor of the trap
+
+table: Honey_Trap_Things
+False treasure
+Fake temple ritual vessels
+The corpse of the replaced ruler of the site
+Journal telling the truth of the site
+
+table: Honey_Trap_Complications
+Most occupants really believe the trap is legitimate
+The trap really does offer what it claims but slays all who seek it
+The trap used to be legitimate but has been taken over by a deceiver
+Locals hide the truth about the trap for some reason
+
+table: Honey_Trap_Places
+Room of smiling locals
+Cruelly trapped treasure-room
+Cell of rotting prey-corpses
+Secret passages for spying
+
+table: Hostile_Camp_Enemies
+Shou-trading weapons merchant
+Foreign military scout leader
+Feral cult priest
+Amoral hunter of men
+
+table: Hostile_Camp_Friends
+Concerned woodsman
+Army patrol leader
+Disturbed hermit-priest
+Fleeing shepherd
+
+table: Hostile_Camp_Things
+Shou gold for weapons
+Scarred primeval altar
+Hidden mineral lode
+Cache of precious furs
+
+table: Hostile_Camp_Complications
+The camp is selling something crucial to the hero
+The camp is under the protection of a local grandee
+The camp is only hostile due to its charismatic leader
+The camp is extremely mobile and never the same place twice
+
+table: Hostile_Camp_Places
+Hidden glade
+Secret cave in the rocks
+Cave hidden at high tide
+Palisade adorned by the heads of intruders
+
+table: Hunting_Grounds_Enemies
+Prowling abomination
+Relentless poacher
+Angry nature spirit
+Animal tinh with human intellect
+
+table: Hunting_Grounds_Friends
+Wise hunter
+Survivor of the hunting beast's attack
+Mayor of hard-pressed village nearby
+Desperately hungry colonist
+
+table: Hunting_Grounds_Things
+Valuable baby animals
+Loot from slain hunters
+Precious animal byproduct
+Infallible beast lure
+
+table: Hunting_Grounds_Complications
+The animals are holy to a local faith
+The locals sacrifice to the beast to avert its hunger from their village
+The grounds curse those who kill certain ages or types of animal
+The predator of the grounds masquerades as a harmless human
+
+table: Hunting_Grounds_Places
+Hidden beast lair
+Noisome animal den
+Quiet animal trail in the jungle
+Site of great slaughter
+
+table: Isolationist_Village_Enemies
+Secret cult leader
+Stern ethnic supremacist
+Smuggler chieftain
+Monstrous being disguised as a human leader
+
+table: Isolationist_Village_Friends
+Naive new outsider resident
+Concerned wayfarer
+Secretly sympathetic local
+Official investigator
+
+table: Isolationist_Village_Things
+Hidden proof of atrocities
+Tokens of a nonhuman past
+The treasure they guard so well
+The goods they smuggle to Shou
+
+table: Isolationist_Village_Complications
+The village is isolationist because its neighbors torment it
+The village shuts itself away to contain some danger within it
+The villagers seem friendly but ruthlessly silence investigators
+The locals used to rule the surrounding lands
+
+table: Isolationist_Village_Places
+Aggressively normal-seeming village square
+Hidden cult shrine
+Secret tunnels below the village
+Hidden meeting place
+
+table: Lost_Shrine_Enemies
+Mad abbot
+Inhuman usurper
+Ruthless treasure hunter
+Degenerate priest-chief
+
+table: Lost_Shrine_Friends
+Searching scholar-priest
+Escapee from the shrine
+Desperate preserver of the shrine's purpose
+Mysterious sacred spirit
+
+table: Lost_Shrine_Things
+Jeweled relic
+Lost holy scrolls
+Abundant tithe-tribute
+Book of secret prophecy
+
+table: Lost_Shrine_Complications
+The shrine's been seized by a rival faith
+The shrine is targeted by an enemy of civilization
+The inhabitants have degenerated into a grotesque parody of their former beliefs
+The shrine holds a holy relic priceless to urban co-religionists
+
+table: Lost_Shrine_Places
+Shattered altar-hall
+Mouldering catacombs
+Befouled meditation hall
+Carefully-tended fields within the jungle
+
+table: Marauding_Thugs_Enemies
+Vicious ethnic supremacist leader
+Violent local pretender
+Ambitious tong grandfather
+Grizzled mercenary captain
+
+table: Marauding_Thugs_Friends
+Despairing city watch chief
+Neighborhood elder
+Thug-oppressed victim
+Vengeful former gang member
+
+table: Marauding_Thugs_Things
+Hidden cache of weapons and armor
+Payroll from enemy power bankrolling the thugs
+Documents proving the thugs are bribing officials
+Magical artifact that empowers the thug leader
+
+table: Marauding_Thugs_Complications
+The thugs used to be upstanding protectors and some still are
+The officials want the neighborhood punished for something
+Some local official only thinks he controls the group
+The thugs have suddenly gained great power or backing
+
+table: Marauding_Thugs_Places
+Embers of an uncooperative victim's house
+Rowdy drinking hall
+Ineffectual civil court
+Hidden or fortified headquarters
+
+table: Massacre_Site_Enemies
+Enraged undead revenant
+Author of the slaughter,
+Grasping treasure hunter
+Feaster upon the slain
+
+table: Massacre_Site_Friends
+Survivor of the killing
+Avenger of the dead
+Confused and sorrowful ghost
+Investigator for the local rulers
+
+table: Massacre_Site_Things
+Loot of the slain
+Precious thing the dead were guarding
+Proof of the culprit's guilt
+The secret they were killed to keep
+
+table: Massacre_Site_Complications
+The dead actually deserved it
+The dead rise to attack the wrong people
+No one admits the site's existence out of shame or fear
+The culprits didn't get all their targets and are going to try again
+
+table: Massacre_Site_Places
+Gory shambles in the wilderness
+Burnt-out home
+Site of their last stand
+Hidden mass grave
+
+table: Mazey_Paths_Enemies
+The beast at the maze's heart
+Cruel trap-springing sorcerer
+Paranoid hermit
+Mad architect of the place
+
+table: Mazey_Paths_Friends
+Would-be escapee
+Survivor dwelling within the maze
+Kin of a maze-lost victim
+Intrepid explorer
+
+table: Mazey_Paths_Things
+Map of the maze
+Key to the maze's defenses
+Treasure the maze was to guard
+Corpse of a long-starved victim
+
+table: Mazey_Paths_Complications
+The maze itself is intelligent
+The maze is to keep something in
+The maze channels magical force through its architecture,
+The maze is the remnant of some ancient race's esoteric artistic or domestic structure
+
+table: Mazey_Paths_Places
+Heart of the maze
+Twisty passage
+Several identical-looking locations
+Site of frantic and useless attack on the maze
+
+table: Monstrous_Predator_Enemies
+Powerful intelligent undead
+Shapeshifting man-eater
+Sewer-dwelling abomination
+Lycanthropic local official
+
+table: Monstrous_Predator_Friends
+Grizzled city-hired hunter
+Sole attack survivor
+Repentant soul involved in its appearance
+Hunted prey
+
+table: Monstrous_Predator_Things
+Poison or weapon to kill the monster
+Hoard of victim's treasure
+Thing the creature seeks
+Tome containing its weaknesses
+
+table: Monstrous_Predator_Complications
+The predator is worth more alive than dead
+The predator is an innocent victim of foul magic
+The predator is only mostly killing people who deserve it
+The predator is targeting a PC's friend or family
+
+table: Monstrous_Predator_Places
+Site of a bloody kill
+Place where the thing was formerly imprisoned
+Reeking animal lair
+Disturbingly quiet ambush site
+
+table: Multiple_Layers_Enemies
+Paranoid hermit
+Undead guardian of secrets
+Smilingly false proprietor
+Hidden chief of the site
+
+table: Multiple_Layers_Friends
+Sharp-eyed investigator
+Scholar with books mentioning the truth
+Tracker with suspicions
+Kin of vanished investigator
+
+table: Multiple_Layers_Things
+Trigger to open the secret
+Map to the hidden areas
+The treasure the layer guards
+The hidden wealth of the chieftain
+
+table: Multiple_Layers_Complications
+A layer is a deathtrap
+Even the inhabitants don't know about the layer
+The layer is collapsing
+The hidden layer is a prison
+
+table: Multiple_Layers_Places
+Room with a rotating wall
+Secret passage in the walls
+Place with hidden trapdoor in floor
+Lightless tunnels below
+
+table: Newly_Discovered_Enemies
+Paranoid ruin chieftain
+Greedy latecomer adventurer
+Long-buried evil power
+Guardian who wants it to stay lost
+
+table: Newly_Discovered_Friends
+Curious ruin inhabitant
+Explorer with an heirloom map
+Trapped fellow adventurer
+Long-shackled unquiet ghost
+
+table: Newly_Discovered_Things
+Key to a buried evil
+Relic describing the truth of the ruin
+Map to a vault of a former age
+Codex of lost wisdom
+
+table: Newly_Discovered_Complications
+The site is easy to enter but near-impossible to escape
+The ruin's location is infested by dangerous foes
+Another group races to find the ruin and unlock its secrets
+The inhabitants are convinced it is death for them to be discovered
+
+table: Newly_Discovered_Places
+Untouched treasure chamber
+Structure of ancient architectural style
+A dusty furnished room
+Unmarred dust on floors
+
+table: Plundered_Recently_Enemies
+The plunderer who is still there
+Enraged heir to the local ruler
+Greedy would-be ruin-picker
+The thing the raider released
+
+table: Plundered_Recently_Friends
+Innocent caught up in the fighting
+Frightened local
+Plunderer's henchman
+Inquisitive local official
+
+table: Plundered_Recently_Things
+The last unfound treasure
+Relic fragment the plunderer missed but needs
+Well-buried treasure
+Worthless-looking prize
+
+table: Plundered_Recently_Complications
+The treasure was vital to the site's stability
+The hero is mistaken for the plunderer by the locals or taxman
+The plunderer strangely sought some seemingly-worthless treasure
+The locals fight savagely to replace their dead chief
+
+table: Plundered_Recently_Places
+Body-strewn chamber
+Corridor echoing with the wailing of survivors
+Signs of great destruction
+Ravaged treasure room
+
+table: Plundered_Tribute_Enemies
+Thieving merchant
+Grasping local official
+Malignant tong leader
+Furious rebel chieftain
+
+table: Plundered_Tribute_Friends
+Embarrassed guard captain
+Desperate tax collector
+Repentant member of the thieving group
+Inquiring local official
+
+table: Plundered_Tribute_Things
+Sacks of worn silver coin from taxes
+Bales of valuable goods
+Carefully-fashioned offering vessels
+Key to a hiding place
+
+table: Plundered_Tribute_Complications
+The one demanding tribute has no real right to it
+The locals are cooperating to deny the tribute-gatherer
+The tribute- gatherer desperately needs that tribute for some reason
+The tribute itself is actually somehow dangerous or cursed
+
+table: Plundered_Tribute_Places
+Secret cache in the mountains
+Hidden cellar
+Smuggler's cove
+A hiding place in plain sight
+
+table: Poisonous_Land_Enemies
+Crazed nature-spirit
+Ruthless alchemist
+Earth-corrupting cult leader
+Abomination that thrives on poison
+
+table: Poisonous_Land_Friends
+Nature-loving hermit
+Refugee from the land
+Worried surveyor
+Owner of the currently-worthless deed to the land
+
+table: Poisonous_Land_Things
+Protective device
+Item causing the poison
+Precious byproduct of the poison
+Possession of one caught in the toxin
+
+table: Poisonous_Land_Complications
+The poison is the direct consequence of some wealth-creating process
+The poison is invisible and the land is thought magically cursed
+The poison only affects certain beings
+Certain monsters are attracted by the poison
+
+table: Poisonous_Land_Places
+Vents of poison gas
+Upwellings of live steam or magma
+Zone of intense radioactivity
+Flesh-meltingly bad feng shui site
+
+table: Preserved_Fragment_Enemies
+Privacy-seeking local ruler
+Aspiring conqueror
+Local seeker of fresh parts
+Outsider who seeks to use these locals as tools
+
+table: Preserved_Fragment_Friends
+Curious native
+Excited historian
+Local villager with a secret friendship with them
+Native needing outsider help
+
+table: Preserved_Fragment_Things
+Book of lost wisdom
+Relic of the ancients
+Thing useless to them but precious to moderns
+Ancient long-kept treasure
+
+table: Preserved_Fragment_Complications
+They can't change
+They carry a terrible disease
+They are bound to the site
+They believe the world hasn't changed
+
+table: Preserved_Fragment_Places
+Temple to a dead god
+Small sad mimicry of a lost glorious structure
+Vast mausoleum
+Library full of ancient lore
+
+table: Rebel_Cell_Enemies
+Cynical demagogue
+Brutal pretender
+Relentless official investigator
+Local official seeking a scapegoat
+
+table: Rebel_Cell_Friends
+Courageous young rebel
+Upright local official
+Survivor of rebel violence
+Victim of official tyranny
+
+table: Rebel_Cell_Things
+List of rebel names
+Secret supply cache
+Stolen tribute
+Payroll for the government soldiers
+
+table: Rebel_Cell_Complications
+The rebels were once justified but are now mere marauders
+The government has put the place under martial law
+The rebels are deluded as to the nature of their true leaders
+The corrupt official the rebels hate is actually under investigation
+
+table: Rebel_Cell_Places
+Musty slum meeting-room
+Secret sewer lair
+Hidden gathering place in a noble's house
+Tavern of known rebel sympathies
+
+table: Recent_Upheaval_Enemies
+Furious former ruler
+Brutal new chieftain stamping out trouble
+Favor-currying toady
+Newly-unleashed horror
+
+table: Recent_Upheaval_Friends
+Conniving political fixer
+Outcast pretender
+Foe seeking to strike in the confusion
+Survivor of the bloody changeover
+
+table: Recent_Upheaval_Things
+The object that provoked the change
+The old ruler's lost treasure
+Regalia of true authority
+The new wealth of new ways
+
+table: Recent_Upheaval_Complications
+The lost situation was much better for the surrounding communities
+The hero is the first outsider to find out
+The new order keeps a facade of the old situation
+The new situation is not stable and is doomed to collapse catastrophically
+
+table: Recent_Upheaval_Places
+Bloodied throne room
+Massacre site of the old order
+Hidden refuge of die-hards
+Freshly-constructed rooms
+
+table: Renegade_Ninja_Enemies
+Megalomaniacal clan leader
+Crazed elder assassin
+Official convinced the hero is a ninja
+Amoral lord of the shadows
+
+table: Renegade_Ninja_Friends
+Traditionalist clan elder
+Official investigator
+Thief from a competing gang
+Related clansman seeking to fix the problem
+
+table: Renegade_Ninja_Things
+Book of blackmail material
+Priceless stolen treasures
+List of ninja infiltrators
+Vial of undetectable poison
+
+table: Renegade_Ninja_Complications
+The ninjas were provoked by some official excess
+The ninjas are no longer led by their old elders
+The ninjas have joined up with some darker power
+The ninjas are convinced rightly or otherwise that they would be better lords
+
+table: Renegade_Ninja_Places
+Well-defended clan estate
+Hidden sewer bolthole
+Concealed teahouse meeting-room
+Secret passage within a palace
+
+table: Repurposed_Ruin_Enemies
+Newly-arrived noble exile
+Aspiring bandit warlord
+Grandiose ‘king' of a new site
+Bitter guardian of the old ruin
+
+table: Repurposed_Ruin_Friends
+Curious scholar
+Scion of the original ruin dwellers
+Avid architect
+Official fearful of what is being raised
+
+table: Repurposed_Ruin_Things
+Key to old sorceries
+Treasure hidden by the rebuild
+Old relic repurposed to new effect
+Great treasure carelessly cast away
+
+table: Repurposed_Ruin_Complications
+The new inhabitants destroyed the old
+The place's old purpose still shows through in awkward ways
+Old wards or magical effects were not completely undone
+Part of the ruin is unknown and still intact as it originally was
+
+table: Repurposed_Ruin_Places
+Monument half-hidden under new work
+Unfinished room
+Untouched hidden chamber
+Place of broken walls
+
+table: Ruined_Settlement_Enemies
+Mad survivor-hermit
+The thing that killed them
+Bandit interloper
+Degenerate cannibal chieftain
+
+table: Ruined_Settlement_Friends
+Hard-pressed survivor
+Curious cartographer
+Troubled local
+Optimistic new colony founder
+
+table: Ruined_Settlement_Things
+Petty abandoned treasures
+Tribute never sent
+Precious byproduct of their deaths
+Journal of their last days
+
+table: Ruined_Settlement_Complications
+The ruined settlement looks alive and safe until victims are too close to escape
+The settlement was very recently ruined,
+Local neighbors had something to do with the destruction
+Wretched locals are being forced to attempt recolonization
+
+table: Ruined_Settlement_Places
+Burnt hut
+Rotting granary
+Derelict rice paddy
+Corral with livestock bones
+
+table: Serial_Killer_Enemies
+Inhuman creature masquerading as a local
+Bloody cult priest
+Secret hater of an ethnicity
+Methodical hired assassin
+
+table: Serial_Killer_Friends
+Bereaved widow
+Frightened witness
+The evidently next victim
+Grizzled monster hunter
+
+table: Serial_Killer_Things
+Vital clue
+Item to reveal a disguised monster
+The thing the murderer seeks from his victims
+List of victims due to die
+
+table: Serial_Killer_Complications
+The slain are political foes of a local grandee
+The locals quietly think the victims needed killing
+The locals somehow profit by the murders
+The dead are being replaced and impersonated
+
+table: Serial_Killer_Places
+Desolate alleyway
+Gory murder site
+Blood-stained altar chamber
+Tavern with locals huddling against the night
+
+table: Sinister_Religion_Enemies
+Traditionalist elder
+Persuasive priest
+Spirit worshiped as a god
+Mage turned high priest of an esoteric faith
+
+table: Sinister_Religion_Friends
+Rival priest
+Reformer of outmoded faiths
+Local suspicious of the new creed
+Cult member who doubts the faith
+
+table: Sinister_Religion_Things
+Slowly-corrupting relic
+Book of divine scripture
+Repository of generations of offerings
+Tribute to bribe local officials
+
+table: Sinister_Religion_Complications
+The religion is vital to local prosperity
+The religion is actually quite benign on the inside
+The religion will get much worse unless the hero intervenes somehow
+The religion is universal among the local elite
+
+table: Sinister_Religion_Places
+Newly-erected shrine
+Ancient traditional temple
+Hidden fane in the wilderness
+Secret urban meeting-house
+
+table: Slow_Poison_Enemies
+Poison-eating abomination
+Sinister alchemist
+Crafter careless of his pollution
+Spirit of the toxin
+
+table: Slow_Poison_Friends
+Curious adapted local
+Wary treasure-hunter
+Scholar seeking the poison
+Mage testing protection against the evil
+
+table: Slow_Poison_Things
+Poison cure or preventative
+Relic that is the poison's source
+Treasure that causes the poison
+Prize lost long ago within
+
+table: Slow_Poison_Complications
+The poison empowers certain types of creatures
+The toxin cannot be avoided by mundane means
+The poison is holy to some dark cult
+A clan of assassins or ninjas has laid claim to the poison's source
+
+table: Slow_Poison_Places
+Altar to a toxic god
+Room with seemingly-untouched corpses
+Bodies rimed over with accreted toxins
+Hall of green mist
+
+table: Stolen_Authority_Enemies
+Usurping noble pretender
+Successful peasant rebel
+Exiled noble from a neighboring land
+Secret power behind the lord
+
+table: Stolen_Authority_Friends
+Former guard captain
+Noble out of favor with the new lord
+Cruelly-oppressed citizen
+Agent of the old lord's suzerain
+
+table: Stolen_Authority_Things
+Stash of rebel weaponry
+Treasure of the old lord
+Savagely extorted tribute shipment
+Proof of a usurper's false lineage
+
+table: Stolen_Authority_Complications
+The old ruler was hated but this one is even worse
+The authority has been seized with no outwardly visible sign of it
+The new lord is a catspaw of a foreign power
+The new lord has a significant power base among a certain faith or organization
+
+table: Stolen_Authority_Places
+Burnt noble estate
+Gallows with dead partisans
+Forced assembly to hear new proclamations
+Hushed tavern room
+
+table: Stronghold_Site_Enemies
+Rebel leader
+Reclusive ethnic supremacist
+Ideological elven warlord
+Depraved dwarven Repenter priest
+
+table: Stronghold_Site_Friends
+Aspiring infiltrator
+Traitor within their ranks
+Plotter seeking replacement of the current leader
+Suspicious local lord
+
+table: Stronghold_Site_Things
+Map of the site's defenses
+Carefully-guarded treasure
+Payroll for mercenaries
+Key to the inner donjon
+
+table: Stronghold_Site_Complications
+The presence of the site is also holding back a threat to the nearby villages
+The natives still dread an enemy that has been gone for generations
+The site's ruler sells his peoples' favor to the highest bidder among the local lords
+The natives regularly venture out to raid the surrounding countryside and have for a long time
+
+table: Stronghold_Site_Places
+Cavernous cistern
+High tower overlook
+Murder-holed corridor
+Well-trod training ground
+
+table: Sudden_Privation_Enemies
+Grain-hoarding noble
+Crop-burning bandit lord
+Cruel dwarven Repenter dam-builder
+Cultist spreading crop disease
+
+table: Sudden_Privation_Friends
+Grain-hauling merchant
+Desperate local lord
+Leader of a losing side in the resource scramble
+Stifled tax collector
+
+table: Sudden_Privation_Things
+Cache of the vital resource
+New source for the lacking resource
+Hoarded trove
+Treasure to pay for the needed goods
+
+table: Sudden_Privation_Complications
+There's plenty of it but it's more valuable elsewhere and being sent to sell there
+The lord is using the privation to break the commoners
+The privation is being used as an excuse to settle old scores
+The locals blame innocents for causing privation
+
+table: Sudden_Privation_Places
+Barren field
+Dry riverbed
+Market with extortionate prices
+Empty granary
+
+table: Sympathetic_Locals_Enemies
+Village headman keeping the secret
+Monstrous ally
+Gatherer of sacrifices
+Secret master of the community
+
+table: Sympathetic_Locals_Friends
+Troubled local
+Investigating official
+Betrayed ruin-clearer
+Escaped sacrifice
+
+table: Sympathetic_Locals_Things
+Treasure produced by denizens
+Food tribute for dungeon
+Written pact of cooperation
+Loot from slain adventurers
+
+table: Sympathetic_Locals_Complications
+The survival of the locals hinges on the dungeon's existence
+The locals are related to the dungeon inhabitants
+The community is actually a facade for the dungeon itself
+The locals see the alliance as the best of several bad options
+
+table: Sympathetic_Locals_Places
+Secret meeting place
+Hidden cache of goods
+Secret room comfortable for an inhuman creature
+Shared hidden shrine
+
+table: Tide_Cult_Enemies
+Depraved nobleman
+Revenge-mad oppressed peasant
+Corrupt clerical reformer
+Decadent brothel madame
+
+table: Tide_Cult_Friends
+Azure Ministry inquisitor
+Shou-blooded cult hunter
+Suspicious local priest
+Worried kin of a cultist
+
+table: Tide_Cult_Things
+Lovecraftian tome
+Abominable relic
+Treasure given in tribute
+List of secret cult members
+
+table: Tide_Cult_Complications
+The cult has infiltrated the main local temple
+The locals suspect the cult's existence but blame unpopular innocents
+The cult is a major ally of the local ruler under a false organization
+The locals would fly into mad panic if the truth were outed
+
+table: Tide_Cult_Places
+Escherian secret temple hall
+Perverted shrine
+Normal location made subtly hideous
+Cloud of crimson mist
+
+table: Tong_Extortion_Enemies
+Avaricious tong grandfather
+Brutal hatchetman
+Ruthless tong father seeking advancement
+Grasping tong extortionist
+
+table: Tong_Extortion_Friends
+Petty shopkeeper
+Humble slum dweller
+Frustrated city official
+Secret reformer within the tong
+
+table: Tong_Extortion_Things
+Shipment of forbidden drugs
+"Work contract" of a prostitute
+Jade ritual vessels
+Collected protection payments
+
+table: Tong_Extortion_Complications
+The tong actually does protect the locals from some oppressor
+The tong was once nobler than it is now
+The tong is dabbling with foul sorceries
+The tong has been corrupted and its leaders secretly serve a cruel noble
+
+table: Tong_Extortion_Places
+Shabby tong meeting hall
+Elaborate home of a tong leader
+Small shopkeeper's stall
+Dark alleyway
+
+table: Trade_Path_Enemies
+Heavily-taxing "lord" of the land
+Bandit chieftain
+Headman of a tariff-heavy hamlet
+Secrecy-seeking caravan master
+
+table: Trade_Path_Friends
+Merchant pathfinder
+Wandering peddler
+Overextended young trader
+Bandit-tormented local
+
+table: Trade_Path_Things
+Map through a perilous natural feature
+Hidden cache of goods
+Tariff payments
+Goods "fallen off a wagon"
+
+table: Trade_Path_Complications
+Two or more polities fight over control of the trade route
+A merchant prince seeks to seize control for himself alone
+The locals are getting rapaciously greedy with their tariffs
+The ruthless "lord" hires bandits to plunder unforthcoming caravans
+
+table: Trade_Path_Places
+Icy mountain pass
+Hidden tunnel through a mountain
+Secret path through swamp
+Ancient prehuman tunnel-road
+
+table: Troubled_Festival_Enemies
+Disapproving priest
+Envious headman of neighboring town
+Dark spiritual power
+Selfish hijacker of the festival
+
+table: Troubled_Festival_Friends
+Desperate local leader
+Merchant with all his money tied up in it
+Tradition-minded elder
+Hereditary ritual performer
+
+table: Troubled_Festival_Things
+Crucial idol
+Festival necessity imported from far away
+Charter proving the festival's lawfulness
+Money raised by it
+
+table: Troubled_Festival_Complications
+Two families are fighting over control of the festival
+The local priest finds the festival deplorable
+A local ruler demands extortionate payment to permit the festival
+A location vital to the festival has been rendered dangerous or defiled
+
+table: Troubled_Festival_Places
+Hushed festival ground
+Empty marketplace
+Temple in disarray
+Sadly under-occupied tea house
+
+table: Uncovered_Depths_Enemies
+Furious disturbed ghost
+Tong leader in hiding
+Rebel chieftain hiding below
+Abomination from beyond time
+
+table: Uncovered_Depths_Friends
+City engineer
+Reeking sewer worker
+Concerned builder of a new structure
+Curious historian
+
+table: Uncovered_Depths_Things
+Original deed to an important building
+Treasure of the past
+Ancient artwork
+Relic of the first inhabitants
+
+table: Uncovered_Depths_Complications
+It is strictly forbidden to enter the depths
+The true rulers dwell below
+The locals make sacrifices to the dwellers beneath them
+Grasping officials force the natives to explore the depths for tribute and taxes
+
+table: Uncovered_Depths_Places
+Crypt of a near-forgotten hero
+Rotting buried palace
+Prehuman tunnel maze
+Sewers of a long-ruined megalopolis
+
+table: Unstable_Structures_Enemies
+Golem engineer-master
+Burrowing abomination
+Scavenger chieftain
+Spatially-deranged sorcerer
+
+table: Unstable_Structures_Friends
+Ruin-plunderer
+Victim trapped inside
+Curious engineer
+Avid sorcerous investigator
+
+table: Unstable_Structures_Things
+Power core for the transformations
+Key to escape
+Portal control unit
+The keystone holding the place together
+
+table: Unstable_Structures_Complications
+The place is unstable in time rather than space
+The place self-destructs after a certain thing happens
+The site is caught halfway into some ancient transformation
+The entrances are all somehow one-way
+
+table: Unstable_Structures_Places
+A giant gear-room
+A mirror-chamber of echoed forms
+Ancient hall with a skeletal floor
+High and tilted chamber
+
+table: Vicious_Flora_Enemies
+Fungal abomination
+Insidious pollen-zombie chief
+Budded spiny plant-humanoid leader
+Furious diwata queen
+
+table: Vicious_Flora_Friends
+Local forester
+Friendly flower-being
+Wise old farmer
+Uninfected village member
+
+table: Vicious_Flora_Things
+Cure for the plant toxin
+Powerful defoliant mixture
+The relic empowering the plants
+Precious plant extract
+
+table: Vicious_Flora_Complications
+The flora is valuable and cultivated with no thought of the cost to the workers
+The plant has powerful psychotropic effects
+The parasitic plants can masquerade as humans
+The plants are the first shoots of a more terrible seed
+
+table: Vicious_Flora_Places
+Vine-wreathed village
+Maze of unnatural bracken
+Perfectly silent community of plant-things
+Pit of corpse-fertilizer
+
+table: Watery_Doom_Enemies
+Siyokoy sorcerer-priest
+Lizardfolk Old Sleeper
+Malevolent squid lord
+Drowned undead lord
+
+table: Watery_Doom_Friends
+Local fisherman
+Wary swamp native
+Relative of siyokoy-kidnapped victim
+Ambitious drainage engineer
+
+table: Watery_Doom_Things
+Elixir of waterbreathing
+Magical pearls
+Rare and enchanted salts
+Long-lost hero's sarcophagus swallowed by the sea
+
+table: Watery_Doom_Complications
+The liquid isn't water but some magical or toxic brew
+The structure was originally designed to cope with the water somehow but its facilities have decayed
+The site is contaminating water needed by a nearby community
+The dungeon actually is floating somehow and changes its position regularly
+
+table: Watery_Doom_Places
+Crumbling dam site
+Room rapidly filling with water
+Salt-crusted chamber
+Hall with a fierce current down its length
