@@ -1,4 +1,4 @@
-# Catch all for miscellanious lookup tables needed everywhere
+# Catch all for miscellaneous lookup tables needed everywhere
 
 table: Direction
 north

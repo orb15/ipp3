@@ -1,0 +1,20 @@
+# ---------------------------------------
+# Oracle: Reason For Wandering Encounter
+# ---------------------------------------
+
+table: UnintelligentWanderer
+8:hunting for food
+2:looking for a nesting/resting location
+2:is instinctively on the move
+1:searching for a mate
+
+table: IntelligentWanderer
+hunting for food, water, fire or some other necessary item
+performing a security patrol for a nearby lair
+scouting this location, lair is distant
+desires trade
+conducting a raid to [|gather treasure|acquire slaves|steal food|punish a transgression|spread terror or mayhem]
+on a religious pilgrimage or task
+conducting a rite of manhood or tribalism
+are outcasts from a [|nearby|distant] lair looking for a new home
+are emissaries or a delegation [|headed to a rival clan or tribe|headed to an allied clan or tribe|on a peace-seeking mission to an enemy] 

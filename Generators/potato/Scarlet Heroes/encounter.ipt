@@ -348,7 +348,7 @@ roll: 2d8
 table: GroupSizeAndCondition
 type: lookup
 roll: 2d8
-2:An entire lair’s worth of the creatures are here
+2:An entire lair's worth of the creatures are here
 3:Maximum normal encounter numbers or size
 4:Roll encounter size twice and take the bigger total
 5:The biggest one has double normal hit dice
