@@ -2,7 +2,7 @@
 # Scarlet Heroes: Weather
 # ---------------------------------------
 
-prompt: Season {Dry|Wet|Mixed} Dry 
+prompt: Season {Dry|Wet|Mixed} Mixed 
 
 table: Master
 MaxReps: 1
