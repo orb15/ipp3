@@ -1,4 +1,6 @@
-# Weather Generation (2-20 table)
+# ---------------------------------------
+# Oracle: Weather (2-20 table)
+# ---------------------------------------
 
 table: Master
 MaxReps: 1
