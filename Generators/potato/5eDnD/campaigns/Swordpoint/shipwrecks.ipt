@@ -1,0 +1,74 @@
+# ---------------------------------------
+# Swordpoint: Shipwrecks
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set:condition=[@Condition]
+Set:creatures=[@Creatures]
+Set:contents=[@Contents]
+Set:notable=[@Notable]
+Set:size=[@Size]
+<b>Shipwreck!</b>\n\n<b>Type:</b> {$size}\n<b>Condition:</b> {$condition}\n<b>Creatures:</b> {$creatures}\n<b>Notable Content:</b> {$notable}\n<b>Contents:</b> {$contents}
+
+Table: Condition
+Just the frame
+Gaping holes
+Broken apart
+Reasonably intact
+Decent condition
+
+Table: Contents
+[|silk|fabric|cloth]
+barrels of [|wine|water|ale|spirits]
+sacks of [|grain|flour|spice|seeds]
+[|weapons|armor]
+[|iron|tin] ore
+[|iron|tin|steel|brass|bronze] ingots
+lumber
+[|meat|fish]
+finished home goods
+ship components (sails, masts, rope)
+Skeletons of livestock
+
+
+Table: Notable
+19:\z
+1:[@SpecialNotable]
+
+Table: SpecialNotable
+Captains log with [|treasure map|reveals hidden pirate outpost]
+Ship's locker with [|{1d6 * 100} gp|{1d4*100} gems]
+Water-based magic item [|potion|spell scroll|wand|wonderous item]
+Personal item[|journal|jewelery|whittled figurine|letters]
+Spyglass that is actually [|a map|valuable|obviously magical]
+
+Table: Creatures
+3:[@Undead]
+1:[@Other]
+4:Empty
+
+Table: Other
+Ooze, Ochre Jelly
+Swarm, Ravens
+Swarm, Rot Grub
+Carrion Crawler
+Sorrowsworn, The Wretched
+Chuul
+[|yellow mold|green slime]
+Unsafe conditions (treat as: [Nuisance|Dangerous|Deadly] trap)
+
+Table: Undead
+9:Zombies
+9:Skeletons
+2:Vampiric mist
+1:Banshee
+1:Ghost
+3:Shadow
+2:Will-o-wisp
+1:Shadow Mastiff
+
+Table: Size
+7:One Mast
+2:Two Masts
+1:Three Masts
