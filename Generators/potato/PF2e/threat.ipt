@@ -1,0 +1,15 @@
+# ---------------------------------------
+# PF2e: Threat/Encounter Difficulty (pg 489CR)
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: detail=[#{1d8+1d12} RollDetail]
+<b>PF2e Encounter Difficulty</b>\nThe Encounter Difficulty is: {$detail}
+
+table: RollDetail
+type: lookup
+2-4:Trivial
+5-13:Low
+14-17:Moderate
+18-20:Severe

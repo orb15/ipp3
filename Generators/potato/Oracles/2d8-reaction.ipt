@@ -1,0 +1,105 @@
+# ---------------------------------------
+# 2d8 Reaction Table
+# ---------------------------------------
+prompt: Disposition {Friendly|Stranger|Unfriendly} Stranger
+prompt: Negative {None|Risky|SigRisk|Insults|GraveRisk} None
+prompt: Positive {None|BribeFavor|BribeFav+|SaveLife} None
+prompt: Charisma {Cha0|Cha-1|Cha-2|Cha-3|Cha-4|Cha-5|Cha1|Cha2|Cha3|Cha4|Cha5} Cha0
+
+table: Master
+MaxReps: 1
+set: negMod=[#{prompt2} NegModifier]
+set: posMod=[#{prompt3} PosModifier]
+set: chaMod=[#{prompt4} ChaModifier]
+set: totMod={negMod + posMod + chaMod}
+set: tableRoll=[#{2d8 + totMod} {prompt1}]
+<b>The NPC's reaction is:</b> {tableRoll}
+
+table: Friendly
+type: lookup
+-7-0:[#{2d8 + totMod} Stranger]
+1:[#{2d8 + totMod} Stranger]
+2:[|[#{2d8 + totMod} Stranger]|Sneering contempt]
+3:Sneering contempt
+4:Flat dismissal
+5:Reasoned refusal
+6:Bribable
+7:Persuadable
+8:[|Persuadable|Hesitant agreement]
+9:Hesitant agreement
+10:[|Hesitant agreement|Quick consent]
+11:Quick consent
+12:Pleased consent
+13:Vigorous consent
+14:Firm commitment
+15:[|Firm commitment|Bold enthusiasm]
+16-24:Bold enthusiasm
+
+table: Stranger
+type: lookup
+-7-0:[#{2d8 + totMod} Unfriendly]
+1:[#{2d8 + totMod} Unfriendly]
+2:[|[#{2d8 + totMod} Unfriendly]|Anger]
+3:Anger
+4:Annoyance
+5:Dismissal
+6:Flat refusal
+7:Qualified refusal
+8:[|Qualified refusal|Bribable]
+9:Bribable
+10:[|Bribable|Qualified consent]
+11:Qualified consent
+12:Tentative agreement
+13:Full agreement
+14:Helpful consent
+15:[|Helpful consent|Admiring consent]
+16-24:Admiring consent
+
+table: Unfriendly
+type: lookup
+-7-0:Violence or direct harm
+1:Violence or direct harm
+2:[|Violence or direct harm|Anger/Violence]
+3:Anger/Violence
+4:Anger/Scorn
+5:Scorn
+6:Dismissal
+7:Flat rejection
+8:[|Flat rejection|Considered refusal]
+9:Considered refusal
+10:[|Considered refusal|Bribable]
+11:Bribable
+12:Persuadable
+13:Qualified consent
+14:Grudging agreement
+15:[|Grudging agreemen|Tolerant consent]
+16-24:Tolerant consent
+
+table: NegModifier
+type: Dictionary
+None:0
+Risky:-1
+SigRisk:-2
+Insults:-3
+GraveRisk:-4
+
+table: PosModifier
+type: Dictionary
+None:0
+BribeFavor:1
+BribeFav+:2
+SaveLife:3
+
+table: ChaModifier
+type: Dictionary
+Cha0:0
+Cha-1:-1
+Cha-2:-2
+Cha-3:-3
+Cha-4:-4
+Cha-5:-5
+Cha1:1
+Cha2:2
+Cha3:3
+Cha4:4
+Cha5:5

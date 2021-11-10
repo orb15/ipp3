@@ -1,0 +1,671 @@
+# ---------------------------------------
+# Tomb of Annihilation: Chult Random Encounters
+# ---------------------------------------
+
+prompt: Hex Terrain {Beach|JNoUndead|JUndead|JMajUndead|Mountains|River|Ruin|Swamp|Wasteland} JNoUndead
+
+table: Master
+MaxReps: 1
+Set: morning=[#{$prompt1} Terrain]
+Set: afternoon=[#{$prompt1} Terrain]
+Set: evening=[#{$prompt1} Terrain]
+<b>Chult Random Encounter for {prompt1}</b>\n\n<b><u>Morning</u></b>\n{morning}\n\n<b><u>Afternoon</u></b>\n{afternoon}\n\n<b><u>Evening</u></b>\n{evening}
+
+table: Terrain
+type: dictionary
+Beach:[@BeachMaybe]
+JNoUndead:[@JNoUndeadMaybe]
+JUndead:[@JUndeadMaybe]
+JMajUndead:[@JMajUndeadMaybe]
+Mountains:[@MountainsMaybe]
+River:[@RiverMaybe]
+Ruin:[@RuinMaybe]
+Swamp:[@SwampMaybe]
+Wasteland:[@WastelandMaybe]
+
+table: BeachMaybe
+type: lookup
+roll: 1d5
+1-4:No Encounter
+5:[@Beach]
+
+table: JNoUndeadMaybe
+type: lookup
+roll: 1d5
+1-4:No Encounter
+5:[@JNoUndead]
+
+table: JUndeadMaybe
+type: lookup
+roll: 1d5
+1-4:No Encounter
+5:[@JUndead]
+
+table: JMajUndeadMaybe
+type: lookup
+roll: 1d5
+1-4:No Encounter
+5:[@JMajUndead]
+
+table: MountainsMaybe
+type: lookup
+roll: 1d5
+1-4:No Encounter
+5:[@Mountains]
+
+table: RiverMaybe
+type: lookup
+roll: 1d5
+1-4:No Encounter
+5:[@River]
+
+table: RuinMaybe
+type: lookup
+roll: 1d5
+1-4:No Encounter
+5:[@Ruin]
+
+table: SwampMaybe
+type: lookup
+roll: 1d5
+1-4:No Encounter
+5:[@Swamp]
+
+table: WastelandMaybe
+type: lookup
+roll: 1d5
+1-4:No Encounter
+5:[@Wasteland]
+
+
+table: Beach
+type: weighted
+1:Chwinga (CR0, TOA216)
+1:Dinosaurs, allosaurus (CR2, MM79)
+1:Dinosaurs, dimetrodon (CR0.25, TOA217)
+4:Dinosaurs, plesiosaurus (CR2, MM80)
+2:Dinosaurs, pteranodon (CR0.25, MM80)
+2:Dinosaurs, quetzalcoatlus (CR2, TOA230)
+1:Dinosaurs, velociraptor (CR0.25, TOA235)
+1:Dragon, young red  (Tinder) (CR10, MM98)
+2:Flying monkeys (CR0, TOA220)
+2:Flying snakes (CR0.125, MM322)
+3:Giant lizards (CR0.25, MM326)
+4:Giant snapping turtle (CR3, TOA222)
+2:Sea hags (CR2, MM179)
+2:Stirges (CR0.125, MM284)
+2:Swarms of bats (CR0.25, MM337)
+2:Tri-flower frond (CR0.5, TOA234)
+1:Aarakocra (CR0.25, MM12)
+1:[@Cache]
+4:Cave or hole
+1:Tabaxi hunter (DC15 to spot, see pg203)
+1:[@EmeraldEnclave]
+1:[@Explorers]
+1:[@FlamingFist]
+2:[@Lizardfolk]
+1:[@RedWizard]
+
+table: JNoUndead
+type: weighted
+1:Chwinga (CR0, TOA216)
+1:Cyclops (CR6, MM45)
+1:Dinosaurs, allosaurus (CR2, MM79)
+2:Dinosaurs, ankylosaurus (CR3, MM79)
+1:Dinosaurs, brontosaurus (CR5, TOA215)
+2:Dinosaurs, deinonychus (CR1, TOA217)
+2:Dinosaurs, hadrosaurus (CR0.255, TOA224)
+1:Dinosaurs, pteranodon (CR0.25, MM80)
+2:Dinosaurs, stegosaurus (CR4, TOA231)
+2:Dinosaurs, triceratops (CR3, MM80)
+1:Dinosaurs, tyrannosaurus (CR8, MM80)
+2:Dinosaurs, velociraptor (CR0.25, TOA235)
+2:Eblis (CR1, TOA219)
+2:Flail snail (CR3, TOA220)
+3:Flying monkeys (CR0, TOA220)
+3:Flying snakes (CR0.125, MM322)
+4:Giant boars (CR2, MM323)
+4:Giant frogs (CR0.25, MM325)
+4:Giant lizards (CR0.25, MM326)
+2:Giant scorpions (CR3, MM327)
+2:Giant wasps (CR0.5, MM329)
+2:Girallons (CR4, TOA222)
+1:Green Hag (CR3, MM177)
+1:Jaculis (CR0.5, TOA225)
+1:Kamadans (CR4, TOA225)
+4:Snake, constrictor (CR0.25, MM320)
+3:Snake, giant constrictor (CR2, MM324)
+3:Snake, giant poisonous (CR0.25, MM327)
+4:Spider, Giant (CR1, MM328)
+4:Spider, Giant Wolf (CR0.25, MM330)
+3:Stirges (CR0.125, MM284)
+1:Su-monsters (CR1, TOA232)
+2:Swarms of bats (CR0.25, MM337)
+4:Swarms of insects (CR0.5, MM338)
+2:Tiger (CR1, MM339)
+2:Troll (CR5, MM291)
+1:Vegepygmies (CR1, TOA234)
+1:Zorbos (CR0.5, TOA241)
+2:Assassin vines (CR3, TOA213)
+2:Mantraps (CR1, TOA227)
+2:Tri-flower frond (CR0.5, TOA234)
+1:[@Cache]
+1:Cave or hole
+1:[@DeadExplorer]
+1:Mad monkey mist
+1:[@RarePlants]
+1:[@RuinedTemple]
+1:[@RuinedVillage]
+1:[@Shrine]
+2:[@Cannibals]
+1:[@Pterafolk]
+1:Tabaxi hunter (DC15 to spot, see pg203)
+1:Wereboar (CR4, MM209)
+1:Weretiger  (CR4, MM210)
+1:[@AlbinoDwarves]
+2:[@EmeraldEnclave]
+2:[@Explorers]
+2:[@FlamingFist]
+3:[@Goblins]
+2:[@Grungs]
+2:[@Lizardfolk]
+1:[@RedWizard]
+1:[@Yuan-ti]
+1:[@Zhentarim]
+1:[@FaerieDragon]
+2:[@YellowMusk]
+
+table: JUndead
+type: weighted
+Axe beaks (CR0.25, MM317)
+1:Dinosaurs, allosaurus (CR2, MM79)
+2:Dinosaurs, ankylosaurus (CR3, MM79)
+1:Dinosaurs, deinonychus (CR1, TOA217)
+2:Dinosaurs, hadrosaurus (CR0.255, TOA224)
+1:Dinosaurs, pteranodon (CR0.25, MM80)
+2:Dinosaurs, stegosaurus (CR4, TOA231)
+2:Dinosaurs, triceratops (CR3, MM80)
+1:Dinosaurs, tyrannosaurus (CR8, MM80)
+3:Flying snakes (CR0.125, MM322)
+2:Giant lizards (CR0.25, MM326)
+3:Giant wasps (CR0.5, MM329)
+1:Girallons (CR4, TOA222)
+1:Green Hag (CR3, MM177)
+1:Jaculis (CR0.5, TOA225)
+3:Snake, constrictor (CR0.25, MM320)
+3:Snake, giant constrictor (CR2, MM324)
+3:Snake, giant poisonous (CR0.25, MM327)
+3:Spider, Giant (CR1, MM328)
+3:Spider, Giant Wolf (CR0.25, MM330)
+1:Stirges (CR0.125, MM284)
+1:Su-monsters (CR1, TOA232)
+2:Swarms of bats (CR0.25, MM337)
+2:Swarms of insects (CR0.5, MM338)
+1:Troll (CR5, MM291)
+1:Undead, specter (CR1, MM279)
+1:Undead, wight (CR3, MM300)
+1:Vegepygmies (CR1, TOA234)
+1:Zorbos (CR0.5, TOA241)
+1:Assassin vines (CR3, TOA213)
+1:Mantraps (CR1, TOA227)
+1:Tri-flower frond (CR0.5, TOA234)
+1:[@Cache]
+1:Cave or hole
+1:[@DeadExplorer]
+1:Mad monkey mist
+1:[@RarePlants]
+2:[@RuinedTemple]
+2:[@RuinedVillage]
+1:[@Shrine]
+2:[@Cannibals]
+1:[@Pterafolk]
+1:Wereboar (CR4, MM209)
+1:Weretiger  (CR4, MM210)
+1:[@AlbinoDwarves]
+2:[@EmeraldEnclave]
+1:[@Explorers]
+1:[@FlamingFist]
+2:[@Goblins]
+1:[@Grungs]
+1:[@RedWizard]
+1:[@Yuan-ti]
+1:[@Zhentarim]
+4:[@UndeadSkeletons]
+2:[@UndeadGhoulGhast]
+4:[@UndeadZombie]
+3:[@YellowMusk]
+
+table: JMajUndead
+type: weighted
+1:Dinosaurs, allosaurus (CR2, MM79)
+2:Dinosaurs, ankylosaurus (CR3, MM79)
+1:Dinosaurs, hadrosaurus (CR0.255, TOA224)
+1:Dinosaurs, pteranodon (CR0.25, MM80)
+2:Dinosaurs, stegosaurus (CR4, TOA231)
+1:inosaurs, tyrannosaurus (CR8, MM80)
+1:Dinosaurs, velociraptor (CR0.25, TOA235)
+2:Giant wasps (CR0.5, MM329)
+3:Snake, constrictor (CR0.25, MM320)
+3:Snake, giant constrictor (CR2, MM324)
+3:Snake, giant poisonous (CR0.25, MM327)
+3:Spider, Giant (CR1, MM328)
+3:Spider, Giant Wolf (CR0.25, MM330)
+2:Stirges (CR0.125, MM284)
+1:Su-monsters (CR1, TOA232)
+2:Swarms of bats (CR0.25, MM337)
+2::Swarms of insects (CR0.5, MM338)
+1:Troll (CR5, MM291)
+3:Undead, specter (CR1, MM279)
+3:Undead, wight (CR3, MM300)
+1:Vegepygmies (CR1, TOA234)
+1:Zorbos (CR0.5, TOA241)
+1:Assassin vines (CR3, TOA213)
+1:Mantraps (CR1, TOA227)
+1:Tri-flower frond (CR0.5, TOA234)
+1:[@Cache]
+1:Cave or hole
+1:[@DeadExplorer]
+1:[@RarePlants]
+2:[@RuinedTemple]
+2:[@RuinedVillage]
+1:[@Shrine]
+1:[@Pterafolk]
+1:Wereboar (CR4, MM209)
+1:Weretiger  (CR4, MM210)
+2:[@EmeraldEnclave]
+1:[@Explorers]
+1:[@FlamingFist]
+1:[@RedWizard]
+1:[@Yuan-ti]
+3:[@UndeadSkeletons]
+4:[@UndeadGhoulGhast]
+3:[@UndeadZombie]
+3:[@YellowMusk]
+
+table: Mountains
+type: weighted
+3:Apes (CR0.5, MM317)
+3:Baboons (CR0, MM318)
+1:Chwinga (CR0, TOA216)
+2:Cyclops (CR6, MM45)
+2:Dinosaurs, pteranodon (CR0.25, MM80)
+2:Dinosaurs, quetzalcoatlus (CR2, TOA230)
+1:Dragon, young red  (Tinder) (CR10, MM98)
+1:Flying monkeys (CR0, TOA220)
+1:Flying snakes (CR0.125, MM322)
+2:Giant boars (CR2, MM323)
+2:Giant lizards (CR0.25, MM326)
+1:Giant wasps (CR0.5, MM329)
+2:Girallons (CR4, TOA222)
+2:Snake, giant poisonous (CR0.25, MM327)
+2:Stirges (CR0.125, MM284)
+3:Swarms of bats (CR0.25, MM337)
+1:Troll (CR5, MM291)
+2:Aarakocra (CR0.25, MM12)
+1:Tabaxi hunter (DC15 to spot, see pg203)
+2:[@AlbinoDwarves]
+1:[@Cache]
+4:Cave or hole
+1:[@DeadExplorer]
+2:[@Pterafolk]
+1:Wereboar (CR4, MM209)
+1:[@EmeraldEnclave]
+1:[@RedWizard]
+
+table: River
+type: weighted
+1:Chwinga (CR0, TOA216)
+4:Crocodiles (CR0.5, MM320)
+3:Dinosaurs, brontosaurus (CR5, TOA215)
+1:Dinosaurs, dimetrodon (CR0.25, TOA217)
+2:Dinosaurs, hadrosaurus (CR0.255, TOA224)
+3:Dinosaurs, plesiosaurus (CR2, MM80)
+2:Dinosaurs, pteranodon (CR0.25, MM80)
+2:Dinosaurs, quetzalcoatlus (CR2, TOA230)
+3:Eblis (CR1, TOA219)
+3:Flying monkeys (CR0, TOA220)
+3:Flying snakes (CR0.125, MM322)
+2:Giant crocodile (CR5, MM324)
+4:Giant frogs (CR0.25, MM325)
+3:Giant snapping turtle (CR3, TOA222)
+2:Giant wasps (CR0.5, MM329)
+1:Jaculis (CR0.5, TOA225)
+1:Kamadans (CR4, TOA225)
+2:Sea hags (CR2, MM179)
+3:Snake, constrictor (CR0.25, MM320)
+2:Snake, giant constrictor (CR2, MM324)
+3:Stirges (CR0.125, MM284)
+4:Swarms of insects (CR0.5, MM338)
+4:Swarms of quippers (CR1, MM338)
+2:Assassin vines (CR3, TOA213)
+2:Aarakocra (CR0.25, MM12)
+1:[@Cache]
+1:[@DeadExplorer]
+1:Mad monkey mist
+1:[@RarePlants]
+1:[@Shrine]
+2:[@Cannibals]
+2:[@Pterafolk]
+1:Tabaxi hunter (DC15 to spot, see pg203)
+2:[@EmeraldEnclave]
+2:[@Explorers]
+2:[@FlamingFist]
+4:[@Grungs]
+4:[@Lizardfolk]
+1:[@RedWizard]
+1:[@Yuan-ti]
+2:[@Zhentarim]
+1:[@UndeadSkeletons]
+1:[@UndeadGhoulGhast]
+1:[@UndeadZombie]
+1:[@FaerieDragon]
+
+table: Ruin
+type: weighted
+1:Almiraj (CR0, TOA211)
+3:Apes (CR0.5, MM317)
+4:Baboons (CR0, MM318)
+1:Chwinga (CR0, TOA216)
+2:Cyclops (CR6, MM45)
+2:Dinosaurs, deinonychus (CR1, TOA217)
+2:Dinosaurs, velociraptor (CR0.25, TOA235)
+1:Flail snail (CR3, TOA220)
+2:Flying monkeys (CR0, TOA220)
+2:Flying snakes (CR0.125, MM322)
+2:Giant lizards (CR0.25, MM326)
+2:Giant scorpions (CR3, MM327)
+2:Giant wasps (CR0.5, MM329)
+3:Girallons (CR4, TOA222)
+1:Green Hag (CR3, MM177)
+3:Jaculis (CR0.5, TOA225)
+1:Kamadans (CR4, TOA225)
+2:Snake, giant poisonous (CR0.25, MM327)
+3:Spider, Giant (CR1, MM328)
+3:Spider, Giant Wolf (CR0.25, MM330)
+3:Stirges (CR0.125, MM284)
+3:Swarms of bats (CR0.25, MM337)
+2:Troll (CR5, MM291)
+1:Undead, specter (CR1, MM279)
+1:Undead, wight (CR3, MM300)
+1:Assassin vines (CR3, TOA213)
+1:Tri-flower frond (CR0.5, TOA234)
+1:[@Cache]
+1:[@DeadExplorer]
+1:Mad monkey mist
+1:[@RarePlants]
+3:[@Shrine]
+3:[@Cannibals]
+2:[@Pterafolk]
+1:Tabaxi hunter (DC15 to spot, see pg203)
+2:[@EmeraldEnclave]
+2:[@Explorers]
+2:[@FlamingFist]
+4:[@Goblins]
+2:[@Lizardfolk]
+1:[@RedWizard]
+1:[@Yuan-ti]
+2:[@Zhentarim]
+1:[@UndeadSkeletons]
+1:[@UndeadGhoulGhast]
+1:[@UndeadZombie]
+1:[@FaerieDragonDragon]
+2:[@YellowMusk]
+1:Weretiger (CR4, MM210)
+
+table: Swamp
+type: weighted
+1:Chwinga (CR0, TOA216)
+4:Crocodiles (CR0.5, MM320)
+1:Dinosaurs, allosaurus (CR2, MM79)
+2:Dinosaurs, ankylosaurus (CR3, MM79)
+4:Dinosaurs, brontosaurus (CR5, TOA215)
+3:Dinosaurs, dimetrodon (CR0.25, TOA217)
+2:Dinosaurs, hadrosaurus (CR0.255, TOA224)
+2:Dinosaurs, pteranodon (CR0.25, MM80)
+3:Eblis (CR1, TOA219)
+3:Flail snail (CR3, TOA220)
+1:Flying snakes (CR0.125, MM322)
+2:Giant crocodile (CR5, MM324)
+4:Giant frogs (CR0.25, MM325)
+4:Giant lizards (CR0.25, MM326)
+3:Giant snapping turtle (CR3, TOA222)
+3:Giant wasps (CR0.5, MM329)
+2:Mephits (CR0.25, MM216)
+2:Shambling mound (CR5, MM270)
+3:Snake, constrictor (CR0.25, MM320)
+2:Snake, giant constrictor (CR2, MM324)
+4:Stirges (CR0.125, MM284)
+4:Swarms of bats (CR0.25, MM337)
+4:Swarms of insects (CR0.5, MM338)
+2:Assassin vines (CR3, TOA213)
+1:[@DeadExplorer]
+1:[@RarePlants]
+1:[@Shrine]
+2:Mad monkey mist
+1:[@Explorers]
+4:[@Grungs]
+4:[@Lizardfolk]
+1:[@Yuan-ti]
+1:[@UndeadSkeletons]
+1:[@UndeadGhoulGhast]
+1:[@UndeadZombie]
+2:[@YellowMusk]
+
+table: Wasteland
+type: weighted
+2:Dragon, young red  (Tinder) (CR10, MM98)
+2:Giant scorpions (CR3, MM327)
+4:Magman (CR0.5, MM212)
+4:Mephits (CR0.25, MM216)
+1:Swarms of insects (CR0.5, MM338)
+1:Troll (CR5, MM291)
+1:Undead, wight (CR3, MM300)
+1:[@Cache]
+1:[@DeadExplorer]
+1:[@Shrine]
+1:[@Explorers]
+4:[@FireNewts]
+1:[@Zhentarim]
+1:[@UndeadSkeletons]
+1:[@UndeadGhoulGhast]
+1:[@UndeadZombie]
+
+# - --------------------------------------------------------
+# Secondary Tables
+# - --------------------------------------------------------
+
+table: AlbinoDwarves
+3:{1d4+3} Albino Dwarf Warriors (CR.25, TOA210)
+1:{1d4+3} Albino Dwarf Warriors (CR.25, TOA210) + an Alboino Dwarf Spirit Warrior (CR.5, TOA210)
+
+table: Cache
+A cache of goods - roll once on the dedicated cache table (ToA196)
+
+table: Cannibals
+Cannibal hunting party. As Tribal Warriors (CR0.125, MM350)
+
+table: FaerieDragon
+3: [|Red|Orange|Yellow] Faerie Dragon (CR1, MM133]
+1: [|Green|Blue|Indigo|Violet] Faerie Dragon (CR2, MM133)
+
+table: DeadExplorer
+The bloated corpse of a dead halfling, riddled with tiny arrows and dangling from a tree vine. (The halfling trespassed on grung sacred ground, and the corpse was hung here as a warning.)
+The bones of an unarmored humanoid, lashed to a tree by vines. (This explorer was captured by Batiri goblins, doused in honey, and left to be devoured by hungry insects.)
+The crushed remains of an unarmored dwarf, showing signs that she was stomped to death by a rampaging dinosaur.
+The gnawed and charred bones of a humanoid. (This unfortunate was murdered and cannibalized by his starving, fever-crazed companions.)
+The mangled body of a half-elf, seemingly bludgeoned to death. (She was dropped from high altitude by pterafolk.)
+The scattered bones of a dwarf, torn to pieces before being devoured. (A hunting pack of velociraptors did the dwarf in.)
+The swollen, purple corpse of an elf, dead only a few days ago from the bite of a poisonous snake.
+A fresh human corpse stuffed into a hollow tree. (Girallons plan to return and devour it later.)
+The skeleton of a humanoid seated on a folding camp stool, clutching a knife and fork in its bony hands.
+The desiccated husk of a gnome, cocooned in giant spider webs.
+The body of a human - from the waist up. Signs show that the explorer crawled a considerable distance after being bitten in half by a tyrannosaurus. (A Flaming Fist charter found on the corpse identifies it as Lord Onovan IV, of the Dales.)
+A charred elf's skeleton inside a charred constrictor snake's skeleton. (Both were killed by a lightning bolt spell.)
+The rotting body of a giant frog with the blade of a short sword poking out its back. (If the frog is cut open, the partially digested body of a halfling is found inside.)
+A tabaxi spread-eagled on the ground, but with its limbs and head severed from its torso and crudely stitched back on in the wrong arrangement.
+A half-ore spiked to an enormous tree by the broken-off horn of a triceratops.
+A gnome, spitted over a burned-out fire pit and thoroughly overcooked , but not eaten. (Goblin weapons and tools are scattered around amid velociraptor tracks.)
+A headless humanoid, hung upside down from a tree and with six Batiri goblin spears thrust symmetrically through the body. (It was a Red Wizard, judging by the robes. The head is nowhere to be found.)
+An elf, balanced on a tree branch 40 feet above the ground, arms and legs dangling downward. (A note pressed between the body and the branch explains that the elf climbed the tree to get away from a prowling allosaurus and was too terrified to come down.)
+The moldering remains of a human wearing a Flaming Fist-style helmet , his legs broken. (He succumbed to a faerie dragon's euphoria breath weapon and stepped off a cliff. A companion tried to carry him back to Fort Beluarian, but the warrior died en route.)
+A dwarf with six large holes piercing her armor and chest. (A stegosaurus caught her squarely with a swipe of its tail.)
+
+table: EmeraldEnclave
+Set: lead=[|Priest (CR2, MM348)|Druid (CR2, MM346)]
+Set: sit=[@ExplorationSituation]
+An Emerald Enclave war party consisting of a {lead} and {1d4+1} Scouts (CR0.5, MM349). They are {sit}
+
+table: Explorers
+Set: fight=[|Gladiator (CR5, MM346)|Veteran (CR3, MM350)]
+Set: heal=[|Druid (CR2, MM346)|Priest (CR2, MM348)|Bard (CR2, VO211)|War Priest (CR9, VO219)]
+Set: magic=[|Warlock of the Archfey (CR4, VO219)|Mage (CR6, MM347)|None]
+Set: rogue=[|Bandit Captain (CR2, MM344)|Master Thief (CR5, VO216)|Martial Arts Expert (CR3, VO216)]
+Set: help={1d6} Tribal Warriors (CR0.125, MM350)
+Set: sit=[@ExplorationSituation]
+A party of explorers with the following members:\n\nFighter: {fight}\nHealer: {heal}\nMagic User: {magic}\nScout: {rogue}\nHelpers: {help}\n Situation: {sit}
+
+table: FireNewts
+3: A patrol of fire newt warriors (CR0.5, TOA219) riding Giant Striders (CR1, TOA222)
+1: A heavy patrol of fire newt warriors (CR0.5, TOA219) and a fire newt warlock (CR1, TOA219) riding Giant Striders (CR1, TOA222)
+
+table: FlamingFist
+Set: lead=[|Knight (CR3, MM347)|Veteran (CR3, MM350)]
+Set: heal=[|Acolyte(CR.25, MM342)|Priest (CR2, MM348)]
+Set: help={1d6} tribal warriors (CR.125, MM350)
+Set: sit=[@ExplorationSituation]
+A Flaming Fist patrol consisting of the following:\n\nLeader: {lead}\nHealer: {heal}\nGuide: Scout (CR0.5, MM349)\nHelpers: {help}\nSituation: They are {sit}
+
+table: Goblins
+A goblin ambush or hunting party lead by a Goblin Boss (CR1, MM166) and lots of goblins (CR0.25, MM166). All wear masks.
+
+table: Grungs
+A grung ambush or hunting party lead by an orange-skinned Elite Warrior (CR2, TOA223) and many red-skinned Grung Warriors (CR0.25, TOA223)
+
+table: Lizardfolk
+A lizardfolk hunting party lead by a Lizardfolk Shaman (CR2, MM205) and many lizardfolk warriors (CR0.5, MM204)
+
+table: Pterafolk
+Pterafolk (CR1, TOA229) are shadowing the party from the air and swoop down to attack with javelins when they are otherwise engaged
+
+table: RarePlants
+{2d6} dancing monkey fruit (TOA205)
+Menga Bush with {2d6} ounces of leaves (TOA205)
+{1d4} ryath roots growing in the ground (TOA205)
+{4d6} sinda berries growing on a bush (TOA205)
+Wukka tree with {2d6} wukka nuts (TOA205)
+{1d6} zabou growing on a dead tree (TOA205)
+
+table: RedWizard
+Set: lead=Red Wizard Mage (CR6, MM347)
+Set: sit=[@ExplorationSituation]
+A Red Wizard party lead by {lead} with {1d6} Guards (CR0.125, MM347) and at least {1d6} Skeletons (CR0.25, MM272). They are {sit}
+
+table: Shrine
+type: weighted
+4: [@Shrine_Ubtao]
+1: [@Shrine_Trickster]
+
+table: Shrine_Ubtao
+Set: detail=[@Shrine_Ubtao_Detail]
+A vine-covered shrine to Ubtao consisting of stylized Chultan king. The statue has {detail}
+
+table: Shrine_Ubtao_Detail
+treasure piled at the shrine's feet (roll treasure randomly using any appropriate table)
+worthless pieces of bone jewelry and rotting fruit piled at the shrine's feet
+a glyph of warding that deals {5d8} thunder damage in a 20ft radius and forces another wandering monster check (DC 15 dex save)
+a groove maze carved into its stomach. Tracing this with a finger (DC [|15|20|25] Intelligence check) bestows a <i>Find the Path</i> spell on the first person to do so each day.
+
+table: Shrine_Trickster
+Set: god=[@Shrine_Trickster_Detail]
+A vine-covered shrine to one of the trickster gods. This shrine is in the shape of {god}
+
+table: Shrine_Trickster_Detail
+A vine-covered shrine to a horned rabbit (Almiraj) that represents the god I'jin (EYE-jin)
+A vine-covered shrine to a tentacled frog-like creature that represents the god Kubazan (Koo-bah-zahn)
+A vine-covered shrine to a snake with barbed head (Jaculi) that represents the god Moa (Moh-ah)
+A vine-covered shrine to a frog-like humanoid with a spear (Grung) that represents the god Nangnang (NANG-nang)
+A vine-covered shrine to a clawed bear (Zorbo) that represents the god Obo'Laka (oh-boh-LAH-kah)
+A vine-covered shrine to a tall, stork-like bird (Eblis) that represents the god Papazotl (pa-pah-Zah-twl)
+A vine-covered shrine to a leapord with tentacles rising from its back (Displacer Beast) that represents the god Shagambi (shah-GOM-bee)
+A vine-covered shrine to a snail with many tentacles (Flail Snail) that represents the god Unkh (UNK)
+A vine-covered shrine to a snarling monkey with naoor eyes (Su-monster) that represents the god Wongo (WONG-go)
+
+table: UndeadGhoulGhast
+3: a pack of Ghouls (CR1, MM146)
+1: a pack of Ghouls (CR1, MM146) led by a Ghast (CR2, MM146)
+
+table: UndeadSkeletons
+3:a pack of Skeletons (CR0.25, MM272)
+2:a pack of skeletal giant lizard. Use Skeletal Warhorse (CR 0.5, MM273)
+2:a pack of skeletal trolls, ogres, large apes or the like. Use Skeletal Minotaur (CR2, MM273)
+1:A mixed pack of Skeletons (CR0.25, MM272), skeletal giant lizards as Skeletal Warhorse (CR 0.5, MM273) and skeletal trolls, large apes or the like as Skeletal Minotaur (CR2, MM273)
+
+table: UndeadZombie
+type: lookup
+roll: 1d10
+1-3: a pack of zombies (CR0.25, MM316). The smell of death and thundering, careless movement proceeds these creatures.
+4-5: ankylosaurus zombie (CR3, TO240). The smell of death and thundering, careless movement proceeds these creatures.
+6-7: girallon zombies (CR3, TOA240). The smell of death and thundering, careless movement proceeds these creatures.
+8-9: ogre zombie (CR2, MM316). The smell of death and thundering, careless movement proceeds these creatures.
+10: tyrannosaurus zombie (CR8, TOA241). The smell of death and thundering, careless movement proceeds these creatures.
+
+table: YellowMusk
+a pack of Yellow Musk Zombies (CR0.25, TOA237). The host plant[|,a Yellow Musk Creeper (CR2, MM2367), is nearby and may attack| is nowhere near].
+
+table: Yuan-ti
+A covert yaun-ti patrol consisting of Purebloods (CR1, MM310) or Malisons (CR3, MM309) if near Omu. Will likely not engage the party. See TOA 204 for details
+
+table: Zhentarim
+Set: lead=Assassin (CR8, MM343) with a pet Flying Snake (CR0.125, MM322)
+Set: magic=[|Mage (CR6, MM347)|None]
+Set: guards={2d6} Thugs (CR0.5, MM350)
+Set: help={1d6} Tribal Warriors (CR0.125, MM350)
+Set: sit=[@ExplorationSituation]
+A Zhentarim expedition consisting of the following:\n\nLeader: {lead}\nPriest: a Priest (CR2, MM348)\nMage: {magic}\nZhent Mercs: {guards}\nHelpers: {help}. They are {sit}
+
+table: ExplorationSituation
+lost, hungry and likely desperate
+being actively hunted by a beast or tribe
+headed toward the nearest landmark to explore it
+returning to their outpost or Port Nayanzaru for rest and supplies
+patrolling the region looking for other explorers to waylay, interrogate, or even join
+searching for a lost expedition member
+looking to establish a base camp to better explore the region
+
+table: RuinedTemple
+Set: shrine=[@Shrine]
+Set: inhab=[@RuinedTemple_Inhab]
+Set: outside=[|an statue or bas relief of the god|no discernible markings]
+A vine-covered temple-ziggurat\nOutside: {outside}\nInside: {shrine}\nInhabitants: {inhab}
+
+table: RuinedTemple_Inhab
+type: weighted
+4:Inhabited. Roll another Encounter for a Ruin
+1:None but contains [@{1d4} RuinedTemple_Feature >> implode]
+
+table: RuinedTemple_Feature
+type: weighted
+16:nothing
+1:signs of a camp fire
+1:spoor of some large [|carnivore|herbivore]
+1:crude charcoal sketch of a map to a nearby feature
+1:a cache of items. Roll once on the cache table
+1:mouldering giant wasp hive
+1:signs of a battle (broken arrows, shattered goblin masks, broken dino teeth, dried blood...)
+1:scattered skeletal remains
+1:a well that drops {20d10} feet down. The well is [|dry|potable water|contaminated water|magic in some way] and [|has a stone bucket with a rope|lacks a bucket] 
+1:treasure chest (roll a treasure). The chest [|is|is not] trapped
+1:empty beast cages
+1:deep claw marks
+1:[@DeadExplorer]
+1: a trap (DMG121)
+1:powerful smell of some [|reptile|animal|fish]
+1:dinosaur nest [|with eggs|that is empty]
+1:thick webs
+1:a continual light spell on a stone
+1:fungi of all types
+1: an assortment of colored feathers
+1: beakers and vials filled with samples
+
+table: RuinedVillage
+<need ruined village - goblin, lizardfolk, grung, etc>

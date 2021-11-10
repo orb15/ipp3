@@ -342,8 +342,8 @@ roll: 2d8
 12:Disinclined to fight unless that seems necessary
 13:Will parley or ignore the hero if at all possible
 14:Willing to talk and can be persuaded to friendliness
-15:Friendly and peaceful if that’s possible in the situation
-16:Zealous friendliness, if that’s at all plausible
+15:Friendly and peaceful if that's possible in the situation
+16:Zealous friendliness, if that's at all plausible
 
 table: GroupSizeAndCondition
 type: lookup

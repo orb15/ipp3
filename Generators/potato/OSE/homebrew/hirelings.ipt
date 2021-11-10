@@ -1,0 +1,83 @@
+# ---------------------------------------
+# OS Homebrew: Hirelings
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: numAvail={2d4-1}
+Set: hirelings=[@{numAvail} Hireling]
+<b>The Following {numAvail} Hirelings Present Themselves For Employment</b>\n\n<table>{hirelings}</table>\n\nAll Hirelings with class levels will have level-appropriate gear and will work as Retainers only.\n All Level 0 Hirelings will work in any capacity desired provided they are paid appropriately. Those that will be made into Retainers will require armor and a weapon if they do not already have them.\nAdjust the stats of any non-human hireling that does not meet the minimum requirements for their race
+
+table: Hireling
+type: weighted
+Set: sex=[|Male|Female]
+8:[@Human]
+2:[@NonHuman]
+
+table: Human
+Set: phys={3d6}
+Set: dex={3d6}
+Set: comp={3d6}
+Set: cha={3d6}
+Set: classlevel=[@HumanClassLevel]
+<tr><td>{classlevel} with stats <b>Phys</b> {phys}  <b>Dex</b> {dex}  <b>Comp</b> {comp}  <b>Cha</b> {cha}</td></tr>
+
+table: HumanClassLevel
+type: weighted
+12:Level 0 Human ([@Level0Gear])
+2:[@Level] Warpriest
+5:[@Level] Fighter
+1:[@Level] Mage
+
+table: NonHuman
+type: weighted
+Set: phys={3d6}
+Set: dex={3d6}
+Set: comp={3d6}
+Set: cha={3d6}
+4:<tr><td>[@Dwarf] with stats <b>Phys</b> {phys}  <b>Dex</b> {dex}  <b>Comp</b> {comp}  <b>Cha</b> {cha}</td></tr>
+4:<tr><td>[@Halfling] with stats <b>Phys</b> {phys}  <b>Dex</b> {dex}  <b>Comp</b> {comp}  <b>Cha</b> {cha}</td></tr>
+2:<tr><td>[@Elf] with stats <b>Phys</b> {phys}  <b>Dex</b> {dex}  <b>Comp</b> {comp}  <b>Cha</b> {cha}</td></tr>
+
+table: Dwarf
+type: weighted
+12:Level 0 Dwarf ([@Level0Gear])
+8:[@Level] Dwarf
+
+table: Halfling
+type: weighted
+12:Level 0 Halfling ([@Level0Gear])
+8:[@Level] Halfling
+
+table: Elf
+type: weighted
+12:Level 0 Elf ([@Level0Gear])
+8:[@Level] Elf
+
+table: Level
+24:Level 1
+7:Level 2
+3:Level 3
+3:Level 4
+2:Level 5
+1:Level 6
+
+table: Level0Gear
+type: weighted
+set: arm=[@Armor]
+set: weap=[@Weapon]
+{arm}, {weap}
+
+table: Armor
+type: weighted
+6:None
+4:Shield
+4:Leather
+3:Leather and Shield
+2:Chainmail
+1:Chainmail and Shield
+
+table: Weapon
+Spear
+Sword
+Dagger

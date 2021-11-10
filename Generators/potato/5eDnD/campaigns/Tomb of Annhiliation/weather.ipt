@@ -1,0 +1,124 @@
+# ---------------------------------------
+# Tomb of Annihilation: Weather
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: MasterResult=<b>Chult Weather</b>\n\n[@Weather]\n\n* Mist is Lightly Obscured (Disadvantage on Perception checks based on sight)\n* Missile weapons ranges are halved during any rain stronger than a mist\n*  Visibility in Heavy Rain is Lightly Obscured and all Perception Checks are at a Disadvantage\n* Tropical Storms prevent travel by canoe, coastal areas have huge waves, traveling overland imposes Exhaustion automatically and DC 10 check (or more) to avoid a second Exhaustion. Checks made to to avoid becoming lost are at Disadvantage
+{$MasterResult}
+
+table: Weather
+type: lookup
+roll: 1d10
+1:No rain
+2:An all-day mist that provides no appreciable fresh water
+3:[|An all-day mist that provides no appreciable fresh water|An all-day tropical storm that fills all raincatcher barrels completely]
+4-10:[@RainMaster]
+
+table: RainMaster
+Set: RateRaw=[@RainType]
+Set: DurationRaw=[@RainDuration]
+Set: Gallons=[@{$RateRaw}{$DurationRaw}]
+Set: NiceDur=[#{$DurationRaw} NiceDuration]
+A {$RateRaw} rain that lasts a {$NiceDur} time\nGallons recovered per Raincatcher deployed: {$Gallons}
+
+table: RainType
+type: lookup
+roll:2d3
+2:Light
+3:Gentle
+4:Steady
+5:Heavy
+6:VeryHeavy
+
+table: RainDuration
+type: lookup
+roll:2d3
+2:30
+3:60
+4:90
+5:120
+6:150
+
+table: NiceDuration
+type: dictionary
+30:brief (30 mins)
+60:short (1 hour)
+90:typical (1.5 hours)
+120:long (2 hours)
+150:very long (2.5 hours)
+
+table: Light30
+2
+
+table: Light60
+3
+
+table: Light90
+5
+
+table: Light120
+6
+
+table: Light150
+8
+
+table: Gentle30
+3
+
+table: Gentle60
+6
+
+table: Gentle90
+9
+
+table: Gentle120
+12
+
+table: Gentle150
+16
+
+table: Steady30
+5
+
+table: Steady60
+9
+
+table: Steady90
+14
+
+table: Steady120
+19
+
+table: Steady150
+23
+
+table: Heavy30
+6
+
+table: Heavy60
+12
+
+table: Heavy90
+19
+
+table: Heavy120
+25
+
+table: Heavy150
+31
+
+table: VeryHeavy30
+8
+
+table: VeryHeavy60
+16
+
+table: VeryHeavy90
+23
+
+table: VeryHeavy120
+31
+
+table: VeryHeavy150
+39

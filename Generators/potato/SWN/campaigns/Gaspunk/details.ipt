@@ -1,0 +1,138 @@
+# ---------------------------------------
+# SWN: Gaspunk Location Details
+# ---------------------------------------
+
+prompt: Type {TrenchSystem|ShoppingDistrict|Factory|Cavern|MilitaryBase} Cavern
+
+table: Master
+MaxReps: 1
+Set: room=[@{prompt1}Location]
+Set: encounter=[@EncounterChance]
+Set: treasureRoll={1d10}
+Set: hazardRoll={1d10}
+Set: featureRoll={1d10}
+Set: treasureFound=[@TreasureMaster]
+Set: hazardDetails=[@HazardDetails]
+<b>This is a {room} that contains:</b>\n<b>Encounter:</b> {encounter}\nBase Treasure roll was: {$treasureRoll} ([#{$treasureRoll} BaseTreasureChance]). Add 3 to this value if there is an Encounter. Threshold: 8\nBase Hazard roll was: {$hazardRoll} ([#{$hazardRoll} BaseHazardChance]). If there is Treasure and no Encounter, add 3 to this value. Threshold: 10\nBase Feature roll was: {$featureRoll} ([#{$featureRoll} BaseFeatureChance]). Add 1 to this value if there was no Encounter, Treasure or Hazard present. Threshold: 9\n\n<u>Details (if they matter)</u>:\n<b>Hazard:</b> [@HazardDetails]\n<b>Treasure:</b> [@TreasureMaster]\n<b>Feature:</b> [@FeatureMaster]
+
+table: EncounterChance
+type: lookup
+roll: 1d10
+1-7: No
+8-10:Yes: [@EncounterDetails]
+
+table: EncounterDetails
+type: lookup
+roll: 3d6
+3-5:One or more beasts with a total of {1d2}+T hit dice
+6-8:One or more beasts with a total of {1d4}+T hit dice
+9-12:One or more beasts with a total of {2d4}+T hit dice
+13-15:One or more beasts with a total of {1d6}+T hit dice
+16-17:One or more beasts with a total of 2*T+{2d4} hit dice
+18:A 'boss-like' creature with at least T+3 HD
+
+table: BaseTreasureChance
+1-7:None
+8-9:Yes, but hidden
+10-13:Yes and it's visible
+
+table: BaseHazardChance
+1-9:No
+10-13:Yes 
+
+table: BaseFeatureChance
+1-8:None
+9-13:Yes
+
+table: TreasureMaster
+9:[@TreasureDetails]
+1:[@TreasureDetails] and [@TreasureDetails]
+
+table: TreasureDetails
+3:[|Pistol|Rifle] Ammunition
+2:[|Pistol|Rifle]
+2:Air filter
+2:Grenades
+2:[|Small|Medium] blade weapon
+2:[|Light|Heavy] Armor
+2:[|Heavy gun|Demolition charge|Explosive shells] Ammunition 
+2:Rations
+2:Misc Equipment - [|binoculars|medikit|pharma - lift|survival kit|rope]
+2:Air filter
+1:Cynogat
+
+table: HazardDetails
+Entry trap. As you enter, save or take Td4 damage.
+Environmental danger. Save or take Td4 damage.
+Decrepit structure. Save or Td6 damage and leave room.
+Triggered danger. If Encounter there, save or Td6 dmg.
+Dangerous object. Save or take Td6 damage.
+Trapped container. If Treasure, save or take Td6 damage.
+Trapped feature. If Feature, save or take Td6 damage.
+Lethal trap or environmental quality. Save or perish.
+
+table: FeatureMaster
+[@FeatureStatic]
+[@FeatureInteractive]
+
+table: FeatureStatic
+A furnishing infested with noxious vermin
+Fire pit with cinders of once-valuable furnishings
+Corpse adorning a table; tortured or half-eaten
+Elaborate lighting apparatus, possibly still working
+Furnishings made of parts of human prey
+Furnishings from the original site's creators
+Obscenely defaced furniture
+Area is partially flooded
+Large bed of mold or plant life growing here
+Roots or growth that block a path
+Signs of recent attempts at repair and furnishing
+Scorch marks of recent destruction
+Elaborately-illustrated book
+Documents of something relevant to nearest community
+Ragged journal speaking of what happens here
+Unusually well-drawn erotica of local denizens
+Many more bodies than normal lie here
+Limited vision (heavy gas, thick fog, heavy dust)
+[|USA|British|French|German] flag
+
+table: FeatureInteractive
+A lump of [|quivering|mutated|unidentifiable] fleshy-thing. Re-roll encounter chance
+Distorted or mutated plants. May be dangerous. Re-roll encounter chance
+Water-weakened floor. Check to avoid it or Td4 dmg
+Chest. Room gets additional Treasure check roll.
+Spiritually active location. 50/50 malignant / benign
+Deep crevasse; route to a new underground place
+Half-burnt note; check to use it to find a treasure
+Drains that have been made vermin burrows. Re-roll encounter chance
+Note revealing location of a treasure
+
+table: TrenchSystemLocation
+Open Trench with [|8'|9'|10'] high walls
+[|Supply Depot|Fighting (pillbox)|Barracks|Headquarters|Hospital|Collapsed] Bunker
+Artillery Pit
+Fighting Position (foxhole)
+Mass Grave
+
+
+table: CavernLocation
+Caved-in cavern
+Circular chamber
+Crumbling dry cave
+Dead end
+Domed cavern
+Flowing water
+Narrow crevasse
+Natural bridge
+Pit ledge
+Sloping gallery
+Spiral tunnel
+Stalactite maze
+Strata pocket
+Stream bank
+Tunnel intersection
+Twisted tunnel
+Underground pool
+Vertical shaft
+Water-smoothed cave
+Wide gallery

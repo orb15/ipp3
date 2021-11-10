@@ -1,0 +1,495 @@
+# ---------------------------------------
+# WelshPiper:  Atlas hex contents
+# https://welshpiper.com/hex-based-campaign-design-part-2/
+# ---------------------------------------
+
+prompt: Atlas Hex Terrain {Forest|Hills|Desert|Swamp|Plains|Mountain|Water} Plains
+
+table: Master
+MaxReps: 1
+Set: MasterResult=<b>Major Encounter for Terrain:</b> {prompt1}\n\n[#{$prompt1} Terrain]
+{$MasterResult}
+
+table: Terrain
+type: dictionary
+Forest:[@Forest]
+Hills: [@Hills]
+Desert:[@Desert]
+Swamp: [@Swamp]
+Plains:[@Plains]
+Mountain:[@Mountain]
+Water:[@Water]
+
+table: Forest
+type: lookup
+roll: 1d10
+1-4: [@RandomMajorEncounter]
+5-10: {$prompt1}: No major Encounter
+
+table: Hills
+type: lookup
+roll: 1d10
+1-4: [@RandomMajorEncounter]
+5-10:{$prompt1}: No major Encounter
+
+table: Desert
+type: lookup
+roll: 1d10
+1-2: [@RandomMajorEncounter]
+3-10: {$prompt1}: No major Encounter
+
+table: Swamp
+type: lookup
+roll: 1d10
+1-2: [@RandomMajorEncounter]
+3-10:{$prompt1}: No major Encounter
+
+table: Plains
+type: lookup
+roll: 1d10
+1-6: [@RandomMajorEncounter]
+7-10:{$prompt1}: No major Encounter
+
+table: Mountain
+type: lookup
+roll: 1d10
+1-2: [@RandomMajorEncounter]
+3-10:{$prompt1}: No major Encounter
+
+table: Water
+type: lookup
+roll: 1d10
+1: [@RandomMajorEncounter]
+2-10:{$prompt1}: No major Encounter
+
+table: RandomMajorEncounter
+[@Settlement]
+[@Fortress]
+[@ReligiousOrder]
+[@Ruin]
+[@Monster]
+[@Nature]
+
+# ####################################################
+# Settlement
+# ####################################################
+table: Settlement
+Set: settlementType=[@settlementType]
+Set: settlementRuler=[@settlementRulers]
+Set: settlementGovt=[@settlementGovt]
+Set: settlementAlign=[@settlementAlign]
+Set: settlementCommerce=[@settlementCommerce]
+<b>Settlement</b>\n\n<b>Type:</b> {settlementType}\n<b>Ruler:</b> {settlementRuler}\n<b>Government:</b> {settlementGovt}\n<b>Alignment:</b> {settlementAlign}\n<b>Commerce:</b> {settlementCommerce}
+
+table: settlementType
+Town (population: {(3d6+2) * 100})
+Town (population: {(3d6+2) * 100})
+Walled Town (population: {(3d6+2) * 100})
+City (population: {(3d4) * 1000})
+Walled City (population: {(3d4) * 1000})
+Walled Free City (population: {(3d4) * 1000})
+Walled Metropolis (population: {(3d6+2) * 3000})
+Walled City State (population: {(3d6+2) * 3000})
+
+table: settlementRulers
+Nobility
+Nobility
+Criminals
+Spell casters
+Military
+Merchants
+Scholars
+Secret Cult
+
+table: settlementGovt
+Autocracy
+Bureaucracy
+Monarchy
+Oligarchy
+Syndicracy
+Theocracy
+Dictatorship
+Confederacy
+
+table: settlementAlign
+Lawful
+Lawful
+Neutral
+Neutral
+Neutral
+Chaotic
+
+table: settlementCommerce
+Food
+Textiles
+Services
+Slaves
+Arms
+Minerals
+Livestock
+Unique Resource
+
+# ####################################################
+# Fortress
+# ####################################################
+table: Fortress
+Set: fortType=[@fortType]
+Set: fortLord=[@fortLord]
+Set: fortAlign=[@fortAlign]
+Set: fortProtects=[@fortProtects]
+Set: fortGuards=[@fortGuards]
+Set: fortDomo=[@fortDomo]
+<b>Fortress</b>\n\n<b>Type:</b> {fortType}\n<b>Lord:</b> {fortLord}\n<b>Alignment:</b> {fortAlign}\n<b>Protects:</b> {fortProtects}\n<b>Guards:</b> {fortGuards}\n<b>Majordomo:</b> {fortDomo}
+
+table: fortType
+Tower
+Tower
+Tower
+Keep
+Keep
+Castle
+
+table: fortLord
+Fighter (Level: {1d6+6})
+Fighter (Level: {1d6+6})
+Fighter (Level: {1d6+6})
+Noble (Level: {1d6+6})
+Noble (Level: {1d6+6})
+Noble (Level: {1d6+6})
+Thief (Level: {1d6+6})
+Mage (Level: {1d6+6})
+Mage (Level: {1d6+6})
+Usurper (Level: {1d6+6})
+
+table: fortAlign
+Lawful
+Lawful
+Neutral
+Neutral
+Chaotic
+Chaotic
+
+table: fortProtects
+Village
+Village
+Town
+Town
+Resource
+Border
+Border
+Dungeon
+Ruin/Artifact
+Secret
+
+table: fortGuards
+Bandits
+Knights
+Men-at-arms
+Men-at-arms
+Men-at-arms
+Dervishes
+Humanoids
+Demi-humans
+Automatons
+Barbarians
+
+table: fortDomo
+Giant (Level: {1d6+3})
+Dragon  (Level: {1d6+3})
+Fighter  (Level: {1d6+3})
+Fighter  (Level: {1d6+3})
+Thief  (Level: {1d6+3})
+Humanoids  (Level: {1d6+3})
+Mage  (Level: {1d6+3})
+Demon  (Level: {1d6+3})
+Elemental  (Level: {1d6+3})
+Naga  (Level: {1d6+3})
+
+# ####################################################
+# Ruin
+# ####################################################
+table: Ruin
+Set: ruinType=[@ruinType]
+Set: ruinRuinedBy=[@ruinRuinedBy]
+Set: ruinInterest=[@ruinInterest]
+Set: ruinDomo=[@ruinDomo]
+Set: ruinMinions=[@ruinMinions]
+<b>Ruins</b>\n\n<b>Type:</b> {ruinType}\n<b>Ruined By:</b> {ruinRuinedBy}\n<b>Reason To Explore:</b> {ruinInterest}\n<b>Majordomo:</b> {ruinDomo}\n<b>Minions:</b> {ruinMinions}
+
+table: ruinType
+Village
+Town
+City
+Tower
+Keep
+Castle
+Tomb
+Temple
+Abbey
+Chantry
+
+table: ruinRuinedBy
+Sacked
+Plague
+Earthquake
+Curse
+Flood
+Angry God(s)
+Infestation
+Bad Magic
+Tech Gone Wrong
+Self-destruction
+
+table: ruinInterest
+Plunder
+Artifact/Relic
+Bounty Hunt
+Recover a [|heirloom|noble person|lost secret|remains|birth right|the ruin itself]
+Rescue the PC's [|mentor|patron|ally|prisoner|ward|nemesis]
+Recon/Intel
+Portal/Gate
+Restoration
+Rare Item
+Search and Destroy
+
+table: ruinDomo
+type: lookup
+1:Fighter
+2:Cleric
+3:Thief
+4:Mage
+5:Demon
+6:Humanoid
+7:Dragon
+8:Alien
+9:[#{1d8} ruinDomo], [#{1d8} ruinDomo]
+10:[#{1d8} ruinDomo], [#{1d8} ruinDomo], [#{1d8} ruinDomo]
+
+table: ruinMinions
+Bandits
+Humanoids
+Imps
+Sub-men
+Constructs
+Creepy thing: [|fungoids|insects/spiders|worms|plants]
+Animals
+Hybrids
+Undead
+Something Weird
+
+# ####################################################
+# Religious Order
+# ####################################################
+table: ReligiousOrder
+Set: religionType=[@religionType]
+Set: religionClergy=[@religionClergy]
+Set: religionDedication=[@religionDedication]
+Set: religionFocus=[@religionFocus]
+Set: religionAlign=[@religionAlign]
+Set: religionDispos=[@religionDispos]
+<b>Religious Order</b>\n\n<b>Type:</b> {religionType}\n<b>Clergy & Garrison Population:</b> {religionClergy}\n<b>Dedicated To:</b> {religionDedication}\n<b>Focus:</b> {religionFocus}\n<b>Alignment:</b> {religionAlign}\n<b>Dispositions:</b> {religionDispos}
+
+table: religionType
+Holy Site
+Hermitage
+Shrine
+Mausoleum
+Temple
+Priory housing [|{1d4} monks|{1d2+4} nuns]
+Abbey housing [|{1d4} monks|{1d2+4} nuns]
+Military Order in a [@orderHousing]
+Chantry
+Glebe with peasant support population of {5d6 * 10}
+
+table: orderHousing
+type: lookup
+roll:1d8
+1-3: fortified manse
+4-5: tower
+6-7: keep
+8: castle
+
+table: religionClergy
+{1d2-1}, {1d2-1}
+{1d4-1}, {1d3-1}
+{1d6}, {1d4}
+{1d6}, {1d4}
+{2d6}, {2d4}
+{3d6}, {2d4}
+{4d6}, {3d4}
+{2d6}, {10d4}
+{5d6}, {5d4}
+{6d6}, {6d4}
+
+table: religionDedication
+Saint
+Martyr
+Hero/Heroine
+Angel
+Demon/Devil
+Demigod
+Lesser God
+Greater God
+
+table: religionFocus
+Healing
+Divination
+Ancient Teachings
+Hedonism
+Technology
+Naturalism
+Dark Secrets
+Jihad
+Dimensions
+Immortality
+
+table: religionAlign
+Lawful
+Lawful
+Neutral
+Neutral
+Neutral
+Chaotic
+Chaotic
+
+table: religionDispos
+1:Exposure: Secret, Relationship to parent church: Aligned, Status: Mainstream
+1:Exposure: Secret, Relationship to parent church: Aligned, Status: Cult
+1:Exposure: Secret, Relationship to parent church: Heretical, Status: Mainstream
+1:Exposure: Secret, Relationship to parent church: Heretical, Status: Cult
+1:Exposure: Public, Relationship to parent church: Aligned, Status: Mainstream
+1:Exposure: Public, Relationship to parent church: Aligned, Status: Cult
+1:Exposure: Public, Relationship to parent church: Heretical, Status: Mainstream
+1:Exposure: Public, Relationship to parent church: Heretical, Status: Cult
+
+# ####################################################
+# Monster
+# ####################################################
+table: Monster
+Set: monsterType=[@monsterType]
+Set: monsterActivity=[@monsterActivity]
+Set: monsterPets=[@monsterPets]
+Set: monsterFeature=[@monsterFeature]
+<b>Monster Lair</b>\n\n<b>Primary Type:</b> {monsterType}\n<b>Goal / Activity:</b> {monsterActivity}\n<b>Pets/Servants:</b> {monsterPets}\n<b>Lair Feature:</b> {monsterFeature}
+
+table: monsterType
+type: lookup
+roll: 1d10
+1:Dragon
+2:Planar
+3:Humanoid, weak
+4:Humanoid, strong
+5:Deep Horror
+6:Hive Minded
+7:Fey
+8:Alien
+9:[#{1d8} monsterType] and [#{1d8} monsterType] relationship: [@monsterRelation]
+10:[#{1d8} monsterType] and [#{1d8} monsterType] and [#{1d8} monsterType] relationship: [@monsterRelation]
+
+table: monsterRelation
+Allied
+Cooperative
+Oppressive or Enslaved
+Neutral
+Competitive
+At War
+
+table: monsterActivity
+Spying
+Raiding
+Expanding
+Searching
+Organizing
+Venerating
+Guarding
+Activating
+Serving
+Summoning
+
+table: monsterPets
+Bugs
+Bugs
+Animals
+Animals
+Animals
+Shrooms
+Plants
+Plants
+Hybrids
+Weird Things
+
+table: monsterFeature
+11:Completely Normal
+1:[@monsterLairDetail]
+
+table: monsterLairDetail
+Geothermal Activity
+Natural Springs
+Wild Magic
+Unnaturally Light / Dark
+Enchanted Fountain
+Portal/Gate
+Ancient Graveyard
+Partially Submerged
+Rare/MagicalResource
+
+# ####################################################
+# Nature
+# ####################################################
+table: Nature
+Set: natureAspect=[@natureAspect]
+Set: natureEffect=[@natureEffect]
+Set: natureDescrip=[@natureDescrip]
+Set: natureQuirk=[@natureQuirk]
+<b>Natural Phenomenon</b>\n\n<b>Aspect:</b> {natureAspect}\n<b>Effect:</b> {natureEffect}\n<b>Description:</b> {natureDescrip}\n<b>Quirk:</b> {natureQuirk}
+
+table: natureAspect
+type: lookup
+roll: 1d10
+1:Air: [|breathable|wind|sky|cyclone]
+2:Earth: [|dormant volcano|formations|seismic|canyon]
+3:Fire: [|active volcano|natural vents|lava|open flame]
+4:Water: [|geyser|spring|whirlpool|waterfall]
+5:Plants
+6:Animals
+7:Precipitation
+8:Sunlight
+9:Moonlight
+10:Elemental Combo: [#{1d4} natureAspect] and  [#{1d4} natureAspect]
+
+table: natureEffect
+It Looks Weird
+No Big Deal
+Attracts:[|metal|wood|High or Low Intelligence|specific monster type|certain alignment|a precious metal]
+Repels:[|metal|wood|High or Low Intelligence|specific monster type|certain alignment|a precious metal]
+Magic Focus
+Divine Focus
+Mental Benefit: [|Intelligence|Memory|Awareness|Personality|Sanity|Alignment]
+Mental Detriment: [|Intelligence|Memory|Awareness|Personality|Sanity|Alignment]
+Physical Benefit: [|Strength|Dexterity|Size|Age|Health|Appearance]
+Physical Detriment: [|Strength|Dexterity|Size|Age|Health|Appearance]
+
+table: natureDescrip
+Hot
+Cold
+Wet
+Dry
+Light (weight)
+Heavy
+Crystal
+Organic
+Misty
+Dusty
+
+table: natureQuirk
+Follows [|Lunar|Solar] Cycle
+Unusual Color
+Attracts Vermin
+Distorts Sound
+Portal/Gateway
+Adapted Monster
+Protected
+Bigger Inside
+Artifact/Relic
+Sacred Ground
+

@@ -1,20 +1,19 @@
 # ---------------------------------------
-# Swordpoint: Smelter Battlefield Encounter
+# Swordpoint: Temple Battlefield Encounter
 # ---------------------------------------
 
 table: Master
 MaxReps: 2
 Set:encounter=[@Encounter]
-<b>Dwarven Smelter Battlefield Encounter (see HoB 92 for VPs)</b>\n\n{$encounter}
+<b>Drow Temple Battlefield Encounter (see HoB 92 for VPs)</b>\n\n{$encounter}
 
 Table: Encounter
-4:[@AssistFriendly]
-5:Protect [@PointType] from [@AttackerType]
+3:[@AssistFriendly]
+3:Protect [@PointType] from [@AttackerType]
 3:Defeat a unit: [@NormalAttackerType]
-2:Disrupt supply guarded by: [@NormalAttackerType]
-3:Capture [@PointType] from [@AttackerType]
+2:Capture supply guarded by: [@NormalAttackerType]
+5:Capture [@PointType] from [@AttackerType]
 1:Defeat a Notable Unit: [@EliteAttackerType]
-
 
 Table:AssistFriendly
 Assist Friendly Troops: Rally demoralized troops ([@FriendlyUnit]) at a [@PointType]
@@ -27,10 +26,10 @@ Dwarven Warriors
 Dwarven crossbowmen
 
 Table: PointType
-2:Defensive position
+1:Defensive position
 1:Intrinsic point
 1:Maneuver point
-1:Offensive Point
+2:Offensive Point
 
 Table: AttackerType
 3:[@NormalAttackerType]
@@ -42,15 +41,13 @@ Table: NormalAttackerType
 1:[@EliteAttackerType]
 
 Table: RankFileAttackerType
-Goblins with Hobgoblin Leaders
-Drow Soldiers
-Spiders
+1:Goblins with Hobgoblin Leaders
+3:Drow Soldiers
+2:Spiders
 
 Table: EliteAttackerType
-Ogres*
 Demons*
 Elite Drow*
-Umber Hulk*
 Cleric (with troops)*
 Magic User (with Troops)*
 Drider*

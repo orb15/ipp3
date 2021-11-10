@@ -1,0 +1,990 @@
+# ---------------------------------------
+# OSE: Wilderness Random Encounters
+# ---------------------------------------
+prompt: Terrain {BarrenHillsMountains|City|Desert|Forest|GrasslandClear|Jungle|LakeRiver|OceanSea|Settled|Swamp} GrasslandClear
+
+table: Master
+MaxReps: 1
+set: enc=[@Wild{prompt1}]
+<b>An Encounter for Terrain: {prompt1}</b>\n{enc}
+
+table: WildBarrenHillsMountains
+[@BarrenHillsMountains_Animal]
+[@WildSubtable1_Dragon]
+[@WildSubtable1_Dragon]
+[@BarrenHillsMountains_Human]
+[@BarrenHillsMountains_Humanoid]
+[@BarrenHillsMountains_Humanoid]
+[@BarrenHillsMountains_Monster]
+[@WildSubtable2_Unusual]
+
+table: WildCity
+[@CitySettled_HumanCity]
+[@CitySettled_HumanCity]
+[@CitySettled_HumanCity]
+[@CitySettled_HumanCity]
+[@CitySettled_HumanCity]
+[@CitySettled_HumanCity]
+[@CitySettled_Humanoid]
+[@WildSubtable2_Undead]
+
+table: WildDesert
+[@Desert_Animal]
+[@Desert_Animal]
+[@WildSubtable1_Dragon]
+[@Desert_Human]
+[@Desert_Human]
+[@Desert_Humanoid]
+[@Desert_Monster]
+[@WildSubtable2_Undead]
+
+table: WildForest
+[@Forest_Animal]
+[@WildSubtable1_Dragon]
+[@WildSubtable1_Flyer]
+[@Forest_Human]
+[@Forest_Humanoid]
+[@WildSubtable1_Insect]
+[@Forest_Monster]
+[@WildSubtable2_Unusual]
+
+table: WildGrasslandClear
+[@GrasslandClear_Animal]
+[@WildSubtable1_Dragon]
+[@WildSubtable1_Flyer]
+[@GrasslandClear_Human]
+[@GrasslandClear_Humanoid]
+[@WildSubtable1_Insect]
+[@GrasslandClear_Monster]
+[@WildSubtable2_Unusual]
+
+table: WildJungle
+[@Jungle_Animal]
+[@WildSubtable1_Dragon]
+[@WildSubtable1_Flyer]
+[@Jungle_Human]
+[@Jungle_Humanoid]
+[@WildSubtable1_Insect]
+[@WildSubtable1_Insect]
+[@Jungle_Monster]
+
+table: WildSettled
+[@CitySettled_Animal]
+[@WildSubtable1_Dragon]
+[@WildSubtable1_Flyer]
+[@CitySettled_HumanSettled]
+[@CitySettled_HumanSettled]
+[@CitySettled_HumanSettled]
+[@CitySettled_Humanoid]
+[@WildSubtable1_Insect]
+
+table: WildSwamp
+[@WildSubtable1_Dragon]
+[@WildSubtable1_Flyer]
+[@Swamp_Human]
+[@Swamp_Humanoid]
+[@WildSubtable1_Insect]
+[@Swamp_Swimmer]
+[@Swamp_Monster]
+[@WildSubtable2_Undead]
+
+table: WildLakeRiver
+[@LakeRiver_Animal]
+[@WildSubtable1_Dragon]
+[@WildSubtable1_Flyer]
+[@LakeRiver_Human]
+[@LakeRiver_Humanoid]
+[@WildSubtable1_Insect]
+[@LakeRiver_Swimmer]
+[@LakeRiver_Swimmer]
+
+table: WildOceanSea
+[@WildSubtable1_Dragon]
+[@WildSubtable1_Dragon]
+[@WildSubtable1_Flyer]
+[@OceanSea_Human]
+[@OceanSea_Swimmer]
+[@OceanSea_Swimmer]
+[@OceanSea_Swimmer]
+[@OceanSea_Swimmer]
+[@OceanSea_Swimmer]
+
+table: WildSubtable1_Insect
+Ankheg
+Beetle, Fire
+Beetle, Oil
+Beetle, Tiger
+Centipede, Giant
+Driver Ant
+Driver Ant
+FlailSnail
+Killer Bee
+Mantis, Giant
+Rhagodessa
+Robber Fly
+Rot Grub
+Scorpion, Giant
+Slug, Giant
+Spider, Black Widow
+Spider, Crab
+Spider, Phase
+Spider, Tarantella
+Wasp, Giant
+
+table: WildSubtable1_Dragon
+Chimera
+Dragon, Black
+Dragon, Blue
+Dragon, Brass
+Dragon, Bronze
+Dragon, Copper
+Dragon, Gold
+Dragon, Green
+Dragon, Red
+Dragon, Silver
+Dragon, White
+Hydra (or Sea Hydra)
+Hydra (or Sea Hydra)
+Pseudo-Dragon
+Wyvern
+Amphisbaena (re-roll at Sea)
+Basilisk (re-roll at Sea)
+Dragonne (re-roll at Sea)
+Lizard, Flame (re-roll at Sea)
+Salamander (re-roll at Sea)
+
+table: WildSubtable1_Flyer
+Cockatrice
+Couatl
+Gargoyle
+Griffon
+Hawk, Giant
+Hippogriff
+Killer Bee
+Mantis, Giant
+Nightmare
+Pegasus
+Peryton
+Phoenix
+Pixie
+Pseudo-Dragon
+Robber Fly
+Roc, Small
+Sphinx
+Sprite
+Stirge
+Wasp, Giant
+
+table: WildSubtable2_Animal
+Bear, Cave
+Bear, Cave
+Cat, Sabre-Toothed
+Cat, Sabre-Toothed
+Crocodile, Giant
+Crocodile, Giant
+Gorilla
+Hippo, Behemoth
+Mastodon
+Pterosaur, Pteranodon
+Pterosaur, Pterodactyl
+Rhino, Woolly
+Rhino, Woolly
+Snake, PitViper
+Stegosaurus
+Titanothere
+Triceratops
+TyrannosaurusRex
+Wolf, Dire
+Yeti
+
+table: WildSubtable2_Undead
+Banshee
+Coffer Corpse
+Coffer Corpse
+Ghast
+Ghost
+Ghost
+Ghoul
+Ghoul
+Mummy
+Necrophidius
+Poltergeist
+Revenant
+Skeleton
+Skeleton
+Spectre
+Vampire
+Wight
+Wraith
+Zombie
+Zombie
+
+table: WildSubtable2_Unusual
+Basilisk
+Blink Dog
+Bulette
+Catoblepas
+Centaur
+Gorgon
+Jackalwere
+Lamia
+Leucrocotta
+Lycanthrope, Werebear
+Lycanthrope, Wereboar
+Lycanthrope, Wererat
+Lycanthrope, Weretiger
+Lycanthrope, Werewolf
+Medusa
+Otyugh
+Roper
+Shambling Mound
+Treant
+Warp Beast
+
+table: BarrenHillsMountains_Human
+Bandit
+Bandit
+Berserker
+Berserker
+Berserker
+Brigand
+Brigand
+Brigand
+Exp. Adventurers
+Exp. Adventurers
+High-Level Cleric
+High-Level Fighter
+High-Level Fighter
+High-Level MU
+High-Level MU
+Merchant
+Merchant
+Neanderthal
+Neanderthal
+Neanderthal
+
+table: BarrenHillsMountains_Monster
+Gargoyle
+Griffon
+Harpy
+Hawk
+Hawk, Giant
+Hippogriff
+Lamia
+Leucrocotta
+Manticore
+Manticore
+Nightmare
+Pegasus
+Peryton
+Peryton
+Roc, Giant
+Roc, Large
+Roc, Small
+Sphinx
+Will-o’-the-Wisp
+Xorn
+
+table: BarrenHillsMountains_Humanoid
+Dwarf
+Ettin
+Giant, Cloud
+Giant, Frost
+Giant, Hill
+Giant, Stone
+Giant, Storm
+Gnome
+Goblin
+Hag, Black
+Jackalwere
+Kobold
+Mutoid
+Orc
+Scorpionoid
+Svirfneblin
+Titan
+Troglodyte
+Troll
+Yeti
+
+table: BarrenHillsMountains_Animal
+Ape, White
+Ape, White
+Bear, Cave
+Cat, Mntn.Lion
+Dog, Wild
+Dragonne
+Gorilla
+Hawk
+HerdAnimal
+Lizard, Flame
+Lizard, Subterr.
+Mule
+RockBaboon
+Snake, PitViper
+Snake, Rattler
+Spider, Phase
+Wasp, Giant
+Wolf
+Wolf, Dire
+Wolf, Winter
+
+table: CitySettled_Animal
+Boar
+Boar
+Cat, Tiger
+Dog, Hunting
+Dog, Hunting
+Dog, War
+Ferret, Giant
+Hawk
+Hawk
+Herd Animal
+Herd Animal
+Herd Animal
+Rat, Giant
+Rat, Giant
+Shrew, Giant
+Snake, Pit Viper
+Spider, Tarantella
+Weasel, Giant
+Wolf
+Wolf
+
+table: CitySettled_HumanCity
+Acolyte
+Acolyte
+Bandit
+Bandit
+Bandit
+Basic Adventurers
+Basic Adventurers
+Exp.Adventurers
+High-Level Fighter
+High-Level Fighter
+Medium
+Merchant
+Merchant
+Noble
+Noble
+Trader
+Trader
+Trader
+Trader
+Veteran
+
+table: CitySettled_Humanoid
+Brownie
+Dwarf
+Dwarf
+Elf
+Elf
+Giant, Hill
+Gnoll
+Gnome
+Gnome
+Goblin
+Gullygug
+Halfling
+Halfling
+Hobgoblin
+Leprechaun
+Mutoid
+Ogre
+Orc
+Pixie
+Sprite
+
+table: CitySettled_HumanSettled
+Acolyte
+Acolyte
+Bandit
+Bandit
+Bandit
+Basic Adventurers
+Basic Adventurers
+Exp.Adventurers
+High-Level Cleric
+High-Level Cleric
+High-Level Fighter
+High-Level MU
+Medium
+Merchant
+Merchant
+Noble
+Noble
+Trader
+Trader
+Veteran
+
+table: Desert_Animal
+Camel
+Camel
+Camel
+Cat, Lion
+Cat, Lion
+Cat, Lion
+Dog, Wild Dog
+Hawk
+Herd Animal
+Herd Animal
+Herd Animal
+Lizard, Gecko
+Lizard, Monitor
+Lizard, Tuatara
+Mantis, Giant
+Snake, Pit Viper
+Snake, Rattler
+Snake, Rattler
+Spider, Tarantella
+Spider, Tarantella
+
+table: Desert_Human
+Dervish
+Dervish
+Dervish
+Exp. Adventurers
+Exp. Adventurers
+High-Level Cleric
+High-Level Cleric
+High-Level Fighter
+High-Level Fighter
+High-Level MU
+Merchant
+Merchant
+Noble
+Noble
+Nomad
+Nomad
+Nomad
+Nomad
+Nomad
+Nomad
+
+table: Desert_Humanoid
+Giant, Fire
+Goblin
+Goblin
+Hobgoblin
+Hobgoblin
+Jackalwere
+Mantid
+Mutoid
+Mutoid
+Ogre
+Ogre
+Ogre
+Orc
+Orc
+Pixie
+Rakshasa
+Scorpionoid
+Snake Person
+Sprite
+Thoul
+
+table: Desert_Monster
+Amphisbaena
+Bulette
+Dragonne
+Gargoyle
+Gargoyle
+Griffon
+Hawk
+Hawk, Giant
+Hawk, Giant
+Lamia
+Leucrocotta
+Manticore
+Manticore
+Manticore
+Roc, Giant
+Roc, Large
+Roc, Small
+Sphinx
+Sphinx
+Wasp, Giant
+
+table: Forest_Animal
+Bear, Grizzly
+Boar
+Cat, Panther
+Cat, Tiger
+Dog, Wild Dog
+Frog, Mutant
+Frog, Poisonous
+Hawk
+Herd Animal
+Lizard, Gecko
+Lizard, Tuatara
+Snake, Pit Viper
+Spider, Crab
+Spider, Crab
+Spider, Phase
+Toad, Poisonous
+Unicorn
+Wolf
+Wolf
+Wolf, Dire
+
+table: Forest_Human
+Bandit
+Bandit
+Bandit
+Basic Adventurers
+Basic Adventurers
+Berserker
+Berserker
+Brigand
+Brigand
+Brigand
+Brigand
+Expert Adventurers
+Expert Adventurers
+High-Level Cleric
+High-Level Fighter
+High-Level MU
+Merchant
+Merchant
+Trader
+Trader
+
+table: Forest_Monster
+Catoblepas
+Centaur
+Cockatrice
+Gas Spore
+Ghost
+Gibbering Mouther
+Manticore
+Otyugh
+Owl Bear
+Peryton
+Poltergeist
+Pseudo-Dragon
+Roper
+Shambling Mound
+Slithering Tracker
+Spider, Aranea
+Treant
+Violet Fungus
+Will-o’-the-Wisp
+Wyvern
+
+table: Forest_Humanoid
+Brownie
+Bugbear
+Cyclops
+Dryad
+Elf
+Ettin
+Giant, Hill
+Gnoll
+Goblin
+Gullygug
+Hag, Black
+Hobgoblin
+Leprechaun
+Mutoid
+Ogre
+Ogre
+Orc
+Satyr
+Thoul
+Troll
+
+table: GrasslandClear_Human
+Bandit
+Bandit
+Bandit
+Berserker
+Berserker
+Brigand
+Brigand
+Expert Adventurers
+Expert Adventurers
+High-Level Cleric
+High-Level Fighter
+High-Level MU
+Merchant
+Merchant
+Merchant
+Noble
+Noble
+Nomad
+Nomad
+Trader
+
+table: GrasslandClear_Humanoid
+Brownie
+Bugbear
+Elf
+Giant, Hill
+Gnoll
+Goblin
+Halfling
+Hobgoblin
+Jackalwere
+Leprechaun
+Mantid
+Mutoid
+Ogre
+Orc
+Pixie
+Rakshasa
+Snake Person
+Thoul
+Titan
+Troll
+
+table: GrasslandClear_Monster
+Amphisbaena
+Amphisbaena
+Blink Dog
+Blink Dog
+Bulette
+Bulette
+Dragonne
+Dragonne
+Gorgon
+Griffon
+Griffon
+Harpy
+Hippogriff
+Leucrocotta
+Manticore
+Minotaur
+Nightmare
+Pegasus
+Warp Beast
+Wyvern
+
+table: GrasslandClear_Animal
+Ankheg
+Boar
+Cat, Lion
+Dog, Wild
+Elephant
+Ferret, Giant
+Hawk, Giant
+Herd Animal
+Herd Animal
+Hippo, Normal
+Horse, Wild
+Lizard, Flame
+Mantis, Giant
+Mule
+Rock Baboon
+Snake, Pit Viper
+Snake, Rattler
+Spider, Phase
+Wasp, Giant
+Weasel, Giant
+
+table: Jungle_Animal
+Boar
+Cat, Panther
+Elephant
+Frog, Poisonous
+Gorilla
+Herd Animal
+Hippo, Behemoth
+Hippo, Normal
+Lizard, Draco
+Lizard, Gecko
+Lizard, Monitor
+Lizard, Horned Chameleon
+Rat, Giant
+Shrew, Giant
+Slug, Giant
+Snake, Pit Viper
+Snake, Rock Python
+Snake, Sp. Cobra
+Spider, Crab
+Toad, Poisonous
+
+table: Jungle_Human
+Bandit
+Bandit
+Berserker
+Berserker
+Brigand
+Brigand
+Brigand
+Brigand
+Expert Adventurers
+Expert Adventurers
+Expert Adventurers
+High-Level Cleric
+High-Level Fighter
+High-Level Fighter
+High-Level MU
+High-Level MU
+Merchant
+Neanderthal
+Neanderthal
+Trader
+
+table: Jungle_Humanoid
+Bugbear
+Cyclops
+Elf
+Ettin
+Giant, Fire
+Giant, Hill
+Gnoll
+Goblin
+Gullygug
+Gullygug
+Hag, Black
+Lizard Man
+Mantid
+Mutoid
+Ogre
+Orc
+Rakshasa
+Snake Person
+Troglodyte
+Troll
+
+table: Jungle_Monster
+Amphisbaena
+Basilisk
+Caecilia
+Couatl
+Couatl
+Flail Snail
+Ghost
+Gibbering Mouther
+Leech, Giant
+Nightmare
+Otyugh
+Otyugh
+Pseudo-Dragon
+Roper
+Roper
+Sphinx
+Spider, Phase
+Violet Fungus
+Violet Fungus
+Warp Beast
+
+table: LakeRiver_Animal
+Boar
+Cat, Panther
+Cat, Tiger
+Crab, Giant
+Crocodile
+Crocodile
+Crocodile, Large
+Fish, Piranha
+Frog, Mutant
+Herd Animal
+Herd Animal
+Hippo, Behemoth
+Hippo, Normal
+Lamprey, Giant
+Leech, Giant
+Leech, Giant
+Rat, Giant
+Shrew, Giant
+Toad, Giant
+Toad, Giant
+
+table: LakeRiver_Human
+Bandit
+Bandit
+Basic Adventurers
+Basic Adventurers
+Brigand
+Buccaneer
+Buccaneer
+Buccaneer
+Buccaneer
+Exp. Adventurers
+Exp. Adventurers
+High-Level Cleric
+High-Level Cleric
+High-Level Fighter
+High-Level Fighter
+High-Level MU
+Merchant
+Merchant
+Merchant
+Trader
+
+table: LakeRiver_Humanoid
+Brownie
+Brownie
+Bugbear
+Elf
+Gnoll
+Gullygug
+Gullygug
+Hobgoblin
+Leprechaun
+Lizard Man
+Lizard Man
+Merrow
+Merrow
+Mutoid
+Nixie
+Ogre
+Orc
+Sprite
+Thoul
+Troll
+
+table: LakeRiver_Swimmer
+Crab, Giant
+Crocodile
+Crocodile, Large
+Fish, Catfish
+Fish, Electric Eel
+Fish, Electric Eel
+Fish, Pike
+Fish, Pike
+Fish, Piranha
+Fish, Sturgeon
+Frog, Mutant
+Frog, Mutant
+Gullygug
+Hippo, Normal
+Leech, Giant
+Lizard Man
+Nixie
+Spider, Aquatic
+Termite, Water
+Turtle, Snapping
+
+table: OceanSea_Human
+Buccaneer
+Buccaneer
+Buccaneer
+Buccaneer
+Ex. Adventurers
+Ex. Adventurers
+Merchant
+Merchant
+Merchant
+Merchant
+Merchant
+Merchant
+Merchant
+Pirate
+Pirate
+Pirate
+Pirate
+Pirate
+Pirate
+Pirate
+
+table: OceanSea_Swimmer
+Dragon Turtle
+Fish, Swordfish
+Hag, Sea
+Hippocampus
+Hydra, Sea
+Jellyfish, Giant
+Locathah
+Merman
+Merrow
+Octopus, Giant
+Sahuagin
+Sea Dragon
+Sea Serpent
+Shark
+Snake, Sea
+Squid, Giant
+Termite, Water
+Triton
+Turtle, Sea
+Whale
+
+table: Swamp_Human
+Bandit
+Bandit
+Bandit
+Basic Adventurers
+Berserker
+Berserker
+Brigand
+Brigand
+Expert Adventurers
+Expert Adventurers
+Expert Adventurers
+High-Level Cleric
+High-Level Cleric
+High-Level Fighter
+High-Level Fighter
+High-Level MU
+High-Level MU
+Merchant
+Trader
+Trader
+
+table: Swamp_Humanoid
+Ettin
+Gnoll
+Goblin
+Gullygug
+Gullygug
+Gullygug
+Hag, Black
+Hobgoblin
+Lizard Man
+Lizard Man
+Lizard Man
+Merrow
+Mutoid
+Nixie
+Ogre
+Orc
+Snake Person
+Troglodyte
+Troll
+Troll
+
+table: Swamp_Monster
+Banshee
+Carcass Crawler
+Catoblepas
+Frog, Mutant
+Frog, Poisonous
+Ghost
+Ghoul
+Hydra
+Leucrocotta
+Merrow
+Merrow
+Otyugh
+Rot Grub
+Shambling Mound
+Spawn of the Worm
+Toad, Poisonous
+Water Fiend
+Will-o'-the-Wisp
+Will-o'-the-Wisp
+Wraith
+
+table: Swamp_Swimmer
+Crab, Giant
+Crocodile
+Crocodile, Giant
+Crocodile, Large
+Fish, Catfish
+Fish, Electric Eel
+Fish, Pike
+Gullygug
+Gullygug
+Insect Swarm
+Insect Swarm
+Lamprey, Giant
+Lamprey, Giant
+Leech, Giant
+Leech, Giant
+Lizard Man
+Lizard Man
+Spider, Aquatic
+Termite, Water
+Turtle, Snapping

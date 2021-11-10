@@ -1,0 +1,42 @@
+# ---------------------------------------
+# Swordpoint: Glacier encounters
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set:encounter=[@EncounterMaster]
+<b>An Encounter on the Glacier of the White Worm</b>\n{$encounter}
+
+table: EncounterMaster
+3:[@CreatureEncounter]
+2:[@MonsterEncounter]
+2:[@TerrainEncounter]
+
+table: CreatureEncounter
+4:Animal herd, Giant Elk (CR2 450 MM325)
+2:Animal herd, Elk (CR0.25 50 MM322)
+1:Animal, Polar Bear (2 450 MM334)
+2:Animal herd, Mammoth (CR6 2300 MM332)
+1:Animal, Giant Eagle (CR1	200	MM324)
+
+table: MonsterEncounter
+Yeti, Abominable (CR9 5000 MM306)
+Yeti (CR3 700 MM305)
+Remorhaz, Young (CR5 1800 MM258)
+Owlbear, Polar (CR3 700	MM249, special)
+Winter Wolf (CR3 700 MM340)
+Girallon, Polar (CR4 1100 VO152)
+Giant, Frost (CR8 3900 MM155)
+Giant Spider, Polar (CR1 200 MM328, special)
+Dragon, Wyrmling White	(CR2 450 MM102)
+Dragon, Young White (CR6 2300 MM101)
+Vampiric Mist, Polar (CR3 700 TF246)
+
+table: TerrainEncounter
+A cave/icy tunnel leads down
+A cave into nearby black rock
+A ruined tower
+A frozen campsite
+A crevasse blocks the path forward, requiring a detour
+Loose snow atop ice, treat as trap
+A cairn of black stones

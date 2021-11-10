@@ -1,0 +1,119 @@
+# ---------------------------------------
+# SWN: Master table for Gaspunk
+# ---------------------------------------
+
+prompt: Adventure Type {Random|Explore|Fetch} Random
+
+table: Master
+MaxReps: 1
+Set: advType=[when]{prompt1}="Random"[do][@RandomAdvType][else][@{prompt1}AdvType][end]
+Set: foes=[when]{gasType}="true"[do][@GasFoes][else][@NoGasFoes][end]
+Set: threat=[@ThreatAdj]
+Set: size=[@Size]
+Set: out=[when]{detailType}="fetch"[do]<b>{advType}</b>\n<b>Location:</b> {loc}[else]<b>{advType}</b>[end]
+{out}\n<b>Size:</b> {size}\n<b>Main Foes:</b> {foes}\n<b>Threat:</b> {threat}
+
+
+table: RandomAdvType
+[@ExploreAdvType]
+[@FetchAdvType]
+
+# ---------------------
+# Fetch-Related
+# ---------------------
+
+table: FetchAdvType
+type: weighted
+Set: detailType="fetch"
+9:[@FetchInGas]
+1:[@FetchNoGas]
+
+table: FetchInGas
+Set: gasType="true"
+Rescue (Gas): [@GasRescueGoal]
+Gather data (Gas): [@GasGatherDataGoal]
+Collect specific item (Gas): [@GasCollectItemGoal]
+
+table: FetchNoGas
+Set: gasType="false"
+Collect specific item (No gas): [@NoGasCollectItemGoal]
+
+# ---------------------
+# Fetch-Goals
+# ---------------------
+
+table: GasRescueGoal
+Set: loc=[@Location]
+[|Trapped|Missing|Ambushed] zeppelin crew
+
+table: GasGatherDataGoal
+Set: loc=[@Location]
+Collect [|rock|soil|weird gas|atmospheric|] samples
+Conduct land survey
+
+table: GasCollectItemGoal
+Set: loc=[@Location]
+Collect mutant samples
+Recover cache of [|weapons|documents]
+Gather Cynogats
+
+table: NoGasCollectItemGoal
+Set: loc=[@Location]
+[|Kill|Capture] [|smugglers|counterfeiters|thieves]
+Stop illicit research
+
+# ---------------------
+# Location-Related
+# ---------------------
+table: ExploreAdvType
+Set: detailType="explore"
+Set: gasType="true"
+Explore [@Location] (Gas)
+
+table: Location
+Trench system
+Dwellings
+Shopping District
+Factory
+Caves
+Military base
+
+# ---------------------
+# Foes-Related
+# ---------------------
+table: GasFoes
+27:Mutants
+1:Germans
+1:Smugglers
+1:[|Germans|Smugglers] and Mutants
+
+table: NoGasFoes
+Germans
+[|French|British|USA]
+
+# ---------------------
+# Misc Tables
+# ---------------------
+table: ThreatAdj
+type: lookup
+roll: 2d6
+2:The threat differs from the expected level. PC level + {1d4} - {1d4}, down to a minimum of 1.
+3:Talk of its dangers is overblown. PC level - 1, down to a minimum of 1
+4:A dangerous power lurks within. The Threat is equal to the PC's level, but after half the rooms are explored, it jumps by {1d4}.
+5:They'll send for help. Your first expedition is at a Threat equal to the PC's level. Any further expeditions are at Threat + {1d4}.
+6-10:The danger is roughly as anticipated. The Threat is equal to the PC's level
+11-12:It's much worse than you expected in there; the threat is equal to the PC's level plus {1d4+2}
+
+table: Size
+{1d6} locations
+{2d6} locations
+{3d6} locations
+{1d10+10} locations
+{1d10+5} locations
+{3d6} locations split into two parts
+{1d20} locations
+{2d12} locations
+{1d6} parts each of {1d20} locations
+{1d12+10} locations
+{2d20} locations
+{1d100} locations

@@ -1,0 +1,17 @@
+# ---------------------------------------
+# d6 Apprentice:  Starting hex
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: terrain = [@StartingTerrain]
+1:The first light of day reveals the nearby terrain to be <b>{$terrain}</b>
+
+table: StartingTerrain
+Plains
+Swamp
+Freshwater
+Hills
+Mountains
+Desert
+Forest

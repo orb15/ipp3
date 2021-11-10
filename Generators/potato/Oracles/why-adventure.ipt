@@ -1,0 +1,33 @@
+# ---------------------------------------
+# General Oracle: Why enter a dungeon?
+# ---------------------------------------
+
+table: Master
+maxReps: 1
+I took on this dangerous task because... [@Tasks]
+
+table: Tasks
+my friend or loved one died near here and I want revenge
+I want to be fabulously [|rich|famous]
+I want to impress the person I want to marry
+it is better than being a dirt-farming peasant for the rest of my life
+my home life is boring and senseless and I want excitement
+I met a hero once when I was a child and I wanted to follow in their footsteps
+I owe a substantial debt and this is the only way I can pay it off
+I am tired of following everyone else's rules and I want to be free to live my life my way
+my family/clan has asked me to leave and this is all I have left
+I am thrilled with the chance to do something very few people do
+I need some way to get enough coin for my next drink
+I want to better my community by putting an end to such places
+I have heard there is magic here and I want to see it with my own eyes
+I have angered or upset every legitimate employer in the area and I need to eat
+I want to test myself against the danger and prove to myself I can survive
+I lost a drunken bet
+I am friends with one of the other participants and I want to help them stay alive
+I lied about having done this before and now I must go in to prove my word
+I had a vision from <deity/saint> that told me to do this
+I must get away from my spouse's/parent's constant nagging criticism
+I inherited some adventuring gear and have taken it as a sign that this is my destiny
+I want to start a business but have no money
+I am brave enough to face the danger and earn much better pay
+I want to be the captain of the guard but no one will take me seriously without experience
