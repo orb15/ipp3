@@ -1,0 +1,57 @@
+# ---------------------------------------
+# OSRHex:  Wilderness Event
+# ---------------------------------------
+
+prompt: Current Terrain {Forest|Hills|Desert|Swamp|Plains|Mountains|Water} Plains
+
+table: Master
+MaxReps: 1
+Set: MasterResult=[@BasicTable]
+{$MasterResult}
+
+table: Default
+type: lookup
+roll: 1d12
+1:Wandering monster
+2-3:Dungeon Information (noise, spoor etc)
+4-7:Defined by Referee as needed (more wandering monsters, more Info, Special Events, etc.)
+8-11:Oldest torch expended
+12:Oldest lantern oil expended
+
+table: BasicTable
+type: lookup
+roll: 1d12
+1:Wandering monster (at time: [@Time])
+2:[|No event|Wandering monster (at time: [@Time])]
+3:Beneficial Event (roll on the generic 2-20 table to learn how beneficial)
+4:Negative Event (roll on the generic 2-20 table to learn how negative)
+5:Feature: [@Feature]
+6:[|No event|Feature: [@Feature]]
+7:Spoor, indication, trail or the like (roll a Wandering Monster to determine details)
+8:Spoor, indication, trail or the like (roll a Wandering Monster to determine details)
+9:No event
+10:No event
+11:No event
+12:No event
+
+table: Feature
+type: lookup
+roll: 1d10
+1-8:[@NotDungeon] at [@Time]
+9-10:Dungeon! at [@Time]
+
+table: NotDungeon
+Beneficial natural feature (roll on the generic 2-20 table to learn how beneficial)
+Negative natural feature (roll on the generic 2-20 table to learn how negative)
+Ruin (suggestion: [|monastery|tower|temple|settlement|mine])
+Settlement
+Mystical object, structure or other strange place
+
+table: Time
+type: weighted
+2:Morning
+2:Mid-morning
+2:Noon
+2:Early Afternoon
+2:Evening
+1:Night

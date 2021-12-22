@@ -1,0 +1,266 @@
+# ---------------------------------------
+# WelshPiper:  Atlas hex terrain
+# https://welshpiper.com/hex-based-campaign-design-part-1/
+# ---------------------------------------
+
+prompt: Current Atlas Hex Terrain {Forest|Hills|Desert|Swamp|Plains|Mountains|Water} Plains
+
+table: Master
+MaxReps: 1
+Set: MasterResult=[#{$prompt1} Terrain]
+{$MasterResult}
+
+table: Terrain
+type: dictionary
+Forest:[@Forest]
+Hills: [@Hills]
+Desert:[@Desert]
+Swamp: [@Swamp]
+Plains:[@Plains]
+Mountains:[@Mountains]
+Water:[@Water]
+
+# ###########################
+# Water
+# ###########################
+table: Water
+Set: primaryType=Water
+Set: secondaryType=Plains
+Set: primaryTerrain=9 {primaryType} hexes
+Set: secondaryTerrain=6 {secondaryType} hexes (beach or scrub when adjacent to water)
+Set: otherTerrain=[@otherWater]
+Set: halfTerrain=[@{12} halfWater >> sort >> implode]
+1: This {primaryType} atlas hex consists of the following terrain:\n\n{primaryTerrain}\n{secondaryTerrain}\n{otherTerrain}\nHalf hexes: {halfTerrain}
+
+table: otherWater
+Set: tertiaryTerrain=Forest
+Set: wildcardTable=wildcardWater
+3 {tertiaryTerrain} hexes
+2 {tertiaryTerrain} hexes and 1 other hex type: [@{wildcardTable}]
+1 {tertiaryTerrain} hex and  2 other hex types: [@{2} {wildcardTable} >> sort >> implode]
+3 other hex types:  [@{3} {wildcardTable} >> sort >> implode]
+
+table: halfWater
+Water
+Plains
+Forest
+
+table: wildcardWater
+Swamp
+Desert
+Hills
+
+# ###########################
+# Swamp
+# ###########################
+table: Swamp
+Set: primaryType=Swamp
+Set: secondaryType=Plains
+Set: primaryTerrain=9 {primaryType} hexes
+Set: secondaryTerrain=6 {secondaryType} hexes
+Set: otherTerrain=[@otherSwamp]
+Set: halfTerrain=[@{12} halfSwamp >> sort >> implode]
+1: This {primaryType} atlas hex consists of the following terrain:\n\n{primaryTerrain}\n{secondaryTerrain}\n{otherTerrain}\nHalf hexes: {halfTerrain}
+
+table: otherSwamp
+Set: tertiaryTerrain=Forest
+Set: wildcardTable=wildcardSwamp
+3 {tertiaryTerrain} hexes
+2 {tertiaryTerrain} hexes and 1 other hex type: [@{wildcardTable}]
+1 {tertiaryTerrain} hex and  2 other hex types: [@{2} {wildcardTable} >> sort >> implode]
+3 other hex types:  [@{3} {wildcardTable} >> sort >> implode]
+
+table: halfSwamp
+Swamp
+Plains
+Forest
+
+table: wildcardSwamp
+Water
+
+# ###########################
+# Desert
+# ###########################
+table: Desert
+Set: primaryType=Desert
+Set: secondaryType=[@desertHills]
+Set: primaryTerrain=9 {primaryType} hexes
+Set: secondaryTerrain=6 {secondaryType} hexes
+Set: otherTerrain=[@otherDesert]
+Set: halfTerrain=[@{12} halfDesert >> sort >> implode]
+1: This {primaryType} atlas hex consists of the following terrain:\n\n{primaryTerrain}\n{secondaryTerrain}\n{otherTerrain}\nHalf hexes: {halfTerrain}
+
+table: otherDesert
+Set: tertiaryTerrain=Plains
+Set: wildcardTable=wildcardDesert
+3 {tertiaryTerrain} hexes
+2 {tertiaryTerrain} hexes and 1 other hex type: [@{wildcardTable}]
+1 {tertiaryTerrain} hex and  2 other hex types: [@{2} {wildcardTable} >> sort >> implode]
+3 other hex types:  [@{3} {wildcardTable} >> sort >> implode]
+
+table: halfDesert
+Desert
+Plains
+[@desertHills]
+
+table: wildcardDesert
+Water
+Mountains
+
+table: desertHills
+2:Hills
+1: [|Desert badlands|High dunes]
+
+# ###########################
+# Plains
+# ###########################
+table: Plains
+Set: primaryType=Plains
+Set: secondaryType=Forest
+Set: primaryTerrain=9 {primaryType} hexes (beach or scrub when near water)
+Set: secondaryTerrain=6 {secondaryType} hexes
+Set: otherTerrain=[@otherPlains]
+Set: halfTerrain=[@{12} halfPlains >> sort >> implode]
+1: This {primaryType} atlas hex consists of the following terrain:\n\n{primaryTerrain}\n{secondaryTerrain}\n{otherTerrain}\nHalf hexes: {halfTerrain}
+
+table: otherPlains
+Set: tertiaryTerrain=Forest
+Set: wildcardTable=wildcardPlains
+3 {tertiaryTerrain} hexes
+2 {tertiaryTerrain} hexes and 1 other hex type: [@{wildcardTable}]
+1 {tertiaryTerrain} hex and  2 other hex types: [@{2} {wildcardTable} >> sort >> implode]
+3 other hex types:  [@{3} {wildcardTable} >> sort >> implode]
+
+table: halfPlains
+Plains
+Hills
+Forest
+
+table: wildcardPlains
+Swamp
+Desert
+Water
+
+# ###########################
+# Forest
+# ###########################
+table: Forest
+Set: primaryType=Forest
+Set: secondaryType=Plains
+Set: primaryTerrain=9 [@forestForest] hexes
+Set: secondaryTerrain=6 {secondaryType} hexes
+Set: otherTerrain=[@otherForest]
+Set: halfTerrain=[@{12} halfForest >> sort >> implode]
+1: This {primaryType} atlas hex consists of the following terrain:\n\n{primaryTerrain}\n{secondaryTerrain}\n{otherTerrain}\nHalf hexes: {halfTerrain}
+
+table: otherForest
+Set: tertiaryTerrain=[@forestHills]
+Set: wildcardTable=wildcardForest
+3 {tertiaryTerrain} hexes
+2 {tertiaryTerrain} hexes and 1 other hex type: [@{wildcardTable}]
+1 {tertiaryTerrain} hex and  2 other hex types: [@{2} {wildcardTable} >> sort >> implode]
+3 other hex types:  [@{3} {wildcardTable} >> sort >> implode]
+
+table: halfForest
+Plains
+[@forestHills]
+[@forestForest]
+
+table: wildcardForest
+Swamp
+[@forestMountains]
+Water
+
+table: forestForest
+1: Heavy forest
+2: Forest
+
+table: forestHills
+1: Hills
+2: Forested hills
+
+table: forestMountains
+1: Mountains
+2: Forested mountains
+
+# ###########################
+# Hills
+# ###########################
+table: Hills
+Set: primaryType=Hills
+Set: secondaryType=Mountains
+Set: primaryTerrain=9 [@hillsHills] hexes
+Set: secondaryTerrain=6 [@hillsMountains] hexes
+Set: otherTerrain=[@otherHills]
+Set: halfTerrain=[@{12} halfHills >> sort >> implode]
+1: This {primaryType} atlas hex consists of the following terrain:\n\n{primaryTerrain}\n{secondaryTerrain}\n{otherTerrain}\nHalf hexes: {halfTerrain}
+
+table: otherHills
+Set: tertiaryTerrain=Plains
+Set: wildcardTable=wildcardHills
+3 {tertiaryTerrain} hexes
+2 {tertiaryTerrain} hexes and 1 other hex type: [@{wildcardTable}]
+1 {tertiaryTerrain} hex and  2 other hex types: [@{2} {wildcardTable} >> sort >> implode]
+3 other hex types:  [@{3} {wildcardTable} >> sort >> implode]
+
+table: halfHills
+[@hillsHills]
+Plains
+[@hillsMountains]
+
+table: wildcardHills
+Water
+Desert
+[@hillsForest]
+
+table: hillsHills
+8: Hills
+2: [|Hill canyon|Hill fissure]
+
+table: hillsForest
+1: Forested hills
+2: Forest
+
+table: hillsMountains
+4: Mountain pass
+6: Mountains
+
+# ###########################
+# Mountains
+# ###########################
+table: Mountains
+Set: primaryType=Mountains
+Set: secondaryType=Hills
+Set: primaryTerrain=9 [@mountainsMountains] hexes
+Set: secondaryTerrain=6 {secondaryType} hexes
+Set: otherTerrain=[@otherMountains]
+Set: halfTerrain=[@{12} halfMountains >> sort >> implode]
+1: This {primaryType} atlas hex consists of the following terrain:\n\n{primaryTerrain}\n{secondaryTerrain}\n{otherTerrain}\nHalf hexes: {halfTerrain}
+
+table: otherMountains
+Set: tertiaryTerrain=[@mountainsForest]
+Set: wildcardTable=wildcardMountains
+3 {tertiaryTerrain} hexes
+2 {tertiaryTerrain} hexes and 1 other hex type: [@{wildcardTable}]
+1 {tertiaryTerrain} hex and  2 other hex types: [@{2} {wildcardTable} >> sort >> implode]
+3 other hex types:  [@{3} {wildcardTable} >> sort >> implode]
+
+table: halfMountains
+[@mountainsMountains]
+Hills
+[@mountainsForest]
+
+table: wildcardMountains
+Desert
+
+table: mountainsForest
+1:Forested mountains
+2:Mountains
+
+table: mountainsMountains
+roll: 1d100
+type: lookup
+1-20:Dominating peak
+21-30:Mountain pass
+31-35:Volcano
+36-100:Mountains

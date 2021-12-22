@@ -2,7 +2,7 @@
 # Scarlet Heroes: Dungeon Location
 # ---------------------------------------
 
-prompt: Type {Cavern|Habitation|Fortress|Temple|Academy} Cavern
+prompt: Type {Cavern|Habitation|Fortress|Temple|Academy|Sewer} Cavern
 
 table: Master
 MaxReps: 1
@@ -31,7 +31,7 @@ roll: 3d6
 9-12:{2d4}+T hit dice worth of Minions and Elites.
 13-15:{1d6}+T hit dice worth of Minions and Elites[@DungeonEncounterPossibleAllies].
 16-17:{2d4} hit dice of Minions plus 2 * T hit dice worth of [|Elites|Mages|Boss] enemies.
-18: A Boss with T+3 hit dice[@DungeonEncountBossPossibleAllies]
+18:A Boss with T+3 hit dice[@DungeonEncountBossPossibleAllies]
 
 table: DungeonEncounterPossibleElite
 4:\z
@@ -201,3 +201,24 @@ Monument
 Courtyard garden
 Stables
 Lecture hall
+
+table: SewerLocation
+Tool storeroom
+Effluent-splattered walkway
+Mist-filled corridor
+Circular pool with bridges
+Slime-covered walkway
+Churning spillway
+Dripping tunnel
+Bramble-choked passage
+Crumbling tunnel
+Unfinished tunnel
+Arched intersection of tunnels
+Debris-filled passage
+Circular room pierced by pipes
+Curved tunnel
+Wide and deep channel-way
+Sloped transit corridor
+Room with tidal pipes
+Square chamber with stepped sides
+Tunnel with new excavation

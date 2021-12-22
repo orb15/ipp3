@@ -1,0 +1,24 @@
+# ---------------------------------------
+# OSRHex:  Starting hex
+# ---------------------------------------
+
+table: Master
+Set: terrain = [@StartingTerrain]
+1:The first light of day reveals the nearby terrain to be <b>{$terrain}</b>.
+
+table: StartingTerrain
+type: lookup
+roll: 1d100
+MaxReps: 1
+1-60: Plains
+61-80: [@StartingForest]
+81-88: Hills
+89-92: Desert
+93-96: Swamp
+97-100: Mountains
+
+table: StartingForest
+type: lookup
+roll: 1d3
+1-2: Forest
+3: Dense Forest

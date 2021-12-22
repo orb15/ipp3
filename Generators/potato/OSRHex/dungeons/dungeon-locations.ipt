@@ -1,0 +1,270 @@
+# ---------------------------------------
+# OSRHex: Dungeon Location
+# ---------------------------------------
+
+Use: potato\OSRHex\treasure.ipt
+Use: potato\OSRHex\misc.ipt
+
+prompt: Type {Cavern|Dungeon|Habitation|Fortress|Temple|Academy|Sewer} Cavern
+prompt: Difficulty {1|2|3|4|5|6|7|8|9} 3
+
+table: Master
+MaxReps: 1
+Set: room=[@{$prompt1}Location]
+Set: nextDir=[@DirectionMaster]
+Set: content=[@Contents]
+<b>This is a {$room} that contains...</b>\n\n<b>Exits:</b> {$nextDir}\n<b>Contents:</b> {content}
+
+table: DirectionMaster
+type: weighted
+4:[@NextLocationDirection]
+13:[@NextLocationDirection], [@NextLocationDirection]
+2:[@NextLocationDirection], [@NextLocationDirection], [@NextLocationDirection]
+2:[@DirectionWithLevelChange]
+
+table: DirectionWithLevelChange
+type: weighted
+32:[@NextLocationDirection], [|up|down|down] {1d2} levels ([@LevelChangeType])
+16:[@NextLocationDirection], [@NextLocationDirection], [|up|down|down] {1d2} levels ([@LevelChangeType])
+8:[@NextLocationDirection], [@NextLocationDirection], [@NextLocationDirection], [|up|down|down] {1d2} levels ([@LevelChangeType])
+4:[@NextLocationDirection], [|up|down|down] {1d2 + 1d3} levels ([@LevelChangeType])
+2:[@NextLocationDirection], [@NextLocationDirection], [|up|down|down] {1d2 + 1d3} levels ([@LevelChangeType])
+1:[@NextLocationDirection], [@NextLocationDirection], [@NextLocationDirection], [|up|down|down] {1d2 + 1d3} levels ([@LevelChangeType])
+
+table: LevelChangeType
+type: weighted
+8:stairs
+4:slope
+1:shaft
+
+table: Contents
+type: lookup
+roll: 1d6
+1-2:Empty\n<b>Treasure:</b> [@EmptyTreasure]
+3-4:Monster\n<b>Treasure:</b> [|Yes, per Monster|None]
+5:[@Feature]\n<b>Treasure:</b> None
+6:[@TrapMaster]
+
+table: Feature
+[|Bloody|Damaged|Pristine|well-worn] [|shrine|statue|altar] to an Old God. It [|holds a hidden power, Save to pass it by|seems inert]
+Grisly remains of [|an adventurer|a monster]
+[|Fresh|Old] spoor or sign of creature. If identified, this will be the next creature encountered and players will start with initiative
+Signs of [|a recent|an old] battle - blood, broken weapons, shattered arrows, torn scales
+[|Pool|Font] of [|water|acid|poison|blood|slime|oil|magical effect]
+A secret door [|in a new direction|to a sanctuary] (COMP check to find means to open)
+A secret trap door in the [|floor|ceiling] (COMP check to find means to open, allows change of 1 level)
+A passage back to an unexplored area/corridor. Roll a side location off this new corridor as well (allows Jaquaying)
+A pile of useful items [@{1d3} HandyThings]
+Phosphorescent [|mineral|moss|fungus] sheds light in [|5|10|15] ft radius. It [|is|is not] possible to harvest it with care/skill/time
+Chasm that [|is|is not] a barrier to progress. Chasm is {1d10 * 1d3 * 1d3} at its narrowest part. It [|can|cannot] be used to access up to {1d6} levels below
+Ceiling crack that is {1d10 * 1d3 * 1d3} at its narrowest part. It [|can|cannot] be used to access up to {1d6} levels above
+Stone sarcophagus. The lid [|is resting on the base|is mortared to the base and requires {3d6} Exploration Turns to free] and requires {4d10 + 10} total PHYS to remove. Before lifting, roll a new room and treat its contents (and traps if any) as the lid and contents of the sarcophagus
+
+table: HandyThings
+wood beams
+some logs
+[|tattered|serviceable] rope {1d10 * 10} feet
+[|rickety|serviceable] ladder {3d6} feet
+{1d3} torches
+tinderbox
+{1d3} rations
+[|a dagger. It is|two daggers. They are] [|badly rusted|in good shape]
+a [|quiver of arrows|box of bolts] with [|4|6|8] resources left
+a healer's kit with [|4|6] resources left
+a [|rusty|serviceable] one-handed weapon
+a lantern with [|oil|no oil]
+{1d3} lantern oil
+
+table: TrapMaster
+type: lookup
+roll: 1d6
+1-4:Appears empty but [|the ceiling|a wall|the floor] contains a trap that will take {1d3 + (1d4-1)*promt2} Exploration Turns to bypass\n<b>Treasure:</b> None
+5-6:[@TreasureTrap]
+
+table: TreasureTrap
+1-2:Appears empty but [|the ceiling|a wall|the floor] contains a trap that will take {1d3 + (1d4-1)*prompt2} Exploration Turns to bypass\n<b>Treasure:</b> [#{prompt2} Treasure]
+3-5:Empty\n<b>Treasure:</b>The treasure is trapped and it will take {1d3 + (1d4-1)*prompt2} Exploration Turns to bypass\n[#{prompt2} Treasure]
+6:Appears empty but [|the ceiling|a wall|the floor] contains a trap that will take {1d3 + (1d4-1)*prompt2} Exploration Turns to bypass\n<b>Treasure:</b> The treasure is trapped and it will take {1d3 + (1d4-1)*prompt2} Exploration Turns to bypass\n[#{prompt2} Treasure]
+
+table: EmptyTreasure
+type: lookup
+roll: 1d6
+1-5:None
+6:[#{prompt2} Treasure]
+
+table: Treasure
+type: lookup
+1:[@Treasure1]
+2-3:[@Treasure23]
+4-5:[@Treasure45]
+6-7:[@Treasure67]
+8-9:[@Treasure89]
+
+table: CavernLocation
+Caved-in cavern
+Circular chamber
+Crumbling dry cave
+Dead end
+Domed cavern
+Flowing water
+Narrow crevasse
+Natural bridge
+Pit ledge
+Sloping gallery
+Spiral tunnel
+Stalactite maze
+Strata pocket
+Stream bank
+Tunnel intersection
+Twisted tunnel
+Underground pool
+Vertical shaft [|up|down]
+Water-smoothed cave
+Wide gallery
+Switch to Dungeon
+
+table: HabitationLocation
+Bathing room
+Cellar
+Courtyard
+Dining room
+Garden
+Great hall
+Kennel or stable
+Kitchen
+Library
+Master bedroom
+Pantry
+Salon
+Scullery
+Servant's rooms
+Shrine
+Solar
+Stairwell
+Storeroom
+Study
+Vault
+
+table: FortressLocation
+Archery range
+Armory
+Barracks
+Cemetery
+Cistern
+Commissary
+Family quarters
+Gatehouse
+Guardpost
+Kitchen
+Map and file room
+Mess hall
+Officer's quarters
+Prison cell
+Sickroom
+Smithy
+Stables
+Storeroom
+Training hall
+Vault
+
+table: TempleLocation
+Acolyte's cells
+Altar hall
+Bathing room
+Cemetery
+Garden
+Guardpost
+Kitchen
+Library
+Meditation room
+Minor shrine
+Pilgrim quarters
+Prayer hall
+Priest's quarters
+Relic chamber
+Ritual chamber
+Sickroom
+Storeroom
+Vault
+Vestry
+Workroom
+
+table: AcademyLocation
+Laboratory
+Occult library
+Apprentice rooms
+Master bedroom
+Summoning room
+Divination room
+Storeroom
+Kitchen
+Study hall
+Dining hall
+Vault
+Secure cell
+Servant's chambers
+Crafter's workroom
+Academy archives
+Memorial hall
+Monument
+Courtyard garden
+Stables
+Lecture hall
+
+table: SewerLocation
+Tool storeroom
+Effluent-splattered walkway
+Mist-filled corridor
+Circular pool with bridges
+Slime-covered walkway
+Churning spillway
+Dripping tunnel
+Bramble-choked passage
+Crumbling tunnel
+Unfinished tunnel
+Arched intersection of tunnels
+Debris-filled passage
+Circular room pierced by pipes
+Curved tunnel
+Wide and deep channel-way
+Sloped transit corridor
+Room with tidal pipes
+Square chamber with stepped sides
+Tunnel with new excavation
+
+table: DungeonLocation
+Prison
+[|Large|Small] storeroom
+Feasting hall
+Practice hall
+Barracks
+Important-looking bedroom
+Summoning room
+Divination room
+Meeting room
+Vault
+Laboratory
+Bathing room
+Debris-filled room
+Underground pool
+Temple
+Shrine
+Non-nondescript room
+Torture chamber
+Workroom
+[Office|Study|Library]
+Scriptorium
+Guardpost
+Armory
+Servants quarters
+Smithy
+[|Mildew-spotted|Damp|Musty|] room
+Switch to Caverns
+High-ceilinged room
+Pillared [room|hall]
+Sitting room
+Burial-niche area
+Throne room
+Ritual chamber
+Kennel
+Oddly-shaped room

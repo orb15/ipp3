@@ -1,0 +1,32 @@
+# ---------------------------------------
+# OSRHex:  Dungeon Overview
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+set: dungeon=[@DungeonMaster]
+set: size=[@Size]
+set: diff=[@Difficulty]
+set: content=[@Contents]
+Rumors persist about a mysterious nearby place:\n\n<b>Type:</b>{dungeon}\n<b>Size:</b> {size}\n<b>Initial Level:</b> {diff}
+
+table: DungeonMaster
+Cavern
+Ruined: [|Habitation|Fortress|Temple|Academy] with dungeon
+
+table: Size
+1:{1d4} levels with {2d6+4} areas per level
+1:{1d4} levels with {3d6+6} areas per level
+1:{1d4} levels with {4d6+8} areas per level
+1:{1d4} levels with {5d6+10} areas per level
+1:{2d4} levels with {2d6+4} areas per level
+1:{2d4} levels with {3d6+6} areas per level
+1:{2d4} levels with {4d6+8} areas per level
+1:{2d4} levels with {5d6+10} areas per level
+
+table: Difficulty
+type: lookup
+roll: 1d8
+1-2:Current Char Level - 1
+3-7:Current Char Level
+8:Current Char Level + 1

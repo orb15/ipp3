@@ -1,0 +1,26 @@
+# ---------------------------------------
+# OSRHex:  Misc Shared
+# ---------------------------------------
+
+table: Gods
+Trade
+War
+Fertility
+Nature
+Protection
+Sun
+Moon
+Justice
+
+table: NextLocationDirection
+type: lookup
+roll: 1d10
+1:northwest
+2:north
+3:northeast
+4:east
+5:southeast
+6:south
+7:southwest
+8:west
+9-10:best/any direction

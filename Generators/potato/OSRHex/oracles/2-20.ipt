@@ -1,0 +1,20 @@
+# ---------------------------------------
+# OSRHex: 2-20 Table
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: detail=[#{1d8+1d12} RollDetail]
+<b>Generic (2-20 table)</b>\nThe event or outcome is: {$detail}
+
+table: RollDetail
+type: lookup
+2-3:Extremely Rare (bad or negatively)
+4:[|Extremely Rare|Rare] (bad or negatively)
+5-6:Rare (bad or negatively)
+7-8:Uncommon (bad or negatively)
+9-13:Average
+14-15:Uncommon (good or positively)
+16-17:Rare (good or positively)
+18:[|Rare|Extremely Rare] (good or positively)
+19-20: Extremely Rare (good or positively)

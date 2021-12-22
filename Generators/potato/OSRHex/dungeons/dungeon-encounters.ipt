@@ -1,0 +1,273 @@
+# ---------------------------------------
+# OSRHex: Dungeon Random Encounters
+# ---------------------------------------
+prompt: Dungeon Level {1|2|3|4|5|6|7|8OrMore} 1
+
+table: Master
+MaxReps: 1
+set: enc=[#{prompt1} DungeonLevelJoiner]
+set: dist={2d6 * 10}
+<b>An Encounter for Dungeon Level: {prompt1}</b>\n{enc}\n It occurs at a distance of no more than {dist} feet
+
+table: DungeonLevelJoiner
+type: dictionary
+1:[@DungeonLevel1]
+2:[@DungeonLevel2]
+3:[@DungeonLevel3]
+4:[@DungeonLevel45]
+5:[@DungeonLevel45]
+6:[@DungeonLevel67]
+7:[@DungeonLevel67]
+8OrMore:[@DungeonLevel8OrMore]
+
+table: DungeonLevel1
+Acolyte Appearing: {1d8}
+Bandit Appearing: {1d8}
+Beetle, Fire Appearing: {1d8}
+Beetle, Oil Appearing: {1d3}
+Berserker Appearing: {1d4}
+Brown Mould Appearing: {1d3}
+Brownie Appearing: {3d6}
+Dark Creeper Appearing: {1}
+Dog, Wild Appearing: {2d6}
+Dwarf Appearing: {1d6}
+Frog, Mutant Appearing: {3d6}
+Gas Spore Appearing: {1d3}
+Gnome Appearing: {1d6}
+Goblin Appearing: {2d4}
+Green Slime Appearing: {1d4}
+Gullygug Appearing: {2d6}
+Halfling Appearing: {3d6}
+Homunculus Appearing: {1}
+Killer Bee Appearing: {1d10}
+Kobold Appearing: {4d4}
+Leprechaun Appearing: {1}
+Lizard, Gecko Appearing: {1d3}
+Mutoid Appearing: {1d8}
+Necrophidius Appearing: {1}
+Orc Appearing: {2d4}
+Piercer 1 HD Appearing: {3d6}
+Poltergeist Appearing: {1d3}
+Robber Fly Appearing: {1d3}
+Rot Grub Appearing: {5d4}
+Shrew, Giant Appearing: {1d10}
+Skeleton Appearing: {3d4}
+Snake, Cobra Appearing: {1d6}
+Spider, Crab Appearing: {1d4}
+Sprite Appearing: {3d6}
+Stirge Appearing: {1d10}
+Toad, Poisonous Appearing: {1d4}
+Trader Appearing: {1d8}
+Troglodyte Appearing: {1d4}
+Wolf Appearing: {2d6}
+Zombie Appearing: {1d4}
+
+table: DungeonLevel2
+Ankheg 3 HD Appearing: {1d2}
+Beetle, Oil Appearing: {1d8}
+Berserker Appearing: {1d6}
+Brown Mould Appearing: {1d8}
+Cat, Mntn. Lion Appearing: {1d4}
+Coffer Corpse Appearing: {1}
+Dark Creeper Appearing: {1}
+Dog, Wild Appearing: {2d6}
+Elf Appearing: {1d4}
+Frog, Poisonous Appearing: {1d6}
+Gas Spore Appearing: {1d3}
+Ghoul Appearing: {1d6}
+Gnoll Appearing: {1d6}
+Grey Ooze Appearing: {1}
+Gullygug Appearing: {2d6}
+Hobgoblin Appearing: {1d6}
+Homunculus Appearing: {1}
+Lizard Man Appearing: {2d4}
+Lizard, Draco Appearing: {1d4}
+Lycan., Wererat Appearing: {1d4}
+Mutoid Appearing: {2d6}
+Mycelian Appearing: {1d12}
+Neanderthal Appearing: {1d10}
+Necrophidius Appearing: {1}
+Noble Appearing: {2d6}
+Piercer 2 HD Appearing: {3d8}
+Pixie Appearing: {2d4}
+Poltergeist Appearing: {1d8}
+Pseudo-Dragon Appearing: {1}
+Robber Fly Appearing: {1d6}
+Rock Baboon Appearing: {2d6}
+Rot Grub Appearing: {5d6}
+Snake, Pit Viper Appearing: {1d8}
+Spider, Bl. Widow Appearing: {1d3}
+Toad, Poisonous Appearing: {1d8}
+Troglodyte Appearing: {1d8}
+Veteran Appearing: {2d4}
+Violet Fungus Appearing: {1d2}
+Water Fiend Appearing: {1}
+Zombie Appearing: {2d4}
+
+table: DungeonLevel3
+Ankheg 3 HD Appearing: {1d6}
+Ape, White Appearing: {1d6}
+Basic Adv. Appearing: {1d4+4}
+Beetle, Tiger Appearing: {1d6}
+Brown Mould Appearing: {1d10}
+Bugbear Appearing: {2d4}
+Carcass Crawler Appearing: {1d3}
+Coffer Corpse Appearing: {1d3}
+Dark Creeper Appearing: {1d4}
+Deep One Appearing: {2d12}
+Doppelgänger Appearing: {1d6}
+Driver Ant Appearing: {2d4}
+Drow Appearing: {2d4}
+Duergar Appearing: {2d6}
+Flail Snail Appearing: {1}
+Gargoyle Appearing: {1d6}
+Gas Spore Appearing: {1d3}
+Gelatinous Cube Appearing: {1}
+Ghast Appearing: {1}
+Harpy Appearing: {1d6}
+Lvng. Stat., Crystal Appearing: {1d6}
+Lycan., Wererat Appearing: {1d8}
+Medium Appearing: {1d4}
+Medusa Appearing: {1d3}
+Mutoid Appearing: {2d8}
+Mycelian Appearing: {2d8}
+Necrophidius Appearing: {1d3}
+Ochre Jelly Appearing: {1}
+Ogre Appearing: {1d6}
+Piercer 3 HD Appearing: {4d6}
+Poltergeist Appearing: {2d6}
+Rot Grub Appearing: {5d6}
+Shadow Appearing: {1d8}
+Spider, Tarantella Appearing: {1d3}
+Svirfneblin Appearing: {2d8}
+Thoul Appearing: {1d6}
+Toad, Poisonous Appearing: {2d6}
+Violet Fungus Appearing: {1d4}
+Water Fiend Appearing: {1d3}
+Wight Appearing: {1d6}
+
+table: DungeonLevel45
+Ankheg 5 HD Appearing: {1d6}
+Bear, Cave Appearing: {1d2}
+Blink Dog Appearing: {1d6}
+Caecilia Appearing: {1d3}
+Caryatid Column Appearing: {1d12}
+Cockatrice Appearing: {1d4}
+Deep One Appearing: {3d12}
+Disenchanter Appearing: {1d2}
+Doppelgänger Appearing: {1d6}
+Drow Appearing: {3d6}
+Duergar Appearing: {3d6}
+Expert Adv. Appearing: {1d6+3}
+Flail Snail Appearing: {1}
+Ghast Appearing: {1d3}
+Gibbering Mouther Appearing: {1}
+Grey Ooze Appearing: {1}
+Hellhound Appearing: {2d4}
+Hook Beast Appearing: {2d6}
+Krell Appearing: {1}
+Lizard, Tuatara Appearing: {1d2}
+Lycan., Wereboar Appearing: {1d4}
+Lycan., Werewolf Appearing: {1d6}
+Minotaur Appearing: {1d6}
+Ochre Jelly Appearing: {1}
+Otyugh 6 HD Appearing: {1}
+Owl Bear Appearing: {1d4}
+Rhagodessa Appearing: {1d4}
+Rust Monster Appearing: {1d4}
+Slithering Tracker Appearing: {1}
+Snake Person Appearing: {1d3}
+Sp. of the Worm Appearing: {1d3}
+Spectre Appearing: {1d4}
+Spider, Phase Appearing: {1d4}
+Toad, Frost Appearing: {1d4}
+Troll Appearing: {1d8}
+Violet Fungus Appearing: {2d4}
+Water Fiend Appearing: {1d4}
+Weasel, Giant Appearing: {1d4}
+Will-o’-the-Wisp Appearing: {1}
+Wraith Appearing: {1d4}
+
+table: DungeonLevel67
+Amphisbaena Appearing: {1d3}
+Banshee Appearing: {1}
+Basilisk Appearing: {1d6}
+Bear, Cave Appearing: {1d2}
+Black Pudding Appearing: {1}
+Caecilia Appearing: {1d3}
+Caryatid Column Appearing: {3d6}
+Dragon, White Appearing: {1d4}
+Drider Appearing: {1d4}
+Expert Adv. Appearing: {1d6+3}
+Flail Snail Appearing: {1d4}
+Ghast Appearing: {2d4}
+Gibbering Mouther Appearing: {1d3}
+Gorgon Appearing: {1d2}
+Hellhound Appearing: {2d4}
+Hook Beast Appearing: {3d6}
+Hydra, 1d4+4HD Appearing: {1}
+Krell Appearing: {1d3}
+Lizard, Flame Appearing: {1d4}
+Lizard, Subterr. Appearing: {1d6}
+Lycan., Weretiger Appearing: {1d4}
+Mind Lasher Appearing: {1d4}
+Minotaur Appearing: {1d6}
+Mummy Appearing: {1d4}
+Ochre Jelly Appearing: {1}
+Otyugh 6 HD Appearing: {1d3}
+Owl Bear Appearing: {1d4}
+Rakshasa Appearing: {1d4}
+Remorhaz 7 HD Appearing: {1}
+Revenant Appearing: {1}
+Rust Monster Appearing: {1d4}
+Salam., Flame Appearing: {1d4+1}
+Scorpion, Giant Appearing: {1d6}
+Slithering Tracker Appearing: {1}
+Snake Person Appearing: {1d6}
+Spectre Appearing: {1d4}
+Troll Appearing: {1d8}
+Warp Beast Appearing: {1d4}
+Will-o’-the-Wisp Appearing: {1d3}
+Xorn Appearing: {1d4}
+
+table: DungeonLevel8OrMore
+Black Pudding Appearing: {1}
+Chimera Appearing: {1d2}
+Dragon, Black Appearing: {1d4}
+Dragon, Blue Appearing: {1d4}
+Dragon, Brass Appearing: {1d4}
+Dragon, Bronze Appearing: {1d4}
+Dragon, Copper Appearing: {1d4}
+Dragon, Gold Appearing: {1d4}
+Dragon, Green Appearing: {1d4}
+Dragon, Red Appearing: {1d4}
+Dragon, Silver Appearing: {1d4}
+Dragonne Appearing: {1}
+Expert Adv. Appearing: {1d6+3}
+Eye of Terror Appearing: {1}
+Ghost Appearing: {1}
+Giant, Hill Appearing: {1d4}
+Giant, Stone Appearing: {1d2}
+Golem, Amber Appearing: {1}
+Golem, Bone Appearing: {1}
+Golem, Iron Appearing: {1}
+Golem, Stone Appearing: {1}
+Hag, Black Appearing: {1}
+Hulker Appearing: {1d4}
+Hydra, 1d4+8HD Appearing: {1}
+Lamia Appearing: {1}
+Lurker Above Appearing: {1}
+Lycan., Devil Swine Appearing: {1d3}
+Lycan., Werebear Appearing: {1d4}
+Manticore Appearing: {1d2}
+Mimic Appearing: {1}
+Mind Lasher Appearing: {1d8}
+Purple Worm Appearing: {1d2}
+Revenant Appearing: {1}
+Roper Appearing: {1d2}
+Salam., Flame Appearing: {1d4+1}
+Salamander, Frost Appearing: {1d3}
+Shambling Mound Appearing: {1d3}
+Slug, Giant Appearing: {1}
+Trapper Appearing: {1}
+Vampire Appearing: {1d4}

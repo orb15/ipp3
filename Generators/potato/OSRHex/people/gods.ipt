@@ -1,0 +1,10 @@
+# ---------------------------------------
+# OSRHex: Gods of Law
+# ---------------------------------------
+
+Use: potato\OSRHex\misc.ipt
+
+table: Master
+MaxReps: 1
+Set: god=[@Gods]
+The god associated with your question is: The God of {god}

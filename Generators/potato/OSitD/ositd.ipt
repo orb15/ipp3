@@ -1,0 +1,166 @@
+# ---------------------------------------
+# One Shot in the Dark: Main
+# ---------------------------------------
+
+prompt: Level {Caverns|Dungeon|Crypt|Boss} Caverns
+
+table: Master
+MaxReps: 1
+Set: loc=[@{$prompt1}Loc]
+<b>{$prompt1} Room</b>\n\n{$loc}
+
+table: CavernsLoc
+T-Junction Tunnel. Did you hear something?!
+Cave of Bats. 3 exits. There are thousands of the harmless little buggers in here!
+Slender Twisting Tunnel. 1 exit. Suck in that gut and squeeze through!
+Creature Lair/Dwelling. 2 exits. Monster: [@CavernsMonster] If you are victorious, Loot: [@CavernsLoot]
+Dead End. A cave-in has collapsed this tunnel. Go back. If no other options exist, dig through: each character loses 1 hp due to exhaustion.
+Treasure Room. 1 exit. Trapped chest: if your Thief is alive, save to disarm the trap. On a fail, a character takes 1d4 damage. In either case, Loot: [@CavernsLoot]
+Huge Cavern. 3 exits. Wow, those are some chunky stalactites! Monster: [@CavernsMonster]
+Creature Sleeping Quarters. 2 exits. If your Thief is alive, save to sneak through. On a fail, Monster: [@CavernsMonster]
+Trap! If your Thief is alive, save to disarm the trap. On a fail, a character takes 1d4 damage.
+Beautiful Natural Sanctuary. 2 exits. Stay and rest: each character regains 1 lost hp. Characters may choose to save this benefit for a one time use later, instead.
+Shrieker Mushroom Cave. 1 exit. If your Thief is alive, save to sneak through. On a fail, something comes to investigate the awful noise - Monster: [@CavernsMonster]
+Prison. 1 exit. Rescue prisoner to either replace a dead party member (same class) -or- take information that allows characters to skip the next Monster!
+Stairs to Level 2. Ignore and roll again if one of the first 6 locations. Otherwise, start a fresh map, Level Up, and begin The Dungeon!
+
+table: CavernsMonster
+type: weighted
+1:4 goblins. 4 hp. d4 damage. Greedy
+1:4 giant spiders. 3 hp. d4 damage
+1:4 Lurker. (What’s that?) 7 hp. d6 damage
+1:2 hobgoblins. 6 hp. d4 damage. Greedy
+1:2 cultists. 6 hp. d6 damage
+1:3 skeletons. 4 hp. d4 damage. Undead
+1:2 giant bats. 4 hp. d4 damage
+1:5 floating skulls. 2 hp. d4 damage. Undead
+1:3 giant razor roaches. 4 hp. d4 damage
+1:4 imps. 3 hp. d4 damage
+1:4 giant filth rats. 3 hp. d4 damage. Diseased
+1:Goblin Shaman. 4 hp. d4 damage. Has spell: Blast
+1:The Defiled One (whatever that is… you make it up). 10 hp. d8 damage. Diseased
+
+table: CavernsLoot
+type: weighted
+1:Potion of Health. One character may add 4 hp to current total
+1:100 gold coins
+1:3 gems. Worth 50 gold coins each. Look how they sparkle!
+1:Magic Weapon. +1 attack & damage rolls for one character
+1:Scroll of Blast!
+1:Lucky Charm. +1 to all saving throws for the rest of the game
+1:Potion of Cure Disease
+1:Map. Save time. Roll and ignore next 2 rooms
+1:Potion of Heroism. +2 on all rolls for one character for one battle
+1:Silver Ring. Worth 100 gold coins
+1:Extreme loot! Roll twice this table
+1:Information. Avoid any single trap (must use before rolling saving throw)
+1:Scroll of Mass Invisibility. Avoid any combat except Boss!
+
+table: DungeonLoc
+Flooded Tunnel. 1 exit. Alas, your socks got wet
+Torture Chamber. 1 exit. The door is locked. Go back, or if your Thief is alive, save to pick the lock. On a fail, the noise of forcing the door causes something to investigate. Monster: [@DungeonMonster]]
+Secret Passage. Save time. Roll and ignore next 2 rooms
+Guard Room. 2 exits. Monster: [@DungeonMonster] Loot: [@DungeonLoot]
+Green Slime Attack! Take d6 damage (one character only) with no save. Yuck!
+Unholy Church. 2 exits. Each character takes 1 hp damage from fear and despair. What exactly did you see in here?
+Cultists' Chambers. 2 exits. If your Thief is alive, save to sneak through. On a fail, fight 2 cultists (6 hp, d6 damage)
+Empty Room. 2 exits. Trapped. If your Thief is alive, save to disarm the trap. On a fail, a character takes 1d6 damage
+Throne Room. 2 exits. Monster: [@DungeonMonster] Loot: [@DungeonLoot]
+Treasure Room. 1 exit. If your Thief is alive, save to pick the lock on the chest to get Loot: [@DungeonLoot] On a fail, the chest cannot be opened
+Sacrificial Pit. 1 exit. Fight The Thing In the Pit (8 hp, d8 damage) or go back.
+A Light in a Dark Place! You found something that gives you hope. What is it? Apply a +2 to your next saving throw roll (whether it is individual or group).
+Stairs to Level 3. Ignore and roll again if one of the first 6 locations. Otherwise, start a fresh map, Level Up, and begin The Crypt! 
+
+table: DungeonMonster
+type: weighted
+1:2 zombies. 6 hp. d6 damage. Undead
+1:Gelatinous Cube. 10 hp. d4 damage. Paralyzing touch
+1:2 gargoyles. 8 hp. d6 damage
+1:3 gnolls. 6 hp. d6 damage. Greedy
+1:The Mad Merchant. Sells choice of this level's loot for treasure worth 100 gold coins.
+1:3 hobgoblins. 6 hp. d4 damage. Greedy
+1:Ogre. 10 hp. d6 damage. Strong: add +1 to damage rolls (but not to attack rolls). Greedy
+1:2 ghouls. 6 hp. d6 damage. Paralyzing touch. Undead
+1:2 unholy priestesses. 6 hp. d6 damage. Each has the spell: Heal!
+1:2 animated armor. 8 hp. d6 damage
+1:3 cultists. 6 hp. d6 damage
+1:Rust Monster. 6hp. d4 damage. Rusting attack
+1:The Horror With 2 Heads! (What!?) 10hp. d8 damage. Attacks twice per round until reduced to half hp
+
+table: DungeonLoot
+type: weighted
+1:4 gems worth 100 gold coins each. Ooooh, shiny!
+1:Scroll of Resurrection. Bring back a dead character to full hp
+1:200 gold coins
+1:Gold ring. Worth 100 gold coins
+1:Ring of Antimagic. Nullifies one enemy spell (does not work on spell-like effects). One use
+1:Magic Weapon. +2 attack & damage rolls for one character
+1:Scroll of Dimension Door.  Save time. Roll and ignore next 2 rooms
+1:Potion of Cure Paralysis
+1:Wand of Missiles. Your Wizard automatically hits in combat from now on!
+1:Magic Armor. The first successful enemy hit in each combat now counts as a miss
+1:Scroll of Fireball. Instantly does 3 points of damage to each enemy
+1:Extreme loot! Roll twice on this table
+1:Magic Helm. Your Warrior or Cleric’s current hp increases by 4 points
+
+table: CryptLoc
+T-Junction Hallway. Does anyone know how far underground we are?
+Room of Statues. 2 exits. Monster: [@CryptMonster]
+False Hope. You see something that lifts your spirits - what is it? Turns out you were wrong. Lose initiative in the next combat (the monster strikes first)
+Room of the Idol. 1 exit. Monster: [@CryptMonster]
+Trapped Hallway. 1 exit. If your Thief is alive, save to disarm the trap. On a fail, one character takes 1d8 damage
+Unholy symbol. If your Cleric is alive, save to avoid a curse that bestows a -2 on your next roll
+Burial Preparation Room. 2 exits. Monster: [@CryptMonster]
+Vault. 1 exit. Loot: [@CryptLoot]
+Catacombs. 1 exit. Monster: [@CryptMonster] Loot: [@CryptLoot]
+Ghost. If a character has died, their ghost floats through the wall. On a successful saving throw, the spirit blesses the party (+3 to the next roll). If unsuccessful, the spirit blames the party for their death and curses them (-3 to the next roll). If no characters have died, you simply hear a spooky wailing from far, far away... but you’re not afraid of ghosts, right?
+Weird Wizard's Study. 1 exit. If your Wizard is alive, make a saving throw. If successful, you find information that gives a +1 bonus to all damage rolls in your next combat. If failed, you find nothing of use here
+Desecrated Chapel. 1 exit. Contains a trapped treasure. If your Thief is alive, save to disarm the trap. If failed, take 1d8 damage. In either case, Loot: [@CryptLoot]
+A Broken Summoning Circle.  Ignore and roll again if one of the first 6 locations. Otherwise, you enter a chamber where a summoning spell gone wrong has called forth an insidious horror. The dead bodies of the cultists who summoned it litter the floor. Defeat the Boss to win the game!
+
+table: CryptMonster
+type: weighted
+1:Carrion Crawler. 10hp. d6 damage. Attacks twice per round. Paralyzing touch
+1:Mummy. 10hp. d6 damage. Mummy’s Curse! Undead
+1:Skeletal Knight. 10hp. d8 damage. Undead
+1:Creeping Crud. 10hp. d6 damage. Hard to kill: any damage sustained reduced by -1.
+1:3 wraiths. 6 hp. Energy drain: automatically causes 1 damage to each character, each round. Undead
+1:The Butcher. 10hp. d8 damage
+1:3 shadow fiends. 6hp. d6 damage. Undead
+1:2 thouls. What exactly is a thoul? 8hp. d8 damage. Regenerates 1 hp per round. Undead! Greedy
+1:Vampire. 10hp. d6 damage. Regains 2 hp on a successful hit. Undead
+1:Flesh Golem. 12hp. d8 damage. What mad wizard sewed this together? Undead
+1:Hideous Hag. 7hp. d6 damage. Has the spell: Poison Cloud! Greedy
+1:Unholy High Priest. 9hp. d6 damage. Has the spell: Divine Aid!
+1:Invisible Stalker. 8hp. d8 damage. Hard to hit: characters must apply a -2 penalty on all attack rolls
+
+table: CryptLoot
+type: weighted
+1:Ring of Teleportation. Instantly escape any combat. Reappear anywhere that is already mapped on your level. One use
+1:Potion of Heroism. +2 on all rolls for one character for one battle
+1:Information. Avoid any single trap (must use before rolling saving throw)
+1:Magic Armor of Champions. Your Warrior or Cleric’s current hp increases by 5 points
+1:Fairy in a cage. This delicate creature begs to be set free. Upon her release, she grants a choice of this level’s loot!
+1:Potion of Health. One character may add 4 hp to current total
+1:Holy Water. Acts the same as the Holy Weapon! Cleric spell
+1:Staff of the Gods. Casts Banish! May be used 2 times and then turns to dust
+1:Magic Weapon. +2 attack & damage rolls for one character
+1:Mask of Transmutation. One of your characters may change their class. Once put on, the mask may not be removed. Hit points do not change
+1:Extreme loot! Roll twice on this table
+1:Scroll of Resurrection. Bring back a dead character to full hp
+1:A Holy Relic. This item once belonged to a saint. Can cast choice of Holy Weapon! or Divine Aid!
+
+table: BossLoc
+Succubus or Incubus Demon. 12 hp. Casts the spell, Enthrall! once per round
+Greater Naga. 12 hp. d8 damage. Constriction: after the first successful attack, an attack roll is no longer needed & damage is automatic until that character is dead and a new target is chosen
+Manticore. 13 hp. d8 damage. *Spiked Tail: on alternating rounds, starting with round 1, shoots tail spikes causing 1 damage to each character
+Beholder. 12 hp. Casts the spell, Blast! twice per round
+Minotaur. 16hp. d8 damage. Blood Rage: the minotaur attacks first in each combat round
+Giant Troll. 16 hp. d8 damage. Regenerates 3 hp each round
+Basilisk. 12 hp. Petrifying Gaze: each round, roll a saving throw. On a fail, one character has been turned to stone permanently
+Vampire Lord. 14 hp. d8 damage. Vampiric Touch: regains 5 hp on each successful attack
+Banshee. 10 hp. d6 damage. Deafening Wail: only 2 characters may act during each combat round and spellcasting is impossible
+Glabrezu Demon. 14 hp. d8 damage. Magic Sword: adds +1 to all attack and damage rolls
+Spider Demoness. 13 hp. d8 damage. Web: one character is immobilized and cannot take an action during each round of combat
+Lich King. 13 hp. d8 damage. Knows the spell: Lightning! (may cast once only)
+Black Dragon. 16 hp. d8 damage. Breathes Fire: on alternating rounds, starting with round 1, spews hellfire causing 2 damage to each character

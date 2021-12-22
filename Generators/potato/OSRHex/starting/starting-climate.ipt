@@ -1,0 +1,27 @@
+# ---------------------------------------
+# OSRHex:  Starting climate
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: climate = [@StartingClimate]
+Set: date = [@StartingDate]
+You seem to have found yourself in a  <b>{$climate}</b> climate</b>.\n It is the {$date}
+
+
+table: StartingClimate
+type: weighted
+15:Temperate
+3:Sub-tropical
+1:Tropical
+1:Cold
+
+table: StartingDate
+{1d90}th day of [@Season]
+
+table: Season
+type: weighted
+4:Spring
+3:Summer
+2:Autumn
+1:Winter

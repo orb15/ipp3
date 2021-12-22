@@ -1,0 +1,56 @@
+# ---------------------------------------
+# OSRHex:  Settlement Basics
+# ---------------------------------------
+
+Use: potato\OSRHex\misc.ipt
+
+table: Master
+MaxReps: 1
+set: size=[@Size]
+set: race=[@Race]
+set: water=[@WaterSource]
+set: eco=[@Economy]
+set: rescont=[@ResourceCount]
+set: gov=[@Government]
+set: traits=[@TraitsMaster]
+Settlement Overview\n\n<b>Predominant Race:</b> {race}\n<b>Size:</b> {size} for the Terrain\n<b>Water Source:</b> {water} appropriate for Size\n<b>Useful Resources:</b>  {rescont}\n<b>Economy:</b> {eco}\n<b>Government:</b> {gov}
+
+table: Size
+1:Very small
+2: Small
+4:Average
+2:Above average
+1:Large
+
+table: Race
+7:Human
+2:Heflin
+2:Dwarven
+1:Elven
+
+table: WaterSource
+4:Flowing water
+1:Lake
+
+table: Economy
+1: Very poor
+2: Poor
+4: Average
+2: Above average
+1: Excellent
+
+table: ResourceCount
+16:One
+4:Two
+1:Three
+
+table: Government
+shuffle: GovernmentType
+4:[@GovernmentType]
+1:[!2 GovernmentType >> implode]
+
+table: GovernmentType
+Merchant council
+Mayor or elected official
+Noble family
+Theocracy - God of [@Gods]

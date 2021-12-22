@@ -1,0 +1,43 @@
+# ---------------------------------------
+# OSRHex:  Dungeon Event
+# ---------------------------------------
+
+prompt: Specific Dungeon? {Default|Basic|TempleFangedWolf} Basic
+
+table: Master
+MaxReps: 1
+Set: MasterResult=[@{prompt1}Table]
+{$MasterResult}
+
+# ---------------------------------------
+# Temple of the Fanged Wolf
+# ---------------------------------------
+table: TempleFangedWolfTable
+type: lookup
+roll: 1d12
+1:Wandering monster
+2:A wolf howls somewhere in the distance
+3:There is a feeling of being watched
+4:You hear the snarling and snapping of wolves
+5:A pale mist rushes into the room
+6:A pale mist rushes into the room and forms itself into {1d2} spectral wolves
+7:No event
+8-11:Oldest torch expended
+12:Oldest lantern oil expended
+
+table: DefaultTable
+type: lookup
+roll: 1d12
+1:Wandering monster
+2-3:Dungeon Information (noise, spoor etc)
+4-7:Defined by Referee as needed (more wandering monsters, more Info, Special Events, etc.)
+8-11:Oldest torch expended
+12:Oldest lantern oil expended
+
+table: BasicTable
+type: lookup
+roll: 1d12
+1:Wandering monster
+2-7:No event
+8-11:Oldest torch expended
+12:Oldest lantern oil expended

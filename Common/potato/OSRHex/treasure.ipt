@@ -1,0 +1,168 @@
+# ---------------------------------------
+# OSRHex:  Treasure
+# ---------------------------------------
+
+
+# ---------------------------------------
+# treasure 1
+# ---------------------------------------
+table: Treasure1
+{1d6 * 100}cp Silver: [@Treasure1Silver] Gems: [@Treasure1Gems] Jewelery or Art: [@Treasure1Jewelery] Magic: [@Treasure1Magic]
+
+table: Treasure1Silver
+type: lookup
+roll: 1d100
+1-50:none
+51-100:{1d6 * 10}sp
+
+table: Treasure1Gems
+type: lookup
+roll: 1d100
+1-95:none
+96-100:[@{1d6} Gems >> implode]
+
+table: Treasure1Jewelery
+type: lookup
+roll: 1d100
+1-98:\z
+99-100:[@{1d6} Jewelery >> implode]
+
+table: Treasure1Magic
+type: lookup
+roll: 1d100
+1-98:none
+99-100:1 magic item
+
+# ---------------------------------------
+# treasure 2-3
+# ---------------------------------------
+table: Treasure23
+{1d12 * 100}cp Silver: [@Treasure23Silver] Gems: [@Treasure23Gems] Jewelery or Art: [@Treasure23Jewelery] Magic: [@Treasure23Magic]
+
+table: Treasure23Silver
+type: lookup
+roll: 1d100
+1-50:none
+51-100:{1d6 * 100}sp
+
+table: Treasure23Gems
+type: lookup
+roll: 1d100
+1-90:none
+91-100:[@{1d6} Gems >> implode]
+
+table: Treasure23Jewelery
+type: lookup
+roll: 1d100
+1-95:none
+96-100:[@{1d6} Jewelery >> implode]
+
+table: Treasure23Magic
+type: lookup
+roll: 1d100
+1-92:none
+93-100:1 magic item
+
+# ---------------------------------------
+# treasure 4-5
+# ---------------------------------------
+table: Treasure45
+{1d6 * 1000}cp Silver: [@Treasure45Silver] Gems: [@Treasure45Gems] Jewelery or Art: [@Treasure45Jewelery] Magic: [@Treasure45Magic]
+
+table: Treasure45Silver
+type: lookup
+roll: 1d100
+1-100:{1d6 * 200}sp
+
+table: Treasure45Gems
+type: lookup
+roll: 1d100
+1-80:none
+81-100:[@{1d6} Gems >> implode]
+
+table: Treasure45Jewelery
+type: lookup
+roll: 1d100
+1-90:none
+91-100:[@{1d6} Jewelery >> implode]
+
+table: Treasure45Magic
+type: lookup
+roll: 1d100
+1-90:none
+91-100:1 magic item
+
+# ---------------------------------------
+# treasure 6-7
+# ---------------------------------------
+table: Treasure67
+{1d6 * 2000}cp Silver: [@Treasure67Silver] Gems: [@Treasure67Gems] Jewelery or Art: [@Treasure67Jewelery] Magic: [@Treasure67Magic]
+
+table: Treasure67Silver
+type: lookup
+roll: 1d100
+1-100:{1d6 * 500}sp
+
+table: Treasure67Gems
+type: lookup
+roll: 1d100
+1-70:none
+71-100:[@{1d6} Gems >> implode]
+
+table: Treasure67Jewelery
+type: lookup
+roll: 1d100
+1-85:none
+86-100:[@{1d6} Jewelery >> implode]
+
+table: Treasure67Magic
+type: lookup
+roll: 1d100
+1-85:none
+86-100:1 magic item
+
+# ---------------------------------------
+# treasure 8-9
+# ---------------------------------------
+table: Treasure89
+{1d6 * 5000}cp Silver: [@Treasure89Silver] Gems: [@Treasure89Gems] Jewelery or Art: [@Treasure89Jewelery] Magic: [@Treasure89Magic]
+
+table: Treasure89Silver
+type: lookup
+roll: 1d100
+1-100:{1d6 * 1000}sp
+
+table: Treasure89Gems
+type: lookup
+roll: 1d100
+1-60:none
+61-100:[@{1d12} Gems >> implode]
+
+table: Treasure89Jewelery
+type: lookup
+roll: 1d100
+1-80:none
+81-100:[@{1d12} Jewelery >> implode]
+
+table: Treasure89Magic
+type: lookup
+roll: 1d100
+1-80:none
+81-100:1 magic item
+
+# ---------------------------------------
+# common treasure stuff
+# ---------------------------------------
+
+#Note on this table - I couldnt get a 1d20 lookup to roll properly - all values returned nil except a roll of 20. Bug?
+
+table: Gems
+type: weighted
+4:10sp
+5:50sp
+6:100sp
+4:500sp
+1:1000sp
+
+table: Jewelery
+{3d6 * 100}sp

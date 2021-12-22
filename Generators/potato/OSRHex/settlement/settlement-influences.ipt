@@ -1,0 +1,43 @@
+# ---------------------------------------
+# OSRHex:  Settlement Influences
+# ---------------------------------------
+
+Use: potato\OSRHex\misc.ipt
+
+table: Master
+MaxReps: 1
+set: traits=[@TraitsMaster]
+Depending on settlement size, it has one or more of the following influences or features\n\n{traits}
+
+table: TraitsMaster
+[@{2d2-1} Traits >> sort >> implode]
+
+table: Traits
+Active thieves guild (or nearby bandit influence)
+Corrupt leadership
+Supports or influenced by Cult of an Old God
+State of [|war|raiding] with another Settlement
+Monstrous influence or predation (roll on Wandering Table for this or nearby terrain)
+[|Unexploited|Exhausted] natural resource
+Birthplace of adventurers (hirelings can be found here even if small)
+Nearby [|lair|dungeon|ruin]
+Built on ancient [|ruins|caverns]
+Experiencing an economic [|upturn|downturn]
+Demographic diversity (human or [@Demographics])
+Uneasy relationship with [|subordinate|superior|equivalent] Settlement
+High-Level protector ([@Protector])
+Exceptionally devout
+[|Strict|Liberal] laws or enforcement
+Offers a regional favorite [|inn|tavern]
+Natural resource has a peculiar trait or capability
+
+table: Protector
+type: weighted
+6:Fighter
+3:Warpriest of the God of [@Gods]
+1:Wizard
+
+table: Demographics
+6: Heflin
+3: Dwarves
+1: Elves
