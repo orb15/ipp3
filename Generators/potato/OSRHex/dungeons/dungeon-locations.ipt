@@ -57,7 +57,7 @@ A passage back to an unexplored area/corridor. Roll a side location off this new
 A pile of useful items [@{1d3} HandyThings]
 Phosphorescent [|mineral|moss|fungus] sheds light in [|5|10|15] ft radius. It [|is|is not] possible to harvest it with care/skill/time
 Chasm that [|is|is not] a barrier to progress. Chasm is {1d10 * 1d3 * 1d3} at its narrowest part. It [|can|cannot] be used to access up to {1d6} levels below
-Ceiling crack that is {1d10 * 1d3 * 1d3} at its narrowest part. It [|can|cannot] be used to access up to {1d6} levels above
+Ceiling crack that is {1d10 * 1d3 * 1d3} ft. at its narrowest part. It [|can|cannot] be used to access up to {1d6} levels above
 Stone sarcophagus. The lid [|is resting on the base|is mortared to the base and requires {3d6} Exploration Turns to free] and requires {4d10 + 10} total PHYS to remove. Before lifting, roll a new room and treat its contents (and traps if any) as the lid and contents of the sarcophagus
 
 table: HandyThings

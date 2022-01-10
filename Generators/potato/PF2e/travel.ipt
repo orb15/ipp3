@@ -1,0 +1,278 @@
+# ---------------------------------------
+# PF2e: Travel
+# A new way to do travel events and features
+# ---------------------------------------
+use: potato\misc\basic.ipt
+
+prompt: Current Hex Terrain {Forest|Hills|Desert|Swamp|Plains|Mountains|Ocean|River} Plains
+
+table: Master
+MaxReps: 1
+Set: result=[#{$prompt1} Terrain]
+Travel through this {prompt1} area is especially interesting because...\n\n{result}.\n\nConsult one or more Oracles to refine this information if desired
+
+table: Terrain
+type: dictionary
+Forest:[@Forest]
+Hills:[@Hills]
+Desert:[@NotYet]
+Swamp:[@NotYet]
+Plains:[@Plains]
+Mountains:[@Mountains]
+Ocean:[@Ocean]
+River:[@River]
+
+table: NotYet
+This table is not yet prepared. Best get on with it!
+
+table: Plains
+[@MysteriousLandmarkMain]
+Off track - the day's travel is wasted and the next day must be spent returning to the proper path. May be avoidable based on various things (class skills, landmarks)
+You spot a [@PlainsStructure] some distance off. Determine its condition and inhabitants randomly
+You are targeted by a hostile NPC group or creature. Create an Encounter
+You encounter a peaceful group of hunters, pilgrims, or peasants. There is a chance they need your help in some way
+If you have a vehicle, it suffers a mechanical failure. If you have a mount, it throws a shoe, grows lame and needs careful tending, is frightened to the point of panic or the like
+The weather suddenly changes very much for the worse - an extreme weather events arises that threatens your travel
+You find a lonely shrine to a lesser deity of the region in which you travel. There is a chance of a valuable offering of some kind, but taking it may anger the god
+You find one or more skeletons of a cow, horse, traveler or herd animal. Examining it reveals something unpleasant - the sign of a large predator, marauders, or the like
+You spot smoke on the horizon. It might be a cook fire, the sign of a battle or a brushfire
+A great tree stands alone some distance off. [|A skeleton hangs from it|It has been blasted by lightning|It is the resting place of predators that eye you hungrily]
+Winds gust around you. Dust limits vision and muffles noise. Tents may collapse in the night or mask the approach of visitors to the camp
+You encounter a merchant caravan. Perhaps they need help, are suspicious of you and your motives or might engage in some kind of trade
+You spot herd animals grazing or traveling in the distance
+Buzzards circle something far out on the plain
+You come across discarded crates, barrels and other containers. Perhaps something of value remains
+You come upon a natural watering hole or shallow pond. Interesting tracks may be found here, or perhaps it is already occupied by naked bathers, monsters or travelers at rest
+There is a copse of trees some distance away. They may offer shelter or peril
+A side trail or track crosses this one. It might be possible to determine who or what made it and when 
+You find a number of burrows. They might be abandoned, contain rabbits, gophers or prairie dogs, or something altogether unexpected
+You spot mounded grasses and upturned earth. Something or someone has been digging here
+You come across signs of a recent battle - discarded weapons, spent arrows, blood trails, and bodies
+You are near the nest or hive of some giant insect - wasps, bees, or giant ants. They may attack or let you pass by unmolested
+Farmers are taking their goods to a local village or market. They may have an issue back at their farm, or a farmer's son or daughter that wants a life of adventure
+A horse wanders nearby looking worn and haggard. It is saddled but the rider is nowhere in sight
+Comfortable resting place. There is fresh water for animals, reasonable shade, a cut log or boulder perimeter, and a fire pit. Perhaps other travelers are already here
+A zealot and his cult-like believers are making their way to/from some holy shrine or place. They may try to convert non-believers or kill anyone they consider infidels
+An ancient, wrinkled, sun-worn woman steers a garishly painted wagon. She may be a charlatan, a true fortune-teller, a hag looking for a meal or all of these things
+
+table: PlainsStructure
+farmstead
+walled manor
+large shrine or small temple
+collection of tents like those of a nomadic people or bandits
+lone tower like that of a wizard
+small village
+a fortified keep
+
+table: Forest
+[@MysteriousLandmarkMain]
+Lost - for the next ?d6 days, travel is in circles or otherwise unproductive as you try to regain the trail. At the end of this time, the trail is re-located and travel can resume. May be avoidable based on various things (class skills, landmarks)
+You come across a [@ForestStructure]. The size of the place may indicate whether it is nestled in the trees or more obvious. Determine its condition and inhabitants randomly
+You are targeted by a hostile NPC group or creature. Create an Encounter
+You encounter a peaceful group of hunters or peasants. There is a chance they need your help in some way
+The density of the trees is especially high here and slows or prevents today's travel.
+You find a massive, hollow tree, large enough to serve as a small camp. It may be occupied, be a dwelling, be the the entrance to a lair, hold a stash of goods or the like
+You hear the unmistakable signs of battle or combat. If investigated, roll two Encounters - these creatures are fighting when you arrive or perhaps there has already been a victory
+You come upon a placid pool ringed with flowers. It might be spring fed and clear or corrupted in some way
+A game trail crosses your path. It may be searched for signs of passage (roll one or more Encounters if tracks are a possibility) and may lead to a lair, or a water or food source
+You spot a (mundane) game animal: deer, boar, turkey or some other source of food
+A cave opens at the base of a low rise
+This is a place of idyllic beauty: a small stream with a waterfall, a natural pool, an enchanting glade or the like. The place may be under the care of fey, a druid or elves or may just be a lucky find
+You come upon an abandoned camp site. It might have been used by adventurers, peasants  or local humanoids
+You are near the nest or hive of some giant insect - wasps, bees, or giant ants. They may attack or let you pass by unmolested
+The trail descends and the trees grow large overhead. It is gloomy and unsettling. Thorn bushes are more prevalent.  Roll again for an Encounter
+You come across the unmistakable signs of a giant - it might be giant humanoids (ogres, trolls or larger), or giant fauna (bears, cats, boars) of some kind. If there is an encounter today or tomorrow, it is with this creature
+You are ambushed (surprised/lose initiative) by a camaflogued hunting creature
+As evening advances and you begin to look for a camp, you hear the howl of wolves. You are being stalked by a pack of them. They might not attack, or perhaps they are wargs..
+This part of the forest has been burned - perhaps recently, perhaps longer ago. Trees are blackened and lack leaves, brush is gone
+The forest opens into a clearing. In the center stands an ancient, dead tree. It may be nothing more than it appears, or may be something else entirely
+You are ambushed (surprised/lose initiative) by a hostile plant creature of some kind
+You come across a huge fallen tree. It might bar the way, serve as a lair or be a tiny ecosystem in its own right
+You find a bubbling brook [|filled with trout|leading to a still beaver pond]
+You are near the nest or hive of some giant insect - wasps, bees, or giant ants. They may attack or let you pass by unmolested
+You have stumbled into the webs of dangerous spiders. You might be able to spot them before becoming entrapped
+You meet a patrol of some kind - humanoids are most likely but it might be elves
+This part of the forest is especially dense with wildlife - roll for a second Encounter
+You find an excellent camping spot - fresh water, nearby food (mushrooms, crayfish, berries) and a secluded location that ensures you won't be ambushed in the night
+
+table: ForestStructure
+[|wood-cutter's|hunter's] camp
+lone hut
+treehouse, flet or other other tree-dwelling
+lone tower like that of a wizard
+obvious lair of some creature(s)
+
+table: Hills
+Lost - for the next ?d3 days, travel is in circles or otherwise unproductive as you try to regain the trail. At the end of this time, the trail is re-located and travel can resume. May be avoidable based on various things (class skills, landmarks)
+You come across a [@HillsStructure]. Determine its condition and inhabitants randomly
+You encounter a peaceful group of hunters or miners. There is a chance they need your help in some way
+You are near the nest or hive of giant ants. They may attack or let you pass by unmolested
+You are targeted by a hostile NPC group or creature. Create an Encounter
+[@MysteriousLandmarkMain]
+You are targeted by a hostile NPC group or creature. Create an Encounter
+Winged hunters circle overhead. They might be large or hungry enough to see you as prey
+You find the signs or spoor of mountain goats. It might be possible to follow them for food or water
+You spot mountain goats or sheep on a far hill
+You are ambushed (surprised/lose initiative) by a hunting predator like a great cat, bear or some other aggressive hunter or monster
+You spot a long, low cave on a far hillside
+There is a cave nearby
+Buzzards circle something some distance away (and possibly much higher up)
+You meet a patrol of some kind - humanoids, dwarves, and giants are likely suggestions
+Boulders and scree make travel difficult, make no progress today
+You have wandered into a box canyon - lose today's travel and roll for a second Encounter
+You find yourself traversing a slope with scree and broken boulders. Check Dex (or Reflex) or trigger a landslide (treat as a Deadly trap or a trap of higher level than the characters)
+The weather turns chill and bitter - clouds descend and limit visibility, wind whistles and there is rain, snow or some other inclement weather
+Natural fort - the rocks here form a protective barrier from wind and predators. A natural overhang ensures dry sleeping
+You come across a rushing torrent in a steep-sided trough. The water may cut off progress, be hazardous to cross, require a detour or just be a thing of natural beauty
+There is a copse of wind-bitten trees here. They may offer shelter, firewood or be the lair of some creature
+You find a [|pristine|polluted] [|pond|small lake]. From a brief examination, it looks [|shallow|deep|very deep]
+A former campsite. There are clear signs something intelligent spent the night here: signs of fire, piled stones, gathered firewood or the like
+Natural lookout - you can seen for a great distance from this vantage point. You might see your destination, find a path to shorten the trip or learn more about the area
+You come across the unmistakable signs of a giant - it might be giant humanoids (ogres, trolls or larger), or giant fauna (bears, cats, boars) of some kind. If there is an encounter today or tomorrow, it is with this creature
+You come across several heads on spears - the heads might be humans, dwarves gnolls or any other humanoid. It looks like this was done fairly recently
+You find the spoor or some other evidence of some large and dangerous predator. It might be a bear, giant bird, huge snake or even a dragon
+
+table: Mountains
+Lost - for the next ?d6 days, travel is in circles or otherwise unproductive as you try to regain the trail. At the end of this time, the trail is re-located and travel can resume. May be avoidable based on various things (class skills, landmarks)
+You come across a [@MountainsStructure]. Determine its condition and inhabitants randomly
+You encounter a peaceful group of miners. There is a chance they need your help in some way
+[@MysteriousLandmarkMain]
+You are targeted by a hostile NPC group or creature. Create an Encounter
+Winged hunters circle overhead. They might be large or hungry enough to see you as prey
+You find the signs or spoor of mountain goats. It might be possible to follow them for food or water
+You spot mountain goats or sheep on a far hill
+You are ambushed (surprised/lose initiative) by a hunting predator like a great cat, bear or some other aggressive hunter or monster
+You spot a long, low cave on a far hillside
+There is a cave nearby
+Buzzards circle something some distance away (and possibly much higher up)
+You meet a patrol of some kind - humanoids, dwarves, and giants are likely suggestions
+Boulders and scree make travel difficult, make no progress today
+You have wandered into a box canyon - lose today's travel and roll for a second Encounter
+You find yourself traversing a slope with scree and broken boulders. Check Dex (or Reflex) or trigger a landslide (treat as a Deadly trap or a trap of higher level than the characters)
+The weather turns chill and bitter - clouds descend and limit visibility, wind whistles and there is rain, snow or some other inclement weather
+Natural fort - the rocks here form a protective barrier from wind and predators. A natural overhang ensures dry sleeping
+You come across a rushing torrent in a steep-sided trough. The water may cut off progress, be hazardous to cross, require a detour or just be a thing of natural beauty
+There is a copse of wind-bitten trees here. They may offer shelter, firewood or be the lair of some creature
+You find a [|pristine|polluted] [|pond|small lake]. From a brief examination, it looks [|shallow|deep|very deep]
+A former campsite. There are clear signs something intelligent spent the night here: signs of fire, piled stones, gathered firewood or the like
+Natural lookout - you can seen for a great distance from this vantage point. You might see your destination, find a path to shorten the trip or learn more about the area
+You come across the unmistakable signs of a giant - it might be giant humanoids (ogres, trolls or larger), or giant fauna (bears, cats, boars) of some kind. If there is an encounter today or tomorrow, it is with this creature
+You come across several heads on spears - the heads might be humans, dwarves gnolls or any other humanoid. It looks like this was done fairly recently
+You find the spoor or some other evidence of some large and dangerous predator. It might be a bear, giant bird, huge snake or even a dragon
+
+# this is a common table that I wanted to use b/w hills and mountains. However, tables are weighted, so when rolling hills (with 5 or so dedicated entries) + a 
+# possible roll on this table, this roll was happing only 1 time in 6. Basically you cant build common tables if the master table is weighted!!
+# My hack right now is to copy the contents of the table below into both the Hills and Mountains table. This is done in those tables where you find the
+# [@MysteriousLandmarkMain] entry on those tables as that is the first entry here. Keeping this table here as a reminder for now
+
+table: HillsAndMoutainsCommon
+[@MysteriousLandmarkMain]
+You are targeted by a hostile NPC group or creature. Create an Encounter
+Winged hunters circle overhead. They might be large or hungry enough to see you as prey
+You find the signs or spoor of mountain goats. It might be possible to follow them for food or water
+You spot mountain goats or sheep on a far hill
+You are ambushed (surprised/lose initiative) by a hunting predator like a great cat, bear or some other aggressive hunter or monster
+You spot a long, low cave on a far hillside
+There is a cave nearby
+Buzzards circle something some distance away (and possibly much higher up)
+You meet a patrol of some kind - humanoids, dwarves, and giants are likely suggestions
+Boulders and scree make travel difficult, make no progress today
+You have wandered into a box canyon - lose today's travel and roll for a second Encounter
+You find yourself traversing a slope with scree and broken boulders. Check Dex (or Reflex) or trigger a landslide (treat as a Deadly trap or a trap of higher level than the characters)
+The weather turns chill and bitter - clouds descend and limit visibility, wind whistles and there is rain, snow or some other inclement weather
+Natural fort - the rocks here form a protective barrier from wind and predators. A natural overhang ensures dry sleeping
+You come across a rushing torrent in a steep-sided trough. The water may cut off progress, be hazardous to cross, require a detour or just be a thing of natural beauty
+There is a copse of wind-bitten trees here. They may offer shelter, firewood or be the lair of some creature
+You find a [|pristine|polluted] [|pond|small lake]. From a brief examination, it looks [|shallow|deep|very deep]
+A former campsite. There are clear signs something intelligent spent the night here: signs of fire, piled stones, gathered firewood or the like
+Natural lookout - you can seen for a great distance from this vantage point. You might see your destination, find a path to shorten the trip or learn more about the area
+You come across the unmistakable signs of a giant - it might be giant humanoids (ogres, trolls or larger), or giant fauna (bears, cats, boars) of some kind. If there is an encounter today or tomorrow, it is with this creature
+You come across several heads on spears - the heads might be humans, dwarves gnolls or any other humanoid. It looks like this was done fairly recently
+You find the spoor or some other evidence of some large and dangerous predator. It might be a bear, giant bird, huge snake or even a dragon
+
+
+table: HillsStructure
+minehead
+lone tower like that of a wizard
+hillside fort
+large cave
+dwarven fortress
+shepherd village
+walled manor
+
+table: MountainsStructure
+minehead
+lone tower like that of a wizard
+large cave
+large cave
+large cave
+dwarven fortress
+
+table: Ocean
+[@MysteriousOceanMain]
+Bad navigation - for the next ?d12 days, you are making up for unexpected currents or errors in navigation. At the end of this time, the ship is back on course and travel can resume. May be avoidable based on various things (class skills, landmarks)
+The weather suddenly changes very much for the worse - an extreme weather events arises that threatens your progress, navigation and maybe your lives
+You spot another ship on the horizon. You cannot yet tell if it is moving to intercept. It may be benign, a foreign privateer or a ship filled with pirates
+The ship is accompanied by a pod of dolphins
+The water here changes from its normal color to that of a strange [@Color] color. Roll for a possible Encounter
+Good winds and currents speed your ship forward. Gain an extra day of progress on your journey
+Bad winds or currents hamper your progress. Make no progress on your journey
+If in shallow waters/near the coast, the ship is attacked by watery humanoids like Sahuagin. If in deep water, a "sea monster" attacks
+The floating hulk of another vessel is ahead. It may be empty, hold survivors, salvage or treasure or it is now serving as a lair of some kind
+You find a rowboat or dinghy adrift. It may be empty, contain survivors in need of rescue or contain only rotting corpses
+Several barrels bob on the waves. They may be empty, contain mundane things or may contain something altogether unexpected
+The ship suffers from some mechanical failure - a spar breaks, sails rip or the like. It will take {1d2} days to address the issue and resume travel
+Rats from the bilge swarm onto the ship proper, devouring everything in their path
+A virulent and disgusting intestinal illness spreads among the crew and passengers. Those that catch it are incapacitated for several days. This may hamper ship operations
+You overhear a drunk sailor talking about his early days as a cabin boy aboard a pirate vessel. He blurts out enough information to actually find the place he mentions
+The wind dies down as the sun sets and the vessel is becalmed. A thick fog bank rolls in and it seems as if the sea itself is making strange sounds. Maybe it's nothing...
+Mermaids rise around the ship in the evening. They may sing for the sailors, plea for help or entice the crew to become their husbands
+A lone spire like that of a fantastic wizard's tower rises from the sea. Gulls fly around its swirled and domed apex
+Fire! The ship is aflame and in danger of sinking if swift action isn't taken to get the flames under control
+Mutiny! The sailors have decided it is time for a new captain. Before you realize what is happening, a battle breaks out between the loyalists and the mutineers. Who's side are you on?
+Man overboard! It will take a long time - usually too long, for the ship to come to a halt and then drop boats to look for the missing man. Only swift action can save him
+Lice infest the passengers and crew. Either live like this until you get ashore or maybe (if you are lucky) the ship has lye aboard to deal with the infestation
+The night watch has reported that some winged creature has been flying near the ship at night. Roll an extra Encounter, and if there is one, it is this winged foe
+The simmering grudge between two sailors breaks out into a fight. It might be over fast, or maybe knives are drawn or the crew divides up to take sides and turns it into a melee
+
+table: River
+The water here changes from its normal color to that of a strange [@Color] color. Roll for a possible Encounter
+Good currents speed your ship forward. Gain an extra day of progress on your journey
+Bad currents hamper your progress. Make no progress on your journey
+The ship is attacked by some foe - either "watery humanoids" endemic to the area or some kind of "river monster"
+Recent weather activity has caused some kind of negative issue - rocks to become exposed, a logjam or the like. Lose today's progress
+Great fishing area - successful fishing here will generate a meaningful number of rations
+Something interesting on the shore - roll on the terrain table for the surrounding terrain
+The ship is swarmed with tiny flying and biting insects like mosquitoes or midges. Handle as a monstrous encounter or maybe as a hazard that must be dealt with
+Excellent landing spot - the river and shoreline here are perfect for an overnight stay. No Encounter even if one was rolled and everyone gets an excellent night's sleep
+Mechanical failure - some critical piece of equipment has failed - the anchor/chain, sail, sculling oar, rudder, mast or the like. Maybe the ship has a replacement or maybe something will need to be improvised. Lose at least 1 day, possibly many more, while the issue is addressed
+Another craft approaches - it might be merchants, adventurers, a patrol, raiders or something else
+As the ship passes over a clear, calm and deep pool, you spot the glint of gold among a sunken wreck. Maybe it is a fortuitous find or perhaps it is the lair of some creature
+A body is floating with the current. It could be anything - an adventurer, a humanoid, normal aquatic life, or a monster. It may provide a vital clue, be a lure or bait, serve as the lair for tiny monsters, a source of disease or just be a dead body
+Barrels or crates are floating downstream. Use an oracle for contents, spoilage, markings and other info
+Shoreline raiders! Goblins, kobolds, murlocks, or some other shoreline menace have recently moved into this area. They may rush out to attack, hurl fire or other missiles or watch your craft lazily as you move past them
+The ship's rudder has become entangled in netting. Someone needs to get into the water to cut the net away. Roll for  possible Encounter to see if an aquatic predator lurks nearby
+Shoreline structure. Roll on the Event table for the surrounding terrain until you roll a structure
+A sealed bottle bobbles in an eddy. It may be in a treacherous spot, making recovery dangerous. Inside is a map, a note, a scroll, a potion or any other interesting thing
+Another ship or boat is drawn up on shore. It appears uninhabited at first glance. Maybe the crew is on shore, perhaps they are in need of help or maybe they have mysteriously vanished. The craft may also contain useful resources
+
+table: MysteriousOceanMain
+You encounter a mysterious event while sailing.\n[@Seamarks]
+
+table: Seamarks
+You ship is being followed by a ghost ship with an undead crew, rotting wood and tattered sails. Some evil force gives it great speed and it is certain to catch you eventually
+No charts show it, but there is a mist-shrouded island here. It might be the back of a giant turtle, an island of legend or a mirage made real
+A sharp-eyed sailor spots a corked bottle bobbing on the waves. Once retrieved, a note is found inside. It might be a map, a scroll, a plea for help or a love poem
+
+table: MysteriousLandmarkMain
+You have found a mysterious landmark or object of some kind. It thrums with an unknown magic that may bring weal or woe.\n\n[@Landmarks]
+
+table: Landmarks
+An Obelisk, boulder or similar - this strange stone is [|perfectly smooth|covered in weird writing|covered in pictograms|weatherbeaten|dotted with crystalline flecks]
+A [@Color] crystal outcropping, growth or spar
+A noticeably-strange [|dead tree|flower|flowering bush|patch of moss|fruit tree]
+A [|crude|well-made|masterpiece] [stone|wicker] sculpture of some local flora or fauna
+A strange beetle-like insect. It is [@Color] and is [|very |\z][|small|large] compared to a typical beetle's size
+A pristine pool of water. The pool is [@Color] in color and is almost a perfect circle with a diameter of [|a few feet|a few yards]. Nothing grows nearby
+A set of roughly-circular stones balanced one atop the other. There are {2d4} stones in total and the largest, bottom-most one is about {2d3} [|inches|feet] around
+A carved arch, like an ancient doorway of some kind, stands here

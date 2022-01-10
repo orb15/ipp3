@@ -1,0 +1,84 @@
+# ---------------------------------------
+# Common - basics
+# Absolutely basic stuff here
+# ---------------------------------------
+
+
+# -----------------------
+# Directions
+# -----------------------
+table: DirectionsFull
+north
+northeast
+east
+southeast
+south
+southwest
+west
+northwest
+
+table: DirectionsAbbrev
+N
+NE
+E
+SE
+S
+SW
+NW
+
+# -----------------------
+# Colors
+# -----------------------
+table: Color
+[@ColorsList]
+[@ColorsList]-[@ColorsList]
+[@ColorMod], [@ColorsList]
+[@ColorMod], [@ColorsList]-[@ColorsList]
+
+table: ColorsList
+red
+orange
+yellow
+green
+blue
+violet
+gray
+silvery
+golden
+russet
+burgandy
+aquamarine
+forest green
+sky-blue
+rose-red
+blood-red
+teal
+black
+ivory
+cobalt
+brown
+turquoise
+obsidian
+maroon
+crimson
+azure
+coffee-colored
+jade
+scarlet
+lemon-colored
+olive-colored
+lime-colored
+earth-colored
+
+
+table: ColorMod
+light
+dark
+glistening
+metallic
+deep
+pale
+translucent
+dull
+shimmering
+hypnotic
