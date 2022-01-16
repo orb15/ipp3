@@ -2,7 +2,7 @@
 # 2d8 Reaction Table
 # ---------------------------------------
 prompt: Disposition {Friendly|Stranger|Unfriendly} Stranger
-prompt: Negative {None|Risky|SigRisk|Insults|GraveRisk} None
+prompt: Negative {None|Risky|SignifRisk|Insults|GraveRisk} None
 prompt: Positive {None|BribeFavor|BribeFav+|SaveLife} None
 prompt: Charisma {Cha0|Cha-1|Cha-2|Cha-3|Cha-4|Cha-5|Cha1|Cha2|Cha3|Cha4|Cha5} Cha0
 
@@ -79,7 +79,7 @@ table: NegModifier
 type: Dictionary
 None:0
 Risky:-1
-SigRisk:-2
+SignifRisk:-2
 Insults:-3
 GraveRisk:-4
 
