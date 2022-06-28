@@ -1,0 +1,20 @@
+# ---------------------------------------
+# Legends of Illithor: Terrain
+# ---------------------------------------
+
+
+table: Master
+MaxReps: 1
+Set: simTerrain={1d8}
+[when] {$simTerrain} < 7 [do] [@SimilarTerrain with {$simTerrain}] [else] The terrain is [@Random] [end]
+
+table: SimilarTerrain
+The terrain in this hex is the same as the hex on side: {$1}. If this hex is blank, the terrain is [@Random]
+
+table: Random
+type: weighted
+1:Plains
+1:Forest
+1:Forested Hills
+1:Forested Mountains
+1:Lake or River

@@ -1,0 +1,75 @@
+# ---------------------------------------
+# General Yes/No Oracle with Likelihood
+# ---------------------------------------
+
+prompt: Likelihood {AlmostImpossible|VeryUnlikely|Unlikely|Unknown|Likely|VeryLikely|AlmostCertain} Unknown
+
+table: Master
+MaxReps: 1
+In answer to your question with {$prompt1} likelihood: <b>[@{$prompt1}]</b>
+
+table: AlmostImpossible
+type: lookup
+roll: 1d20
+1-17:No 
+18:No, but [@But] 
+19:Yes, but [@But] 
+20:Yes
+
+table: VeryUnlikely
+type: lookup
+roll: 1d20
+1-14:No 
+15-16:No, but [@But] 
+17-18:Yes, but [@But] 
+19-20:Yes
+
+table: Unlikely
+type: lookup
+roll: 1d20
+1-10:No 
+11-14:No, but [@But] 
+15-17:Yes, but [@But] 
+18-20:Yes
+
+table: Unknown
+type: lookup
+roll: 1d20
+1-5:No 
+6-10:No, but [@But] 
+11-15:Yes, but [@But] 
+16-20:Yes
+
+table: Likely
+type: lookup
+roll: 1d20
+1-3:No 
+4-6:No, but [@But] 
+7-10:Yes, but [@But] 
+11-20:Yes
+
+table: VeryLikely
+type: lookup
+roll: 1d20
+1-2:No 
+3-4:No, but [@But] 
+5-6:Yes, but [@But] 
+7-20:Yes
+
+table: AlmostCertain
+type: lookup
+roll: 1d20
+1:No 
+2:No, but [@But] 
+3:Yes, but [@But] 
+4-20:Yes
+
+table: But
+type: lookup
+roll: 1d6
+1:there is a twist to the relationship between people in the situation
+2:there is an adjustment to the physical environment
+3:there is an error in an assumption some NPC is making
+4:a fact the hero thinks they know is actually wrong
+5:there is the failure of a piece of gear, either for the hero or an NPC
+6:there is sublimely bad or good timing by a sudden event

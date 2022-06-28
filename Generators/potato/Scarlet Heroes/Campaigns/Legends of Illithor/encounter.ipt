@@ -1,0 +1,15 @@
+# ---------------------------------------
+# Legends of Illithor: Encounters
+# ---------------------------------------
+
+Use: potato/Scarlet Heroes/campaigns/Legends-of-Illithor/monsters.ipt
+Use: potato/Oracles/wandering-reason.ipt
+
+prompt: Level {1AndLess|2|3|4|5|6|7|8|9|10|11|12|13AndHigher} Desert
+
+table: Master
+MaxReps: 5
+set: enc=[@Monsters{prompt1}]
+set: unintelReason=[@UnintelligentWanderer]
+set: intelReason=[@IntelligentWanderer]
+<b>An Encounter Level: {prompt1}</b>\n{enc}\n<b>Unintelligent Activity:</b> {$unintelReason}\n<b>Intelligent Activity: </b> {$intelReason} 

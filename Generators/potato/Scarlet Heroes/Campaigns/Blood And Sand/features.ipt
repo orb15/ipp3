@@ -1,0 +1,40 @@
+# ---------------------------------------
+# Blood-and-Sand: Features
+# ---------------------------------------
+
+Use: potato/Scarlet Heroes/campaigns/Blood-and-Sand/basics.ipt
+use: potato/misc/basic.ipt
+
+table: Master
+MaxReps: 1
+Set: result=[@TravelFeature]
+You spot a Feature during today's travel\n\n{result}.\n\nConsult one or more Oracles to refine this information if desired
+
+table: TravelFeature
+Mysterious Landmark thrumming with unseen power - [@MysteriousLandmark]
+Structure - [@Structure] Determine its condition and inhabitants randomly
+Natural Feature - [@NaturalFeature]
+
+table: Structure
+Pyramid
+Collection of tents
+Ruined mud-walled village
+Clearly a lair. The exact nature of the inhabitants determines what the structure is
+Lone tower
+A shimmering city dances on a mirage. This is a temporary entrance to the Floating City of Ur!
+
+table: NaturalFeature
+Craggy outcropping of stone with a dark cave. It might be a lair of a monster
+Natural fort
+A sheltered glade of shrubs provides shade and protection from predators
+
+table: MysteriousLandmarkMain
+You have found a mysterious landmark or object of some kind. It thrums with an unknown magic that may bring weal or woe.\n\n[@Landmarks]
+
+table: Landmarks
+An ancient obelisk - this strange stone is [|perfectly smooth|covered in weird writing|covered in pictograms|dotted with crystalline flecks]
+A [@Color] crystal outcropping, growth or spar
+A noticeably-strange [|dead tree|flower|flowering bush]
+A strange beetle-like insect. It is [@Color] and is [|very |\z][|small|large] compared to a typical beetle's size
+A set of roughly-circular stones balanced one atop the other. There are {2d4} stones in total and the largest, bottom-most one is about {2d3} [|inches|feet] around
+A carved arch, like an ancient doorway of some kind, stands here

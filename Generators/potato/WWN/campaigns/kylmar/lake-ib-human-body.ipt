@@ -1,0 +1,98 @@
+# ---------------------------------------
+# Kylmar: Human Body Info
+# ---------------------------------------
+
+table: Master
+MaxReps: 3
+Set: state=[@State]
+Set: sex=[@Sex]
+Set: gear=[@Gear]
+Set: treasure=[@Treasure]
+Lake Ib Human Body</b>\n\n<b>State:</b> {$state}\n<b>Sex:</b> {$sex}\n<b>Equip:</b> {$gear}\n<b>Treasure:</b> {$treasure}
+
+table: State
+type: weighted
+4:Skeleton
+2:Dessicated
+1:Rotting
+
+table: Sex
+type: weighted
+9:male
+1:female
+
+table: Gear
+type: weighted
+9:[@FighterGear]
+1:[@MageGear]
+
+table: FighterGear
+Set: armor=[@Armor] [@Shield]
+Set: weapon=[@FighterWeapon]
+Set: equip=[@{2d4} Equipment >> implode]
+<b>armor:</b> {$armor} <b>weapon:</b> {$weapon} <b>other:</b> {$equip}
+
+table: MageGear
+Set: armor=none
+Set: weapon=[@MageWeapon]
+Set: equip=[@{1d3} Equipment >> implode]
+<b>armor:</b> {$armor} <b>weapon:</b> {$weapon} <b>other:</b> {$equip}
+
+table: Armor
+type: weighted
+linothorax (light)
+pieced (light)
+mail shirt (medium)
+scaled (medium)
+mail hauberk (heavy)
+
+table: Shield
+type: weighted
+7:with shield
+1:no shield
+
+table: FighterWeapon
+[@{1d2} FighterSecondaryWeapon >> implode], [@FighterMainWeapon]
+
+table: FighterMainWeapon
+mace
+war axe
+[|heavy|light] spear
+[|long|short|great] sword
+
+table: FighterSecondaryWeapon
+type: weighted
+6: [|dagger|hand axe]
+1: short sword
+1: no offhand
+1: [@{2} FighterSecondaryWeapon]
+
+table: FighterRangedWeapon
+type: weighted
+3:None
+1:[|short|long|cross] bow
+
+table: MageWeapon
+type: weighted
+dagger
+staff
+
+table: Equipment
+rope
+rations
+lantern and oil
+torches
+tool ([|crowbar|pick|heavy hammer])
+cooking gear
+healer's pouch
+tinderbox
+hammer and spikes
+
+table: Treasure
+type: weighted
+31:none
+16:{1d3 *10}sp
+8:{2d4 *10}sp
+4:{2d6 *10}sp
+2:{1d3} small scrimshaw mollusk (10sp each)
+1:{1d3} small glowing scrimshaw mollusk (100sp each)

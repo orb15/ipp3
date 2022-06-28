@@ -1,0 +1,20 @@
+# ---------------------------------------
+# Blood and Sand: Terrain
+# ---------------------------------------
+
+
+table: Master
+MaxReps: 1
+Set: simTerrain={1d8}
+[when] {$simTerrain} < 7 [do] [@SimilarTerrain with {$simTerrain}] [else] The terrain is [@Random] [end]
+
+table: SimilarTerrain
+The terrain in this hex is the same as the hex on side: {$1}. If this hex is blank, the terrain is [@Random]
+
+table: Random
+type: weighted
+3:Open Desert
+2:Crags
+1:Dunes
+1:Petrified Forest
+1:Scrubland

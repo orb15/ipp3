@@ -1,0 +1,21 @@
+# ---------------------------------------
+# Kylmar: Lake Ib Wandering Encounter
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: creature=[@Creature]
+
+Lake Ib Wandering Encounter</b>\n\n{$creature}
+
+table: Creature
+type: weighted
+4:[@Guards]
+2:{1d6} Centipedes (pg32 AC10 HP2 HIT+0 MV20 SV15 ML7 bite: poison +2sv 1d4m onset +2 SS & -1 move 1d4T)
+2:Spider (pg110 AC12 HP9 HIT+1 MV40 SV15 ML7 bite: 1d6 + poison +2sv 1d4m onset 25% of max hp)
+1:Gray ooze (pg64 AC11 HP13 HIT+2 MV03 SV13 ML11 touch 2d8 + sticks + destroy armor)
+
+table: Guards
+type: weighted
+4:{1d4} Male Guards (AC13 HP4 HIT+0 MV30 SV15 ML12 2x pierce-claw 1d4 2/13 shock)
+1:{1d4} Male Guards (AC13 HP4 HIT+0 MV30 SV15 ML12 2x pierce-claw 1d4 2/13 shock) with Female (AC13 HP8 MV30 SV14 ML12 2x acid spray 10 cone evade or 2d4 damage)

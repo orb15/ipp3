@@ -1,0 +1,43 @@
+# ---------------------------------------
+# PF2e: Chitterwood
+# Events specific to the Chitterwood in the Kintargo campaign
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: result=[@Chitterwood]
+Travel through this portion of the Chitterwood is especially interesting because...\n\n{result}.\n\nConsult one or more Oracles to refine this information if desired
+
+table: Chitterwood
+Lost - for the next ?d6 days, travel is in circles or otherwise unproductive as you try to regain the trail. At the end of this time, the trail is re-located and travel can resume. May be avoidable based on various things (class skills, landmarks)
+You come across a [@ForestStructure]. The size of the place may indicate whether it is nestled in the trees or more obvious. Determine its condition and inhabitants randomly
+You are targeted by a hostile NPC group or creature. Create an Encounter
+The density of the trees is especially high here and slows or prevents today's travel.
+You hear the unmistakable signs of battle or combat. If investigated, roll two Encounters - these creatures are fighting when you arrive or perhaps there has already been a victory
+A game trail crosses your path. It may be searched for signs of passage (roll one or more Encounters if tracks are a possibility) and may lead to a lair, or a water or food source
+A cave opens at the base of a low rise. It is likely the trail shows goblin tracks
+You come upon an abandoned camp site. It might have been used by the Iskari military or goblins
+The trail descends and the trees grow large overhead. It is gloomy and unsettling. Thorn bushes are more prevalent.  Roll again for an Encounter
+You are ambushed (surprised/lose initiative) by a camouflaged hunting creature
+As evening advances and you begin to look for a camp, you hear the howl of wolves. You are being stalked by a pack of them. They might not attack, or perhaps they wargs are ridden by goblins
+This part of the forest has been burned - perhaps recently, perhaps longer ago. Trees are blackened and lack leaves, brush is gone
+You are near the nest or hive of some giant insect - wasps, bees, or giant ants. They may attack or let you pass by unmolested
+You have stumbled into the webs of dangerous spiders. You might be able to spot them before becoming entrapped
+You meet a patrol of goblins. Tribe: [@GoblinTribe]
+You have been spotted by crows working for the [@GoblinTribes] tribe. Roll an Initiative check. If the Crows win, they escape and for the next ?d4 days, roll twice for each encounter. If there is an encounter, it will be with this tribe or their servitors
+Bats roost in this gloomy area and take flight as you approach. They may swarm to attack or settle down to let you pass
+Ruined, burned webs and the bodies of spiders and goblins lay everywhere. One or both sides may be nearby or the battle may have ended some time ago
+You come across an old battle site. What was once a row of Iskari soldiers' heads on pikes is now a jumbled mess of picked-over bones and broken spears
+The trees here are shattered - trunks blasted apart or burned, and brush trampled. Bodies (or maybe just bones) lie scattered everywhere. Roll for an additional Undead encounter
+You find whatever it is you are looking for
+You come across several trees used for archery and javelin practice. If you encounter goblins in the next 1d2 days, they have a +1 to hit on all ranged attacks
+
+table: ForestStructure
+hidden goblin watchpost. Tribe: [@GoblinTribe]
+entrance to the goblin caves. Tribe: [@GoblinTribe] 
+obvious lair of some creature other than a goblin
+
+table: GoblinTribe
+True Hoard
+Spine Threshers
+People of the Stirge

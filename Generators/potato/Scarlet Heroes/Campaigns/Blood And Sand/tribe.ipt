@@ -1,0 +1,9 @@
+# ---------------------------------------
+# Blood and Sand: Tribe
+# ---------------------------------------
+
+Use: potato/Scarlet Heroes/campaigns/Blood-and-sand/basics.ipt
+
+table: Master
+MaxReps: 1
+The tribe at interest here is: [@DesertTribe]

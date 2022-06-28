@@ -1,0 +1,26 @@
+# ---------------------------------------
+# Blood and Sand: Basics
+# ---------------------------------------
+
+table: DesertTribe
+Amil (Golden Scimitar)
+Faruq (Camels in Line)
+Gazi (Bright Green Sashes)
+Bakra (Crescent Moon)
+Qudra (Date Tree)
+Ghatan (Ram's Horn)
+
+table: DesertTribeNameOnly
+Amil
+Faruq
+Gazi
+Bakra
+Qudra
+Ghatan
+
+table: DesertSpirits
+Al-Kalmaru, The Desert Moon
+Melenja, The Face in the Sand
+Rijhan, The Voice of the Wind
+Zala, The Shadow Walker
+Natajil, The Songbird of Hope

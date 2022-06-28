@@ -1,0 +1,37 @@
+# ---------------------------------------
+# Blood-and-Sand: Events
+# ---------------------------------------
+
+Use: potato/Scarlet Heroes/campaigns/Blood-and-Sand/basics.ipt
+use: potato/misc/basic.ipt
+
+table: Master
+MaxReps: 1
+Set: result=[@TravelEvent]
+An Event occurs during today's travel\n\n{result}.\n\nConsult one or more Oracles to refine this information if desired
+
+table: TravelEvent
+You spot a Feature some distance off. Determine its condition and inhabitants randomly
+You notice new terrain in the distance: New terrain is: [@TerrainChange] (re-roll if this is the current terrain)
+Off track - the day's travel is wasted and the next day must be spent returning to the proper path. May be avoidable based on various things (class skills, landmarks)
+You are targeted by a hostile NPC group or creature. Create an Encounter
+You encounter a peaceful group of hunters, pilgrims, traders or peasants. There is a chance they need your help in some way
+You spot wild camels traveling in the distance
+A zealot and his cult-like believers are making their way to/from some holy shrine or place. They may try to convert non-believers or kill anyone they consider infidels. They are sworn followers of [@DesertSpirits]
+If you have a camel, it grows lame and needs careful tending, is frightened to the point of panic, is steadfastly stubborn or the like
+Sandstorm! Lasts {2d3-1} hours. Save vs paralysis for each hour exposed or take 1 hp damage. Chance to lose path for each hour traveling in the storm
+You find a shrine to [@DesertSpirits]. There is a chance of a valuable offering of some kind, but taking it may anger the god or its followers
+You find one or more skeletons of a camel, goat, human or sheep. Examining it reveals something unpleasant - the sign of a large predator, marauders, or the like
+Buzzards circle something far out on sand
+By some gift of the gods, you find a berry bush covered in ripe berries. Eat these to avoid consuming a ration
+By some gift of the gods, you find a temporary watering hole. Check for an Encounter twice and accept all results. You can refill your water here and your mount can drink its fill if the Encounters can be overcome
+A side trail or track crosses this one. It might be possible to determine who or what made it and when. it may lead somewhere interesting 
+You come across signs of a recent battle - discarded weapons, spent arrows, blood trails, and bodies
+A camel wanders nearby looking worn and haggard. It is saddled but the rider is nowhere in sight
+Sunstroke! Save vs Physical at 9+L. On fail, Halt travel for the day and drink twice as much water. If out of water, take Ld4 damage
+
+table: TerrainChange
+Craggy hills
+Scrubland
+Rolling dunes
+Petrified Forest

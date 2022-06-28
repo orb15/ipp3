@@ -1,0 +1,42 @@
+# ---------------------------------------
+# Kylmar: Lake Ib Ruins Level 2 Contents
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: sleeps={1d2+1d2}
+Set: content=[@ContentMaster]
+Set: bodies=[@Bodies]
+Set: treasure=[@Treasure >> implode]
+Lake Ib Level 2 Sleeping Quarters</b>\n\n<b>Sleeps:</b> {$sleeps}\n<b>Bodies:</b> {$bodies}\n<b>Treasure:</b> {$treasure}
+
+table: Bodies
+type: weighted
+5:None
+2:[@{1d3} Guards >> implode] and {1d3} Aldani [@AldaniItems]
+2:{1d3} Omuans
+1:{1d2} Aldani [@AldaniItems]
+1:{1d4} Omuans and {1d2} Aldani  [@AldaniItems]
+
+table: AldaniItems
+type: weighted
+6:\z
+2:with severed hand of Omuan
+1:with Mold (save poison or lose half max hp)
+1:[@{1d2} AldaniItems >> implode]
+
+table: Guards
+type: weighted
+9:Guard
+1:Female leader
+
+table: Treasure
+type: weighted
+15:None
+6:{1d3} small scrimshaw mollusk (10sp each)
+6:{1d3} small glowing scrimshaw mollusk (100sp each)
+4:{1d2} large scrimshaw mollusk (30sp each)
+4:{1d2} large glowing scrimshaw mollusk (300sp each)
+2:1 very large scrimshaw mollusk (100sp each)
+2:1 very large glowing scrimshaw mollusk (1000sp each)
+1:[@{1d3} Treasure >> implode]

@@ -1,0 +1,26 @@
+# ---------------------------------------
+# Legends of Illithor: Events
+# ---------------------------------------
+
+use: potato/misc/basic.ipt
+
+table: Master
+MaxReps: 1
+Set: result=[@TravelEvent]
+An Event occurs during today's travel\n\n{result}.\n\nConsult one or more Oracles to refine this information if desired
+
+table: TravelEvent
+You spot a Feature some distance off. Determine its condition and inhabitants randomly
+You notice new terrain in the distance. Roll new terrain for a nearby region
+Off track - the day's travel is wasted and the next day must be spent returning to the proper path. May be avoidable based on various things (class skills, landmarks)
+Shortcut - some unexpected feature of the terrain provides a meaningful shortcut toward your destination
+You are targeted by a hostile NPC group or creature. Create an Encounter
+You have entered a hunting grounds or patrolled territory. Something hunts or patrols this area. Roll to determine if another Encounter occurs
+Bad weather! A sever storm blows in, bringing travel to a halt. It might be dangerous as well, depending on its nature
+You find one or more decaying bodies; it might be herd animals, Beastmen, monsters or something else. Examining them reveals something unpleasant - the sign of a large predator, marauders, or the like
+Buzzards circle something far above
+Gear or mount failure. Some unfortunate event costs you useful gear or rations, injures a mount or otherwise reduces resources or limits travel or other capabilities in a meaningful way
+Easy access to good food. You find a berry bush covered in ripe berries, quality mushrooms, easy prey or the like. There is enough food present to feed 1d4+1 humans.
+A side trail or track crosses this one. It might be possible to determine who or what made it and when. It may lead somewhere interesting
+You come across signs of a recent battle - discarded weapons, spent arrows, blood trails, and bodies
+Infected wound or illness. Select a wounded person (or mount) at random; if no one is wounded, select a <b>person</b> at random. The wound becomes infected or the person falls acutely ill. Take Td4 damage unless this malady can be promptly cured

@@ -1,0 +1,27 @@
+# ---------------------------------------
+# Kylmar: Lake Ib Events
+# ---------------------------------------
+
+table: Master
+MaxReps: 1
+Set: event=[@Event]
+
+Lake Ib Event</b>\n\n{$event}
+
+table: Event
+type: lookup
+roll: 1d12
+1:Wandering monster
+2-7:[@Special]
+8-11:Oldest torch expended
+12:Oldest lantern oil expended
+
+table: Special
+Hear skittering or scurrying
+Hear croaking / bellowing
+Next dark or out of sight area: corpse of a [|spider|human|aldani|omuan]
+Thick ooze on floor - area is [|slippery|slippery and acidic take 1d2 hp acid if fall]
+Hear marching/stepping
+Smell of something dead
+Smell of chemicals/bitterness
+Smell of fresh air
