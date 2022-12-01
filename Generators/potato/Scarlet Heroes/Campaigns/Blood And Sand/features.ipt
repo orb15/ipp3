@@ -11,7 +11,7 @@ Set: result=[@TravelFeature]
 You spot a Feature during today's travel\n\n{result}.\n\nConsult one or more Oracles to refine this information if desired
 
 table: TravelFeature
-Mysterious Landmark thrumming with unseen power - [@MysteriousLandmark]
+Mysterious Landmark thrumming with unseen power - [@MysteriousLandmarkMain]
 Structure - [@Structure] Determine its condition and inhabitants randomly
 Natural Feature - [@NaturalFeature]
 

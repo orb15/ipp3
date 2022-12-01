@@ -1,0 +1,92 @@
+# ---------------------------------------
+# Kylmar: Lake Ib Library
+# ---------------------------------------
+prompt: Category {Random|Science|FacPow|FacStruct|Religion|AldArch|AldRel|AldScrim|AldLife|AldLiveDie|AldCapture|AldInside} Random 
+
+table: Master
+MaxReps: 3
+Set: content=[@{$prompt1}]
+Set: format=[@Format]
+Set: duration={1d4-1} hours
+<b>Lake Ib Library Content</b>\n\n<b>Format:</b> {$format}\n<b>Content:</b> {$content}\n<b>Duration:</b> {$duration}
+
+table: Format
+A presentation about
+Video about
+Text and pictures about
+
+table: Random
+[@FacPow]
+[@FacStruct]
+[@Religion]
+[@AldArch]
+[@AldRel]
+[@AldScrim]
+[@AldLife]
+[@AldLiveDie]
+[@AldCapture]
+
+table: Science
+Core educational or reference data on [|chemistry|metallurgy|geology]
+
+table: FacPow
+A schematic of wiring and conduit for floor {1d9}
+A schematic of the power cell connections
+A schematic of the [|pool|temple|atrium|shaft|single-dwelling unit|lab] area
+operating instructions for the reactor
+
+table: FacStruct
+Structural drawings for floor {1d9}
+Structural drawing of the [|pool|temple secret door|ventilation shafts|lake room|executive suites]
+Structural drawing of the [|atrium stairs|atrium secret doors|cloning tank]
+Structural sideview showing the full facility
+
+Table: Religion
+A [|normal|high-holy] religious service
+The opening of the secret area
+Core religious text
+
+table: AldArch
+Aldani construction mechanisms
+Aldani stone and materials gathering
+Aldani structures examined from a structural engineering standpoint
+Aldani use of their claws and fine manipulators in stone working
+Aldani use of mucus + mud to create mortar
+
+table: AldRel
+Aldani paying homage around a totem pole
+Aldani 'priest like figure' adorned with rare lake plants
+Aldani touching totem pole in a strange manner
+Aldani waving claws in intricate way near totem
+
+table: AldScrim
+Aldani gathering mollusks at lake at night
+Aldani sucking mollusks from shell and shell care
+Aldani shell scrimshaw with delicate stone tools in fine manipulators
+Aldani shell polishing with muddy gravel
+
+table:AldLife
+Aldani hunting for fish
+Aldani communal gatherings
+Aldani personal combat
+Aldani daily life
+
+table: AldLiveDie
+Aldani courtship dances
+Aldani mating practices
+Aldani egg fertilization
+Aldani egg development
+Aldani 'children'
+Aldani growth cycle
+Aldani end of life
+Aldani death practices
+
+Table: AldCapture
+Stalking the Aldani (underwater)
+Aldani capture (with nets)
+Aldani wrangling and subduing for transport
+Aldani being placed into tanks
+Aldani knock-out vials (blue-purple fluid) at work
+
+table: AldInside
+Aldani dissection of [|claws|brain|tail|manipulators|mouth-parts|children|male-parts|female-parts|eggs]

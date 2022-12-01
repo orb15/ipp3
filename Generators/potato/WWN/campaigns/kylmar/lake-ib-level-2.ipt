@@ -32,11 +32,12 @@ type: weighted
 
 table: Treasure
 type: weighted
-15:None
+108:None
 6:{1d3} small scrimshaw mollusk (10sp each)
 6:{1d3} small glowing scrimshaw mollusk (100sp each)
 4:{1d2} large scrimshaw mollusk (30sp each)
 4:{1d2} large glowing scrimshaw mollusk (300sp each)
 2:1 very large scrimshaw mollusk (100sp each)
 2:1 very large glowing scrimshaw mollusk (1000sp each)
+2:video of Aldani attack stored on library thing
 1:[@{1d3} Treasure >> implode]

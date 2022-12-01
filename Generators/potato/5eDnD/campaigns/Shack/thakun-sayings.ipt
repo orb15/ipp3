@@ -1,0 +1,74 @@
+# ---------------------------------------
+# Shack Unknown: Thakun Sayings
+# ---------------------------------------
+
+prompt: Context {Any|Outside|City|Cave|Puzzle|Weird|Exclaim} Any
+
+table: Master
+MaxReps: 1
+Set:saying=[#{$prompt1} Sayings]
+<b>Thakun mumbles in a low voice...!</b>\n\n{$saying}\n\n
+
+
+table: Sayings
+type: dictionary
+Any:[@Any]
+Outside:[@Outside]
+Cave:[@Cave]
+City:[@City]
+Puzzle:[@Puzzle]
+Weird:[@Weird]
+Exclaim:[@Exclaim]
+
+table: Any
+[@Outside]
+[@Cave]
+[@Puzzle]
+[@Weird]
+
+table: Outside
+When [@ShuddeNames] moves, the earth trembles and the sky is as stone cracked by the hammer
+That which they call the sun is an eye of [@ShuddeNames] gazing upon you. Pray it turns away ere you burst aflame
+That which they call the moon is an eye of [@ShuddeNames]. Probe its secrets at your peril
+All that crawls upon the earth or flies above is a trifle to [@ShuddeNames]
+The waters of the earth are the [|sweat|piss|spittle|vomit] of [@ShuddeNames]
+How large is [@ShuddeNames]? The mountains are that part of the earth it chose to leave uneaten
+The soil is dark because it is the shit of [@ShuddeNames]. We all stand upon the shit-pile of [@ShuddeNames] and scurry like maggots over its surface
+
+table: Cave
+Shudde M'ell probes the very ground beneath my feet. [|Somewhere a cave opens|The caverns of my mind are bathed in a new shadow]
+To enter a cave is to touch the stone that [@ShuddeNames] devoured
+A wall of stone of this size is an insult to [@ShuddeNames]. May it pass though it and set it aright
+My mind trembles knowing that I stand upon that which [@ShuddeNames] will devour
+[@ShuddeNames] writes the future in its every delving, its ink is the stone beneath the earth and it carves letters for all to read
+Those that shape the stone by hand pay poor homage to [@ShuddeNames]. The horror that awaits the makers of this place cannot be described
+
+table: City
+Man builds houses in mockery of [@ShuddeNames]. Stone must never be stacked but left to grow and to await its devouring. To cut a block from a wall is to cheat [@ShuddeNames] of its prize
+Vermin may gather in great numbers, but that does not make them more than vermin
+They talk to one another like what they say will have the slightest meaning when [@ShuddeNames] topples their walls
+
+table: Puzzle
+Who can see the unseen or know the unknowable?
+The object is to burrow to ones goal. Of course it is. To truly know the present we must [|walk the caverns of the past|create a tunnel through the thought-stone of our minds]
+The mind is like to a mine. It is. It is. The answer is in our minds and like a mine we must tunnel to the thought we need. [|\z|But... must we be heedful of what is devoured when we tunnel?|[@ShuddeNames] cares not for how it devours the gray stone of a mine so we should care not what holes we make in our minds]
+If you feed the worm within you, it can carve new caverns in your thought
+
+table: Weird
+There are worms in the earth, there are worms of the earth and there are worms that devour the earth. Sometimes they are [|the same|different] [|\z|but not this time]
+There are worms in the earth, there are worms of the earth and there are worms that devour the earth. Understand to which you belong
+Every worm is covered with smaller worms that dance upon the wormskin if you look closely enough
+Do not set your teeth against the stone for you are not [@ShuddeNames]. A tooth will shatter before the stone cracks, for we are nothing
+
+table: Exclaim
+[@ShuddeNames], lend me a fraction of your might!
+[@ShuddeNames] tires of your insolence!
+[@ShuddeNames] claim this as your own!
+[@ShuddeNames] bring forth the change you desire!
+[@ShuddeNames] deems you insignificant!
+
+table: ShuddeNames
+Shudde M'ell
+It That Crawls
+The Devourer Within
+The Wormshadow

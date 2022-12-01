@@ -1,0 +1,10 @@
+# ---------------------------------------
+# Oracle: Lair Activity
+# ---------------------------------------
+
+Use: potato/Oracles/lair-activity.ipt
+
+table: Master
+MaxReps: 1
+Set: activity=[@LairActivity]
+<b>Lair Activity:</b> {$activity}
